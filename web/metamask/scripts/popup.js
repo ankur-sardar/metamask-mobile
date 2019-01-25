@@ -1,4 +1,4 @@
-(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(_dereq_,module,exports){
+(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/app/scripts/lib/buy-eth-url.js":[function(_dereq_,module,exports){
 'use strict';
 
 module.exports = getBuyEthUrl;
@@ -29,7 +29,7 @@ function getBuyEthUrl(_ref) {
   return url;
 }
 
-},{}],2:[function(_dereq_,module,exports){
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/app/scripts/lib/hex-to-bn.js":[function(_dereq_,module,exports){
 'use strict';
 
 var ethUtil = _dereq_('ethereumjs-util');
@@ -39,7 +39,7 @@ module.exports = function hexToBn(hex) {
   return new BN(ethUtil.stripHexPrefix(hex), 16);
 };
 
-},{"ethereumjs-util":130}],3:[function(_dereq_,module,exports){
+},{"ethereumjs-util":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/ethereumjs-util/index.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/app/scripts/lib/is-popup-or-notification.js":[function(_dereq_,module,exports){
 'use strict';
 
 module.exports = function isPopupOrNotification() {
@@ -51,7 +51,7 @@ module.exports = function isPopupOrNotification() {
   }
 };
 
-},{}],4:[function(_dereq_,module,exports){
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/app/scripts/lib/notification-manager.js":[function(_dereq_,module,exports){
 'use strict';
 
 var _classCallCheck2 = _dereq_('babel-runtime/helpers/classCallCheck');
@@ -148,7 +148,7 @@ var NotificationManager = function () {
 
 module.exports = NotificationManager;
 
-},{"babel-runtime/helpers/classCallCheck":16,"babel-runtime/helpers/createClass":17,"extensionizer":147}],5:[function(_dereq_,module,exports){
+},{"babel-runtime/helpers/classCallCheck":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/babel-runtime/helpers/classCallCheck.js","babel-runtime/helpers/createClass":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/babel-runtime/helpers/createClass.js","extensionizer":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/extensionizer/index.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/app/scripts/lib/obj-multiplex.js":[function(_dereq_,module,exports){
 'use strict';
 
 var through = _dereq_('through2');
@@ -196,7 +196,7 @@ function ObjectMultiplex(opts) {
   return mx;
 }
 
-},{"through2":489}],6:[function(_dereq_,module,exports){
+},{"through2":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/through2/through2.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/app/scripts/lib/port-stream.js":[function(_dereq_,module,exports){
 (function (Buffer){
 'use strict';
 
@@ -265,7 +265,8 @@ PortDuplexStream.prototype._write = function (msg, encoding, cb) {
 function noop() {}
 
 }).call(this,_dereq_("buffer").Buffer)
-},{"buffer":24,"readable-stream":447,"util":495}],7:[function(_dereq_,module,exports){
+
+},{"buffer":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/buffer/index.js","readable-stream":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/readable-stream/readable-browser.js","util":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/util/util.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/app/scripts/lib/stream-utils.js":[function(_dereq_,module,exports){
 'use strict';
 
 var _stringify = _dereq_('babel-runtime/core-js/json/stringify');
@@ -311,7 +312,7 @@ function setupMultiplex(connectionStream) {
   return mx;
 }
 
-},{"./obj-multiplex":5,"babel-runtime/core-js/json/stringify":13,"end-of-stream":115,"through2":489}],8:[function(_dereq_,module,exports){
+},{"./obj-multiplex":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/app/scripts/lib/obj-multiplex.js","babel-runtime/core-js/json/stringify":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/babel-runtime/core-js/json/stringify.js","end-of-stream":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/end-of-stream/index.js","through2":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/through2/through2.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/app/scripts/platforms/extension.js":[function(_dereq_,module,exports){
 'use strict';
 
 var _classCallCheck2 = _dereq_('babel-runtime/helpers/classCallCheck');
@@ -360,7 +361,7 @@ var ExtensionPlatform = function () {
 
 module.exports = ExtensionPlatform;
 
-},{"babel-runtime/helpers/classCallCheck":16,"babel-runtime/helpers/createClass":17,"extensionizer":147}],9:[function(_dereq_,module,exports){
+},{"babel-runtime/helpers/classCallCheck":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/babel-runtime/helpers/classCallCheck.js","babel-runtime/helpers/createClass":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/babel-runtime/helpers/createClass.js","extensionizer":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/extensionizer/index.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/app/scripts/popup-core.js":[function(_dereq_,module,exports){
 (function (global){
 'use strict';
 
@@ -389,9 +390,9 @@ function initializePopup(_ref, cb) {
 function connectToAccountManager(connectionStream, cb) {
   // setup communication with background
   // setup multiplexing
-  var mx = setupMultiplex(connectionStream
+  var mx = setupMultiplex(connectionStream);
   // connect features
-  );setupControllerConnection(mx.createStream('controller'), cb);
+  setupControllerConnection(mx.createStream('controller'), cb);
   setupWeb3Connection(mx.createStream('provider'));
 }
 
@@ -422,7 +423,8 @@ function setupControllerConnection(connectionStream, cb) {
 }
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"../../ui":561,"./lib/stream-utils.js":7,"async":12,"dnode":97,"eth-query":128,"events":144,"web3-stream-provider":498}],10:[function(_dereq_,module,exports){
+
+},{"../../ui":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/index.js","./lib/stream-utils.js":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/app/scripts/lib/stream-utils.js","async":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/async/lib/async.js","dnode":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/dnode/browser.js","eth-query":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/eth-query/index.js","events":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/events/events.js","web3-stream-provider":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/web3-stream-provider/index.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/app/scripts/popup.js":[function(_dereq_,module,exports){
 (function (global){
 'use strict';
 
@@ -441,15 +443,15 @@ global.platform = new ExtensionPlatform();
 
 // inject css
 var css = MetaMaskUiCss();
-injectCss(css
+injectCss(css);
 
 // identify window type (popup, notification)
-);var windowType = isPopupOrNotification();
+var windowType = isPopupOrNotification();
 global.METAMASK_UI_TYPE = windowType;
-closePopupIfOpen(windowType
+closePopupIfOpen(windowType);
 
 // setup stream to background
-);var extensionPort = extension.runtime.connect({ name: windowType });
+var extensionPort = extension.runtime.connect({ name: windowType });
 var connectionStream = new PortStream(extensionPort);
 
 // start ui
@@ -476,7 +478,8 @@ function displayCriticalError(err) {
 }
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"../../ui/css":560,"./lib/is-popup-or-notification":3,"./lib/notification-manager":4,"./lib/port-stream.js":6,"./platforms/extension":8,"./popup-core":9,"extensionizer":147,"inject-css":192}],11:[function(_dereq_,module,exports){
+
+},{"../../ui/css":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/css.js","./lib/is-popup-or-notification":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/app/scripts/lib/is-popup-or-notification.js","./lib/notification-manager":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/app/scripts/lib/notification-manager.js","./lib/port-stream.js":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/app/scripts/lib/port-stream.js","./platforms/extension":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/app/scripts/platforms/extension.js","./popup-core":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/app/scripts/popup-core.js","extensionizer":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/extensionizer/index.js","inject-css":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/inject-css/index.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/assert/assert.js":[function(_dereq_,module,exports){
 (function (global){
 'use strict';
 
@@ -970,7 +973,8 @@ var objectKeys = Object.keys || function (obj) {
 };
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"util/":495}],12:[function(_dereq_,module,exports){
+
+},{"util/":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/util/util.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/async/lib/async.js":[function(_dereq_,module,exports){
 (function (process,global){
 /*!
  * async
@@ -2239,13 +2243,14 @@ var objectKeys = Object.keys || function (obj) {
 }());
 
 }).call(this,_dereq_('_process'),typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"_process":237}],13:[function(_dereq_,module,exports){
+
+},{"_process":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/browserify/node_modules/process/browser.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/babel-runtime/core-js/json/stringify.js":[function(_dereq_,module,exports){
 module.exports = { "default": _dereq_("core-js/library/fn/json/stringify"), __esModule: true };
-},{"core-js/library/fn/json/stringify":46}],14:[function(_dereq_,module,exports){
+},{"core-js/library/fn/json/stringify":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/core-js/library/fn/json/stringify.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/babel-runtime/core-js/object/define-property.js":[function(_dereq_,module,exports){
 module.exports = { "default": _dereq_("core-js/library/fn/object/define-property"), __esModule: true };
-},{"core-js/library/fn/object/define-property":47}],15:[function(_dereq_,module,exports){
+},{"core-js/library/fn/object/define-property":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/core-js/library/fn/object/define-property.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/babel-runtime/core-js/object/keys.js":[function(_dereq_,module,exports){
 module.exports = { "default": _dereq_("core-js/library/fn/object/keys"), __esModule: true };
-},{"core-js/library/fn/object/keys":48}],16:[function(_dereq_,module,exports){
+},{"core-js/library/fn/object/keys":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/core-js/library/fn/object/keys.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/babel-runtime/helpers/classCallCheck.js":[function(_dereq_,module,exports){
 "use strict";
 
 exports.__esModule = true;
@@ -2255,7 +2260,7 @@ exports.default = function (instance, Constructor) {
     throw new TypeError("Cannot call a class as a function");
   }
 };
-},{}],17:[function(_dereq_,module,exports){
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/babel-runtime/helpers/createClass.js":[function(_dereq_,module,exports){
 "use strict";
 
 exports.__esModule = true;
@@ -2283,123 +2288,7 @@ exports.default = function () {
     return Constructor;
   };
 }();
-},{"../core-js/object/define-property":14}],18:[function(_dereq_,module,exports){
-'use strict'
-
-exports.byteLength = byteLength
-exports.toByteArray = toByteArray
-exports.fromByteArray = fromByteArray
-
-var lookup = []
-var revLookup = []
-var Arr = typeof Uint8Array !== 'undefined' ? Uint8Array : Array
-
-var code = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/'
-for (var i = 0, len = code.length; i < len; ++i) {
-  lookup[i] = code[i]
-  revLookup[code.charCodeAt(i)] = i
-}
-
-revLookup['-'.charCodeAt(0)] = 62
-revLookup['_'.charCodeAt(0)] = 63
-
-function placeHoldersCount (b64) {
-  var len = b64.length
-  if (len % 4 > 0) {
-    throw new Error('Invalid string. Length must be a multiple of 4')
-  }
-
-  // the number of equal signs (place holders)
-  // if there are two placeholders, than the two characters before it
-  // represent one byte
-  // if there is only one, then the three characters before it represent 2 bytes
-  // this is just a cheap hack to not do indexOf twice
-  return b64[len - 2] === '=' ? 2 : b64[len - 1] === '=' ? 1 : 0
-}
-
-function byteLength (b64) {
-  // base64 is 4/3 + up to two characters of the original data
-  return b64.length * 3 / 4 - placeHoldersCount(b64)
-}
-
-function toByteArray (b64) {
-  var i, j, l, tmp, placeHolders, arr
-  var len = b64.length
-  placeHolders = placeHoldersCount(b64)
-
-  arr = new Arr(len * 3 / 4 - placeHolders)
-
-  // if there are placeholders, only get up to the last complete 4 chars
-  l = placeHolders > 0 ? len - 4 : len
-
-  var L = 0
-
-  for (i = 0, j = 0; i < l; i += 4, j += 3) {
-    tmp = (revLookup[b64.charCodeAt(i)] << 18) | (revLookup[b64.charCodeAt(i + 1)] << 12) | (revLookup[b64.charCodeAt(i + 2)] << 6) | revLookup[b64.charCodeAt(i + 3)]
-    arr[L++] = (tmp >> 16) & 0xFF
-    arr[L++] = (tmp >> 8) & 0xFF
-    arr[L++] = tmp & 0xFF
-  }
-
-  if (placeHolders === 2) {
-    tmp = (revLookup[b64.charCodeAt(i)] << 2) | (revLookup[b64.charCodeAt(i + 1)] >> 4)
-    arr[L++] = tmp & 0xFF
-  } else if (placeHolders === 1) {
-    tmp = (revLookup[b64.charCodeAt(i)] << 10) | (revLookup[b64.charCodeAt(i + 1)] << 4) | (revLookup[b64.charCodeAt(i + 2)] >> 2)
-    arr[L++] = (tmp >> 8) & 0xFF
-    arr[L++] = tmp & 0xFF
-  }
-
-  return arr
-}
-
-function tripletToBase64 (num) {
-  return lookup[num >> 18 & 0x3F] + lookup[num >> 12 & 0x3F] + lookup[num >> 6 & 0x3F] + lookup[num & 0x3F]
-}
-
-function encodeChunk (uint8, start, end) {
-  var tmp
-  var output = []
-  for (var i = start; i < end; i += 3) {
-    tmp = (uint8[i] << 16) + (uint8[i + 1] << 8) + (uint8[i + 2])
-    output.push(tripletToBase64(tmp))
-  }
-  return output.join('')
-}
-
-function fromByteArray (uint8) {
-  var tmp
-  var len = uint8.length
-  var extraBytes = len % 3 // if we have 1 byte left, pad 2 bytes
-  var output = ''
-  var parts = []
-  var maxChunkLength = 16383 // must be multiple of 3
-
-  // go through the array every three bytes, we'll deal with trailing stuff later
-  for (var i = 0, len2 = len - extraBytes; i < len2; i += maxChunkLength) {
-    parts.push(encodeChunk(uint8, i, (i + maxChunkLength) > len2 ? len2 : (i + maxChunkLength)))
-  }
-
-  // pad the end with zeros, but make sure to not forget the extra bytes
-  if (extraBytes === 1) {
-    tmp = uint8[len - 1]
-    output += lookup[tmp >> 2]
-    output += lookup[(tmp << 4) & 0x3F]
-    output += '=='
-  } else if (extraBytes === 2) {
-    tmp = (uint8[len - 2] << 8) + (uint8[len - 1])
-    output += lookup[tmp >> 10]
-    output += lookup[(tmp >> 4) & 0x3F]
-    output += lookup[(tmp << 2) & 0x3F]
-    output += '='
-  }
-
-  parts.push(output)
-
-  return parts.join('')
-}
-
-},{}],19:[function(_dereq_,module,exports){
+},{"../core-js/object/define-property":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/babel-runtime/core-js/object/define-property.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/bip66/index.js":[function(_dereq_,module,exports){
 // Reference https://github.com/bitcoin/bips/blob/master/bip-0066.mediawiki
 // Format: 0x30 [total-length] 0x02 [R-length] [R] 0x02 [S-length] [S]
 // NOTE: SIGHASH byte ignored AND restricted, truncate before use
@@ -2514,7 +2403,7 @@ module.exports = {
   encode: encode
 }
 
-},{"safe-buffer":465}],20:[function(_dereq_,module,exports){
+},{"safe-buffer":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/safe-buffer/browser.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/bn.js/lib/bn.js":[function(_dereq_,module,exports){
 (function (module, exports) {
   'use strict';
 
@@ -5943,7 +5832,7 @@ module.exports = {
   };
 })(typeof module === 'undefined' || module, this);
 
-},{}],21:[function(_dereq_,module,exports){
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/brorand/index.js":[function(_dereq_,module,exports){
 var r;
 
 module.exports = function rand(len) {
@@ -6010,9 +5899,956 @@ if (typeof self === 'object') {
   }
 }
 
-},{"crypto":22}],22:[function(_dereq_,module,exports){
+},{"crypto":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/browser-resolve/empty.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/browser-resolve/empty.js":[function(_dereq_,module,exports){
 
-},{}],23:[function(_dereq_,module,exports){
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/browserify/node_modules/process/browser.js":[function(_dereq_,module,exports){
+// shim for using process in browser
+var process = module.exports = {};
+
+// cached from whatever global is present so that test runners that stub it
+// don't break things.  But we need to wrap it in a try catch in case it is
+// wrapped in strict mode code which doesn't define any globals.  It's inside a
+// function because try/catches deoptimize in certain engines.
+
+var cachedSetTimeout;
+var cachedClearTimeout;
+
+function defaultSetTimout() {
+    throw new Error('setTimeout has not been defined');
+}
+function defaultClearTimeout () {
+    throw new Error('clearTimeout has not been defined');
+}
+(function () {
+    try {
+        if (typeof setTimeout === 'function') {
+            cachedSetTimeout = setTimeout;
+        } else {
+            cachedSetTimeout = defaultSetTimout;
+        }
+    } catch (e) {
+        cachedSetTimeout = defaultSetTimout;
+    }
+    try {
+        if (typeof clearTimeout === 'function') {
+            cachedClearTimeout = clearTimeout;
+        } else {
+            cachedClearTimeout = defaultClearTimeout;
+        }
+    } catch (e) {
+        cachedClearTimeout = defaultClearTimeout;
+    }
+} ())
+function runTimeout(fun) {
+    if (cachedSetTimeout === setTimeout) {
+        //normal enviroments in sane situations
+        return setTimeout(fun, 0);
+    }
+    // if setTimeout wasn't available but was latter defined
+    if ((cachedSetTimeout === defaultSetTimout || !cachedSetTimeout) && setTimeout) {
+        cachedSetTimeout = setTimeout;
+        return setTimeout(fun, 0);
+    }
+    try {
+        // when when somebody has screwed with setTimeout but no I.E. maddness
+        return cachedSetTimeout(fun, 0);
+    } catch(e){
+        try {
+            // When we are in I.E. but the script has been evaled so I.E. doesn't trust the global object when called normally
+            return cachedSetTimeout.call(null, fun, 0);
+        } catch(e){
+            // same as above but when it's a version of I.E. that must have the global object for 'this', hopfully our context correct otherwise it will throw a global error
+            return cachedSetTimeout.call(this, fun, 0);
+        }
+    }
+
+
+}
+function runClearTimeout(marker) {
+    if (cachedClearTimeout === clearTimeout) {
+        //normal enviroments in sane situations
+        return clearTimeout(marker);
+    }
+    // if clearTimeout wasn't available but was latter defined
+    if ((cachedClearTimeout === defaultClearTimeout || !cachedClearTimeout) && clearTimeout) {
+        cachedClearTimeout = clearTimeout;
+        return clearTimeout(marker);
+    }
+    try {
+        // when when somebody has screwed with setTimeout but no I.E. maddness
+        return cachedClearTimeout(marker);
+    } catch (e){
+        try {
+            // When we are in I.E. but the script has been evaled so I.E. doesn't  trust the global object when called normally
+            return cachedClearTimeout.call(null, marker);
+        } catch (e){
+            // same as above but when it's a version of I.E. that must have the global object for 'this', hopfully our context correct otherwise it will throw a global error.
+            // Some versions of I.E. have different rules for clearTimeout vs setTimeout
+            return cachedClearTimeout.call(this, marker);
+        }
+    }
+
+
+
+}
+var queue = [];
+var draining = false;
+var currentQueue;
+var queueIndex = -1;
+
+function cleanUpNextTick() {
+    if (!draining || !currentQueue) {
+        return;
+    }
+    draining = false;
+    if (currentQueue.length) {
+        queue = currentQueue.concat(queue);
+    } else {
+        queueIndex = -1;
+    }
+    if (queue.length) {
+        drainQueue();
+    }
+}
+
+function drainQueue() {
+    if (draining) {
+        return;
+    }
+    var timeout = runTimeout(cleanUpNextTick);
+    draining = true;
+
+    var len = queue.length;
+    while(len) {
+        currentQueue = queue;
+        queue = [];
+        while (++queueIndex < len) {
+            if (currentQueue) {
+                currentQueue[queueIndex].run();
+            }
+        }
+        queueIndex = -1;
+        len = queue.length;
+    }
+    currentQueue = null;
+    draining = false;
+    runClearTimeout(timeout);
+}
+
+process.nextTick = function (fun) {
+    var args = new Array(arguments.length - 1);
+    if (arguments.length > 1) {
+        for (var i = 1; i < arguments.length; i++) {
+            args[i - 1] = arguments[i];
+        }
+    }
+    queue.push(new Item(fun, args));
+    if (queue.length === 1 && !draining) {
+        runTimeout(drainQueue);
+    }
+};
+
+// v8 likes predictible objects
+function Item(fun, array) {
+    this.fun = fun;
+    this.array = array;
+}
+Item.prototype.run = function () {
+    this.fun.apply(null, this.array);
+};
+process.title = 'browser';
+process.browser = true;
+process.env = {};
+process.argv = [];
+process.version = ''; // empty string to avoid regexp issues
+process.versions = {};
+
+function noop() {}
+
+process.on = noop;
+process.addListener = noop;
+process.once = noop;
+process.off = noop;
+process.removeListener = noop;
+process.removeAllListeners = noop;
+process.emit = noop;
+process.prependListener = noop;
+process.prependOnceListener = noop;
+
+process.listeners = function (name) { return [] }
+
+process.binding = function (name) {
+    throw new Error('process.binding is not supported');
+};
+
+process.cwd = function () { return '/' };
+process.chdir = function (dir) {
+    throw new Error('process.chdir is not supported');
+};
+process.umask = function() { return 0; };
+
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/browserify/node_modules/punycode/punycode.js":[function(_dereq_,module,exports){
+(function (global){
+/*! https://mths.be/punycode v1.4.1 by @mathias */
+;(function(root) {
+
+	/** Detect free variables */
+	var freeExports = typeof exports == 'object' && exports &&
+		!exports.nodeType && exports;
+	var freeModule = typeof module == 'object' && module &&
+		!module.nodeType && module;
+	var freeGlobal = typeof global == 'object' && global;
+	if (
+		freeGlobal.global === freeGlobal ||
+		freeGlobal.window === freeGlobal ||
+		freeGlobal.self === freeGlobal
+	) {
+		root = freeGlobal;
+	}
+
+	/**
+	 * The `punycode` object.
+	 * @name punycode
+	 * @type Object
+	 */
+	var punycode,
+
+	/** Highest positive signed 32-bit float value */
+	maxInt = 2147483647, // aka. 0x7FFFFFFF or 2^31-1
+
+	/** Bootstring parameters */
+	base = 36,
+	tMin = 1,
+	tMax = 26,
+	skew = 38,
+	damp = 700,
+	initialBias = 72,
+	initialN = 128, // 0x80
+	delimiter = '-', // '\x2D'
+
+	/** Regular expressions */
+	regexPunycode = /^xn--/,
+	regexNonASCII = /[^\x20-\x7E]/, // unprintable ASCII chars + non-ASCII chars
+	regexSeparators = /[\x2E\u3002\uFF0E\uFF61]/g, // RFC 3490 separators
+
+	/** Error messages */
+	errors = {
+		'overflow': 'Overflow: input needs wider integers to process',
+		'not-basic': 'Illegal input >= 0x80 (not a basic code point)',
+		'invalid-input': 'Invalid input'
+	},
+
+	/** Convenience shortcuts */
+	baseMinusTMin = base - tMin,
+	floor = Math.floor,
+	stringFromCharCode = String.fromCharCode,
+
+	/** Temporary variable */
+	key;
+
+	/*--------------------------------------------------------------------------*/
+
+	/**
+	 * A generic error utility function.
+	 * @private
+	 * @param {String} type The error type.
+	 * @returns {Error} Throws a `RangeError` with the applicable error message.
+	 */
+	function error(type) {
+		throw new RangeError(errors[type]);
+	}
+
+	/**
+	 * A generic `Array#map` utility function.
+	 * @private
+	 * @param {Array} array The array to iterate over.
+	 * @param {Function} callback The function that gets called for every array
+	 * item.
+	 * @returns {Array} A new array of values returned by the callback function.
+	 */
+	function map(array, fn) {
+		var length = array.length;
+		var result = [];
+		while (length--) {
+			result[length] = fn(array[length]);
+		}
+		return result;
+	}
+
+	/**
+	 * A simple `Array#map`-like wrapper to work with domain name strings or email
+	 * addresses.
+	 * @private
+	 * @param {String} domain The domain name or email address.
+	 * @param {Function} callback The function that gets called for every
+	 * character.
+	 * @returns {Array} A new string of characters returned by the callback
+	 * function.
+	 */
+	function mapDomain(string, fn) {
+		var parts = string.split('@');
+		var result = '';
+		if (parts.length > 1) {
+			// In email addresses, only the domain name should be punycoded. Leave
+			// the local part (i.e. everything up to `@`) intact.
+			result = parts[0] + '@';
+			string = parts[1];
+		}
+		// Avoid `split(regex)` for IE8 compatibility. See #17.
+		string = string.replace(regexSeparators, '\x2E');
+		var labels = string.split('.');
+		var encoded = map(labels, fn).join('.');
+		return result + encoded;
+	}
+
+	/**
+	 * Creates an array containing the numeric code points of each Unicode
+	 * character in the string. While JavaScript uses UCS-2 internally,
+	 * this function will convert a pair of surrogate halves (each of which
+	 * UCS-2 exposes as separate characters) into a single code point,
+	 * matching UTF-16.
+	 * @see `punycode.ucs2.encode`
+	 * @see <https://mathiasbynens.be/notes/javascript-encoding>
+	 * @memberOf punycode.ucs2
+	 * @name decode
+	 * @param {String} string The Unicode input string (UCS-2).
+	 * @returns {Array} The new array of code points.
+	 */
+	function ucs2decode(string) {
+		var output = [],
+		    counter = 0,
+		    length = string.length,
+		    value,
+		    extra;
+		while (counter < length) {
+			value = string.charCodeAt(counter++);
+			if (value >= 0xD800 && value <= 0xDBFF && counter < length) {
+				// high surrogate, and there is a next character
+				extra = string.charCodeAt(counter++);
+				if ((extra & 0xFC00) == 0xDC00) { // low surrogate
+					output.push(((value & 0x3FF) << 10) + (extra & 0x3FF) + 0x10000);
+				} else {
+					// unmatched surrogate; only append this code unit, in case the next
+					// code unit is the high surrogate of a surrogate pair
+					output.push(value);
+					counter--;
+				}
+			} else {
+				output.push(value);
+			}
+		}
+		return output;
+	}
+
+	/**
+	 * Creates a string based on an array of numeric code points.
+	 * @see `punycode.ucs2.decode`
+	 * @memberOf punycode.ucs2
+	 * @name encode
+	 * @param {Array} codePoints The array of numeric code points.
+	 * @returns {String} The new Unicode string (UCS-2).
+	 */
+	function ucs2encode(array) {
+		return map(array, function(value) {
+			var output = '';
+			if (value > 0xFFFF) {
+				value -= 0x10000;
+				output += stringFromCharCode(value >>> 10 & 0x3FF | 0xD800);
+				value = 0xDC00 | value & 0x3FF;
+			}
+			output += stringFromCharCode(value);
+			return output;
+		}).join('');
+	}
+
+	/**
+	 * Converts a basic code point into a digit/integer.
+	 * @see `digitToBasic()`
+	 * @private
+	 * @param {Number} codePoint The basic numeric code point value.
+	 * @returns {Number} The numeric value of a basic code point (for use in
+	 * representing integers) in the range `0` to `base - 1`, or `base` if
+	 * the code point does not represent a value.
+	 */
+	function basicToDigit(codePoint) {
+		if (codePoint - 48 < 10) {
+			return codePoint - 22;
+		}
+		if (codePoint - 65 < 26) {
+			return codePoint - 65;
+		}
+		if (codePoint - 97 < 26) {
+			return codePoint - 97;
+		}
+		return base;
+	}
+
+	/**
+	 * Converts a digit/integer into a basic code point.
+	 * @see `basicToDigit()`
+	 * @private
+	 * @param {Number} digit The numeric value of a basic code point.
+	 * @returns {Number} The basic code point whose value (when used for
+	 * representing integers) is `digit`, which needs to be in the range
+	 * `0` to `base - 1`. If `flag` is non-zero, the uppercase form is
+	 * used; else, the lowercase form is used. The behavior is undefined
+	 * if `flag` is non-zero and `digit` has no uppercase form.
+	 */
+	function digitToBasic(digit, flag) {
+		//  0..25 map to ASCII a..z or A..Z
+		// 26..35 map to ASCII 0..9
+		return digit + 22 + 75 * (digit < 26) - ((flag != 0) << 5);
+	}
+
+	/**
+	 * Bias adaptation function as per section 3.4 of RFC 3492.
+	 * https://tools.ietf.org/html/rfc3492#section-3.4
+	 * @private
+	 */
+	function adapt(delta, numPoints, firstTime) {
+		var k = 0;
+		delta = firstTime ? floor(delta / damp) : delta >> 1;
+		delta += floor(delta / numPoints);
+		for (/* no initialization */; delta > baseMinusTMin * tMax >> 1; k += base) {
+			delta = floor(delta / baseMinusTMin);
+		}
+		return floor(k + (baseMinusTMin + 1) * delta / (delta + skew));
+	}
+
+	/**
+	 * Converts a Punycode string of ASCII-only symbols to a string of Unicode
+	 * symbols.
+	 * @memberOf punycode
+	 * @param {String} input The Punycode string of ASCII-only symbols.
+	 * @returns {String} The resulting string of Unicode symbols.
+	 */
+	function decode(input) {
+		// Don't use UCS-2
+		var output = [],
+		    inputLength = input.length,
+		    out,
+		    i = 0,
+		    n = initialN,
+		    bias = initialBias,
+		    basic,
+		    j,
+		    index,
+		    oldi,
+		    w,
+		    k,
+		    digit,
+		    t,
+		    /** Cached calculation results */
+		    baseMinusT;
+
+		// Handle the basic code points: let `basic` be the number of input code
+		// points before the last delimiter, or `0` if there is none, then copy
+		// the first basic code points to the output.
+
+		basic = input.lastIndexOf(delimiter);
+		if (basic < 0) {
+			basic = 0;
+		}
+
+		for (j = 0; j < basic; ++j) {
+			// if it's not a basic code point
+			if (input.charCodeAt(j) >= 0x80) {
+				error('not-basic');
+			}
+			output.push(input.charCodeAt(j));
+		}
+
+		// Main decoding loop: start just after the last delimiter if any basic code
+		// points were copied; start at the beginning otherwise.
+
+		for (index = basic > 0 ? basic + 1 : 0; index < inputLength; /* no final expression */) {
+
+			// `index` is the index of the next character to be consumed.
+			// Decode a generalized variable-length integer into `delta`,
+			// which gets added to `i`. The overflow checking is easier
+			// if we increase `i` as we go, then subtract off its starting
+			// value at the end to obtain `delta`.
+			for (oldi = i, w = 1, k = base; /* no condition */; k += base) {
+
+				if (index >= inputLength) {
+					error('invalid-input');
+				}
+
+				digit = basicToDigit(input.charCodeAt(index++));
+
+				if (digit >= base || digit > floor((maxInt - i) / w)) {
+					error('overflow');
+				}
+
+				i += digit * w;
+				t = k <= bias ? tMin : (k >= bias + tMax ? tMax : k - bias);
+
+				if (digit < t) {
+					break;
+				}
+
+				baseMinusT = base - t;
+				if (w > floor(maxInt / baseMinusT)) {
+					error('overflow');
+				}
+
+				w *= baseMinusT;
+
+			}
+
+			out = output.length + 1;
+			bias = adapt(i - oldi, out, oldi == 0);
+
+			// `i` was supposed to wrap around from `out` to `0`,
+			// incrementing `n` each time, so we'll fix that now:
+			if (floor(i / out) > maxInt - n) {
+				error('overflow');
+			}
+
+			n += floor(i / out);
+			i %= out;
+
+			// Insert `n` at position `i` of the output
+			output.splice(i++, 0, n);
+
+		}
+
+		return ucs2encode(output);
+	}
+
+	/**
+	 * Converts a string of Unicode symbols (e.g. a domain name label) to a
+	 * Punycode string of ASCII-only symbols.
+	 * @memberOf punycode
+	 * @param {String} input The string of Unicode symbols.
+	 * @returns {String} The resulting Punycode string of ASCII-only symbols.
+	 */
+	function encode(input) {
+		var n,
+		    delta,
+		    handledCPCount,
+		    basicLength,
+		    bias,
+		    j,
+		    m,
+		    q,
+		    k,
+		    t,
+		    currentValue,
+		    output = [],
+		    /** `inputLength` will hold the number of code points in `input`. */
+		    inputLength,
+		    /** Cached calculation results */
+		    handledCPCountPlusOne,
+		    baseMinusT,
+		    qMinusT;
+
+		// Convert the input in UCS-2 to Unicode
+		input = ucs2decode(input);
+
+		// Cache the length
+		inputLength = input.length;
+
+		// Initialize the state
+		n = initialN;
+		delta = 0;
+		bias = initialBias;
+
+		// Handle the basic code points
+		for (j = 0; j < inputLength; ++j) {
+			currentValue = input[j];
+			if (currentValue < 0x80) {
+				output.push(stringFromCharCode(currentValue));
+			}
+		}
+
+		handledCPCount = basicLength = output.length;
+
+		// `handledCPCount` is the number of code points that have been handled;
+		// `basicLength` is the number of basic code points.
+
+		// Finish the basic string - if it is not empty - with a delimiter
+		if (basicLength) {
+			output.push(delimiter);
+		}
+
+		// Main encoding loop:
+		while (handledCPCount < inputLength) {
+
+			// All non-basic code points < n have been handled already. Find the next
+			// larger one:
+			for (m = maxInt, j = 0; j < inputLength; ++j) {
+				currentValue = input[j];
+				if (currentValue >= n && currentValue < m) {
+					m = currentValue;
+				}
+			}
+
+			// Increase `delta` enough to advance the decoder's <n,i> state to <m,0>,
+			// but guard against overflow
+			handledCPCountPlusOne = handledCPCount + 1;
+			if (m - n > floor((maxInt - delta) / handledCPCountPlusOne)) {
+				error('overflow');
+			}
+
+			delta += (m - n) * handledCPCountPlusOne;
+			n = m;
+
+			for (j = 0; j < inputLength; ++j) {
+				currentValue = input[j];
+
+				if (currentValue < n && ++delta > maxInt) {
+					error('overflow');
+				}
+
+				if (currentValue == n) {
+					// Represent delta as a generalized variable-length integer
+					for (q = delta, k = base; /* no condition */; k += base) {
+						t = k <= bias ? tMin : (k >= bias + tMax ? tMax : k - bias);
+						if (q < t) {
+							break;
+						}
+						qMinusT = q - t;
+						baseMinusT = base - t;
+						output.push(
+							stringFromCharCode(digitToBasic(t + qMinusT % baseMinusT, 0))
+						);
+						q = floor(qMinusT / baseMinusT);
+					}
+
+					output.push(stringFromCharCode(digitToBasic(q, 0)));
+					bias = adapt(delta, handledCPCountPlusOne, handledCPCount == basicLength);
+					delta = 0;
+					++handledCPCount;
+				}
+			}
+
+			++delta;
+			++n;
+
+		}
+		return output.join('');
+	}
+
+	/**
+	 * Converts a Punycode string representing a domain name or an email address
+	 * to Unicode. Only the Punycoded parts of the input will be converted, i.e.
+	 * it doesn't matter if you call it on a string that has already been
+	 * converted to Unicode.
+	 * @memberOf punycode
+	 * @param {String} input The Punycoded domain name or email address to
+	 * convert to Unicode.
+	 * @returns {String} The Unicode representation of the given Punycode
+	 * string.
+	 */
+	function toUnicode(input) {
+		return mapDomain(input, function(string) {
+			return regexPunycode.test(string)
+				? decode(string.slice(4).toLowerCase())
+				: string;
+		});
+	}
+
+	/**
+	 * Converts a Unicode string representing a domain name or an email address to
+	 * Punycode. Only the non-ASCII parts of the domain name will be converted,
+	 * i.e. it doesn't matter if you call it with a domain that's already in
+	 * ASCII.
+	 * @memberOf punycode
+	 * @param {String} input The domain name or email address to convert, as a
+	 * Unicode string.
+	 * @returns {String} The Punycode representation of the given domain name or
+	 * email address.
+	 */
+	function toASCII(input) {
+		return mapDomain(input, function(string) {
+			return regexNonASCII.test(string)
+				? 'xn--' + encode(string)
+				: string;
+		});
+	}
+
+	/*--------------------------------------------------------------------------*/
+
+	/** Define the public API */
+	punycode = {
+		/**
+		 * A string representing the current Punycode.js version number.
+		 * @memberOf punycode
+		 * @type String
+		 */
+		'version': '1.4.1',
+		/**
+		 * An object of methods to convert from JavaScript's internal character
+		 * representation (UCS-2) to Unicode code points, and back.
+		 * @see <https://mathiasbynens.be/notes/javascript-encoding>
+		 * @memberOf punycode
+		 * @type Object
+		 */
+		'ucs2': {
+			'decode': ucs2decode,
+			'encode': ucs2encode
+		},
+		'decode': decode,
+		'encode': encode,
+		'toASCII': toASCII,
+		'toUnicode': toUnicode
+	};
+
+	/** Expose `punycode` */
+	// Some AMD build optimizers, like r.js, check for specific condition patterns
+	// like the following:
+	if (
+		typeof define == 'function' &&
+		typeof define.amd == 'object' &&
+		define.amd
+	) {
+		define('punycode', function() {
+			return punycode;
+		});
+	} else if (freeExports && freeModule) {
+		if (module.exports == freeExports) {
+			// in Node.js, io.js, or RingoJS v0.8.0+
+			freeModule.exports = punycode;
+		} else {
+			// in Narwhal or RingoJS v0.7.0-
+			for (key in punycode) {
+				punycode.hasOwnProperty(key) && (freeExports[key] = punycode[key]);
+			}
+		}
+	} else {
+		// in Rhino or a web browser
+		root.punycode = punycode;
+	}
+
+}(this));
+
+}).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
+
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/browserify/node_modules/string_decoder/index.js":[function(_dereq_,module,exports){
+// Copyright Joyent, Inc. and other Node contributors.
+//
+// Permission is hereby granted, free of charge, to any person obtaining a
+// copy of this software and associated documentation files (the
+// "Software"), to deal in the Software without restriction, including
+// without limitation the rights to use, copy, modify, merge, publish,
+// distribute, sublicense, and/or sell copies of the Software, and to permit
+// persons to whom the Software is furnished to do so, subject to the
+// following conditions:
+//
+// The above copyright notice and this permission notice shall be included
+// in all copies or substantial portions of the Software.
+//
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
+// OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+// MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN
+// NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+// DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
+// OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE
+// USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+var Buffer = _dereq_('buffer').Buffer;
+
+var isBufferEncoding = Buffer.isEncoding
+  || function(encoding) {
+       switch (encoding && encoding.toLowerCase()) {
+         case 'hex': case 'utf8': case 'utf-8': case 'ascii': case 'binary': case 'base64': case 'ucs2': case 'ucs-2': case 'utf16le': case 'utf-16le': case 'raw': return true;
+         default: return false;
+       }
+     }
+
+
+function assertEncoding(encoding) {
+  if (encoding && !isBufferEncoding(encoding)) {
+    throw new Error('Unknown encoding: ' + encoding);
+  }
+}
+
+// StringDecoder provides an interface for efficiently splitting a series of
+// buffers into a series of JS strings without breaking apart multi-byte
+// characters. CESU-8 is handled as part of the UTF-8 encoding.
+//
+// @TODO Handling all encodings inside a single object makes it very difficult
+// to reason about this code, so it should be split up in the future.
+// @TODO There should be a utf8-strict encoding that rejects invalid UTF-8 code
+// points as used by CESU-8.
+var StringDecoder = exports.StringDecoder = function(encoding) {
+  this.encoding = (encoding || 'utf8').toLowerCase().replace(/[-_]/, '');
+  assertEncoding(encoding);
+  switch (this.encoding) {
+    case 'utf8':
+      // CESU-8 represents each of Surrogate Pair by 3-bytes
+      this.surrogateSize = 3;
+      break;
+    case 'ucs2':
+    case 'utf16le':
+      // UTF-16 represents each of Surrogate Pair by 2-bytes
+      this.surrogateSize = 2;
+      this.detectIncompleteChar = utf16DetectIncompleteChar;
+      break;
+    case 'base64':
+      // Base-64 stores 3 bytes in 4 chars, and pads the remainder.
+      this.surrogateSize = 3;
+      this.detectIncompleteChar = base64DetectIncompleteChar;
+      break;
+    default:
+      this.write = passThroughWrite;
+      return;
+  }
+
+  // Enough space to store all bytes of a single character. UTF-8 needs 4
+  // bytes, but CESU-8 may require up to 6 (3 bytes per surrogate).
+  this.charBuffer = new Buffer(6);
+  // Number of bytes received for the current incomplete multi-byte character.
+  this.charReceived = 0;
+  // Number of bytes expected for the current incomplete multi-byte character.
+  this.charLength = 0;
+};
+
+
+// write decodes the given buffer and returns it as JS string that is
+// guaranteed to not contain any partial multi-byte characters. Any partial
+// character found at the end of the buffer is buffered up, and will be
+// returned when calling write again with the remaining bytes.
+//
+// Note: Converting a Buffer containing an orphan surrogate to a String
+// currently works, but converting a String to a Buffer (via `new Buffer`, or
+// Buffer#write) will replace incomplete surrogates with the unicode
+// replacement character. See https://codereview.chromium.org/121173009/ .
+StringDecoder.prototype.write = function(buffer) {
+  var charStr = '';
+  // if our last write ended with an incomplete multibyte character
+  while (this.charLength) {
+    // determine how many remaining bytes this buffer has to offer for this char
+    var available = (buffer.length >= this.charLength - this.charReceived) ?
+        this.charLength - this.charReceived :
+        buffer.length;
+
+    // add the new bytes to the char buffer
+    buffer.copy(this.charBuffer, this.charReceived, 0, available);
+    this.charReceived += available;
+
+    if (this.charReceived < this.charLength) {
+      // still not enough chars in this buffer? wait for more ...
+      return '';
+    }
+
+    // remove bytes belonging to the current character from the buffer
+    buffer = buffer.slice(available, buffer.length);
+
+    // get the character that was split
+    charStr = this.charBuffer.slice(0, this.charLength).toString(this.encoding);
+
+    // CESU-8: lead surrogate (D800-DBFF) is also the incomplete character
+    var charCode = charStr.charCodeAt(charStr.length - 1);
+    if (charCode >= 0xD800 && charCode <= 0xDBFF) {
+      this.charLength += this.surrogateSize;
+      charStr = '';
+      continue;
+    }
+    this.charReceived = this.charLength = 0;
+
+    // if there are no more bytes in this buffer, just emit our char
+    if (buffer.length === 0) {
+      return charStr;
+    }
+    break;
+  }
+
+  // determine and set charLength / charReceived
+  this.detectIncompleteChar(buffer);
+
+  var end = buffer.length;
+  if (this.charLength) {
+    // buffer the incomplete character bytes we got
+    buffer.copy(this.charBuffer, 0, buffer.length - this.charReceived, end);
+    end -= this.charReceived;
+  }
+
+  charStr += buffer.toString(this.encoding, 0, end);
+
+  var end = charStr.length - 1;
+  var charCode = charStr.charCodeAt(end);
+  // CESU-8: lead surrogate (D800-DBFF) is also the incomplete character
+  if (charCode >= 0xD800 && charCode <= 0xDBFF) {
+    var size = this.surrogateSize;
+    this.charLength += size;
+    this.charReceived += size;
+    this.charBuffer.copy(this.charBuffer, size, 0, size);
+    buffer.copy(this.charBuffer, 0, 0, size);
+    return charStr.substring(0, end);
+  }
+
+  // or just emit the charStr
+  return charStr;
+};
+
+// detectIncompleteChar determines if there is an incomplete UTF-8 character at
+// the end of the given buffer. If so, it sets this.charLength to the byte
+// length that character, and sets this.charReceived to the number of bytes
+// that are available for this character.
+StringDecoder.prototype.detectIncompleteChar = function(buffer) {
+  // determine how many bytes we have to check at the end of this buffer
+  var i = (buffer.length >= 3) ? 3 : buffer.length;
+
+  // Figure out if one of the last i bytes of our buffer announces an
+  // incomplete char.
+  for (; i > 0; i--) {
+    var c = buffer[buffer.length - i];
+
+    // See http://en.wikipedia.org/wiki/UTF-8#Description
+
+    // 110XXXXX
+    if (i == 1 && c >> 5 == 0x06) {
+      this.charLength = 2;
+      break;
+    }
+
+    // 1110XXXX
+    if (i <= 2 && c >> 4 == 0x0E) {
+      this.charLength = 3;
+      break;
+    }
+
+    // 11110XXX
+    if (i <= 3 && c >> 3 == 0x1E) {
+      this.charLength = 4;
+      break;
+    }
+  }
+  this.charReceived = i;
+};
+
+StringDecoder.prototype.end = function(buffer) {
+  var res = '';
+  if (buffer && buffer.length)
+    res = this.write(buffer);
+
+  if (this.charReceived) {
+    var cr = this.charReceived;
+    var buf = this.charBuffer;
+    var enc = this.encoding;
+    res += buf.slice(0, cr).toString(enc);
+  }
+
+  return res;
+};
+
+function passThroughWrite(buffer) {
+  return buffer.toString(this.encoding);
+}
+
+function utf16DetectIncompleteChar(buffer) {
+  this.charReceived = buffer.length % 2;
+  this.charLength = this.charReceived ? 2 : 0;
+}
+
+function base64DetectIncompleteChar(buffer) {
+  this.charReceived = buffer.length % 3;
+  this.charLength = this.charReceived ? 3 : 0;
+}
+
+},{"buffer":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/buffer/index.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/buffer-shims/index.js":[function(_dereq_,module,exports){
 (function (global){
 'use strict';
 
@@ -6124,7 +6960,8 @@ exports.allocUnsafeSlow = function allocUnsafeSlow(size) {
 }
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"buffer":24}],24:[function(_dereq_,module,exports){
+
+},{"buffer":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/buffer/index.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/buffer/index.js":[function(_dereq_,module,exports){
 (function (global){
 /*!
  * The buffer module from node.js, for the browser.
@@ -7917,14 +8754,124 @@ function isnan (val) {
 }
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"base64-js":18,"ieee754":190,"isarray":25}],25:[function(_dereq_,module,exports){
-var toString = {}.toString;
 
-module.exports = Array.isArray || function (arr) {
-  return toString.call(arr) == '[object Array]';
-};
+},{"base64-js":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/buffer/node_modules/base64-js/index.js","ieee754":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/ieee754/index.js","isarray":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/isarray/index.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/buffer/node_modules/base64-js/index.js":[function(_dereq_,module,exports){
+'use strict'
 
-},{}],26:[function(_dereq_,module,exports){
+exports.byteLength = byteLength
+exports.toByteArray = toByteArray
+exports.fromByteArray = fromByteArray
+
+var lookup = []
+var revLookup = []
+var Arr = typeof Uint8Array !== 'undefined' ? Uint8Array : Array
+
+var code = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/'
+for (var i = 0, len = code.length; i < len; ++i) {
+  lookup[i] = code[i]
+  revLookup[code.charCodeAt(i)] = i
+}
+
+revLookup['-'.charCodeAt(0)] = 62
+revLookup['_'.charCodeAt(0)] = 63
+
+function placeHoldersCount (b64) {
+  var len = b64.length
+  if (len % 4 > 0) {
+    throw new Error('Invalid string. Length must be a multiple of 4')
+  }
+
+  // the number of equal signs (place holders)
+  // if there are two placeholders, than the two characters before it
+  // represent one byte
+  // if there is only one, then the three characters before it represent 2 bytes
+  // this is just a cheap hack to not do indexOf twice
+  return b64[len - 2] === '=' ? 2 : b64[len - 1] === '=' ? 1 : 0
+}
+
+function byteLength (b64) {
+  // base64 is 4/3 + up to two characters of the original data
+  return b64.length * 3 / 4 - placeHoldersCount(b64)
+}
+
+function toByteArray (b64) {
+  var i, j, l, tmp, placeHolders, arr
+  var len = b64.length
+  placeHolders = placeHoldersCount(b64)
+
+  arr = new Arr(len * 3 / 4 - placeHolders)
+
+  // if there are placeholders, only get up to the last complete 4 chars
+  l = placeHolders > 0 ? len - 4 : len
+
+  var L = 0
+
+  for (i = 0, j = 0; i < l; i += 4, j += 3) {
+    tmp = (revLookup[b64.charCodeAt(i)] << 18) | (revLookup[b64.charCodeAt(i + 1)] << 12) | (revLookup[b64.charCodeAt(i + 2)] << 6) | revLookup[b64.charCodeAt(i + 3)]
+    arr[L++] = (tmp >> 16) & 0xFF
+    arr[L++] = (tmp >> 8) & 0xFF
+    arr[L++] = tmp & 0xFF
+  }
+
+  if (placeHolders === 2) {
+    tmp = (revLookup[b64.charCodeAt(i)] << 2) | (revLookup[b64.charCodeAt(i + 1)] >> 4)
+    arr[L++] = tmp & 0xFF
+  } else if (placeHolders === 1) {
+    tmp = (revLookup[b64.charCodeAt(i)] << 10) | (revLookup[b64.charCodeAt(i + 1)] << 4) | (revLookup[b64.charCodeAt(i + 2)] >> 2)
+    arr[L++] = (tmp >> 8) & 0xFF
+    arr[L++] = tmp & 0xFF
+  }
+
+  return arr
+}
+
+function tripletToBase64 (num) {
+  return lookup[num >> 18 & 0x3F] + lookup[num >> 12 & 0x3F] + lookup[num >> 6 & 0x3F] + lookup[num & 0x3F]
+}
+
+function encodeChunk (uint8, start, end) {
+  var tmp
+  var output = []
+  for (var i = start; i < end; i += 3) {
+    tmp = (uint8[i] << 16) + (uint8[i + 1] << 8) + (uint8[i + 2])
+    output.push(tripletToBase64(tmp))
+  }
+  return output.join('')
+}
+
+function fromByteArray (uint8) {
+  var tmp
+  var len = uint8.length
+  var extraBytes = len % 3 // if we have 1 byte left, pad 2 bytes
+  var output = ''
+  var parts = []
+  var maxChunkLength = 16383 // must be multiple of 3
+
+  // go through the array every three bytes, we'll deal with trailing stuff later
+  for (var i = 0, len2 = len - extraBytes; i < len2; i += maxChunkLength) {
+    parts.push(encodeChunk(uint8, i, (i + maxChunkLength) > len2 ? len2 : (i + maxChunkLength)))
+  }
+
+  // pad the end with zeros, but make sure to not forget the extra bytes
+  if (extraBytes === 1) {
+    tmp = uint8[len - 1]
+    output += lookup[tmp >> 2]
+    output += lookup[(tmp << 4) & 0x3F]
+    output += '=='
+  } else if (extraBytes === 2) {
+    tmp = (uint8[len - 2] << 8) + (uint8[len - 1])
+    output += lookup[tmp >> 10]
+    output += lookup[(tmp >> 4) & 0x3F]
+    output += lookup[(tmp << 2) & 0x3F]
+    output += '='
+  }
+
+  parts.push(output)
+
+  return parts.join('')
+}
+
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/cipher-base/index.js":[function(_dereq_,module,exports){
 (function (Buffer){
 var Transform = _dereq_('stream').Transform
 var inherits = _dereq_('inherits')
@@ -8018,7 +8965,8 @@ CipherBase.prototype._toString = function (value, enc, fin) {
 }
 
 }).call(this,_dereq_("buffer").Buffer)
-},{"buffer":24,"inherits":191,"stream":481,"string_decoder":483}],27:[function(_dereq_,module,exports){
+
+},{"buffer":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/buffer/index.js","inherits":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/inherits/inherits_browser.js","stream":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/stream-browserify/index.js","string_decoder":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/browserify/node_modules/string_decoder/index.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/classnames/index.js":[function(_dereq_,module,exports){
 /*!
   Copyright (c) 2016 Jed Watson.
   Licensed under the MIT License (MIT), see
@@ -8068,7 +9016,7 @@ CipherBase.prototype._toString = function (value, enc, fin) {
 	}
 }());
 
-},{}],28:[function(_dereq_,module,exports){
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/clone/clone.js":[function(_dereq_,module,exports){
 (function (Buffer){
 var clone = (function() {
 'use strict';
@@ -8232,7 +9180,8 @@ if (typeof module === 'object' && module.exports) {
 }
 
 }).call(this,_dereq_("buffer").Buffer)
-},{"buffer":24}],29:[function(_dereq_,module,exports){
+
+},{"buffer":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/buffer/index.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/color-convert/conversions.js":[function(_dereq_,module,exports){
 /* MIT license */
 var cssKeywords = _dereq_('color-name');
 
@@ -9095,7 +10044,7 @@ convert.rgb.gray = function (rgb) {
 	return [val / 255 * 100];
 };
 
-},{"color-name":32}],30:[function(_dereq_,module,exports){
+},{"color-name":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/color-name/index.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/color-convert/index.js":[function(_dereq_,module,exports){
 var conversions = _dereq_('./conversions');
 var route = _dereq_('./route');
 
@@ -9175,7 +10124,7 @@ models.forEach(function (fromModel) {
 
 module.exports = convert;
 
-},{"./conversions":29,"./route":31}],31:[function(_dereq_,module,exports){
+},{"./conversions":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/color-convert/conversions.js","./route":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/color-convert/route.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/color-convert/route.js":[function(_dereq_,module,exports){
 var conversions = _dereq_('./conversions');
 
 /*
@@ -9275,7 +10224,7 @@ module.exports = function (fromModel) {
 };
 
 
-},{"./conversions":29}],32:[function(_dereq_,module,exports){
+},{"./conversions":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/color-convert/conversions.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/color-name/index.js":[function(_dereq_,module,exports){
 module.exports = {
 	"aliceblue": [240, 248, 255],
 	"antiquewhite": [250, 235, 215],
@@ -9426,7 +10375,7 @@ module.exports = {
 	"yellow": [255, 255, 0],
 	"yellowgreen": [154, 205, 50]
 };
-},{}],33:[function(_dereq_,module,exports){
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/color-string/color-string.js":[function(_dereq_,module,exports){
 /* MIT license */
 var colorNames = _dereq_('color-name');
 
@@ -9649,7 +10598,7 @@ for (var name in colorNames) {
    reverseNames[colorNames[name]] = name;
 }
 
-},{"color-name":32}],34:[function(_dereq_,module,exports){
+},{"color-name":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/color-name/index.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/color/index.js":[function(_dereq_,module,exports){
 /* MIT license */
 var clone = _dereq_('clone');
 var convert = _dereq_('color-convert');
@@ -10110,7 +11059,7 @@ Color.prototype.setChannel = function (space, index, val) {
 
 module.exports = Color;
 
-},{"clone":28,"color-convert":30,"color-string":33}],35:[function(_dereq_,module,exports){
+},{"clone":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/clone/clone.js","color-convert":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/color-convert/index.js","color-string":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/color-string/color-string.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/commonmark-react-renderer/src/commonmark-react-renderer.js":[function(_dereq_,module,exports){
 'use strict';
 
 var React = _dereq_('react');
@@ -10520,7 +11469,7 @@ ReactRenderer.renderers = coreTypes.reduce(function(renderers, type) {
 
 module.exports = ReactRenderer;
 
-},{"lodash.assign":210,"lodash.isplainobject":211,"pascalcase":234,"react":435,"xss-filters":500}],36:[function(_dereq_,module,exports){
+},{"lodash.assign":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/lodash.assign/index.js","lodash.isplainobject":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/lodash.isplainobject/index.js","pascalcase":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/pascalcase/index.js","react":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/react.js","xss-filters":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/xss-filters/src/xss-filters.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/commonmark/lib/blocks.js":[function(_dereq_,module,exports){
 "use strict";
 
 var Node = _dereq_('./node');
@@ -11392,7 +12341,7 @@ function Parser(options){
 
 module.exports = Parser;
 
-},{"./common":37,"./inlines":41,"./node":42}],37:[function(_dereq_,module,exports){
+},{"./common":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/commonmark/lib/common.js","./inlines":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/commonmark/lib/inlines.js","./node":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/commonmark/lib/node.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/commonmark/lib/common.js":[function(_dereq_,module,exports){
 "use strict";
 
 var encode = _dereq_('mdurl/encode');
@@ -11497,7 +12446,7 @@ module.exports = { unescapeString: unescapeString,
                    ESCAPABLE: ESCAPABLE
                  };
 
-},{"entities":116,"mdurl/decode":223,"mdurl/encode":224}],38:[function(_dereq_,module,exports){
+},{"entities":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/entities/index.js","mdurl/decode":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/mdurl/decode.js","mdurl/encode":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/mdurl/encode.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/commonmark/lib/from-code-point.js":[function(_dereq_,module,exports){
 "use strict";
 
 // derived from https://github.com/mathiasbynens/String.fromCodePoint
@@ -11558,7 +12507,7 @@ if (String.fromCodePoint) {
   module.exports = fromCodePoint;
 }
 
-},{}],39:[function(_dereq_,module,exports){
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/commonmark/lib/html.js":[function(_dereq_,module,exports){
 "use strict";
 
 var escapeXml = _dereq_('./common').escapeXml;
@@ -11846,7 +12795,7 @@ function HtmlRenderer(options){
 
 module.exports = HtmlRenderer;
 
-},{"./common":37}],40:[function(_dereq_,module,exports){
+},{"./common":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/commonmark/lib/common.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/commonmark/lib/index.js":[function(_dereq_,module,exports){
 "use strict";
 
 // commonmark.js - CommomMark in JavaScript
@@ -11866,7 +12815,7 @@ module.exports.Parser = _dereq_('./blocks');
 module.exports.HtmlRenderer = _dereq_('./html');
 module.exports.XmlRenderer = _dereq_('./xml');
 
-},{"./blocks":36,"./html":39,"./node":42,"./xml":44}],41:[function(_dereq_,module,exports){
+},{"./blocks":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/commonmark/lib/blocks.js","./html":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/commonmark/lib/html.js","./node":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/commonmark/lib/node.js","./xml":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/commonmark/lib/xml.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/commonmark/lib/inlines.js":[function(_dereq_,module,exports){
 "use strict";
 
 var Node = _dereq_('./node');
@@ -12799,7 +13748,7 @@ function InlineParser(options){
 
 module.exports = InlineParser;
 
-},{"./common":37,"./from-code-point.js":38,"./node":42,"./normalize-reference":43,"entities":116,"string.prototype.repeat":482}],42:[function(_dereq_,module,exports){
+},{"./common":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/commonmark/lib/common.js","./from-code-point.js":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/commonmark/lib/from-code-point.js","./node":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/commonmark/lib/node.js","./normalize-reference":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/commonmark/lib/normalize-reference.js","entities":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/entities/index.js","string.prototype.repeat":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/string.prototype.repeat/repeat.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/commonmark/lib/node.js":[function(_dereq_,module,exports){
 "use strict";
 
 function isContainer(node) {
@@ -13072,7 +14021,7 @@ module.exports = Node;
 
  */
 
-},{}],43:[function(_dereq_,module,exports){
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/commonmark/lib/normalize-reference.js":[function(_dereq_,module,exports){
 "use strict";
 
 /* The bulk of this code derives from https://github.com/dmoscrop/fold-case
@@ -13116,7 +14065,7 @@ module.exports = function(string) {
     });
 };
 
-},{}],44:[function(_dereq_,module,exports){
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/commonmark/lib/xml.js":[function(_dereq_,module,exports){
 "use strict";
 
 var escapeXml = _dereq_('./common').escapeXml;
@@ -13295,7 +14244,7 @@ function XmlRenderer(options){
 
 module.exports = XmlRenderer;
 
-},{"./common":37}],45:[function(_dereq_,module,exports){
+},{"./common":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/commonmark/lib/common.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/copy-to-clipboard/index.js":[function(_dereq_,module,exports){
 var deselectCurrent = _dereq_('toggle-selection');
 
 function copy(text, options) {
@@ -13352,33 +14301,33 @@ function copy(text, options) {
 
 module.exports = copy;
 
-},{"toggle-selection":490}],46:[function(_dereq_,module,exports){
+},{"toggle-selection":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/toggle-selection/index.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/core-js/library/fn/json/stringify.js":[function(_dereq_,module,exports){
 var core  = _dereq_('../../modules/_core')
   , $JSON = core.JSON || (core.JSON = {stringify: JSON.stringify});
 module.exports = function stringify(it){ // eslint-disable-line no-unused-vars
   return $JSON.stringify.apply($JSON, arguments);
 };
-},{"../../modules/_core":53}],47:[function(_dereq_,module,exports){
+},{"../../modules/_core":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/core-js/library/modules/_core.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/core-js/library/fn/object/define-property.js":[function(_dereq_,module,exports){
 _dereq_('../../modules/es6.object.define-property');
 var $Object = _dereq_('../../modules/_core').Object;
 module.exports = function defineProperty(it, key, desc){
   return $Object.defineProperty(it, key, desc);
 };
-},{"../../modules/_core":53,"../../modules/es6.object.define-property":81}],48:[function(_dereq_,module,exports){
+},{"../../modules/_core":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/core-js/library/modules/_core.js","../../modules/es6.object.define-property":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/core-js/library/modules/es6.object.define-property.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/core-js/library/fn/object/keys.js":[function(_dereq_,module,exports){
 _dereq_('../../modules/es6.object.keys');
 module.exports = _dereq_('../../modules/_core').Object.keys;
-},{"../../modules/_core":53,"../../modules/es6.object.keys":82}],49:[function(_dereq_,module,exports){
+},{"../../modules/_core":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/core-js/library/modules/_core.js","../../modules/es6.object.keys":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/core-js/library/modules/es6.object.keys.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/core-js/library/modules/_a-function.js":[function(_dereq_,module,exports){
 module.exports = function(it){
   if(typeof it != 'function')throw TypeError(it + ' is not a function!');
   return it;
 };
-},{}],50:[function(_dereq_,module,exports){
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/core-js/library/modules/_an-object.js":[function(_dereq_,module,exports){
 var isObject = _dereq_('./_is-object');
 module.exports = function(it){
   if(!isObject(it))throw TypeError(it + ' is not an object!');
   return it;
 };
-},{"./_is-object":66}],51:[function(_dereq_,module,exports){
+},{"./_is-object":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/core-js/library/modules/_is-object.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/core-js/library/modules/_array-includes.js":[function(_dereq_,module,exports){
 // false -> Array#indexOf
 // true  -> Array#includes
 var toIObject = _dereq_('./_to-iobject')
@@ -13400,16 +14349,16 @@ module.exports = function(IS_INCLUDES){
     } return !IS_INCLUDES && -1;
   };
 };
-},{"./_to-index":74,"./_to-iobject":76,"./_to-length":77}],52:[function(_dereq_,module,exports){
+},{"./_to-index":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/core-js/library/modules/_to-index.js","./_to-iobject":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/core-js/library/modules/_to-iobject.js","./_to-length":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/core-js/library/modules/_to-length.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/core-js/library/modules/_cof.js":[function(_dereq_,module,exports){
 var toString = {}.toString;
 
 module.exports = function(it){
   return toString.call(it).slice(8, -1);
 };
-},{}],53:[function(_dereq_,module,exports){
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/core-js/library/modules/_core.js":[function(_dereq_,module,exports){
 var core = module.exports = {version: '2.4.0'};
 if(typeof __e == 'number')__e = core; // eslint-disable-line no-undef
-},{}],54:[function(_dereq_,module,exports){
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/core-js/library/modules/_ctx.js":[function(_dereq_,module,exports){
 // optional / simple context binding
 var aFunction = _dereq_('./_a-function');
 module.exports = function(fn, that, length){
@@ -13430,18 +14379,18 @@ module.exports = function(fn, that, length){
     return fn.apply(that, arguments);
   };
 };
-},{"./_a-function":49}],55:[function(_dereq_,module,exports){
+},{"./_a-function":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/core-js/library/modules/_a-function.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/core-js/library/modules/_defined.js":[function(_dereq_,module,exports){
 // 7.2.1 RequireObjectCoercible(argument)
 module.exports = function(it){
   if(it == undefined)throw TypeError("Can't call method on  " + it);
   return it;
 };
-},{}],56:[function(_dereq_,module,exports){
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/core-js/library/modules/_descriptors.js":[function(_dereq_,module,exports){
 // Thank's IE8 for his funny defineProperty
 module.exports = !_dereq_('./_fails')(function(){
   return Object.defineProperty({}, 'a', {get: function(){ return 7; }}).a != 7;
 });
-},{"./_fails":60}],57:[function(_dereq_,module,exports){
+},{"./_fails":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/core-js/library/modules/_fails.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/core-js/library/modules/_dom-create.js":[function(_dereq_,module,exports){
 var isObject = _dereq_('./_is-object')
   , document = _dereq_('./_global').document
   // in old IE typeof document.createElement is 'object'
@@ -13449,12 +14398,12 @@ var isObject = _dereq_('./_is-object')
 module.exports = function(it){
   return is ? document.createElement(it) : {};
 };
-},{"./_global":61,"./_is-object":66}],58:[function(_dereq_,module,exports){
+},{"./_global":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/core-js/library/modules/_global.js","./_is-object":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/core-js/library/modules/_is-object.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/core-js/library/modules/_enum-bug-keys.js":[function(_dereq_,module,exports){
 // IE 8- don't enum bug keys
 module.exports = (
   'constructor,hasOwnProperty,isPrototypeOf,propertyIsEnumerable,toLocaleString,toString,valueOf'
 ).split(',');
-},{}],59:[function(_dereq_,module,exports){
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/core-js/library/modules/_export.js":[function(_dereq_,module,exports){
 var global    = _dereq_('./_global')
   , core      = _dereq_('./_core')
   , ctx       = _dereq_('./_ctx')
@@ -13516,7 +14465,7 @@ $export.W = 32;  // wrap
 $export.U = 64;  // safe
 $export.R = 128; // real proto method for `library` 
 module.exports = $export;
-},{"./_core":53,"./_ctx":54,"./_global":61,"./_hide":63}],60:[function(_dereq_,module,exports){
+},{"./_core":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/core-js/library/modules/_core.js","./_ctx":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/core-js/library/modules/_ctx.js","./_global":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/core-js/library/modules/_global.js","./_hide":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/core-js/library/modules/_hide.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/core-js/library/modules/_fails.js":[function(_dereq_,module,exports){
 module.exports = function(exec){
   try {
     return !!exec();
@@ -13524,17 +14473,17 @@ module.exports = function(exec){
     return true;
   }
 };
-},{}],61:[function(_dereq_,module,exports){
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/core-js/library/modules/_global.js":[function(_dereq_,module,exports){
 // https://github.com/zloirock/core-js/issues/86#issuecomment-115759028
 var global = module.exports = typeof window != 'undefined' && window.Math == Math
   ? window : typeof self != 'undefined' && self.Math == Math ? self : Function('return this')();
 if(typeof __g == 'number')__g = global; // eslint-disable-line no-undef
-},{}],62:[function(_dereq_,module,exports){
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/core-js/library/modules/_has.js":[function(_dereq_,module,exports){
 var hasOwnProperty = {}.hasOwnProperty;
 module.exports = function(it, key){
   return hasOwnProperty.call(it, key);
 };
-},{}],63:[function(_dereq_,module,exports){
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/core-js/library/modules/_hide.js":[function(_dereq_,module,exports){
 var dP         = _dereq_('./_object-dp')
   , createDesc = _dereq_('./_property-desc');
 module.exports = _dereq_('./_descriptors') ? function(object, key, value){
@@ -13543,21 +14492,21 @@ module.exports = _dereq_('./_descriptors') ? function(object, key, value){
   object[key] = value;
   return object;
 };
-},{"./_descriptors":56,"./_object-dp":67,"./_property-desc":71}],64:[function(_dereq_,module,exports){
+},{"./_descriptors":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/core-js/library/modules/_descriptors.js","./_object-dp":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/core-js/library/modules/_object-dp.js","./_property-desc":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/core-js/library/modules/_property-desc.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/core-js/library/modules/_ie8-dom-define.js":[function(_dereq_,module,exports){
 module.exports = !_dereq_('./_descriptors') && !_dereq_('./_fails')(function(){
   return Object.defineProperty(_dereq_('./_dom-create')('div'), 'a', {get: function(){ return 7; }}).a != 7;
 });
-},{"./_descriptors":56,"./_dom-create":57,"./_fails":60}],65:[function(_dereq_,module,exports){
+},{"./_descriptors":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/core-js/library/modules/_descriptors.js","./_dom-create":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/core-js/library/modules/_dom-create.js","./_fails":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/core-js/library/modules/_fails.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/core-js/library/modules/_iobject.js":[function(_dereq_,module,exports){
 // fallback for non-array-like ES3 and non-enumerable old V8 strings
 var cof = _dereq_('./_cof');
 module.exports = Object('z').propertyIsEnumerable(0) ? Object : function(it){
   return cof(it) == 'String' ? it.split('') : Object(it);
 };
-},{"./_cof":52}],66:[function(_dereq_,module,exports){
+},{"./_cof":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/core-js/library/modules/_cof.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/core-js/library/modules/_is-object.js":[function(_dereq_,module,exports){
 module.exports = function(it){
   return typeof it === 'object' ? it !== null : typeof it === 'function';
 };
-},{}],67:[function(_dereq_,module,exports){
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/core-js/library/modules/_object-dp.js":[function(_dereq_,module,exports){
 var anObject       = _dereq_('./_an-object')
   , IE8_DOM_DEFINE = _dereq_('./_ie8-dom-define')
   , toPrimitive    = _dereq_('./_to-primitive')
@@ -13574,7 +14523,7 @@ exports.f = _dereq_('./_descriptors') ? Object.defineProperty : function defineP
   if('value' in Attributes)O[P] = Attributes.value;
   return O;
 };
-},{"./_an-object":50,"./_descriptors":56,"./_ie8-dom-define":64,"./_to-primitive":79}],68:[function(_dereq_,module,exports){
+},{"./_an-object":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/core-js/library/modules/_an-object.js","./_descriptors":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/core-js/library/modules/_descriptors.js","./_ie8-dom-define":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/core-js/library/modules/_ie8-dom-define.js","./_to-primitive":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/core-js/library/modules/_to-primitive.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/core-js/library/modules/_object-keys-internal.js":[function(_dereq_,module,exports){
 var has          = _dereq_('./_has')
   , toIObject    = _dereq_('./_to-iobject')
   , arrayIndexOf = _dereq_('./_array-includes')(false)
@@ -13592,7 +14541,7 @@ module.exports = function(object, names){
   }
   return result;
 };
-},{"./_array-includes":51,"./_has":62,"./_shared-key":72,"./_to-iobject":76}],69:[function(_dereq_,module,exports){
+},{"./_array-includes":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/core-js/library/modules/_array-includes.js","./_has":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/core-js/library/modules/_has.js","./_shared-key":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/core-js/library/modules/_shared-key.js","./_to-iobject":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/core-js/library/modules/_to-iobject.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/core-js/library/modules/_object-keys.js":[function(_dereq_,module,exports){
 // 19.1.2.14 / 15.2.3.14 Object.keys(O)
 var $keys       = _dereq_('./_object-keys-internal')
   , enumBugKeys = _dereq_('./_enum-bug-keys');
@@ -13600,7 +14549,7 @@ var $keys       = _dereq_('./_object-keys-internal')
 module.exports = Object.keys || function keys(O){
   return $keys(O, enumBugKeys);
 };
-},{"./_enum-bug-keys":58,"./_object-keys-internal":68}],70:[function(_dereq_,module,exports){
+},{"./_enum-bug-keys":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/core-js/library/modules/_enum-bug-keys.js","./_object-keys-internal":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/core-js/library/modules/_object-keys-internal.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/core-js/library/modules/_object-sap.js":[function(_dereq_,module,exports){
 // most Object methods by ES6 should accept primitives
 var $export = _dereq_('./_export')
   , core    = _dereq_('./_core')
@@ -13611,7 +14560,7 @@ module.exports = function(KEY, exec){
   exp[KEY] = exec(fn);
   $export($export.S + $export.F * fails(function(){ fn(1); }), 'Object', exp);
 };
-},{"./_core":53,"./_export":59,"./_fails":60}],71:[function(_dereq_,module,exports){
+},{"./_core":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/core-js/library/modules/_core.js","./_export":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/core-js/library/modules/_export.js","./_fails":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/core-js/library/modules/_fails.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/core-js/library/modules/_property-desc.js":[function(_dereq_,module,exports){
 module.exports = function(bitmap, value){
   return {
     enumerable  : !(bitmap & 1),
@@ -13620,20 +14569,20 @@ module.exports = function(bitmap, value){
     value       : value
   };
 };
-},{}],72:[function(_dereq_,module,exports){
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/core-js/library/modules/_shared-key.js":[function(_dereq_,module,exports){
 var shared = _dereq_('./_shared')('keys')
   , uid    = _dereq_('./_uid');
 module.exports = function(key){
   return shared[key] || (shared[key] = uid(key));
 };
-},{"./_shared":73,"./_uid":80}],73:[function(_dereq_,module,exports){
+},{"./_shared":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/core-js/library/modules/_shared.js","./_uid":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/core-js/library/modules/_uid.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/core-js/library/modules/_shared.js":[function(_dereq_,module,exports){
 var global = _dereq_('./_global')
   , SHARED = '__core-js_shared__'
   , store  = global[SHARED] || (global[SHARED] = {});
 module.exports = function(key){
   return store[key] || (store[key] = {});
 };
-},{"./_global":61}],74:[function(_dereq_,module,exports){
+},{"./_global":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/core-js/library/modules/_global.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/core-js/library/modules/_to-index.js":[function(_dereq_,module,exports){
 var toInteger = _dereq_('./_to-integer')
   , max       = Math.max
   , min       = Math.min;
@@ -13641,34 +14590,34 @@ module.exports = function(index, length){
   index = toInteger(index);
   return index < 0 ? max(index + length, 0) : min(index, length);
 };
-},{"./_to-integer":75}],75:[function(_dereq_,module,exports){
+},{"./_to-integer":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/core-js/library/modules/_to-integer.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/core-js/library/modules/_to-integer.js":[function(_dereq_,module,exports){
 // 7.1.4 ToInteger
 var ceil  = Math.ceil
   , floor = Math.floor;
 module.exports = function(it){
   return isNaN(it = +it) ? 0 : (it > 0 ? floor : ceil)(it);
 };
-},{}],76:[function(_dereq_,module,exports){
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/core-js/library/modules/_to-iobject.js":[function(_dereq_,module,exports){
 // to indexed object, toObject with fallback for non-array-like ES3 strings
 var IObject = _dereq_('./_iobject')
   , defined = _dereq_('./_defined');
 module.exports = function(it){
   return IObject(defined(it));
 };
-},{"./_defined":55,"./_iobject":65}],77:[function(_dereq_,module,exports){
+},{"./_defined":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/core-js/library/modules/_defined.js","./_iobject":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/core-js/library/modules/_iobject.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/core-js/library/modules/_to-length.js":[function(_dereq_,module,exports){
 // 7.1.15 ToLength
 var toInteger = _dereq_('./_to-integer')
   , min       = Math.min;
 module.exports = function(it){
   return it > 0 ? min(toInteger(it), 0x1fffffffffffff) : 0; // pow(2, 53) - 1 == 9007199254740991
 };
-},{"./_to-integer":75}],78:[function(_dereq_,module,exports){
+},{"./_to-integer":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/core-js/library/modules/_to-integer.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/core-js/library/modules/_to-object.js":[function(_dereq_,module,exports){
 // 7.1.13 ToObject(argument)
 var defined = _dereq_('./_defined');
 module.exports = function(it){
   return Object(defined(it));
 };
-},{"./_defined":55}],79:[function(_dereq_,module,exports){
+},{"./_defined":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/core-js/library/modules/_defined.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/core-js/library/modules/_to-primitive.js":[function(_dereq_,module,exports){
 // 7.1.1 ToPrimitive(input [, PreferredType])
 var isObject = _dereq_('./_is-object');
 // instead of the ES6 spec version, we didn't implement @@toPrimitive case
@@ -13681,17 +14630,17 @@ module.exports = function(it, S){
   if(!S && typeof (fn = it.toString) == 'function' && !isObject(val = fn.call(it)))return val;
   throw TypeError("Can't convert object to primitive value");
 };
-},{"./_is-object":66}],80:[function(_dereq_,module,exports){
+},{"./_is-object":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/core-js/library/modules/_is-object.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/core-js/library/modules/_uid.js":[function(_dereq_,module,exports){
 var id = 0
   , px = Math.random();
 module.exports = function(key){
   return 'Symbol('.concat(key === undefined ? '' : key, ')_', (++id + px).toString(36));
 };
-},{}],81:[function(_dereq_,module,exports){
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/core-js/library/modules/es6.object.define-property.js":[function(_dereq_,module,exports){
 var $export = _dereq_('./_export');
 // 19.1.2.4 / 15.2.3.6 Object.defineProperty(O, P, Attributes)
 $export($export.S + $export.F * !_dereq_('./_descriptors'), 'Object', {defineProperty: _dereq_('./_object-dp').f});
-},{"./_descriptors":56,"./_export":59,"./_object-dp":67}],82:[function(_dereq_,module,exports){
+},{"./_descriptors":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/core-js/library/modules/_descriptors.js","./_export":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/core-js/library/modules/_export.js","./_object-dp":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/core-js/library/modules/_object-dp.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/core-js/library/modules/es6.object.keys.js":[function(_dereq_,module,exports){
 // 19.1.2.14 Object.keys(O)
 var toObject = _dereq_('./_to-object')
   , $keys    = _dereq_('./_object-keys');
@@ -13701,7 +14650,7 @@ _dereq_('./_object-sap')('keys', function(){
     return $keys(toObject(it));
   };
 });
-},{"./_object-keys":69,"./_object-sap":70,"./_to-object":78}],83:[function(_dereq_,module,exports){
+},{"./_object-keys":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/core-js/library/modules/_object-keys.js","./_object-sap":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/core-js/library/modules/_object-sap.js","./_to-object":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/core-js/library/modules/_to-object.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/core-util-is/lib/util.js":[function(_dereq_,module,exports){
 (function (Buffer){
 // Copyright Joyent, Inc. and other Node contributors.
 //
@@ -13812,7 +14761,8 @@ function objectToString(o) {
 }
 
 }).call(this,{"isBuffer":_dereq_("../../is-buffer/index.js")})
-},{"../../is-buffer/index.js":194}],84:[function(_dereq_,module,exports){
+
+},{"../../is-buffer/index.js":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/is-buffer/index.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/create-hash/browser.js":[function(_dereq_,module,exports){
 (function (Buffer){
 'use strict'
 var inherits = _dereq_('inherits')
@@ -13868,7 +14818,8 @@ module.exports = function createHash (alg) {
 }
 
 }).call(this,_dereq_("buffer").Buffer)
-},{"./md5":86,"buffer":24,"cipher-base":26,"inherits":191,"ripemd160":463,"sha.js":474}],85:[function(_dereq_,module,exports){
+
+},{"./md5":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/create-hash/md5.js","buffer":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/buffer/index.js","cipher-base":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/cipher-base/index.js","inherits":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/inherits/inherits_browser.js","ripemd160":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/ripemd160/index.js","sha.js":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/sha.js/index.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/create-hash/make-hash.js":[function(_dereq_,module,exports){
 (function (Buffer){
 'use strict'
 var intSize = 4
@@ -13902,7 +14853,8 @@ module.exports = function hash (buf, fn) {
 }
 
 }).call(this,_dereq_("buffer").Buffer)
-},{"buffer":24}],86:[function(_dereq_,module,exports){
+
+},{"buffer":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/buffer/index.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/create-hash/md5.js":[function(_dereq_,module,exports){
 'use strict'
 /*
  * A JavaScript implementation of the RSA Data Security, Inc. MD5 Message
@@ -14055,7 +15007,7 @@ module.exports = function md5 (buf) {
   return makeHash(buf, core_md5)
 }
 
-},{"./make-hash":85}],87:[function(_dereq_,module,exports){
+},{"./make-hash":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/create-hash/make-hash.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/create-react-class/factory.js":[function(_dereq_,module,exports){
 (function (process){
 /**
  * Copyright 2013-present, Facebook, Inc.
@@ -14783,7 +15735,8 @@ function factory(ReactComponent, isValidElement, ReactNoopUpdateQueue) {
 module.exports = factory;
 
 }).call(this,_dereq_('_process'))
-},{"_process":237,"fbjs/lib/emptyObject":157,"fbjs/lib/invariant":164,"fbjs/lib/warning":171,"object-assign":232}],88:[function(_dereq_,module,exports){
+
+},{"_process":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/emptyObject":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/emptyObject.js","fbjs/lib/invariant":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/invariant.js","fbjs/lib/warning":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/warning.js","object-assign":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/object-assign/index.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/create-react-class/index.js":[function(_dereq_,module,exports){
 /**
  * Copyright 2013-present, Facebook, Inc.
  * All rights reserved.
@@ -14808,7 +15761,7 @@ module.exports = factory(
   ReactNoopUpdateQueue
 );
 
-},{"./factory":87,"react":435}],89:[function(_dereq_,module,exports){
+},{"./factory":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/create-react-class/factory.js","react":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/react.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/debounce/index.js":[function(_dereq_,module,exports){
 /**
  * Returns a function, that, as long as it continues to be invoked, will not
  * be triggered. The function will be called after it stops being called for
@@ -14866,7 +15819,7 @@ module.exports = function debounce(func, wait, immediate){
   return debounced;
 };
 
-},{}],90:[function(_dereq_,module,exports){
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/deep-diff/index.js":[function(_dereq_,module,exports){
 (function (global){
 /*!
  * deep-diff.
@@ -15292,7 +16245,8 @@ module.exports = function debounce(func, wait, immediate){
 }));
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{}],91:[function(_dereq_,module,exports){
+
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/detect-node/index.js":[function(_dereq_,module,exports){
 (function (global){
 module.exports = false;
 
@@ -15302,7 +16256,8 @@ try {
 } catch(e) {}
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{}],92:[function(_dereq_,module,exports){
+
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/dnode-protocol/index.js":[function(_dereq_,module,exports){
 var EventEmitter = _dereq_('events').EventEmitter;
 var scrubber = _dereq_('./lib/scrub');
 var objectKeys = _dereq_('./lib/keys');
@@ -15429,7 +16384,7 @@ Proto.prototype.apply = function (f, args) {
     catch (err) { this.emit('error', err) }
 };
 
-},{"./lib/foreach":93,"./lib/is_enum":94,"./lib/keys":95,"./lib/scrub":96,"events":144}],93:[function(_dereq_,module,exports){
+},{"./lib/foreach":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/dnode-protocol/lib/foreach.js","./lib/is_enum":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/dnode-protocol/lib/is_enum.js","./lib/keys":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/dnode-protocol/lib/keys.js","./lib/scrub":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/dnode-protocol/lib/scrub.js","events":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/events/events.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/dnode-protocol/lib/foreach.js":[function(_dereq_,module,exports){
 module.exports = function forEach (xs, f) {
     if (xs.forEach) return xs.forEach(f)
     for (var i = 0; i < xs.length; i++) {
@@ -15437,7 +16392,7 @@ module.exports = function forEach (xs, f) {
     }
 }
 
-},{}],94:[function(_dereq_,module,exports){
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/dnode-protocol/lib/is_enum.js":[function(_dereq_,module,exports){
 var objectKeys = _dereq_('./keys');
 
 module.exports = function (obj, key) {
@@ -15451,14 +16406,14 @@ module.exports = function (obj, key) {
     return false;
 };
 
-},{"./keys":95}],95:[function(_dereq_,module,exports){
+},{"./keys":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/dnode-protocol/lib/keys.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/dnode-protocol/lib/keys.js":[function(_dereq_,module,exports){
 module.exports = Object.keys || function (obj) {
     var keys = [];
     for (var key in obj) keys.push(key);
     return keys;
 };
 
-},{}],96:[function(_dereq_,module,exports){
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/dnode-protocol/lib/scrub.js":[function(_dereq_,module,exports){
 var traverse = _dereq_('traverse');
 var objectKeys = _dereq_('./keys');
 var forEach = _dereq_('./foreach');
@@ -15532,14 +16487,14 @@ Scrubber.prototype.unscrub = function (msg, f) {
     return args;
 };
 
-},{"./foreach":93,"./keys":95,"traverse":491}],97:[function(_dereq_,module,exports){
+},{"./foreach":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/dnode-protocol/lib/foreach.js","./keys":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/dnode-protocol/lib/keys.js","traverse":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/traverse/index.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/dnode/browser.js":[function(_dereq_,module,exports){
 var dnode = _dereq_('./lib/dnode');
 
 module.exports = function (cons, opts) {
     return new dnode(cons, opts);
 };
 
-},{"./lib/dnode":98}],98:[function(_dereq_,module,exports){
+},{"./lib/dnode":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/dnode/lib/dnode.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/dnode/lib/dnode.js":[function(_dereq_,module,exports){
 (function (process){
 var protocol = _dereq_('dnode-protocol');
 var Stream = _dereq_('stream');
@@ -15696,7 +16651,8 @@ dnode.prototype.destroy = function () {
 };
 
 }).call(this,_dereq_('_process'))
-},{"_process":237,"dnode-protocol":92,"jsonify":201,"stream":481}],99:[function(_dereq_,module,exports){
+
+},{"_process":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/browserify/node_modules/process/browser.js","dnode-protocol":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/dnode-protocol/index.js","jsonify":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/jsonify/index.js","stream":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/stream-browserify/index.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/elliptic/lib/elliptic.js":[function(_dereq_,module,exports){
 'use strict';
 
 var elliptic = exports;
@@ -15711,7 +16667,7 @@ elliptic.curves = _dereq_('./elliptic/curves');
 elliptic.ec = _dereq_('./elliptic/ec');
 elliptic.eddsa = _dereq_('./elliptic/eddsa');
 
-},{"../package.json":114,"./elliptic/curve":102,"./elliptic/curves":105,"./elliptic/ec":106,"./elliptic/eddsa":109,"./elliptic/utils":113,"brorand":21}],100:[function(_dereq_,module,exports){
+},{"../package.json":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/elliptic/package.json","./elliptic/curve":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/elliptic/lib/elliptic/curve/index.js","./elliptic/curves":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/elliptic/lib/elliptic/curves.js","./elliptic/ec":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/elliptic/lib/elliptic/ec/index.js","./elliptic/eddsa":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/elliptic/lib/elliptic/eddsa/index.js","./elliptic/utils":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/elliptic/lib/elliptic/utils.js","brorand":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/brorand/index.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/elliptic/lib/elliptic/curve/base.js":[function(_dereq_,module,exports){
 'use strict';
 
 var BN = _dereq_('bn.js');
@@ -16088,7 +17044,7 @@ BasePoint.prototype.dblp = function dblp(k) {
   return r;
 };
 
-},{"../../elliptic":99,"bn.js":20}],101:[function(_dereq_,module,exports){
+},{"../../elliptic":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/elliptic/lib/elliptic.js","bn.js":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/bn.js/lib/bn.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/elliptic/lib/elliptic/curve/edwards.js":[function(_dereq_,module,exports){
 'use strict';
 
 var curve = _dereq_('../curve');
@@ -16523,7 +17479,7 @@ Point.prototype.eqXToP = function eqXToP(x) {
 Point.prototype.toP = Point.prototype.normalize;
 Point.prototype.mixedAdd = Point.prototype.add;
 
-},{"../../elliptic":99,"../curve":102,"bn.js":20,"inherits":191}],102:[function(_dereq_,module,exports){
+},{"../../elliptic":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/elliptic/lib/elliptic.js","../curve":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/elliptic/lib/elliptic/curve/index.js","bn.js":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/bn.js/lib/bn.js","inherits":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/inherits/inherits_browser.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/elliptic/lib/elliptic/curve/index.js":[function(_dereq_,module,exports){
 'use strict';
 
 var curve = exports;
@@ -16533,7 +17489,7 @@ curve.short = _dereq_('./short');
 curve.mont = _dereq_('./mont');
 curve.edwards = _dereq_('./edwards');
 
-},{"./base":100,"./edwards":101,"./mont":103,"./short":104}],103:[function(_dereq_,module,exports){
+},{"./base":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/elliptic/lib/elliptic/curve/base.js","./edwards":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/elliptic/lib/elliptic/curve/edwards.js","./mont":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/elliptic/lib/elliptic/curve/mont.js","./short":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/elliptic/lib/elliptic/curve/short.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/elliptic/lib/elliptic/curve/mont.js":[function(_dereq_,module,exports){
 'use strict';
 
 var curve = _dereq_('../curve');
@@ -16715,7 +17671,7 @@ Point.prototype.getX = function getX() {
   return this.x.fromRed();
 };
 
-},{"../../elliptic":99,"../curve":102,"bn.js":20,"inherits":191}],104:[function(_dereq_,module,exports){
+},{"../../elliptic":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/elliptic/lib/elliptic.js","../curve":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/elliptic/lib/elliptic/curve/index.js","bn.js":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/bn.js/lib/bn.js","inherits":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/inherits/inherits_browser.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/elliptic/lib/elliptic/curve/short.js":[function(_dereq_,module,exports){
 'use strict';
 
 var curve = _dereq_('../curve');
@@ -17655,7 +18611,7 @@ JPoint.prototype.isInfinity = function isInfinity() {
   return this.z.cmpn(0) === 0;
 };
 
-},{"../../elliptic":99,"../curve":102,"bn.js":20,"inherits":191}],105:[function(_dereq_,module,exports){
+},{"../../elliptic":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/elliptic/lib/elliptic.js","../curve":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/elliptic/lib/elliptic/curve/index.js","bn.js":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/bn.js/lib/bn.js","inherits":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/inherits/inherits_browser.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/elliptic/lib/elliptic/curves.js":[function(_dereq_,module,exports){
 'use strict';
 
 var curves = exports;
@@ -17862,7 +18818,7 @@ defineCurve('secp256k1', {
   ]
 });
 
-},{"../elliptic":99,"./precomputed/secp256k1":112,"hash.js":180}],106:[function(_dereq_,module,exports){
+},{"../elliptic":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/elliptic/lib/elliptic.js","./precomputed/secp256k1":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/elliptic/lib/elliptic/precomputed/secp256k1.js","hash.js":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/hash.js/lib/hash.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/elliptic/lib/elliptic/ec/index.js":[function(_dereq_,module,exports){
 'use strict';
 
 var BN = _dereq_('bn.js');
@@ -18104,7 +19060,7 @@ EC.prototype.getKeyRecoveryParam = function(e, signature, Q, enc) {
   throw new Error('Unable to find valid recovery factor');
 };
 
-},{"../../elliptic":99,"./key":107,"./signature":108,"bn.js":20,"hmac-drbg":186}],107:[function(_dereq_,module,exports){
+},{"../../elliptic":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/elliptic/lib/elliptic.js","./key":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/elliptic/lib/elliptic/ec/key.js","./signature":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/elliptic/lib/elliptic/ec/signature.js","bn.js":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/bn.js/lib/bn.js","hmac-drbg":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/hmac-drbg/lib/hmac-drbg.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/elliptic/lib/elliptic/ec/key.js":[function(_dereq_,module,exports){
 'use strict';
 
 var BN = _dereq_('bn.js');
@@ -18225,7 +19181,7 @@ KeyPair.prototype.inspect = function inspect() {
          ' pub: ' + (this.pub && this.pub.inspect()) + ' >';
 };
 
-},{"../../elliptic":99,"bn.js":20}],108:[function(_dereq_,module,exports){
+},{"../../elliptic":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/elliptic/lib/elliptic.js","bn.js":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/bn.js/lib/bn.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/elliptic/lib/elliptic/ec/signature.js":[function(_dereq_,module,exports){
 'use strict';
 
 var BN = _dereq_('bn.js');
@@ -18362,7 +19318,7 @@ Signature.prototype.toDER = function toDER(enc) {
   return utils.encode(res, enc);
 };
 
-},{"../../elliptic":99,"bn.js":20}],109:[function(_dereq_,module,exports){
+},{"../../elliptic":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/elliptic/lib/elliptic.js","bn.js":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/bn.js/lib/bn.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/elliptic/lib/elliptic/eddsa/index.js":[function(_dereq_,module,exports){
 'use strict';
 
 var hash = _dereq_('hash.js');
@@ -18482,7 +19438,7 @@ EDDSA.prototype.isPoint = function isPoint(val) {
   return val instanceof this.pointClass;
 };
 
-},{"../../elliptic":99,"./key":110,"./signature":111,"hash.js":180}],110:[function(_dereq_,module,exports){
+},{"../../elliptic":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/elliptic/lib/elliptic.js","./key":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/elliptic/lib/elliptic/eddsa/key.js","./signature":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/elliptic/lib/elliptic/eddsa/signature.js","hash.js":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/hash.js/lib/hash.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/elliptic/lib/elliptic/eddsa/key.js":[function(_dereq_,module,exports){
 'use strict';
 
 var elliptic = _dereq_('../../elliptic');
@@ -18580,7 +19536,7 @@ KeyPair.prototype.getPublic = function getPublic(enc) {
 
 module.exports = KeyPair;
 
-},{"../../elliptic":99}],111:[function(_dereq_,module,exports){
+},{"../../elliptic":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/elliptic/lib/elliptic.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/elliptic/lib/elliptic/eddsa/signature.js":[function(_dereq_,module,exports){
 'use strict';
 
 var BN = _dereq_('bn.js');
@@ -18648,7 +19604,7 @@ Signature.prototype.toHex = function toHex() {
 
 module.exports = Signature;
 
-},{"../../elliptic":99,"bn.js":20}],112:[function(_dereq_,module,exports){
+},{"../../elliptic":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/elliptic/lib/elliptic.js","bn.js":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/bn.js/lib/bn.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/elliptic/lib/elliptic/precomputed/secp256k1.js":[function(_dereq_,module,exports){
 module.exports = {
   doubles: {
     step: 4,
@@ -19430,7 +20386,7 @@ module.exports = {
   }
 };
 
-},{}],113:[function(_dereq_,module,exports){
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/elliptic/lib/elliptic/utils.js":[function(_dereq_,module,exports){
 'use strict';
 
 var utils = exports;
@@ -19552,39 +20508,50 @@ function intFromLE(bytes) {
 utils.intFromLE = intFromLE;
 
 
-},{"bn.js":20,"minimalistic-assert":229,"minimalistic-crypto-utils":230}],114:[function(_dereq_,module,exports){
+},{"bn.js":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/bn.js/lib/bn.js","minimalistic-assert":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/minimalistic-assert/index.js","minimalistic-crypto-utils":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/minimalistic-crypto-utils/lib/utils.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/elliptic/package.json":[function(_dereq_,module,exports){
 module.exports={
-  "name": "elliptic",
-  "version": "6.4.0",
-  "description": "EC cryptography",
-  "main": "lib/elliptic.js",
-  "files": [
-    "lib"
+  "_args": [
+    [
+      "elliptic@https://registry.npmjs.org/elliptic/-/elliptic-6.4.0.tgz",
+      "/Users/ankur_sardar/Desktop/metamask/metamask-plugin"
+    ]
   ],
-  "scripts": {
-    "jscs": "jscs benchmarks/*.js lib/*.js lib/**/*.js lib/**/**/*.js test/index.js",
-    "jshint": "jscs benchmarks/*.js lib/*.js lib/**/*.js lib/**/**/*.js test/index.js",
-    "lint": "npm run jscs && npm run jshint",
-    "unit": "istanbul test _mocha --reporter=spec test/index.js",
-    "test": "npm run lint && npm run unit",
-    "version": "grunt dist && git add dist/"
+  "_from": "elliptic@https://registry.npmjs.org/elliptic/-/elliptic-6.4.0.tgz",
+  "_id": "elliptic@6.4.0",
+  "_inBundle": false,
+  "_integrity": "sha1-ysmvh2LIWDYYcAPI3+GT5eLq5d8=",
+  "_location": "/elliptic",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "elliptic@https://registry.npmjs.org/elliptic/-/elliptic-6.4.0.tgz",
+    "name": "elliptic",
+    "escapedName": "elliptic",
+    "rawSpec": "https://registry.npmjs.org/elliptic/-/elliptic-6.4.0.tgz",
+    "saveSpec": "https://registry.npmjs.org/elliptic/-/elliptic-6.4.0.tgz",
+    "fetchSpec": "https://registry.npmjs.org/elliptic/-/elliptic-6.4.0.tgz"
   },
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:indutny/elliptic"
+  "_requiredBy": [],
+  "_resolved": "https://registry.npmjs.org/elliptic/-/elliptic-6.4.0.tgz",
+  "_spec": "https://registry.npmjs.org/elliptic/-/elliptic-6.4.0.tgz",
+  "_where": "/Users/ankur_sardar/Desktop/metamask/metamask-plugin",
+  "author": {
+    "name": "Fedor Indutny",
+    "email": "fedor@indutny.com"
   },
-  "keywords": [
-    "EC",
-    "Elliptic",
-    "curve",
-    "Cryptography"
-  ],
-  "author": "Fedor Indutny <fedor@indutny.com>",
-  "license": "MIT",
   "bugs": {
     "url": "https://github.com/indutny/elliptic/issues"
   },
-  "homepage": "https://github.com/indutny/elliptic",
+  "dependencies": {
+    "bn.js": "^4.4.0",
+    "brorand": "^1.0.1",
+    "hash.js": "^1.0.0",
+    "hmac-drbg": "^1.0.0",
+    "inherits": "^2.0.1",
+    "minimalistic-assert": "^1.0.0",
+    "minimalistic-crypto-utils": "^1.0.0"
+  },
+  "description": "EC cryptography",
   "devDependencies": {
     "brfs": "^1.4.3",
     "coveralls": "^2.11.3",
@@ -19601,18 +20568,35 @@ module.exports={
     "jshint": "^2.6.0",
     "mocha": "^2.1.0"
   },
-  "dependencies": {
-    "bn.js": "^4.4.0",
-    "brorand": "^1.0.1",
-    "hash.js": "^1.0.0",
-    "hmac-drbg": "^1.0.0",
-    "inherits": "^2.0.1",
-    "minimalistic-assert": "^1.0.0",
-    "minimalistic-crypto-utils": "^1.0.0"
-  }
+  "files": [
+    "lib"
+  ],
+  "homepage": "https://github.com/indutny/elliptic",
+  "keywords": [
+    "EC",
+    "Elliptic",
+    "curve",
+    "Cryptography"
+  ],
+  "license": "MIT",
+  "main": "lib/elliptic.js",
+  "name": "elliptic",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/indutny/elliptic.git"
+  },
+  "scripts": {
+    "jscs": "jscs benchmarks/*.js lib/*.js lib/**/*.js lib/**/**/*.js test/index.js",
+    "jshint": "jscs benchmarks/*.js lib/*.js lib/**/*.js lib/**/**/*.js test/index.js",
+    "lint": "npm run jscs && npm run jshint",
+    "test": "npm run lint && npm run unit",
+    "unit": "istanbul test _mocha --reporter=spec test/index.js",
+    "version": "grunt dist && git add dist/"
+  },
+  "version": "6.4.0"
 }
 
-},{}],115:[function(_dereq_,module,exports){
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/end-of-stream/index.js":[function(_dereq_,module,exports){
 var once = _dereq_('once');
 
 var noop = function() {};
@@ -19697,7 +20681,7 @@ var eos = function(stream, opts, callback) {
 
 module.exports = eos;
 
-},{"once":233}],116:[function(_dereq_,module,exports){
+},{"once":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/once/once.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/entities/index.js":[function(_dereq_,module,exports){
 var encode = _dereq_("./lib/encode.js"),
     decode = _dereq_("./lib/decode.js");
 
@@ -19732,7 +20716,7 @@ exports.decodeHTMLStrict = decode.HTMLStrict;
 
 exports.escape = encode.escape;
 
-},{"./lib/decode.js":117,"./lib/encode.js":119}],117:[function(_dereq_,module,exports){
+},{"./lib/decode.js":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/entities/lib/decode.js","./lib/encode.js":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/entities/lib/encode.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/entities/lib/decode.js":[function(_dereq_,module,exports){
 var entityMap = _dereq_("../maps/entities.json"),
     legacyMap = _dereq_("../maps/legacy.json"),
     xmlMap    = _dereq_("../maps/xml.json"),
@@ -19805,7 +20789,7 @@ module.exports = {
 	HTML: decodeHTML,
 	HTMLStrict: decodeHTMLStrict
 };
-},{"../maps/entities.json":121,"../maps/legacy.json":122,"../maps/xml.json":123,"./decode_codepoint.js":118}],118:[function(_dereq_,module,exports){
+},{"../maps/entities.json":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/entities/maps/entities.json","../maps/legacy.json":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/entities/maps/legacy.json","../maps/xml.json":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/entities/maps/xml.json","./decode_codepoint.js":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/entities/lib/decode_codepoint.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/entities/lib/decode_codepoint.js":[function(_dereq_,module,exports){
 var decodeMap = _dereq_("../maps/decode.json");
 
 module.exports = decodeCodePoint;
@@ -19833,7 +20817,7 @@ function decodeCodePoint(codePoint){
 	return output;
 }
 
-},{"../maps/decode.json":120}],119:[function(_dereq_,module,exports){
+},{"../maps/decode.json":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/entities/maps/decode.json"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/entities/lib/encode.js":[function(_dereq_,module,exports){
 var inverseXML = getInverseObj(_dereq_("../maps/xml.json")),
     xmlReplacer = getInverseReplacer(inverseXML);
 
@@ -19908,16 +20892,16 @@ function escapeXML(data){
 
 exports.escape = escapeXML;
 
-},{"../maps/entities.json":121,"../maps/xml.json":123}],120:[function(_dereq_,module,exports){
+},{"../maps/entities.json":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/entities/maps/entities.json","../maps/xml.json":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/entities/maps/xml.json"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/entities/maps/decode.json":[function(_dereq_,module,exports){
 module.exports={"0":65533,"128":8364,"130":8218,"131":402,"132":8222,"133":8230,"134":8224,"135":8225,"136":710,"137":8240,"138":352,"139":8249,"140":338,"142":381,"145":8216,"146":8217,"147":8220,"148":8221,"149":8226,"150":8211,"151":8212,"152":732,"153":8482,"154":353,"155":8250,"156":339,"158":382,"159":376}
-},{}],121:[function(_dereq_,module,exports){
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/entities/maps/entities.json":[function(_dereq_,module,exports){
 module.exports={"Aacute":"\u00C1","aacute":"\u00E1","Abreve":"\u0102","abreve":"\u0103","ac":"\u223E","acd":"\u223F","acE":"\u223E\u0333","Acirc":"\u00C2","acirc":"\u00E2","acute":"\u00B4","Acy":"\u0410","acy":"\u0430","AElig":"\u00C6","aelig":"\u00E6","af":"\u2061","Afr":"\uD835\uDD04","afr":"\uD835\uDD1E","Agrave":"\u00C0","agrave":"\u00E0","alefsym":"\u2135","aleph":"\u2135","Alpha":"\u0391","alpha":"\u03B1","Amacr":"\u0100","amacr":"\u0101","amalg":"\u2A3F","amp":"&","AMP":"&","andand":"\u2A55","And":"\u2A53","and":"\u2227","andd":"\u2A5C","andslope":"\u2A58","andv":"\u2A5A","ang":"\u2220","ange":"\u29A4","angle":"\u2220","angmsdaa":"\u29A8","angmsdab":"\u29A9","angmsdac":"\u29AA","angmsdad":"\u29AB","angmsdae":"\u29AC","angmsdaf":"\u29AD","angmsdag":"\u29AE","angmsdah":"\u29AF","angmsd":"\u2221","angrt":"\u221F","angrtvb":"\u22BE","angrtvbd":"\u299D","angsph":"\u2222","angst":"\u00C5","angzarr":"\u237C","Aogon":"\u0104","aogon":"\u0105","Aopf":"\uD835\uDD38","aopf":"\uD835\uDD52","apacir":"\u2A6F","ap":"\u2248","apE":"\u2A70","ape":"\u224A","apid":"\u224B","apos":"'","ApplyFunction":"\u2061","approx":"\u2248","approxeq":"\u224A","Aring":"\u00C5","aring":"\u00E5","Ascr":"\uD835\uDC9C","ascr":"\uD835\uDCB6","Assign":"\u2254","ast":"*","asymp":"\u2248","asympeq":"\u224D","Atilde":"\u00C3","atilde":"\u00E3","Auml":"\u00C4","auml":"\u00E4","awconint":"\u2233","awint":"\u2A11","backcong":"\u224C","backepsilon":"\u03F6","backprime":"\u2035","backsim":"\u223D","backsimeq":"\u22CD","Backslash":"\u2216","Barv":"\u2AE7","barvee":"\u22BD","barwed":"\u2305","Barwed":"\u2306","barwedge":"\u2305","bbrk":"\u23B5","bbrktbrk":"\u23B6","bcong":"\u224C","Bcy":"\u0411","bcy":"\u0431","bdquo":"\u201E","becaus":"\u2235","because":"\u2235","Because":"\u2235","bemptyv":"\u29B0","bepsi":"\u03F6","bernou":"\u212C","Bernoullis":"\u212C","Beta":"\u0392","beta":"\u03B2","beth":"\u2136","between":"\u226C","Bfr":"\uD835\uDD05","bfr":"\uD835\uDD1F","bigcap":"\u22C2","bigcirc":"\u25EF","bigcup":"\u22C3","bigodot":"\u2A00","bigoplus":"\u2A01","bigotimes":"\u2A02","bigsqcup":"\u2A06","bigstar":"\u2605","bigtriangledown":"\u25BD","bigtriangleup":"\u25B3","biguplus":"\u2A04","bigvee":"\u22C1","bigwedge":"\u22C0","bkarow":"\u290D","blacklozenge":"\u29EB","blacksquare":"\u25AA","blacktriangle":"\u25B4","blacktriangledown":"\u25BE","blacktriangleleft":"\u25C2","blacktriangleright":"\u25B8","blank":"\u2423","blk12":"\u2592","blk14":"\u2591","blk34":"\u2593","block":"\u2588","bne":"=\u20E5","bnequiv":"\u2261\u20E5","bNot":"\u2AED","bnot":"\u2310","Bopf":"\uD835\uDD39","bopf":"\uD835\uDD53","bot":"\u22A5","bottom":"\u22A5","bowtie":"\u22C8","boxbox":"\u29C9","boxdl":"\u2510","boxdL":"\u2555","boxDl":"\u2556","boxDL":"\u2557","boxdr":"\u250C","boxdR":"\u2552","boxDr":"\u2553","boxDR":"\u2554","boxh":"\u2500","boxH":"\u2550","boxhd":"\u252C","boxHd":"\u2564","boxhD":"\u2565","boxHD":"\u2566","boxhu":"\u2534","boxHu":"\u2567","boxhU":"\u2568","boxHU":"\u2569","boxminus":"\u229F","boxplus":"\u229E","boxtimes":"\u22A0","boxul":"\u2518","boxuL":"\u255B","boxUl":"\u255C","boxUL":"\u255D","boxur":"\u2514","boxuR":"\u2558","boxUr":"\u2559","boxUR":"\u255A","boxv":"\u2502","boxV":"\u2551","boxvh":"\u253C","boxvH":"\u256A","boxVh":"\u256B","boxVH":"\u256C","boxvl":"\u2524","boxvL":"\u2561","boxVl":"\u2562","boxVL":"\u2563","boxvr":"\u251C","boxvR":"\u255E","boxVr":"\u255F","boxVR":"\u2560","bprime":"\u2035","breve":"\u02D8","Breve":"\u02D8","brvbar":"\u00A6","bscr":"\uD835\uDCB7","Bscr":"\u212C","bsemi":"\u204F","bsim":"\u223D","bsime":"\u22CD","bsolb":"\u29C5","bsol":"\\","bsolhsub":"\u27C8","bull":"\u2022","bullet":"\u2022","bump":"\u224E","bumpE":"\u2AAE","bumpe":"\u224F","Bumpeq":"\u224E","bumpeq":"\u224F","Cacute":"\u0106","cacute":"\u0107","capand":"\u2A44","capbrcup":"\u2A49","capcap":"\u2A4B","cap":"\u2229","Cap":"\u22D2","capcup":"\u2A47","capdot":"\u2A40","CapitalDifferentialD":"\u2145","caps":"\u2229\uFE00","caret":"\u2041","caron":"\u02C7","Cayleys":"\u212D","ccaps":"\u2A4D","Ccaron":"\u010C","ccaron":"\u010D","Ccedil":"\u00C7","ccedil":"\u00E7","Ccirc":"\u0108","ccirc":"\u0109","Cconint":"\u2230","ccups":"\u2A4C","ccupssm":"\u2A50","Cdot":"\u010A","cdot":"\u010B","cedil":"\u00B8","Cedilla":"\u00B8","cemptyv":"\u29B2","cent":"\u00A2","centerdot":"\u00B7","CenterDot":"\u00B7","cfr":"\uD835\uDD20","Cfr":"\u212D","CHcy":"\u0427","chcy":"\u0447","check":"\u2713","checkmark":"\u2713","Chi":"\u03A7","chi":"\u03C7","circ":"\u02C6","circeq":"\u2257","circlearrowleft":"\u21BA","circlearrowright":"\u21BB","circledast":"\u229B","circledcirc":"\u229A","circleddash":"\u229D","CircleDot":"\u2299","circledR":"\u00AE","circledS":"\u24C8","CircleMinus":"\u2296","CirclePlus":"\u2295","CircleTimes":"\u2297","cir":"\u25CB","cirE":"\u29C3","cire":"\u2257","cirfnint":"\u2A10","cirmid":"\u2AEF","cirscir":"\u29C2","ClockwiseContourIntegral":"\u2232","CloseCurlyDoubleQuote":"\u201D","CloseCurlyQuote":"\u2019","clubs":"\u2663","clubsuit":"\u2663","colon":":","Colon":"\u2237","Colone":"\u2A74","colone":"\u2254","coloneq":"\u2254","comma":",","commat":"@","comp":"\u2201","compfn":"\u2218","complement":"\u2201","complexes":"\u2102","cong":"\u2245","congdot":"\u2A6D","Congruent":"\u2261","conint":"\u222E","Conint":"\u222F","ContourIntegral":"\u222E","copf":"\uD835\uDD54","Copf":"\u2102","coprod":"\u2210","Coproduct":"\u2210","copy":"\u00A9","COPY":"\u00A9","copysr":"\u2117","CounterClockwiseContourIntegral":"\u2233","crarr":"\u21B5","cross":"\u2717","Cross":"\u2A2F","Cscr":"\uD835\uDC9E","cscr":"\uD835\uDCB8","csub":"\u2ACF","csube":"\u2AD1","csup":"\u2AD0","csupe":"\u2AD2","ctdot":"\u22EF","cudarrl":"\u2938","cudarrr":"\u2935","cuepr":"\u22DE","cuesc":"\u22DF","cularr":"\u21B6","cularrp":"\u293D","cupbrcap":"\u2A48","cupcap":"\u2A46","CupCap":"\u224D","cup":"\u222A","Cup":"\u22D3","cupcup":"\u2A4A","cupdot":"\u228D","cupor":"\u2A45","cups":"\u222A\uFE00","curarr":"\u21B7","curarrm":"\u293C","curlyeqprec":"\u22DE","curlyeqsucc":"\u22DF","curlyvee":"\u22CE","curlywedge":"\u22CF","curren":"\u00A4","curvearrowleft":"\u21B6","curvearrowright":"\u21B7","cuvee":"\u22CE","cuwed":"\u22CF","cwconint":"\u2232","cwint":"\u2231","cylcty":"\u232D","dagger":"\u2020","Dagger":"\u2021","daleth":"\u2138","darr":"\u2193","Darr":"\u21A1","dArr":"\u21D3","dash":"\u2010","Dashv":"\u2AE4","dashv":"\u22A3","dbkarow":"\u290F","dblac":"\u02DD","Dcaron":"\u010E","dcaron":"\u010F","Dcy":"\u0414","dcy":"\u0434","ddagger":"\u2021","ddarr":"\u21CA","DD":"\u2145","dd":"\u2146","DDotrahd":"\u2911","ddotseq":"\u2A77","deg":"\u00B0","Del":"\u2207","Delta":"\u0394","delta":"\u03B4","demptyv":"\u29B1","dfisht":"\u297F","Dfr":"\uD835\uDD07","dfr":"\uD835\uDD21","dHar":"\u2965","dharl":"\u21C3","dharr":"\u21C2","DiacriticalAcute":"\u00B4","DiacriticalDot":"\u02D9","DiacriticalDoubleAcute":"\u02DD","DiacriticalGrave":"`","DiacriticalTilde":"\u02DC","diam":"\u22C4","diamond":"\u22C4","Diamond":"\u22C4","diamondsuit":"\u2666","diams":"\u2666","die":"\u00A8","DifferentialD":"\u2146","digamma":"\u03DD","disin":"\u22F2","div":"\u00F7","divide":"\u00F7","divideontimes":"\u22C7","divonx":"\u22C7","DJcy":"\u0402","djcy":"\u0452","dlcorn":"\u231E","dlcrop":"\u230D","dollar":"$","Dopf":"\uD835\uDD3B","dopf":"\uD835\uDD55","Dot":"\u00A8","dot":"\u02D9","DotDot":"\u20DC","doteq":"\u2250","doteqdot":"\u2251","DotEqual":"\u2250","dotminus":"\u2238","dotplus":"\u2214","dotsquare":"\u22A1","doublebarwedge":"\u2306","DoubleContourIntegral":"\u222F","DoubleDot":"\u00A8","DoubleDownArrow":"\u21D3","DoubleLeftArrow":"\u21D0","DoubleLeftRightArrow":"\u21D4","DoubleLeftTee":"\u2AE4","DoubleLongLeftArrow":"\u27F8","DoubleLongLeftRightArrow":"\u27FA","DoubleLongRightArrow":"\u27F9","DoubleRightArrow":"\u21D2","DoubleRightTee":"\u22A8","DoubleUpArrow":"\u21D1","DoubleUpDownArrow":"\u21D5","DoubleVerticalBar":"\u2225","DownArrowBar":"\u2913","downarrow":"\u2193","DownArrow":"\u2193","Downarrow":"\u21D3","DownArrowUpArrow":"\u21F5","DownBreve":"\u0311","downdownarrows":"\u21CA","downharpoonleft":"\u21C3","downharpoonright":"\u21C2","DownLeftRightVector":"\u2950","DownLeftTeeVector":"\u295E","DownLeftVectorBar":"\u2956","DownLeftVector":"\u21BD","DownRightTeeVector":"\u295F","DownRightVectorBar":"\u2957","DownRightVector":"\u21C1","DownTeeArrow":"\u21A7","DownTee":"\u22A4","drbkarow":"\u2910","drcorn":"\u231F","drcrop":"\u230C","Dscr":"\uD835\uDC9F","dscr":"\uD835\uDCB9","DScy":"\u0405","dscy":"\u0455","dsol":"\u29F6","Dstrok":"\u0110","dstrok":"\u0111","dtdot":"\u22F1","dtri":"\u25BF","dtrif":"\u25BE","duarr":"\u21F5","duhar":"\u296F","dwangle":"\u29A6","DZcy":"\u040F","dzcy":"\u045F","dzigrarr":"\u27FF","Eacute":"\u00C9","eacute":"\u00E9","easter":"\u2A6E","Ecaron":"\u011A","ecaron":"\u011B","Ecirc":"\u00CA","ecirc":"\u00EA","ecir":"\u2256","ecolon":"\u2255","Ecy":"\u042D","ecy":"\u044D","eDDot":"\u2A77","Edot":"\u0116","edot":"\u0117","eDot":"\u2251","ee":"\u2147","efDot":"\u2252","Efr":"\uD835\uDD08","efr":"\uD835\uDD22","eg":"\u2A9A","Egrave":"\u00C8","egrave":"\u00E8","egs":"\u2A96","egsdot":"\u2A98","el":"\u2A99","Element":"\u2208","elinters":"\u23E7","ell":"\u2113","els":"\u2A95","elsdot":"\u2A97","Emacr":"\u0112","emacr":"\u0113","empty":"\u2205","emptyset":"\u2205","EmptySmallSquare":"\u25FB","emptyv":"\u2205","EmptyVerySmallSquare":"\u25AB","emsp13":"\u2004","emsp14":"\u2005","emsp":"\u2003","ENG":"\u014A","eng":"\u014B","ensp":"\u2002","Eogon":"\u0118","eogon":"\u0119","Eopf":"\uD835\uDD3C","eopf":"\uD835\uDD56","epar":"\u22D5","eparsl":"\u29E3","eplus":"\u2A71","epsi":"\u03B5","Epsilon":"\u0395","epsilon":"\u03B5","epsiv":"\u03F5","eqcirc":"\u2256","eqcolon":"\u2255","eqsim":"\u2242","eqslantgtr":"\u2A96","eqslantless":"\u2A95","Equal":"\u2A75","equals":"=","EqualTilde":"\u2242","equest":"\u225F","Equilibrium":"\u21CC","equiv":"\u2261","equivDD":"\u2A78","eqvparsl":"\u29E5","erarr":"\u2971","erDot":"\u2253","escr":"\u212F","Escr":"\u2130","esdot":"\u2250","Esim":"\u2A73","esim":"\u2242","Eta":"\u0397","eta":"\u03B7","ETH":"\u00D0","eth":"\u00F0","Euml":"\u00CB","euml":"\u00EB","euro":"\u20AC","excl":"!","exist":"\u2203","Exists":"\u2203","expectation":"\u2130","exponentiale":"\u2147","ExponentialE":"\u2147","fallingdotseq":"\u2252","Fcy":"\u0424","fcy":"\u0444","female":"\u2640","ffilig":"\uFB03","fflig":"\uFB00","ffllig":"\uFB04","Ffr":"\uD835\uDD09","ffr":"\uD835\uDD23","filig":"\uFB01","FilledSmallSquare":"\u25FC","FilledVerySmallSquare":"\u25AA","fjlig":"fj","flat":"\u266D","fllig":"\uFB02","fltns":"\u25B1","fnof":"\u0192","Fopf":"\uD835\uDD3D","fopf":"\uD835\uDD57","forall":"\u2200","ForAll":"\u2200","fork":"\u22D4","forkv":"\u2AD9","Fouriertrf":"\u2131","fpartint":"\u2A0D","frac12":"\u00BD","frac13":"\u2153","frac14":"\u00BC","frac15":"\u2155","frac16":"\u2159","frac18":"\u215B","frac23":"\u2154","frac25":"\u2156","frac34":"\u00BE","frac35":"\u2157","frac38":"\u215C","frac45":"\u2158","frac56":"\u215A","frac58":"\u215D","frac78":"\u215E","frasl":"\u2044","frown":"\u2322","fscr":"\uD835\uDCBB","Fscr":"\u2131","gacute":"\u01F5","Gamma":"\u0393","gamma":"\u03B3","Gammad":"\u03DC","gammad":"\u03DD","gap":"\u2A86","Gbreve":"\u011E","gbreve":"\u011F","Gcedil":"\u0122","Gcirc":"\u011C","gcirc":"\u011D","Gcy":"\u0413","gcy":"\u0433","Gdot":"\u0120","gdot":"\u0121","ge":"\u2265","gE":"\u2267","gEl":"\u2A8C","gel":"\u22DB","geq":"\u2265","geqq":"\u2267","geqslant":"\u2A7E","gescc":"\u2AA9","ges":"\u2A7E","gesdot":"\u2A80","gesdoto":"\u2A82","gesdotol":"\u2A84","gesl":"\u22DB\uFE00","gesles":"\u2A94","Gfr":"\uD835\uDD0A","gfr":"\uD835\uDD24","gg":"\u226B","Gg":"\u22D9","ggg":"\u22D9","gimel":"\u2137","GJcy":"\u0403","gjcy":"\u0453","gla":"\u2AA5","gl":"\u2277","glE":"\u2A92","glj":"\u2AA4","gnap":"\u2A8A","gnapprox":"\u2A8A","gne":"\u2A88","gnE":"\u2269","gneq":"\u2A88","gneqq":"\u2269","gnsim":"\u22E7","Gopf":"\uD835\uDD3E","gopf":"\uD835\uDD58","grave":"`","GreaterEqual":"\u2265","GreaterEqualLess":"\u22DB","GreaterFullEqual":"\u2267","GreaterGreater":"\u2AA2","GreaterLess":"\u2277","GreaterSlantEqual":"\u2A7E","GreaterTilde":"\u2273","Gscr":"\uD835\uDCA2","gscr":"\u210A","gsim":"\u2273","gsime":"\u2A8E","gsiml":"\u2A90","gtcc":"\u2AA7","gtcir":"\u2A7A","gt":">","GT":">","Gt":"\u226B","gtdot":"\u22D7","gtlPar":"\u2995","gtquest":"\u2A7C","gtrapprox":"\u2A86","gtrarr":"\u2978","gtrdot":"\u22D7","gtreqless":"\u22DB","gtreqqless":"\u2A8C","gtrless":"\u2277","gtrsim":"\u2273","gvertneqq":"\u2269\uFE00","gvnE":"\u2269\uFE00","Hacek":"\u02C7","hairsp":"\u200A","half":"\u00BD","hamilt":"\u210B","HARDcy":"\u042A","hardcy":"\u044A","harrcir":"\u2948","harr":"\u2194","hArr":"\u21D4","harrw":"\u21AD","Hat":"^","hbar":"\u210F","Hcirc":"\u0124","hcirc":"\u0125","hearts":"\u2665","heartsuit":"\u2665","hellip":"\u2026","hercon":"\u22B9","hfr":"\uD835\uDD25","Hfr":"\u210C","HilbertSpace":"\u210B","hksearow":"\u2925","hkswarow":"\u2926","hoarr":"\u21FF","homtht":"\u223B","hookleftarrow":"\u21A9","hookrightarrow":"\u21AA","hopf":"\uD835\uDD59","Hopf":"\u210D","horbar":"\u2015","HorizontalLine":"\u2500","hscr":"\uD835\uDCBD","Hscr":"\u210B","hslash":"\u210F","Hstrok":"\u0126","hstrok":"\u0127","HumpDownHump":"\u224E","HumpEqual":"\u224F","hybull":"\u2043","hyphen":"\u2010","Iacute":"\u00CD","iacute":"\u00ED","ic":"\u2063","Icirc":"\u00CE","icirc":"\u00EE","Icy":"\u0418","icy":"\u0438","Idot":"\u0130","IEcy":"\u0415","iecy":"\u0435","iexcl":"\u00A1","iff":"\u21D4","ifr":"\uD835\uDD26","Ifr":"\u2111","Igrave":"\u00CC","igrave":"\u00EC","ii":"\u2148","iiiint":"\u2A0C","iiint":"\u222D","iinfin":"\u29DC","iiota":"\u2129","IJlig":"\u0132","ijlig":"\u0133","Imacr":"\u012A","imacr":"\u012B","image":"\u2111","ImaginaryI":"\u2148","imagline":"\u2110","imagpart":"\u2111","imath":"\u0131","Im":"\u2111","imof":"\u22B7","imped":"\u01B5","Implies":"\u21D2","incare":"\u2105","in":"\u2208","infin":"\u221E","infintie":"\u29DD","inodot":"\u0131","intcal":"\u22BA","int":"\u222B","Int":"\u222C","integers":"\u2124","Integral":"\u222B","intercal":"\u22BA","Intersection":"\u22C2","intlarhk":"\u2A17","intprod":"\u2A3C","InvisibleComma":"\u2063","InvisibleTimes":"\u2062","IOcy":"\u0401","iocy":"\u0451","Iogon":"\u012E","iogon":"\u012F","Iopf":"\uD835\uDD40","iopf":"\uD835\uDD5A","Iota":"\u0399","iota":"\u03B9","iprod":"\u2A3C","iquest":"\u00BF","iscr":"\uD835\uDCBE","Iscr":"\u2110","isin":"\u2208","isindot":"\u22F5","isinE":"\u22F9","isins":"\u22F4","isinsv":"\u22F3","isinv":"\u2208","it":"\u2062","Itilde":"\u0128","itilde":"\u0129","Iukcy":"\u0406","iukcy":"\u0456","Iuml":"\u00CF","iuml":"\u00EF","Jcirc":"\u0134","jcirc":"\u0135","Jcy":"\u0419","jcy":"\u0439","Jfr":"\uD835\uDD0D","jfr":"\uD835\uDD27","jmath":"\u0237","Jopf":"\uD835\uDD41","jopf":"\uD835\uDD5B","Jscr":"\uD835\uDCA5","jscr":"\uD835\uDCBF","Jsercy":"\u0408","jsercy":"\u0458","Jukcy":"\u0404","jukcy":"\u0454","Kappa":"\u039A","kappa":"\u03BA","kappav":"\u03F0","Kcedil":"\u0136","kcedil":"\u0137","Kcy":"\u041A","kcy":"\u043A","Kfr":"\uD835\uDD0E","kfr":"\uD835\uDD28","kgreen":"\u0138","KHcy":"\u0425","khcy":"\u0445","KJcy":"\u040C","kjcy":"\u045C","Kopf":"\uD835\uDD42","kopf":"\uD835\uDD5C","Kscr":"\uD835\uDCA6","kscr":"\uD835\uDCC0","lAarr":"\u21DA","Lacute":"\u0139","lacute":"\u013A","laemptyv":"\u29B4","lagran":"\u2112","Lambda":"\u039B","lambda":"\u03BB","lang":"\u27E8","Lang":"\u27EA","langd":"\u2991","langle":"\u27E8","lap":"\u2A85","Laplacetrf":"\u2112","laquo":"\u00AB","larrb":"\u21E4","larrbfs":"\u291F","larr":"\u2190","Larr":"\u219E","lArr":"\u21D0","larrfs":"\u291D","larrhk":"\u21A9","larrlp":"\u21AB","larrpl":"\u2939","larrsim":"\u2973","larrtl":"\u21A2","latail":"\u2919","lAtail":"\u291B","lat":"\u2AAB","late":"\u2AAD","lates":"\u2AAD\uFE00","lbarr":"\u290C","lBarr":"\u290E","lbbrk":"\u2772","lbrace":"{","lbrack":"[","lbrke":"\u298B","lbrksld":"\u298F","lbrkslu":"\u298D","Lcaron":"\u013D","lcaron":"\u013E","Lcedil":"\u013B","lcedil":"\u013C","lceil":"\u2308","lcub":"{","Lcy":"\u041B","lcy":"\u043B","ldca":"\u2936","ldquo":"\u201C","ldquor":"\u201E","ldrdhar":"\u2967","ldrushar":"\u294B","ldsh":"\u21B2","le":"\u2264","lE":"\u2266","LeftAngleBracket":"\u27E8","LeftArrowBar":"\u21E4","leftarrow":"\u2190","LeftArrow":"\u2190","Leftarrow":"\u21D0","LeftArrowRightArrow":"\u21C6","leftarrowtail":"\u21A2","LeftCeiling":"\u2308","LeftDoubleBracket":"\u27E6","LeftDownTeeVector":"\u2961","LeftDownVectorBar":"\u2959","LeftDownVector":"\u21C3","LeftFloor":"\u230A","leftharpoondown":"\u21BD","leftharpoonup":"\u21BC","leftleftarrows":"\u21C7","leftrightarrow":"\u2194","LeftRightArrow":"\u2194","Leftrightarrow":"\u21D4","leftrightarrows":"\u21C6","leftrightharpoons":"\u21CB","leftrightsquigarrow":"\u21AD","LeftRightVector":"\u294E","LeftTeeArrow":"\u21A4","LeftTee":"\u22A3","LeftTeeVector":"\u295A","leftthreetimes":"\u22CB","LeftTriangleBar":"\u29CF","LeftTriangle":"\u22B2","LeftTriangleEqual":"\u22B4","LeftUpDownVector":"\u2951","LeftUpTeeVector":"\u2960","LeftUpVectorBar":"\u2958","LeftUpVector":"\u21BF","LeftVectorBar":"\u2952","LeftVector":"\u21BC","lEg":"\u2A8B","leg":"\u22DA","leq":"\u2264","leqq":"\u2266","leqslant":"\u2A7D","lescc":"\u2AA8","les":"\u2A7D","lesdot":"\u2A7F","lesdoto":"\u2A81","lesdotor":"\u2A83","lesg":"\u22DA\uFE00","lesges":"\u2A93","lessapprox":"\u2A85","lessdot":"\u22D6","lesseqgtr":"\u22DA","lesseqqgtr":"\u2A8B","LessEqualGreater":"\u22DA","LessFullEqual":"\u2266","LessGreater":"\u2276","lessgtr":"\u2276","LessLess":"\u2AA1","lesssim":"\u2272","LessSlantEqual":"\u2A7D","LessTilde":"\u2272","lfisht":"\u297C","lfloor":"\u230A","Lfr":"\uD835\uDD0F","lfr":"\uD835\uDD29","lg":"\u2276","lgE":"\u2A91","lHar":"\u2962","lhard":"\u21BD","lharu":"\u21BC","lharul":"\u296A","lhblk":"\u2584","LJcy":"\u0409","ljcy":"\u0459","llarr":"\u21C7","ll":"\u226A","Ll":"\u22D8","llcorner":"\u231E","Lleftarrow":"\u21DA","llhard":"\u296B","lltri":"\u25FA","Lmidot":"\u013F","lmidot":"\u0140","lmoustache":"\u23B0","lmoust":"\u23B0","lnap":"\u2A89","lnapprox":"\u2A89","lne":"\u2A87","lnE":"\u2268","lneq":"\u2A87","lneqq":"\u2268","lnsim":"\u22E6","loang":"\u27EC","loarr":"\u21FD","lobrk":"\u27E6","longleftarrow":"\u27F5","LongLeftArrow":"\u27F5","Longleftarrow":"\u27F8","longleftrightarrow":"\u27F7","LongLeftRightArrow":"\u27F7","Longleftrightarrow":"\u27FA","longmapsto":"\u27FC","longrightarrow":"\u27F6","LongRightArrow":"\u27F6","Longrightarrow":"\u27F9","looparrowleft":"\u21AB","looparrowright":"\u21AC","lopar":"\u2985","Lopf":"\uD835\uDD43","lopf":"\uD835\uDD5D","loplus":"\u2A2D","lotimes":"\u2A34","lowast":"\u2217","lowbar":"_","LowerLeftArrow":"\u2199","LowerRightArrow":"\u2198","loz":"\u25CA","lozenge":"\u25CA","lozf":"\u29EB","lpar":"(","lparlt":"\u2993","lrarr":"\u21C6","lrcorner":"\u231F","lrhar":"\u21CB","lrhard":"\u296D","lrm":"\u200E","lrtri":"\u22BF","lsaquo":"\u2039","lscr":"\uD835\uDCC1","Lscr":"\u2112","lsh":"\u21B0","Lsh":"\u21B0","lsim":"\u2272","lsime":"\u2A8D","lsimg":"\u2A8F","lsqb":"[","lsquo":"\u2018","lsquor":"\u201A","Lstrok":"\u0141","lstrok":"\u0142","ltcc":"\u2AA6","ltcir":"\u2A79","lt":"<","LT":"<","Lt":"\u226A","ltdot":"\u22D6","lthree":"\u22CB","ltimes":"\u22C9","ltlarr":"\u2976","ltquest":"\u2A7B","ltri":"\u25C3","ltrie":"\u22B4","ltrif":"\u25C2","ltrPar":"\u2996","lurdshar":"\u294A","luruhar":"\u2966","lvertneqq":"\u2268\uFE00","lvnE":"\u2268\uFE00","macr":"\u00AF","male":"\u2642","malt":"\u2720","maltese":"\u2720","Map":"\u2905","map":"\u21A6","mapsto":"\u21A6","mapstodown":"\u21A7","mapstoleft":"\u21A4","mapstoup":"\u21A5","marker":"\u25AE","mcomma":"\u2A29","Mcy":"\u041C","mcy":"\u043C","mdash":"\u2014","mDDot":"\u223A","measuredangle":"\u2221","MediumSpace":"\u205F","Mellintrf":"\u2133","Mfr":"\uD835\uDD10","mfr":"\uD835\uDD2A","mho":"\u2127","micro":"\u00B5","midast":"*","midcir":"\u2AF0","mid":"\u2223","middot":"\u00B7","minusb":"\u229F","minus":"\u2212","minusd":"\u2238","minusdu":"\u2A2A","MinusPlus":"\u2213","mlcp":"\u2ADB","mldr":"\u2026","mnplus":"\u2213","models":"\u22A7","Mopf":"\uD835\uDD44","mopf":"\uD835\uDD5E","mp":"\u2213","mscr":"\uD835\uDCC2","Mscr":"\u2133","mstpos":"\u223E","Mu":"\u039C","mu":"\u03BC","multimap":"\u22B8","mumap":"\u22B8","nabla":"\u2207","Nacute":"\u0143","nacute":"\u0144","nang":"\u2220\u20D2","nap":"\u2249","napE":"\u2A70\u0338","napid":"\u224B\u0338","napos":"\u0149","napprox":"\u2249","natural":"\u266E","naturals":"\u2115","natur":"\u266E","nbsp":"\u00A0","nbump":"\u224E\u0338","nbumpe":"\u224F\u0338","ncap":"\u2A43","Ncaron":"\u0147","ncaron":"\u0148","Ncedil":"\u0145","ncedil":"\u0146","ncong":"\u2247","ncongdot":"\u2A6D\u0338","ncup":"\u2A42","Ncy":"\u041D","ncy":"\u043D","ndash":"\u2013","nearhk":"\u2924","nearr":"\u2197","neArr":"\u21D7","nearrow":"\u2197","ne":"\u2260","nedot":"\u2250\u0338","NegativeMediumSpace":"\u200B","NegativeThickSpace":"\u200B","NegativeThinSpace":"\u200B","NegativeVeryThinSpace":"\u200B","nequiv":"\u2262","nesear":"\u2928","nesim":"\u2242\u0338","NestedGreaterGreater":"\u226B","NestedLessLess":"\u226A","NewLine":"\n","nexist":"\u2204","nexists":"\u2204","Nfr":"\uD835\uDD11","nfr":"\uD835\uDD2B","ngE":"\u2267\u0338","nge":"\u2271","ngeq":"\u2271","ngeqq":"\u2267\u0338","ngeqslant":"\u2A7E\u0338","nges":"\u2A7E\u0338","nGg":"\u22D9\u0338","ngsim":"\u2275","nGt":"\u226B\u20D2","ngt":"\u226F","ngtr":"\u226F","nGtv":"\u226B\u0338","nharr":"\u21AE","nhArr":"\u21CE","nhpar":"\u2AF2","ni":"\u220B","nis":"\u22FC","nisd":"\u22FA","niv":"\u220B","NJcy":"\u040A","njcy":"\u045A","nlarr":"\u219A","nlArr":"\u21CD","nldr":"\u2025","nlE":"\u2266\u0338","nle":"\u2270","nleftarrow":"\u219A","nLeftarrow":"\u21CD","nleftrightarrow":"\u21AE","nLeftrightarrow":"\u21CE","nleq":"\u2270","nleqq":"\u2266\u0338","nleqslant":"\u2A7D\u0338","nles":"\u2A7D\u0338","nless":"\u226E","nLl":"\u22D8\u0338","nlsim":"\u2274","nLt":"\u226A\u20D2","nlt":"\u226E","nltri":"\u22EA","nltrie":"\u22EC","nLtv":"\u226A\u0338","nmid":"\u2224","NoBreak":"\u2060","NonBreakingSpace":"\u00A0","nopf":"\uD835\uDD5F","Nopf":"\u2115","Not":"\u2AEC","not":"\u00AC","NotCongruent":"\u2262","NotCupCap":"\u226D","NotDoubleVerticalBar":"\u2226","NotElement":"\u2209","NotEqual":"\u2260","NotEqualTilde":"\u2242\u0338","NotExists":"\u2204","NotGreater":"\u226F","NotGreaterEqual":"\u2271","NotGreaterFullEqual":"\u2267\u0338","NotGreaterGreater":"\u226B\u0338","NotGreaterLess":"\u2279","NotGreaterSlantEqual":"\u2A7E\u0338","NotGreaterTilde":"\u2275","NotHumpDownHump":"\u224E\u0338","NotHumpEqual":"\u224F\u0338","notin":"\u2209","notindot":"\u22F5\u0338","notinE":"\u22F9\u0338","notinva":"\u2209","notinvb":"\u22F7","notinvc":"\u22F6","NotLeftTriangleBar":"\u29CF\u0338","NotLeftTriangle":"\u22EA","NotLeftTriangleEqual":"\u22EC","NotLess":"\u226E","NotLessEqual":"\u2270","NotLessGreater":"\u2278","NotLessLess":"\u226A\u0338","NotLessSlantEqual":"\u2A7D\u0338","NotLessTilde":"\u2274","NotNestedGreaterGreater":"\u2AA2\u0338","NotNestedLessLess":"\u2AA1\u0338","notni":"\u220C","notniva":"\u220C","notnivb":"\u22FE","notnivc":"\u22FD","NotPrecedes":"\u2280","NotPrecedesEqual":"\u2AAF\u0338","NotPrecedesSlantEqual":"\u22E0","NotReverseElement":"\u220C","NotRightTriangleBar":"\u29D0\u0338","NotRightTriangle":"\u22EB","NotRightTriangleEqual":"\u22ED","NotSquareSubset":"\u228F\u0338","NotSquareSubsetEqual":"\u22E2","NotSquareSuperset":"\u2290\u0338","NotSquareSupersetEqual":"\u22E3","NotSubset":"\u2282\u20D2","NotSubsetEqual":"\u2288","NotSucceeds":"\u2281","NotSucceedsEqual":"\u2AB0\u0338","NotSucceedsSlantEqual":"\u22E1","NotSucceedsTilde":"\u227F\u0338","NotSuperset":"\u2283\u20D2","NotSupersetEqual":"\u2289","NotTilde":"\u2241","NotTildeEqual":"\u2244","NotTildeFullEqual":"\u2247","NotTildeTilde":"\u2249","NotVerticalBar":"\u2224","nparallel":"\u2226","npar":"\u2226","nparsl":"\u2AFD\u20E5","npart":"\u2202\u0338","npolint":"\u2A14","npr":"\u2280","nprcue":"\u22E0","nprec":"\u2280","npreceq":"\u2AAF\u0338","npre":"\u2AAF\u0338","nrarrc":"\u2933\u0338","nrarr":"\u219B","nrArr":"\u21CF","nrarrw":"\u219D\u0338","nrightarrow":"\u219B","nRightarrow":"\u21CF","nrtri":"\u22EB","nrtrie":"\u22ED","nsc":"\u2281","nsccue":"\u22E1","nsce":"\u2AB0\u0338","Nscr":"\uD835\uDCA9","nscr":"\uD835\uDCC3","nshortmid":"\u2224","nshortparallel":"\u2226","nsim":"\u2241","nsime":"\u2244","nsimeq":"\u2244","nsmid":"\u2224","nspar":"\u2226","nsqsube":"\u22E2","nsqsupe":"\u22E3","nsub":"\u2284","nsubE":"\u2AC5\u0338","nsube":"\u2288","nsubset":"\u2282\u20D2","nsubseteq":"\u2288","nsubseteqq":"\u2AC5\u0338","nsucc":"\u2281","nsucceq":"\u2AB0\u0338","nsup":"\u2285","nsupE":"\u2AC6\u0338","nsupe":"\u2289","nsupset":"\u2283\u20D2","nsupseteq":"\u2289","nsupseteqq":"\u2AC6\u0338","ntgl":"\u2279","Ntilde":"\u00D1","ntilde":"\u00F1","ntlg":"\u2278","ntriangleleft":"\u22EA","ntrianglelefteq":"\u22EC","ntriangleright":"\u22EB","ntrianglerighteq":"\u22ED","Nu":"\u039D","nu":"\u03BD","num":"#","numero":"\u2116","numsp":"\u2007","nvap":"\u224D\u20D2","nvdash":"\u22AC","nvDash":"\u22AD","nVdash":"\u22AE","nVDash":"\u22AF","nvge":"\u2265\u20D2","nvgt":">\u20D2","nvHarr":"\u2904","nvinfin":"\u29DE","nvlArr":"\u2902","nvle":"\u2264\u20D2","nvlt":"<\u20D2","nvltrie":"\u22B4\u20D2","nvrArr":"\u2903","nvrtrie":"\u22B5\u20D2","nvsim":"\u223C\u20D2","nwarhk":"\u2923","nwarr":"\u2196","nwArr":"\u21D6","nwarrow":"\u2196","nwnear":"\u2927","Oacute":"\u00D3","oacute":"\u00F3","oast":"\u229B","Ocirc":"\u00D4","ocirc":"\u00F4","ocir":"\u229A","Ocy":"\u041E","ocy":"\u043E","odash":"\u229D","Odblac":"\u0150","odblac":"\u0151","odiv":"\u2A38","odot":"\u2299","odsold":"\u29BC","OElig":"\u0152","oelig":"\u0153","ofcir":"\u29BF","Ofr":"\uD835\uDD12","ofr":"\uD835\uDD2C","ogon":"\u02DB","Ograve":"\u00D2","ograve":"\u00F2","ogt":"\u29C1","ohbar":"\u29B5","ohm":"\u03A9","oint":"\u222E","olarr":"\u21BA","olcir":"\u29BE","olcross":"\u29BB","oline":"\u203E","olt":"\u29C0","Omacr":"\u014C","omacr":"\u014D","Omega":"\u03A9","omega":"\u03C9","Omicron":"\u039F","omicron":"\u03BF","omid":"\u29B6","ominus":"\u2296","Oopf":"\uD835\uDD46","oopf":"\uD835\uDD60","opar":"\u29B7","OpenCurlyDoubleQuote":"\u201C","OpenCurlyQuote":"\u2018","operp":"\u29B9","oplus":"\u2295","orarr":"\u21BB","Or":"\u2A54","or":"\u2228","ord":"\u2A5D","order":"\u2134","orderof":"\u2134","ordf":"\u00AA","ordm":"\u00BA","origof":"\u22B6","oror":"\u2A56","orslope":"\u2A57","orv":"\u2A5B","oS":"\u24C8","Oscr":"\uD835\uDCAA","oscr":"\u2134","Oslash":"\u00D8","oslash":"\u00F8","osol":"\u2298","Otilde":"\u00D5","otilde":"\u00F5","otimesas":"\u2A36","Otimes":"\u2A37","otimes":"\u2297","Ouml":"\u00D6","ouml":"\u00F6","ovbar":"\u233D","OverBar":"\u203E","OverBrace":"\u23DE","OverBracket":"\u23B4","OverParenthesis":"\u23DC","para":"\u00B6","parallel":"\u2225","par":"\u2225","parsim":"\u2AF3","parsl":"\u2AFD","part":"\u2202","PartialD":"\u2202","Pcy":"\u041F","pcy":"\u043F","percnt":"%","period":".","permil":"\u2030","perp":"\u22A5","pertenk":"\u2031","Pfr":"\uD835\uDD13","pfr":"\uD835\uDD2D","Phi":"\u03A6","phi":"\u03C6","phiv":"\u03D5","phmmat":"\u2133","phone":"\u260E","Pi":"\u03A0","pi":"\u03C0","pitchfork":"\u22D4","piv":"\u03D6","planck":"\u210F","planckh":"\u210E","plankv":"\u210F","plusacir":"\u2A23","plusb":"\u229E","pluscir":"\u2A22","plus":"+","plusdo":"\u2214","plusdu":"\u2A25","pluse":"\u2A72","PlusMinus":"\u00B1","plusmn":"\u00B1","plussim":"\u2A26","plustwo":"\u2A27","pm":"\u00B1","Poincareplane":"\u210C","pointint":"\u2A15","popf":"\uD835\uDD61","Popf":"\u2119","pound":"\u00A3","prap":"\u2AB7","Pr":"\u2ABB","pr":"\u227A","prcue":"\u227C","precapprox":"\u2AB7","prec":"\u227A","preccurlyeq":"\u227C","Precedes":"\u227A","PrecedesEqual":"\u2AAF","PrecedesSlantEqual":"\u227C","PrecedesTilde":"\u227E","preceq":"\u2AAF","precnapprox":"\u2AB9","precneqq":"\u2AB5","precnsim":"\u22E8","pre":"\u2AAF","prE":"\u2AB3","precsim":"\u227E","prime":"\u2032","Prime":"\u2033","primes":"\u2119","prnap":"\u2AB9","prnE":"\u2AB5","prnsim":"\u22E8","prod":"\u220F","Product":"\u220F","profalar":"\u232E","profline":"\u2312","profsurf":"\u2313","prop":"\u221D","Proportional":"\u221D","Proportion":"\u2237","propto":"\u221D","prsim":"\u227E","prurel":"\u22B0","Pscr":"\uD835\uDCAB","pscr":"\uD835\uDCC5","Psi":"\u03A8","psi":"\u03C8","puncsp":"\u2008","Qfr":"\uD835\uDD14","qfr":"\uD835\uDD2E","qint":"\u2A0C","qopf":"\uD835\uDD62","Qopf":"\u211A","qprime":"\u2057","Qscr":"\uD835\uDCAC","qscr":"\uD835\uDCC6","quaternions":"\u210D","quatint":"\u2A16","quest":"?","questeq":"\u225F","quot":"\"","QUOT":"\"","rAarr":"\u21DB","race":"\u223D\u0331","Racute":"\u0154","racute":"\u0155","radic":"\u221A","raemptyv":"\u29B3","rang":"\u27E9","Rang":"\u27EB","rangd":"\u2992","range":"\u29A5","rangle":"\u27E9","raquo":"\u00BB","rarrap":"\u2975","rarrb":"\u21E5","rarrbfs":"\u2920","rarrc":"\u2933","rarr":"\u2192","Rarr":"\u21A0","rArr":"\u21D2","rarrfs":"\u291E","rarrhk":"\u21AA","rarrlp":"\u21AC","rarrpl":"\u2945","rarrsim":"\u2974","Rarrtl":"\u2916","rarrtl":"\u21A3","rarrw":"\u219D","ratail":"\u291A","rAtail":"\u291C","ratio":"\u2236","rationals":"\u211A","rbarr":"\u290D","rBarr":"\u290F","RBarr":"\u2910","rbbrk":"\u2773","rbrace":"}","rbrack":"]","rbrke":"\u298C","rbrksld":"\u298E","rbrkslu":"\u2990","Rcaron":"\u0158","rcaron":"\u0159","Rcedil":"\u0156","rcedil":"\u0157","rceil":"\u2309","rcub":"}","Rcy":"\u0420","rcy":"\u0440","rdca":"\u2937","rdldhar":"\u2969","rdquo":"\u201D","rdquor":"\u201D","rdsh":"\u21B3","real":"\u211C","realine":"\u211B","realpart":"\u211C","reals":"\u211D","Re":"\u211C","rect":"\u25AD","reg":"\u00AE","REG":"\u00AE","ReverseElement":"\u220B","ReverseEquilibrium":"\u21CB","ReverseUpEquilibrium":"\u296F","rfisht":"\u297D","rfloor":"\u230B","rfr":"\uD835\uDD2F","Rfr":"\u211C","rHar":"\u2964","rhard":"\u21C1","rharu":"\u21C0","rharul":"\u296C","Rho":"\u03A1","rho":"\u03C1","rhov":"\u03F1","RightAngleBracket":"\u27E9","RightArrowBar":"\u21E5","rightarrow":"\u2192","RightArrow":"\u2192","Rightarrow":"\u21D2","RightArrowLeftArrow":"\u21C4","rightarrowtail":"\u21A3","RightCeiling":"\u2309","RightDoubleBracket":"\u27E7","RightDownTeeVector":"\u295D","RightDownVectorBar":"\u2955","RightDownVector":"\u21C2","RightFloor":"\u230B","rightharpoondown":"\u21C1","rightharpoonup":"\u21C0","rightleftarrows":"\u21C4","rightleftharpoons":"\u21CC","rightrightarrows":"\u21C9","rightsquigarrow":"\u219D","RightTeeArrow":"\u21A6","RightTee":"\u22A2","RightTeeVector":"\u295B","rightthreetimes":"\u22CC","RightTriangleBar":"\u29D0","RightTriangle":"\u22B3","RightTriangleEqual":"\u22B5","RightUpDownVector":"\u294F","RightUpTeeVector":"\u295C","RightUpVectorBar":"\u2954","RightUpVector":"\u21BE","RightVectorBar":"\u2953","RightVector":"\u21C0","ring":"\u02DA","risingdotseq":"\u2253","rlarr":"\u21C4","rlhar":"\u21CC","rlm":"\u200F","rmoustache":"\u23B1","rmoust":"\u23B1","rnmid":"\u2AEE","roang":"\u27ED","roarr":"\u21FE","robrk":"\u27E7","ropar":"\u2986","ropf":"\uD835\uDD63","Ropf":"\u211D","roplus":"\u2A2E","rotimes":"\u2A35","RoundImplies":"\u2970","rpar":")","rpargt":"\u2994","rppolint":"\u2A12","rrarr":"\u21C9","Rrightarrow":"\u21DB","rsaquo":"\u203A","rscr":"\uD835\uDCC7","Rscr":"\u211B","rsh":"\u21B1","Rsh":"\u21B1","rsqb":"]","rsquo":"\u2019","rsquor":"\u2019","rthree":"\u22CC","rtimes":"\u22CA","rtri":"\u25B9","rtrie":"\u22B5","rtrif":"\u25B8","rtriltri":"\u29CE","RuleDelayed":"\u29F4","ruluhar":"\u2968","rx":"\u211E","Sacute":"\u015A","sacute":"\u015B","sbquo":"\u201A","scap":"\u2AB8","Scaron":"\u0160","scaron":"\u0161","Sc":"\u2ABC","sc":"\u227B","sccue":"\u227D","sce":"\u2AB0","scE":"\u2AB4","Scedil":"\u015E","scedil":"\u015F","Scirc":"\u015C","scirc":"\u015D","scnap":"\u2ABA","scnE":"\u2AB6","scnsim":"\u22E9","scpolint":"\u2A13","scsim":"\u227F","Scy":"\u0421","scy":"\u0441","sdotb":"\u22A1","sdot":"\u22C5","sdote":"\u2A66","searhk":"\u2925","searr":"\u2198","seArr":"\u21D8","searrow":"\u2198","sect":"\u00A7","semi":";","seswar":"\u2929","setminus":"\u2216","setmn":"\u2216","sext":"\u2736","Sfr":"\uD835\uDD16","sfr":"\uD835\uDD30","sfrown":"\u2322","sharp":"\u266F","SHCHcy":"\u0429","shchcy":"\u0449","SHcy":"\u0428","shcy":"\u0448","ShortDownArrow":"\u2193","ShortLeftArrow":"\u2190","shortmid":"\u2223","shortparallel":"\u2225","ShortRightArrow":"\u2192","ShortUpArrow":"\u2191","shy":"\u00AD","Sigma":"\u03A3","sigma":"\u03C3","sigmaf":"\u03C2","sigmav":"\u03C2","sim":"\u223C","simdot":"\u2A6A","sime":"\u2243","simeq":"\u2243","simg":"\u2A9E","simgE":"\u2AA0","siml":"\u2A9D","simlE":"\u2A9F","simne":"\u2246","simplus":"\u2A24","simrarr":"\u2972","slarr":"\u2190","SmallCircle":"\u2218","smallsetminus":"\u2216","smashp":"\u2A33","smeparsl":"\u29E4","smid":"\u2223","smile":"\u2323","smt":"\u2AAA","smte":"\u2AAC","smtes":"\u2AAC\uFE00","SOFTcy":"\u042C","softcy":"\u044C","solbar":"\u233F","solb":"\u29C4","sol":"/","Sopf":"\uD835\uDD4A","sopf":"\uD835\uDD64","spades":"\u2660","spadesuit":"\u2660","spar":"\u2225","sqcap":"\u2293","sqcaps":"\u2293\uFE00","sqcup":"\u2294","sqcups":"\u2294\uFE00","Sqrt":"\u221A","sqsub":"\u228F","sqsube":"\u2291","sqsubset":"\u228F","sqsubseteq":"\u2291","sqsup":"\u2290","sqsupe":"\u2292","sqsupset":"\u2290","sqsupseteq":"\u2292","square":"\u25A1","Square":"\u25A1","SquareIntersection":"\u2293","SquareSubset":"\u228F","SquareSubsetEqual":"\u2291","SquareSuperset":"\u2290","SquareSupersetEqual":"\u2292","SquareUnion":"\u2294","squarf":"\u25AA","squ":"\u25A1","squf":"\u25AA","srarr":"\u2192","Sscr":"\uD835\uDCAE","sscr":"\uD835\uDCC8","ssetmn":"\u2216","ssmile":"\u2323","sstarf":"\u22C6","Star":"\u22C6","star":"\u2606","starf":"\u2605","straightepsilon":"\u03F5","straightphi":"\u03D5","strns":"\u00AF","sub":"\u2282","Sub":"\u22D0","subdot":"\u2ABD","subE":"\u2AC5","sube":"\u2286","subedot":"\u2AC3","submult":"\u2AC1","subnE":"\u2ACB","subne":"\u228A","subplus":"\u2ABF","subrarr":"\u2979","subset":"\u2282","Subset":"\u22D0","subseteq":"\u2286","subseteqq":"\u2AC5","SubsetEqual":"\u2286","subsetneq":"\u228A","subsetneqq":"\u2ACB","subsim":"\u2AC7","subsub":"\u2AD5","subsup":"\u2AD3","succapprox":"\u2AB8","succ":"\u227B","succcurlyeq":"\u227D","Succeeds":"\u227B","SucceedsEqual":"\u2AB0","SucceedsSlantEqual":"\u227D","SucceedsTilde":"\u227F","succeq":"\u2AB0","succnapprox":"\u2ABA","succneqq":"\u2AB6","succnsim":"\u22E9","succsim":"\u227F","SuchThat":"\u220B","sum":"\u2211","Sum":"\u2211","sung":"\u266A","sup1":"\u00B9","sup2":"\u00B2","sup3":"\u00B3","sup":"\u2283","Sup":"\u22D1","supdot":"\u2ABE","supdsub":"\u2AD8","supE":"\u2AC6","supe":"\u2287","supedot":"\u2AC4","Superset":"\u2283","SupersetEqual":"\u2287","suphsol":"\u27C9","suphsub":"\u2AD7","suplarr":"\u297B","supmult":"\u2AC2","supnE":"\u2ACC","supne":"\u228B","supplus":"\u2AC0","supset":"\u2283","Supset":"\u22D1","supseteq":"\u2287","supseteqq":"\u2AC6","supsetneq":"\u228B","supsetneqq":"\u2ACC","supsim":"\u2AC8","supsub":"\u2AD4","supsup":"\u2AD6","swarhk":"\u2926","swarr":"\u2199","swArr":"\u21D9","swarrow":"\u2199","swnwar":"\u292A","szlig":"\u00DF","Tab":"\t","target":"\u2316","Tau":"\u03A4","tau":"\u03C4","tbrk":"\u23B4","Tcaron":"\u0164","tcaron":"\u0165","Tcedil":"\u0162","tcedil":"\u0163","Tcy":"\u0422","tcy":"\u0442","tdot":"\u20DB","telrec":"\u2315","Tfr":"\uD835\uDD17","tfr":"\uD835\uDD31","there4":"\u2234","therefore":"\u2234","Therefore":"\u2234","Theta":"\u0398","theta":"\u03B8","thetasym":"\u03D1","thetav":"\u03D1","thickapprox":"\u2248","thicksim":"\u223C","ThickSpace":"\u205F\u200A","ThinSpace":"\u2009","thinsp":"\u2009","thkap":"\u2248","thksim":"\u223C","THORN":"\u00DE","thorn":"\u00FE","tilde":"\u02DC","Tilde":"\u223C","TildeEqual":"\u2243","TildeFullEqual":"\u2245","TildeTilde":"\u2248","timesbar":"\u2A31","timesb":"\u22A0","times":"\u00D7","timesd":"\u2A30","tint":"\u222D","toea":"\u2928","topbot":"\u2336","topcir":"\u2AF1","top":"\u22A4","Topf":"\uD835\uDD4B","topf":"\uD835\uDD65","topfork":"\u2ADA","tosa":"\u2929","tprime":"\u2034","trade":"\u2122","TRADE":"\u2122","triangle":"\u25B5","triangledown":"\u25BF","triangleleft":"\u25C3","trianglelefteq":"\u22B4","triangleq":"\u225C","triangleright":"\u25B9","trianglerighteq":"\u22B5","tridot":"\u25EC","trie":"\u225C","triminus":"\u2A3A","TripleDot":"\u20DB","triplus":"\u2A39","trisb":"\u29CD","tritime":"\u2A3B","trpezium":"\u23E2","Tscr":"\uD835\uDCAF","tscr":"\uD835\uDCC9","TScy":"\u0426","tscy":"\u0446","TSHcy":"\u040B","tshcy":"\u045B","Tstrok":"\u0166","tstrok":"\u0167","twixt":"\u226C","twoheadleftarrow":"\u219E","twoheadrightarrow":"\u21A0","Uacute":"\u00DA","uacute":"\u00FA","uarr":"\u2191","Uarr":"\u219F","uArr":"\u21D1","Uarrocir":"\u2949","Ubrcy":"\u040E","ubrcy":"\u045E","Ubreve":"\u016C","ubreve":"\u016D","Ucirc":"\u00DB","ucirc":"\u00FB","Ucy":"\u0423","ucy":"\u0443","udarr":"\u21C5","Udblac":"\u0170","udblac":"\u0171","udhar":"\u296E","ufisht":"\u297E","Ufr":"\uD835\uDD18","ufr":"\uD835\uDD32","Ugrave":"\u00D9","ugrave":"\u00F9","uHar":"\u2963","uharl":"\u21BF","uharr":"\u21BE","uhblk":"\u2580","ulcorn":"\u231C","ulcorner":"\u231C","ulcrop":"\u230F","ultri":"\u25F8","Umacr":"\u016A","umacr":"\u016B","uml":"\u00A8","UnderBar":"_","UnderBrace":"\u23DF","UnderBracket":"\u23B5","UnderParenthesis":"\u23DD","Union":"\u22C3","UnionPlus":"\u228E","Uogon":"\u0172","uogon":"\u0173","Uopf":"\uD835\uDD4C","uopf":"\uD835\uDD66","UpArrowBar":"\u2912","uparrow":"\u2191","UpArrow":"\u2191","Uparrow":"\u21D1","UpArrowDownArrow":"\u21C5","updownarrow":"\u2195","UpDownArrow":"\u2195","Updownarrow":"\u21D5","UpEquilibrium":"\u296E","upharpoonleft":"\u21BF","upharpoonright":"\u21BE","uplus":"\u228E","UpperLeftArrow":"\u2196","UpperRightArrow":"\u2197","upsi":"\u03C5","Upsi":"\u03D2","upsih":"\u03D2","Upsilon":"\u03A5","upsilon":"\u03C5","UpTeeArrow":"\u21A5","UpTee":"\u22A5","upuparrows":"\u21C8","urcorn":"\u231D","urcorner":"\u231D","urcrop":"\u230E","Uring":"\u016E","uring":"\u016F","urtri":"\u25F9","Uscr":"\uD835\uDCB0","uscr":"\uD835\uDCCA","utdot":"\u22F0","Utilde":"\u0168","utilde":"\u0169","utri":"\u25B5","utrif":"\u25B4","uuarr":"\u21C8","Uuml":"\u00DC","uuml":"\u00FC","uwangle":"\u29A7","vangrt":"\u299C","varepsilon":"\u03F5","varkappa":"\u03F0","varnothing":"\u2205","varphi":"\u03D5","varpi":"\u03D6","varpropto":"\u221D","varr":"\u2195","vArr":"\u21D5","varrho":"\u03F1","varsigma":"\u03C2","varsubsetneq":"\u228A\uFE00","varsubsetneqq":"\u2ACB\uFE00","varsupsetneq":"\u228B\uFE00","varsupsetneqq":"\u2ACC\uFE00","vartheta":"\u03D1","vartriangleleft":"\u22B2","vartriangleright":"\u22B3","vBar":"\u2AE8","Vbar":"\u2AEB","vBarv":"\u2AE9","Vcy":"\u0412","vcy":"\u0432","vdash":"\u22A2","vDash":"\u22A8","Vdash":"\u22A9","VDash":"\u22AB","Vdashl":"\u2AE6","veebar":"\u22BB","vee":"\u2228","Vee":"\u22C1","veeeq":"\u225A","vellip":"\u22EE","verbar":"|","Verbar":"\u2016","vert":"|","Vert":"\u2016","VerticalBar":"\u2223","VerticalLine":"|","VerticalSeparator":"\u2758","VerticalTilde":"\u2240","VeryThinSpace":"\u200A","Vfr":"\uD835\uDD19","vfr":"\uD835\uDD33","vltri":"\u22B2","vnsub":"\u2282\u20D2","vnsup":"\u2283\u20D2","Vopf":"\uD835\uDD4D","vopf":"\uD835\uDD67","vprop":"\u221D","vrtri":"\u22B3","Vscr":"\uD835\uDCB1","vscr":"\uD835\uDCCB","vsubnE":"\u2ACB\uFE00","vsubne":"\u228A\uFE00","vsupnE":"\u2ACC\uFE00","vsupne":"\u228B\uFE00","Vvdash":"\u22AA","vzigzag":"\u299A","Wcirc":"\u0174","wcirc":"\u0175","wedbar":"\u2A5F","wedge":"\u2227","Wedge":"\u22C0","wedgeq":"\u2259","weierp":"\u2118","Wfr":"\uD835\uDD1A","wfr":"\uD835\uDD34","Wopf":"\uD835\uDD4E","wopf":"\uD835\uDD68","wp":"\u2118","wr":"\u2240","wreath":"\u2240","Wscr":"\uD835\uDCB2","wscr":"\uD835\uDCCC","xcap":"\u22C2","xcirc":"\u25EF","xcup":"\u22C3","xdtri":"\u25BD","Xfr":"\uD835\uDD1B","xfr":"\uD835\uDD35","xharr":"\u27F7","xhArr":"\u27FA","Xi":"\u039E","xi":"\u03BE","xlarr":"\u27F5","xlArr":"\u27F8","xmap":"\u27FC","xnis":"\u22FB","xodot":"\u2A00","Xopf":"\uD835\uDD4F","xopf":"\uD835\uDD69","xoplus":"\u2A01","xotime":"\u2A02","xrarr":"\u27F6","xrArr":"\u27F9","Xscr":"\uD835\uDCB3","xscr":"\uD835\uDCCD","xsqcup":"\u2A06","xuplus":"\u2A04","xutri":"\u25B3","xvee":"\u22C1","xwedge":"\u22C0","Yacute":"\u00DD","yacute":"\u00FD","YAcy":"\u042F","yacy":"\u044F","Ycirc":"\u0176","ycirc":"\u0177","Ycy":"\u042B","ycy":"\u044B","yen":"\u00A5","Yfr":"\uD835\uDD1C","yfr":"\uD835\uDD36","YIcy":"\u0407","yicy":"\u0457","Yopf":"\uD835\uDD50","yopf":"\uD835\uDD6A","Yscr":"\uD835\uDCB4","yscr":"\uD835\uDCCE","YUcy":"\u042E","yucy":"\u044E","yuml":"\u00FF","Yuml":"\u0178","Zacute":"\u0179","zacute":"\u017A","Zcaron":"\u017D","zcaron":"\u017E","Zcy":"\u0417","zcy":"\u0437","Zdot":"\u017B","zdot":"\u017C","zeetrf":"\u2128","ZeroWidthSpace":"\u200B","Zeta":"\u0396","zeta":"\u03B6","zfr":"\uD835\uDD37","Zfr":"\u2128","ZHcy":"\u0416","zhcy":"\u0436","zigrarr":"\u21DD","zopf":"\uD835\uDD6B","Zopf":"\u2124","Zscr":"\uD835\uDCB5","zscr":"\uD835\uDCCF","zwj":"\u200D","zwnj":"\u200C"}
-},{}],122:[function(_dereq_,module,exports){
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/entities/maps/legacy.json":[function(_dereq_,module,exports){
 module.exports={"Aacute":"\u00C1","aacute":"\u00E1","Acirc":"\u00C2","acirc":"\u00E2","acute":"\u00B4","AElig":"\u00C6","aelig":"\u00E6","Agrave":"\u00C0","agrave":"\u00E0","amp":"&","AMP":"&","Aring":"\u00C5","aring":"\u00E5","Atilde":"\u00C3","atilde":"\u00E3","Auml":"\u00C4","auml":"\u00E4","brvbar":"\u00A6","Ccedil":"\u00C7","ccedil":"\u00E7","cedil":"\u00B8","cent":"\u00A2","copy":"\u00A9","COPY":"\u00A9","curren":"\u00A4","deg":"\u00B0","divide":"\u00F7","Eacute":"\u00C9","eacute":"\u00E9","Ecirc":"\u00CA","ecirc":"\u00EA","Egrave":"\u00C8","egrave":"\u00E8","ETH":"\u00D0","eth":"\u00F0","Euml":"\u00CB","euml":"\u00EB","frac12":"\u00BD","frac14":"\u00BC","frac34":"\u00BE","gt":">","GT":">","Iacute":"\u00CD","iacute":"\u00ED","Icirc":"\u00CE","icirc":"\u00EE","iexcl":"\u00A1","Igrave":"\u00CC","igrave":"\u00EC","iquest":"\u00BF","Iuml":"\u00CF","iuml":"\u00EF","laquo":"\u00AB","lt":"<","LT":"<","macr":"\u00AF","micro":"\u00B5","middot":"\u00B7","nbsp":"\u00A0","not":"\u00AC","Ntilde":"\u00D1","ntilde":"\u00F1","Oacute":"\u00D3","oacute":"\u00F3","Ocirc":"\u00D4","ocirc":"\u00F4","Ograve":"\u00D2","ograve":"\u00F2","ordf":"\u00AA","ordm":"\u00BA","Oslash":"\u00D8","oslash":"\u00F8","Otilde":"\u00D5","otilde":"\u00F5","Ouml":"\u00D6","ouml":"\u00F6","para":"\u00B6","plusmn":"\u00B1","pound":"\u00A3","quot":"\"","QUOT":"\"","raquo":"\u00BB","reg":"\u00AE","REG":"\u00AE","sect":"\u00A7","shy":"\u00AD","sup1":"\u00B9","sup2":"\u00B2","sup3":"\u00B3","szlig":"\u00DF","THORN":"\u00DE","thorn":"\u00FE","times":"\u00D7","Uacute":"\u00DA","uacute":"\u00FA","Ucirc":"\u00DB","ucirc":"\u00FB","Ugrave":"\u00D9","ugrave":"\u00F9","uml":"\u00A8","Uuml":"\u00DC","uuml":"\u00FC","Yacute":"\u00DD","yacute":"\u00FD","yen":"\u00A5","yuml":"\u00FF"}
-},{}],123:[function(_dereq_,module,exports){
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/entities/maps/xml.json":[function(_dereq_,module,exports){
 module.exports={"amp":"&","apos":"'","gt":">","lt":"<","quot":"\""}
 
-},{}],124:[function(_dereq_,module,exports){
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/eth-contract-metadata/contract-map.json":[function(_dereq_,module,exports){
 module.exports={
   "0x6090A6e47849629b7245Dfa1Ca21D94cd15878Ef": {
     "logo": "ens.svg",
@@ -19925,10 +20909,10 @@ module.exports={
   }
 }
 
-},{}],125:[function(_dereq_,module,exports){
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/eth-contract-metadata/index.js":[function(_dereq_,module,exports){
 module.exports = _dereq_('./contract-map.json')
 
-},{"./contract-map.json":124}],126:[function(_dereq_,module,exports){
+},{"./contract-map.json":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/eth-contract-metadata/contract-map.json"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/eth-ens-namehash/index.js":[function(_dereq_,module,exports){
 (function (Buffer){
 var sha3 = _dereq_('js-sha3').keccak_256
 var uts46 = _dereq_('idna-uts46')
@@ -19959,7 +20943,8 @@ function normalize(name) {
 }
 
 }).call(this,_dereq_("buffer").Buffer)
-},{"buffer":24,"idna-uts46":189,"js-sha3":127}],127:[function(_dereq_,module,exports){
+
+},{"buffer":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/buffer/index.js","idna-uts46":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/idna-uts46/uts46.js","js-sha3":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/eth-ens-namehash/node_modules/js-sha3/src/sha3.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/eth-ens-namehash/node_modules/js-sha3/src/sha3.js":[function(_dereq_,module,exports){
 (function (process,global){
 /**
  * [js-sha3]{@link https://github.com/emn178/js-sha3}
@@ -20438,7 +21423,8 @@ function normalize(name) {
 })();
 
 }).call(this,_dereq_('_process'),typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"_process":237}],128:[function(_dereq_,module,exports){
+
+},{"_process":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/browserify/node_modules/process/browser.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/eth-query/index.js":[function(_dereq_,module,exports){
 const extend = _dereq_('xtend')
 const createRandomId = _dereq_('json-rpc-random-id')()
 
@@ -20550,7 +21536,7 @@ function createPayload(data){
   }, data)
 }
 
-},{"json-rpc-random-id":200,"xtend":501}],129:[function(_dereq_,module,exports){
+},{"json-rpc-random-id":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/json-rpc-random-id/index.js","xtend":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/xtend/immutable.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/ethereum-ens-network-map/index.js":[function(_dereq_,module,exports){
 module.exports = {
   // Mainnet
   '1': '0x314159265dd8dbb310642f98f50c066173c1259b',
@@ -20558,7 +21544,7 @@ module.exports = {
   '3': '0x112234455c3a32fd11230c42e7bccd4a84e02010',
 }
 
-},{}],130:[function(_dereq_,module,exports){
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/ethereumjs-util/index.js":[function(_dereq_,module,exports){
 (function (Buffer){
 const createKeccakHash = _dereq_('keccak')
 const secp256k1 = _dereq_('secp256k1')
@@ -21284,7 +22270,8 @@ exports.defineProperties = function (self, fields, data) {
 }
 
 }).call(this,_dereq_("buffer").Buffer)
-},{"assert":11,"bn.js":20,"buffer":24,"create-hash":84,"keccak":204,"rlp":464,"secp256k1":467}],131:[function(_dereq_,module,exports){
+
+},{"assert":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/assert/assert.js","bn.js":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/bn.js/lib/bn.js","buffer":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/buffer/index.js","create-hash":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/create-hash/browser.js","keccak":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/keccak/js.js","rlp":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/rlp/index.js","secp256k1":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/secp256k1/elliptic.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/ethjs-abi/lib/index.js":[function(_dereq_,module,exports){
 (function (Buffer){
 'use strict';
 
@@ -21474,7 +22461,8 @@ module.exports = {
   eventSignature: eventSignature
 };
 }).call(this,_dereq_("buffer").Buffer)
-},{"./utils/index.js":132,"buffer":24}],132:[function(_dereq_,module,exports){
+
+},{"./utils/index.js":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/ethjs-abi/lib/utils/index.js","buffer":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/buffer/index.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/ethjs-abi/lib/utils/index.js":[function(_dereq_,module,exports){
 (function (Buffer){
 'use strict';
 
@@ -21894,7 +22882,484 @@ module.exports = {
   getParamCoder: getParamCoder
 };
 }).call(this,_dereq_("buffer").Buffer)
-},{"bn.js":20,"buffer":24,"js-sha3":199,"number-to-bn":231}],133:[function(_dereq_,module,exports){
+
+},{"bn.js":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/bn.js/lib/bn.js","buffer":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/buffer/index.js","js-sha3":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/ethjs-abi/node_modules/js-sha3/src/sha3.js","number-to-bn":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/number-to-bn/src/index.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/ethjs-abi/node_modules/js-sha3/src/sha3.js":[function(_dereq_,module,exports){
+(function (process,global){
+/**
+ * [js-sha3]{@link https://github.com/emn178/js-sha3}
+ *
+ * @version 0.5.5
+ * @author Chen, Yi-Cyuan [emn178@gmail.com]
+ * @copyright Chen, Yi-Cyuan 2015-2016
+ * @license MIT
+ */
+(function (root) {
+  'use strict';
+
+  var NODE_JS = typeof process == 'object' && process.versions && process.versions.node;
+  if (NODE_JS) {
+    root = global;
+  }
+  var COMMON_JS = !root.JS_SHA3_TEST && typeof module == 'object' && module.exports;
+  var HEX_CHARS = '0123456789abcdef'.split('');
+  var SHAKE_PADDING = [31, 7936, 2031616, 520093696];
+  var KECCAK_PADDING = [1, 256, 65536, 16777216];
+  var PADDING = [6, 1536, 393216, 100663296];
+  var SHIFT = [0, 8, 16, 24];
+  var RC = [1, 0, 32898, 0, 32906, 2147483648, 2147516416, 2147483648, 32907, 0, 2147483649,
+            0, 2147516545, 2147483648, 32777, 2147483648, 138, 0, 136, 0, 2147516425, 0, 
+            2147483658, 0, 2147516555, 0, 139, 2147483648, 32905, 2147483648, 32771, 
+            2147483648, 32770, 2147483648, 128, 2147483648, 32778, 0, 2147483658, 2147483648,
+            2147516545, 2147483648, 32896, 2147483648, 2147483649, 0, 2147516424, 2147483648];
+  var BITS = [224, 256, 384, 512];
+  var SHAKE_BITS = [128, 256];
+  var OUTPUT_TYPES = ['hex', 'buffer', 'arrayBuffer', 'array'];
+
+  var createOutputMethod = function (bits, padding, outputType) {
+    return function (message) {
+      return new Keccak(bits, padding, bits).update(message)[outputType]();
+    }
+  };
+
+  var createShakeOutputMethod = function (bits, padding, outputType) {
+    return function (message, outputBits) {
+      return new Keccak(bits, padding, outputBits).update(message)[outputType]();
+    }
+  };
+
+  var createMethod = function (bits, padding) {
+    var method = createOutputMethod(bits, padding, 'hex');
+    method.create = function () {
+      return new Keccak(bits, padding, bits);
+    };
+    method.update = function (message) {
+      return method.create().update(message);
+    };
+    for (var i = 0;i < OUTPUT_TYPES.length;++i) {
+      var type = OUTPUT_TYPES[i];
+      method[type] = createOutputMethod(bits, padding, type);
+    }
+    return method;
+  };
+
+  var createShakeMethod = function (bits, padding) {
+    var method = createShakeOutputMethod(bits, padding, 'hex');
+    method.create = function (outputBits) {
+      return new Keccak(bits, padding, outputBits);
+    };
+    method.update = function (message, outputBits) {
+      return method.create(outputBits).update(message);
+    };
+    for (var i = 0;i < OUTPUT_TYPES.length;++i) {
+      var type = OUTPUT_TYPES[i];
+      method[type] = createShakeOutputMethod(bits, padding, type);
+    }
+    return method;
+  };
+
+  var algorithms = [
+    {name: 'keccak', padding: KECCAK_PADDING, bits: BITS, createMethod: createMethod},
+    {name: 'sha3', padding: PADDING, bits: BITS, createMethod: createMethod},
+    {name: 'shake', padding: SHAKE_PADDING, bits: SHAKE_BITS, createMethod: createShakeMethod}
+  ];
+
+  var methods = {};
+
+  for (var i = 0;i < algorithms.length;++i) {
+    var algorithm = algorithms[i];
+    var bits  = algorithm.bits;
+    for (var j = 0;j < bits.length;++j) {
+      methods[algorithm.name +'_' + bits[j]] = algorithm.createMethod(bits[j], algorithm.padding);
+    }
+  }
+
+  function Keccak(bits, padding, outputBits) {
+    this.blocks = [];
+    this.s = [];
+    this.padding = padding;
+    this.outputBits = outputBits;
+    this.reset = true;
+    this.block = 0;
+    this.start = 0;
+    this.blockCount = (1600 - (bits << 1)) >> 5;
+    this.byteCount = this.blockCount << 2;
+    this.outputBlocks = outputBits >> 5;
+    this.extraBytes = (outputBits & 31) >> 3;
+
+    for (var i = 0;i < 50;++i) {
+      this.s[i] = 0;
+    }
+  };
+
+  Keccak.prototype.update = function (message) {
+    var notString = typeof message != 'string';
+    if (notString && message.constructor == root.ArrayBuffer) {
+      message = new Uint8Array(message);
+    }
+    var length = message.length, blocks = this.blocks, byteCount = this.byteCount, 
+        blockCount = this.blockCount, index = 0, s = this.s, i, code;
+    
+    while (index < length) {
+      if (this.reset) {
+        this.reset = false;
+        blocks[0] = this.block;
+        for (i = 1;i < blockCount + 1;++i) {
+          blocks[i] = 0;
+        }
+      }
+      if (notString) {
+        for (i = this.start;index < length && i < byteCount;++index) {
+          blocks[i >> 2] |= message[index] << SHIFT[i++ & 3];
+        }
+      } else {
+        for (i = this.start;index < length && i < byteCount;++index) {
+          code = message.charCodeAt(index);
+          if (code < 0x80) {
+            blocks[i >> 2] |= code << SHIFT[i++ & 3];
+          } else if (code < 0x800) {
+            blocks[i >> 2] |= (0xc0 | (code >> 6)) << SHIFT[i++ & 3];
+            blocks[i >> 2] |= (0x80 | (code & 0x3f)) << SHIFT[i++ & 3];
+          } else if (code < 0xd800 || code >= 0xe000) {
+            blocks[i >> 2] |= (0xe0 | (code >> 12)) << SHIFT[i++ & 3];
+            blocks[i >> 2] |= (0x80 | ((code >> 6) & 0x3f)) << SHIFT[i++ & 3];
+            blocks[i >> 2] |= (0x80 | (code & 0x3f)) << SHIFT[i++ & 3];
+          } else {
+            code = 0x10000 + (((code & 0x3ff) << 10) | (message.charCodeAt(++index) & 0x3ff));
+            blocks[i >> 2] |= (0xf0 | (code >> 18)) << SHIFT[i++ & 3];
+            blocks[i >> 2] |= (0x80 | ((code >> 12) & 0x3f)) << SHIFT[i++ & 3];
+            blocks[i >> 2] |= (0x80 | ((code >> 6) & 0x3f)) << SHIFT[i++ & 3];
+            blocks[i >> 2] |= (0x80 | (code & 0x3f)) << SHIFT[i++ & 3];
+          }
+        }
+      }
+      this.lastByteIndex = i;
+      if (i >= byteCount) {
+        this.start = i - byteCount;
+        this.block = blocks[blockCount];
+        for (i = 0;i < blockCount;++i) {
+          s[i] ^= blocks[i];
+        }
+        f(s);
+        this.reset = true;
+      } else {
+        this.start = i;
+      }
+    }
+    return this;
+  };
+
+  Keccak.prototype.finalize = function () {
+    var blocks = this.blocks, i = this.lastByteIndex, blockCount = this.blockCount, s = this.s;
+    blocks[i >> 2] |= this.padding[i & 3];
+    if (this.lastByteIndex == this.byteCount) {
+      blocks[0] = blocks[blockCount];
+      for (i = 1;i < blockCount + 1;++i) {
+        blocks[i] = 0;
+      }
+    }
+    blocks[blockCount - 1] |= 0x80000000;
+    for (i = 0;i < blockCount;++i) {
+      s[i] ^= blocks[i];
+    }
+    f(s);
+  };
+
+  Keccak.prototype.toString = Keccak.prototype.hex = function () {
+    this.finalize();
+
+    var blockCount = this.blockCount, s = this.s, outputBlocks = this.outputBlocks, 
+        extraBytes = this.extraBytes, i = 0, j = 0;
+    var hex = '', block;
+    while (j < outputBlocks) {
+      for (i = 0;i < blockCount && j < outputBlocks;++i, ++j) {
+        block = s[i];
+        hex += HEX_CHARS[(block >> 4) & 0x0F] + HEX_CHARS[block & 0x0F] +
+               HEX_CHARS[(block >> 12) & 0x0F] + HEX_CHARS[(block >> 8) & 0x0F] +
+               HEX_CHARS[(block >> 20) & 0x0F] + HEX_CHARS[(block >> 16) & 0x0F] +
+               HEX_CHARS[(block >> 28) & 0x0F] + HEX_CHARS[(block >> 24) & 0x0F];
+      }
+      if (j % blockCount == 0) {
+        f(s);
+        i = 0;
+      }
+    }
+    if (extraBytes) {
+      block = s[i];
+      if (extraBytes > 0) {
+        hex += HEX_CHARS[(block >> 4) & 0x0F] + HEX_CHARS[block & 0x0F];
+      }
+      if (extraBytes > 1) {
+        hex += HEX_CHARS[(block >> 12) & 0x0F] + HEX_CHARS[(block >> 8) & 0x0F];
+      }
+      if (extraBytes > 2) {
+        hex += HEX_CHARS[(block >> 20) & 0x0F] + HEX_CHARS[(block >> 16) & 0x0F];
+      }
+    }
+    return hex;
+  };
+
+  Keccak.prototype.arrayBuffer = function () {
+    this.finalize();
+
+    var blockCount = this.blockCount, s = this.s, outputBlocks = this.outputBlocks, 
+        extraBytes = this.extraBytes, i = 0, j = 0;
+    var bytes = this.outputBits >> 3;
+    var buffer;
+    if (extraBytes) {
+      buffer = new ArrayBuffer((outputBlocks + 1) << 2);
+    } else {
+      buffer = new ArrayBuffer(bytes);
+    }
+    var array = new Uint32Array(buffer);
+    while (j < outputBlocks) {
+      for (i = 0;i < blockCount && j < outputBlocks;++i, ++j) {
+        array[j] = s[i];
+      }
+      if (j % blockCount == 0) {
+        f(s);
+      }
+    }
+    if (extraBytes) {
+      array[i] = s[i];
+      buffer = buffer.slice(0, bytes);
+    }
+    return buffer;
+  };
+
+  Keccak.prototype.buffer = Keccak.prototype.arrayBuffer;
+
+  Keccak.prototype.digest = Keccak.prototype.array = function () {
+    this.finalize();
+
+    var blockCount = this.blockCount, s = this.s, outputBlocks = this.outputBlocks, 
+        extraBytes = this.extraBytes, i = 0, j = 0;
+    var array = [], offset, block;
+    while (j < outputBlocks) {
+      for (i = 0;i < blockCount && j < outputBlocks;++i, ++j) {
+        offset = j << 2;
+        block = s[i];
+        array[offset] = block & 0xFF;
+        array[offset + 1] = (block >> 8) & 0xFF;
+        array[offset + 2] = (block >> 16) & 0xFF;
+        array[offset + 3] = (block >> 24) & 0xFF;
+      }
+      if (j % blockCount == 0) {
+        f(s);
+      }
+    }
+    if (extraBytes) {
+      offset = j << 2;
+      block = s[i];
+      if (extraBytes > 0) {
+        array[offset] = block & 0xFF;
+      }
+      if (extraBytes > 1) {
+        array[offset + 1] = (block >> 8) & 0xFF;
+      }
+      if (extraBytes > 2) {
+        array[offset + 2] = (block >> 16) & 0xFF;
+      }
+    }
+    return array;
+  };
+
+  var f = function (s) {
+    var h, l, n, c0, c1, c2, c3, c4, c5, c6, c7, c8, c9, 
+        b0, b1, b2, b3, b4, b5, b6, b7, b8, b9, b10, b11, b12, b13, b14, b15, b16, b17, 
+        b18, b19, b20, b21, b22, b23, b24, b25, b26, b27, b28, b29, b30, b31, b32, b33, 
+        b34, b35, b36, b37, b38, b39, b40, b41, b42, b43, b44, b45, b46, b47, b48, b49;
+    for (n = 0;n < 48;n += 2) {
+      c0 = s[0] ^ s[10] ^ s[20] ^ s[30] ^ s[40];
+      c1 = s[1] ^ s[11] ^ s[21] ^ s[31] ^ s[41];
+      c2 = s[2] ^ s[12] ^ s[22] ^ s[32] ^ s[42];
+      c3 = s[3] ^ s[13] ^ s[23] ^ s[33] ^ s[43];
+      c4 = s[4] ^ s[14] ^ s[24] ^ s[34] ^ s[44];
+      c5 = s[5] ^ s[15] ^ s[25] ^ s[35] ^ s[45];
+      c6 = s[6] ^ s[16] ^ s[26] ^ s[36] ^ s[46];
+      c7 = s[7] ^ s[17] ^ s[27] ^ s[37] ^ s[47];
+      c8 = s[8] ^ s[18] ^ s[28] ^ s[38] ^ s[48];
+      c9 = s[9] ^ s[19] ^ s[29] ^ s[39] ^ s[49];
+
+      h = c8 ^ ((c2 << 1) | (c3 >>> 31));
+      l = c9 ^ ((c3 << 1) | (c2 >>> 31));
+      s[0] ^= h;
+      s[1] ^= l;
+      s[10] ^= h;
+      s[11] ^= l;
+      s[20] ^= h;
+      s[21] ^= l;
+      s[30] ^= h;
+      s[31] ^= l;
+      s[40] ^= h;
+      s[41] ^= l;
+      h = c0 ^ ((c4 << 1) | (c5 >>> 31));
+      l = c1 ^ ((c5 << 1) | (c4 >>> 31));
+      s[2] ^= h;
+      s[3] ^= l;
+      s[12] ^= h;
+      s[13] ^= l;
+      s[22] ^= h;
+      s[23] ^= l;
+      s[32] ^= h;
+      s[33] ^= l;
+      s[42] ^= h;
+      s[43] ^= l;
+      h = c2 ^ ((c6 << 1) | (c7 >>> 31));
+      l = c3 ^ ((c7 << 1) | (c6 >>> 31));
+      s[4] ^= h;
+      s[5] ^= l;
+      s[14] ^= h;
+      s[15] ^= l;
+      s[24] ^= h;
+      s[25] ^= l;
+      s[34] ^= h;
+      s[35] ^= l;
+      s[44] ^= h;
+      s[45] ^= l;
+      h = c4 ^ ((c8 << 1) | (c9 >>> 31));
+      l = c5 ^ ((c9 << 1) | (c8 >>> 31));
+      s[6] ^= h;
+      s[7] ^= l;
+      s[16] ^= h;
+      s[17] ^= l;
+      s[26] ^= h;
+      s[27] ^= l;
+      s[36] ^= h;
+      s[37] ^= l;
+      s[46] ^= h;
+      s[47] ^= l;
+      h = c6 ^ ((c0 << 1) | (c1 >>> 31));
+      l = c7 ^ ((c1 << 1) | (c0 >>> 31));
+      s[8] ^= h;
+      s[9] ^= l;
+      s[18] ^= h;
+      s[19] ^= l;
+      s[28] ^= h;
+      s[29] ^= l;
+      s[38] ^= h;
+      s[39] ^= l;
+      s[48] ^= h;
+      s[49] ^= l;
+
+      b0 = s[0];
+      b1 = s[1];
+      b32 = (s[11] << 4) | (s[10] >>> 28);
+      b33 = (s[10] << 4) | (s[11] >>> 28);
+      b14 = (s[20] << 3) | (s[21] >>> 29);
+      b15 = (s[21] << 3) | (s[20] >>> 29);
+      b46 = (s[31] << 9) | (s[30] >>> 23);
+      b47 = (s[30] << 9) | (s[31] >>> 23);
+      b28 = (s[40] << 18) | (s[41] >>> 14);
+      b29 = (s[41] << 18) | (s[40] >>> 14);
+      b20 = (s[2] << 1) | (s[3] >>> 31);
+      b21 = (s[3] << 1) | (s[2] >>> 31);
+      b2 = (s[13] << 12) | (s[12] >>> 20);
+      b3 = (s[12] << 12) | (s[13] >>> 20);
+      b34 = (s[22] << 10) | (s[23] >>> 22);
+      b35 = (s[23] << 10) | (s[22] >>> 22);
+      b16 = (s[33] << 13) | (s[32] >>> 19);
+      b17 = (s[32] << 13) | (s[33] >>> 19);
+      b48 = (s[42] << 2) | (s[43] >>> 30);
+      b49 = (s[43] << 2) | (s[42] >>> 30);
+      b40 = (s[5] << 30) | (s[4] >>> 2);
+      b41 = (s[4] << 30) | (s[5] >>> 2);
+      b22 = (s[14] << 6) | (s[15] >>> 26);
+      b23 = (s[15] << 6) | (s[14] >>> 26);
+      b4 = (s[25] << 11) | (s[24] >>> 21);
+      b5 = (s[24] << 11) | (s[25] >>> 21);
+      b36 = (s[34] << 15) | (s[35] >>> 17);
+      b37 = (s[35] << 15) | (s[34] >>> 17);
+      b18 = (s[45] << 29) | (s[44] >>> 3);
+      b19 = (s[44] << 29) | (s[45] >>> 3);
+      b10 = (s[6] << 28) | (s[7] >>> 4);
+      b11 = (s[7] << 28) | (s[6] >>> 4);
+      b42 = (s[17] << 23) | (s[16] >>> 9);
+      b43 = (s[16] << 23) | (s[17] >>> 9);
+      b24 = (s[26] << 25) | (s[27] >>> 7);
+      b25 = (s[27] << 25) | (s[26] >>> 7);
+      b6 = (s[36] << 21) | (s[37] >>> 11);
+      b7 = (s[37] << 21) | (s[36] >>> 11);
+      b38 = (s[47] << 24) | (s[46] >>> 8);
+      b39 = (s[46] << 24) | (s[47] >>> 8);
+      b30 = (s[8] << 27) | (s[9] >>> 5);
+      b31 = (s[9] << 27) | (s[8] >>> 5);
+      b12 = (s[18] << 20) | (s[19] >>> 12);
+      b13 = (s[19] << 20) | (s[18] >>> 12);
+      b44 = (s[29] << 7) | (s[28] >>> 25);
+      b45 = (s[28] << 7) | (s[29] >>> 25);
+      b26 = (s[38] << 8) | (s[39] >>> 24);
+      b27 = (s[39] << 8) | (s[38] >>> 24);
+      b8 = (s[48] << 14) | (s[49] >>> 18);
+      b9 = (s[49] << 14) | (s[48] >>> 18);
+
+      s[0] = b0 ^ (~b2 & b4);
+      s[1] = b1 ^ (~b3 & b5);
+      s[10] = b10 ^ (~b12 & b14);
+      s[11] = b11 ^ (~b13 & b15);
+      s[20] = b20 ^ (~b22 & b24);
+      s[21] = b21 ^ (~b23 & b25);
+      s[30] = b30 ^ (~b32 & b34);
+      s[31] = b31 ^ (~b33 & b35);
+      s[40] = b40 ^ (~b42 & b44);
+      s[41] = b41 ^ (~b43 & b45);
+      s[2] = b2 ^ (~b4 & b6);
+      s[3] = b3 ^ (~b5 & b7);
+      s[12] = b12 ^ (~b14 & b16);
+      s[13] = b13 ^ (~b15 & b17);
+      s[22] = b22 ^ (~b24 & b26);
+      s[23] = b23 ^ (~b25 & b27);
+      s[32] = b32 ^ (~b34 & b36);
+      s[33] = b33 ^ (~b35 & b37);
+      s[42] = b42 ^ (~b44 & b46);
+      s[43] = b43 ^ (~b45 & b47);
+      s[4] = b4 ^ (~b6 & b8);
+      s[5] = b5 ^ (~b7 & b9);
+      s[14] = b14 ^ (~b16 & b18);
+      s[15] = b15 ^ (~b17 & b19);
+      s[24] = b24 ^ (~b26 & b28);
+      s[25] = b25 ^ (~b27 & b29);
+      s[34] = b34 ^ (~b36 & b38);
+      s[35] = b35 ^ (~b37 & b39);
+      s[44] = b44 ^ (~b46 & b48);
+      s[45] = b45 ^ (~b47 & b49);
+      s[6] = b6 ^ (~b8 & b0);
+      s[7] = b7 ^ (~b9 & b1);
+      s[16] = b16 ^ (~b18 & b10);
+      s[17] = b17 ^ (~b19 & b11);
+      s[26] = b26 ^ (~b28 & b20);
+      s[27] = b27 ^ (~b29 & b21);
+      s[36] = b36 ^ (~b38 & b30);
+      s[37] = b37 ^ (~b39 & b31);
+      s[46] = b46 ^ (~b48 & b40);
+      s[47] = b47 ^ (~b49 & b41);
+      s[8] = b8 ^ (~b0 & b2);
+      s[9] = b9 ^ (~b1 & b3);
+      s[18] = b18 ^ (~b10 & b12);
+      s[19] = b19 ^ (~b11 & b13);
+      s[28] = b28 ^ (~b20 & b22);
+      s[29] = b29 ^ (~b21 & b23);
+      s[38] = b38 ^ (~b30 & b32);
+      s[39] = b39 ^ (~b31 & b33);
+      s[48] = b48 ^ (~b40 & b42);
+      s[49] = b49 ^ (~b41 & b43);
+
+      s[0] ^= RC[n];
+      s[1] ^= RC[n + 1];
+    }
+  }
+
+  if (COMMON_JS) {
+    module.exports = methods;
+  } else if (root) {
+    for (var key in methods) {
+      root[key] = methods[key];
+    }
+  }
+}(this));
+
+}).call(this,_dereq_('_process'),typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
+
+},{"_process":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/browserify/node_modules/process/browser.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/ethjs-contract/lib/index.js":[function(_dereq_,module,exports){
 'use strict';
 
 var abi = _dereq_('ethjs-abi'); // eslint-disable-line
@@ -22057,7 +23522,707 @@ function EthContract(query) {
 }
 
 module.exports = EthContract;
-},{"ethjs-abi":131,"ethjs-filter":138,"ethjs-util":143,"js-sha3":199}],134:[function(_dereq_,module,exports){
+},{"ethjs-abi":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/ethjs-abi/lib/index.js","ethjs-filter":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/ethjs-filter/lib/index.js","ethjs-util":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/ethjs-contract/node_modules/ethjs-util/lib/index.js","js-sha3":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/ethjs-contract/node_modules/js-sha3/src/sha3.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/ethjs-contract/node_modules/ethjs-util/lib/index.js":[function(_dereq_,module,exports){
+(function (Buffer){
+'use strict';
+
+var isHexPrefixed = _dereq_('is-hex-prefixed');
+var stripHexPrefix = _dereq_('strip-hex-prefix');
+
+/**
+ * Pads a `String` to have an even length
+ * @param {String} value
+ * @return {String} output
+ */
+function padToEven(value) {
+  var a = value; // eslint-disable-line
+
+  if (typeof a !== 'string') {
+    throw new Error('[ethjs-util] while padding to even, value must be string, is currently ' + typeof a + ', while padToEven.');
+  }
+
+  if (a.length % 2) {
+    a = '0' + a;
+  }
+
+  return a;
+}
+
+/**
+ * Converts a `Number` into a hex `String`
+ * @param {Number} i
+ * @return {String}
+ */
+function intToHex(i) {
+  var hex = i.toString(16); // eslint-disable-line
+
+  return '0x' + padToEven(hex);
+}
+
+/**
+ * Converts an `Number` to a `Buffer`
+ * @param {Number} i
+ * @return {Buffer}
+ */
+function intToBuffer(i) {
+  var hex = intToHex(i);
+
+  return Buffer.from(hex.slice(2), 'hex');
+}
+
+/**
+ * Get the binary size of a string
+ * @param {String} str
+ * @return {Number}
+ */
+function getBinarySize(str) {
+  if (typeof str !== 'string') {
+    throw new Error('[ethjs-util] while getting binary size, method getBinarySize requires input \'str\' to be type String, got \'' + typeof str + '\'.');
+  }
+
+  return Buffer.byteLength(str, 'utf8');
+}
+
+/**
+ * Returns TRUE if the first specified array contains all elements
+ * from the second one. FALSE otherwise.
+ *
+ * @param {array} superset
+ * @param {array} subset
+ *
+ * @returns {boolean}
+ */
+function arrayContainsArray(superset, subset, some) {
+  if (Array.isArray(superset) !== true) {
+    throw new Error('[ethjs-util] method arrayContainsArray requires input \'superset\' to be an array got type \'' + typeof superset + '\'');
+  }
+  if (Array.isArray(subset) !== true) {
+    throw new Error('[ethjs-util] method arrayContainsArray requires input \'subset\' to be an array got type \'' + typeof subset + '\'');
+  }
+
+  return subset[Boolean(some) && 'some' || 'every'](function (value) {
+    return superset.indexOf(value) >= 0;
+  });
+}
+
+/**
+ * Should be called to get utf8 from it's hex representation
+ *
+ * @method toUtf8
+ * @param {String} string in hex
+ * @returns {String} ascii string representation of hex value
+ */
+function toUtf8(hex) {
+  var bufferValue = new Buffer(padToEven(stripHexPrefix(hex).replace(/^0+|0+$/g, '')), 'hex');
+
+  return bufferValue.toString('utf8');
+}
+
+/**
+ * Should be called to get ascii from it's hex representation
+ *
+ * @method toAscii
+ * @param {String} string in hex
+ * @returns {String} ascii string representation of hex value
+ */
+function toAscii(hex) {
+  var str = ''; // eslint-disable-line
+  var i = 0,
+      l = hex.length; // eslint-disable-line
+
+  if (hex.substring(0, 2) === '0x') {
+    i = 2;
+  }
+
+  for (; i < l; i += 2) {
+    var code = parseInt(hex.substr(i, 2), 16);
+    str += String.fromCharCode(code);
+  }
+
+  return str;
+}
+
+/**
+ * Should be called to get hex representation (prefixed by 0x) of utf8 string
+ *
+ * @method fromUtf8
+ * @param {String} string
+ * @param {Number} optional padding
+ * @returns {String} hex representation of input string
+ */
+function fromUtf8(stringValue) {
+  var str = new Buffer(stringValue, 'utf8');
+
+  return '0x' + padToEven(str.toString('hex')).replace(/^0+|0+$/g, '');
+}
+
+/**
+ * Should be called to get hex representation (prefixed by 0x) of ascii string
+ *
+ * @method fromAscii
+ * @param {String} string
+ * @param {Number} optional padding
+ * @returns {String} hex representation of input string
+ */
+function fromAscii(stringValue) {
+  var hex = ''; // eslint-disable-line
+  for (var i = 0; i < stringValue.length; i++) {
+    // eslint-disable-line
+    var code = stringValue.charCodeAt(i);
+    var n = code.toString(16);
+    hex += n.length < 2 ? '0' + n : n;
+  }
+
+  return '0x' + hex;
+}
+
+/**
+ * getKeys([{a: 1, b: 2}, {a: 3, b: 4}], 'a') => [1, 3]
+ *
+ * @method getKeys get specific key from inner object array of objects
+ * @param {String} params
+ * @param {String} key
+ * @param {Boolean} allowEmpty
+ * @returns {Array} output just a simple array of output keys
+ */
+function getKeys(params, key, allowEmpty) {
+  if (!Array.isArray(params)) {
+    throw new Error('[ethjs-util] method getKeys expecting type Array as \'params\' input, got \'' + typeof params + '\'');
+  }
+  if (typeof key !== 'string') {
+    throw new Error('[ethjs-util] method getKeys expecting type String for input \'key\' got \'' + typeof key + '\'.');
+  }
+
+  var result = []; // eslint-disable-line
+
+  for (var i = 0; i < params.length; i++) {
+    // eslint-disable-line
+    var value = params[i][key]; // eslint-disable-line
+    if (allowEmpty && !value) {
+      value = '';
+    } else if (typeof value !== 'string') {
+      throw new Error('invalid abi');
+    }
+    result.push(value);
+  }
+
+  return result;
+}
+
+/**
+ * Is the string a hex string.
+ *
+ * @method check if string is hex string of specific length
+ * @param {String} value
+ * @param {Number} length
+ * @returns {Boolean} output the string is a hex string
+ */
+function isHexString(value, length) {
+  if (typeof value !== 'string' || !value.match(/^0x[0-9A-Fa-f]*$/)) {
+    return false;
+  }
+
+  if (length && value.length !== 2 + 2 * length) {
+    return false;
+  }
+
+  return true;
+}
+
+module.exports = {
+  arrayContainsArray: arrayContainsArray,
+  intToBuffer: intToBuffer,
+  getBinarySize: getBinarySize,
+  isHexPrefixed: isHexPrefixed,
+  stripHexPrefix: stripHexPrefix,
+  padToEven: padToEven,
+  intToHex: intToHex,
+  fromAscii: fromAscii,
+  fromUtf8: fromUtf8,
+  toAscii: toAscii,
+  toUtf8: toUtf8,
+  getKeys: getKeys,
+  isHexString: isHexString
+};
+}).call(this,_dereq_("buffer").Buffer)
+
+},{"buffer":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/buffer/index.js","is-hex-prefixed":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/is-hex-prefixed/src/index.js","strip-hex-prefix":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/strip-hex-prefix/src/index.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/ethjs-contract/node_modules/js-sha3/src/sha3.js":[function(_dereq_,module,exports){
+(function (process,global){
+/**
+ * [js-sha3]{@link https://github.com/emn178/js-sha3}
+ *
+ * @version 0.5.5
+ * @author Chen, Yi-Cyuan [emn178@gmail.com]
+ * @copyright Chen, Yi-Cyuan 2015-2016
+ * @license MIT
+ */
+(function (root) {
+  'use strict';
+
+  var NODE_JS = typeof process == 'object' && process.versions && process.versions.node;
+  if (NODE_JS) {
+    root = global;
+  }
+  var COMMON_JS = !root.JS_SHA3_TEST && typeof module == 'object' && module.exports;
+  var HEX_CHARS = '0123456789abcdef'.split('');
+  var SHAKE_PADDING = [31, 7936, 2031616, 520093696];
+  var KECCAK_PADDING = [1, 256, 65536, 16777216];
+  var PADDING = [6, 1536, 393216, 100663296];
+  var SHIFT = [0, 8, 16, 24];
+  var RC = [1, 0, 32898, 0, 32906, 2147483648, 2147516416, 2147483648, 32907, 0, 2147483649,
+            0, 2147516545, 2147483648, 32777, 2147483648, 138, 0, 136, 0, 2147516425, 0, 
+            2147483658, 0, 2147516555, 0, 139, 2147483648, 32905, 2147483648, 32771, 
+            2147483648, 32770, 2147483648, 128, 2147483648, 32778, 0, 2147483658, 2147483648,
+            2147516545, 2147483648, 32896, 2147483648, 2147483649, 0, 2147516424, 2147483648];
+  var BITS = [224, 256, 384, 512];
+  var SHAKE_BITS = [128, 256];
+  var OUTPUT_TYPES = ['hex', 'buffer', 'arrayBuffer', 'array'];
+
+  var createOutputMethod = function (bits, padding, outputType) {
+    return function (message) {
+      return new Keccak(bits, padding, bits).update(message)[outputType]();
+    }
+  };
+
+  var createShakeOutputMethod = function (bits, padding, outputType) {
+    return function (message, outputBits) {
+      return new Keccak(bits, padding, outputBits).update(message)[outputType]();
+    }
+  };
+
+  var createMethod = function (bits, padding) {
+    var method = createOutputMethod(bits, padding, 'hex');
+    method.create = function () {
+      return new Keccak(bits, padding, bits);
+    };
+    method.update = function (message) {
+      return method.create().update(message);
+    };
+    for (var i = 0;i < OUTPUT_TYPES.length;++i) {
+      var type = OUTPUT_TYPES[i];
+      method[type] = createOutputMethod(bits, padding, type);
+    }
+    return method;
+  };
+
+  var createShakeMethod = function (bits, padding) {
+    var method = createShakeOutputMethod(bits, padding, 'hex');
+    method.create = function (outputBits) {
+      return new Keccak(bits, padding, outputBits);
+    };
+    method.update = function (message, outputBits) {
+      return method.create(outputBits).update(message);
+    };
+    for (var i = 0;i < OUTPUT_TYPES.length;++i) {
+      var type = OUTPUT_TYPES[i];
+      method[type] = createShakeOutputMethod(bits, padding, type);
+    }
+    return method;
+  };
+
+  var algorithms = [
+    {name: 'keccak', padding: KECCAK_PADDING, bits: BITS, createMethod: createMethod},
+    {name: 'sha3', padding: PADDING, bits: BITS, createMethod: createMethod},
+    {name: 'shake', padding: SHAKE_PADDING, bits: SHAKE_BITS, createMethod: createShakeMethod}
+  ];
+
+  var methods = {};
+
+  for (var i = 0;i < algorithms.length;++i) {
+    var algorithm = algorithms[i];
+    var bits  = algorithm.bits;
+    for (var j = 0;j < bits.length;++j) {
+      methods[algorithm.name +'_' + bits[j]] = algorithm.createMethod(bits[j], algorithm.padding);
+    }
+  }
+
+  function Keccak(bits, padding, outputBits) {
+    this.blocks = [];
+    this.s = [];
+    this.padding = padding;
+    this.outputBits = outputBits;
+    this.reset = true;
+    this.block = 0;
+    this.start = 0;
+    this.blockCount = (1600 - (bits << 1)) >> 5;
+    this.byteCount = this.blockCount << 2;
+    this.outputBlocks = outputBits >> 5;
+    this.extraBytes = (outputBits & 31) >> 3;
+
+    for (var i = 0;i < 50;++i) {
+      this.s[i] = 0;
+    }
+  };
+
+  Keccak.prototype.update = function (message) {
+    var notString = typeof message != 'string';
+    if (notString && message.constructor == root.ArrayBuffer) {
+      message = new Uint8Array(message);
+    }
+    var length = message.length, blocks = this.blocks, byteCount = this.byteCount, 
+        blockCount = this.blockCount, index = 0, s = this.s, i, code;
+    
+    while (index < length) {
+      if (this.reset) {
+        this.reset = false;
+        blocks[0] = this.block;
+        for (i = 1;i < blockCount + 1;++i) {
+          blocks[i] = 0;
+        }
+      }
+      if (notString) {
+        for (i = this.start;index < length && i < byteCount;++index) {
+          blocks[i >> 2] |= message[index] << SHIFT[i++ & 3];
+        }
+      } else {
+        for (i = this.start;index < length && i < byteCount;++index) {
+          code = message.charCodeAt(index);
+          if (code < 0x80) {
+            blocks[i >> 2] |= code << SHIFT[i++ & 3];
+          } else if (code < 0x800) {
+            blocks[i >> 2] |= (0xc0 | (code >> 6)) << SHIFT[i++ & 3];
+            blocks[i >> 2] |= (0x80 | (code & 0x3f)) << SHIFT[i++ & 3];
+          } else if (code < 0xd800 || code >= 0xe000) {
+            blocks[i >> 2] |= (0xe0 | (code >> 12)) << SHIFT[i++ & 3];
+            blocks[i >> 2] |= (0x80 | ((code >> 6) & 0x3f)) << SHIFT[i++ & 3];
+            blocks[i >> 2] |= (0x80 | (code & 0x3f)) << SHIFT[i++ & 3];
+          } else {
+            code = 0x10000 + (((code & 0x3ff) << 10) | (message.charCodeAt(++index) & 0x3ff));
+            blocks[i >> 2] |= (0xf0 | (code >> 18)) << SHIFT[i++ & 3];
+            blocks[i >> 2] |= (0x80 | ((code >> 12) & 0x3f)) << SHIFT[i++ & 3];
+            blocks[i >> 2] |= (0x80 | ((code >> 6) & 0x3f)) << SHIFT[i++ & 3];
+            blocks[i >> 2] |= (0x80 | (code & 0x3f)) << SHIFT[i++ & 3];
+          }
+        }
+      }
+      this.lastByteIndex = i;
+      if (i >= byteCount) {
+        this.start = i - byteCount;
+        this.block = blocks[blockCount];
+        for (i = 0;i < blockCount;++i) {
+          s[i] ^= blocks[i];
+        }
+        f(s);
+        this.reset = true;
+      } else {
+        this.start = i;
+      }
+    }
+    return this;
+  };
+
+  Keccak.prototype.finalize = function () {
+    var blocks = this.blocks, i = this.lastByteIndex, blockCount = this.blockCount, s = this.s;
+    blocks[i >> 2] |= this.padding[i & 3];
+    if (this.lastByteIndex == this.byteCount) {
+      blocks[0] = blocks[blockCount];
+      for (i = 1;i < blockCount + 1;++i) {
+        blocks[i] = 0;
+      }
+    }
+    blocks[blockCount - 1] |= 0x80000000;
+    for (i = 0;i < blockCount;++i) {
+      s[i] ^= blocks[i];
+    }
+    f(s);
+  };
+
+  Keccak.prototype.toString = Keccak.prototype.hex = function () {
+    this.finalize();
+
+    var blockCount = this.blockCount, s = this.s, outputBlocks = this.outputBlocks, 
+        extraBytes = this.extraBytes, i = 0, j = 0;
+    var hex = '', block;
+    while (j < outputBlocks) {
+      for (i = 0;i < blockCount && j < outputBlocks;++i, ++j) {
+        block = s[i];
+        hex += HEX_CHARS[(block >> 4) & 0x0F] + HEX_CHARS[block & 0x0F] +
+               HEX_CHARS[(block >> 12) & 0x0F] + HEX_CHARS[(block >> 8) & 0x0F] +
+               HEX_CHARS[(block >> 20) & 0x0F] + HEX_CHARS[(block >> 16) & 0x0F] +
+               HEX_CHARS[(block >> 28) & 0x0F] + HEX_CHARS[(block >> 24) & 0x0F];
+      }
+      if (j % blockCount == 0) {
+        f(s);
+        i = 0;
+      }
+    }
+    if (extraBytes) {
+      block = s[i];
+      if (extraBytes > 0) {
+        hex += HEX_CHARS[(block >> 4) & 0x0F] + HEX_CHARS[block & 0x0F];
+      }
+      if (extraBytes > 1) {
+        hex += HEX_CHARS[(block >> 12) & 0x0F] + HEX_CHARS[(block >> 8) & 0x0F];
+      }
+      if (extraBytes > 2) {
+        hex += HEX_CHARS[(block >> 20) & 0x0F] + HEX_CHARS[(block >> 16) & 0x0F];
+      }
+    }
+    return hex;
+  };
+
+  Keccak.prototype.arrayBuffer = function () {
+    this.finalize();
+
+    var blockCount = this.blockCount, s = this.s, outputBlocks = this.outputBlocks, 
+        extraBytes = this.extraBytes, i = 0, j = 0;
+    var bytes = this.outputBits >> 3;
+    var buffer;
+    if (extraBytes) {
+      buffer = new ArrayBuffer((outputBlocks + 1) << 2);
+    } else {
+      buffer = new ArrayBuffer(bytes);
+    }
+    var array = new Uint32Array(buffer);
+    while (j < outputBlocks) {
+      for (i = 0;i < blockCount && j < outputBlocks;++i, ++j) {
+        array[j] = s[i];
+      }
+      if (j % blockCount == 0) {
+        f(s);
+      }
+    }
+    if (extraBytes) {
+      array[i] = s[i];
+      buffer = buffer.slice(0, bytes);
+    }
+    return buffer;
+  };
+
+  Keccak.prototype.buffer = Keccak.prototype.arrayBuffer;
+
+  Keccak.prototype.digest = Keccak.prototype.array = function () {
+    this.finalize();
+
+    var blockCount = this.blockCount, s = this.s, outputBlocks = this.outputBlocks, 
+        extraBytes = this.extraBytes, i = 0, j = 0;
+    var array = [], offset, block;
+    while (j < outputBlocks) {
+      for (i = 0;i < blockCount && j < outputBlocks;++i, ++j) {
+        offset = j << 2;
+        block = s[i];
+        array[offset] = block & 0xFF;
+        array[offset + 1] = (block >> 8) & 0xFF;
+        array[offset + 2] = (block >> 16) & 0xFF;
+        array[offset + 3] = (block >> 24) & 0xFF;
+      }
+      if (j % blockCount == 0) {
+        f(s);
+      }
+    }
+    if (extraBytes) {
+      offset = j << 2;
+      block = s[i];
+      if (extraBytes > 0) {
+        array[offset] = block & 0xFF;
+      }
+      if (extraBytes > 1) {
+        array[offset + 1] = (block >> 8) & 0xFF;
+      }
+      if (extraBytes > 2) {
+        array[offset + 2] = (block >> 16) & 0xFF;
+      }
+    }
+    return array;
+  };
+
+  var f = function (s) {
+    var h, l, n, c0, c1, c2, c3, c4, c5, c6, c7, c8, c9, 
+        b0, b1, b2, b3, b4, b5, b6, b7, b8, b9, b10, b11, b12, b13, b14, b15, b16, b17, 
+        b18, b19, b20, b21, b22, b23, b24, b25, b26, b27, b28, b29, b30, b31, b32, b33, 
+        b34, b35, b36, b37, b38, b39, b40, b41, b42, b43, b44, b45, b46, b47, b48, b49;
+    for (n = 0;n < 48;n += 2) {
+      c0 = s[0] ^ s[10] ^ s[20] ^ s[30] ^ s[40];
+      c1 = s[1] ^ s[11] ^ s[21] ^ s[31] ^ s[41];
+      c2 = s[2] ^ s[12] ^ s[22] ^ s[32] ^ s[42];
+      c3 = s[3] ^ s[13] ^ s[23] ^ s[33] ^ s[43];
+      c4 = s[4] ^ s[14] ^ s[24] ^ s[34] ^ s[44];
+      c5 = s[5] ^ s[15] ^ s[25] ^ s[35] ^ s[45];
+      c6 = s[6] ^ s[16] ^ s[26] ^ s[36] ^ s[46];
+      c7 = s[7] ^ s[17] ^ s[27] ^ s[37] ^ s[47];
+      c8 = s[8] ^ s[18] ^ s[28] ^ s[38] ^ s[48];
+      c9 = s[9] ^ s[19] ^ s[29] ^ s[39] ^ s[49];
+
+      h = c8 ^ ((c2 << 1) | (c3 >>> 31));
+      l = c9 ^ ((c3 << 1) | (c2 >>> 31));
+      s[0] ^= h;
+      s[1] ^= l;
+      s[10] ^= h;
+      s[11] ^= l;
+      s[20] ^= h;
+      s[21] ^= l;
+      s[30] ^= h;
+      s[31] ^= l;
+      s[40] ^= h;
+      s[41] ^= l;
+      h = c0 ^ ((c4 << 1) | (c5 >>> 31));
+      l = c1 ^ ((c5 << 1) | (c4 >>> 31));
+      s[2] ^= h;
+      s[3] ^= l;
+      s[12] ^= h;
+      s[13] ^= l;
+      s[22] ^= h;
+      s[23] ^= l;
+      s[32] ^= h;
+      s[33] ^= l;
+      s[42] ^= h;
+      s[43] ^= l;
+      h = c2 ^ ((c6 << 1) | (c7 >>> 31));
+      l = c3 ^ ((c7 << 1) | (c6 >>> 31));
+      s[4] ^= h;
+      s[5] ^= l;
+      s[14] ^= h;
+      s[15] ^= l;
+      s[24] ^= h;
+      s[25] ^= l;
+      s[34] ^= h;
+      s[35] ^= l;
+      s[44] ^= h;
+      s[45] ^= l;
+      h = c4 ^ ((c8 << 1) | (c9 >>> 31));
+      l = c5 ^ ((c9 << 1) | (c8 >>> 31));
+      s[6] ^= h;
+      s[7] ^= l;
+      s[16] ^= h;
+      s[17] ^= l;
+      s[26] ^= h;
+      s[27] ^= l;
+      s[36] ^= h;
+      s[37] ^= l;
+      s[46] ^= h;
+      s[47] ^= l;
+      h = c6 ^ ((c0 << 1) | (c1 >>> 31));
+      l = c7 ^ ((c1 << 1) | (c0 >>> 31));
+      s[8] ^= h;
+      s[9] ^= l;
+      s[18] ^= h;
+      s[19] ^= l;
+      s[28] ^= h;
+      s[29] ^= l;
+      s[38] ^= h;
+      s[39] ^= l;
+      s[48] ^= h;
+      s[49] ^= l;
+
+      b0 = s[0];
+      b1 = s[1];
+      b32 = (s[11] << 4) | (s[10] >>> 28);
+      b33 = (s[10] << 4) | (s[11] >>> 28);
+      b14 = (s[20] << 3) | (s[21] >>> 29);
+      b15 = (s[21] << 3) | (s[20] >>> 29);
+      b46 = (s[31] << 9) | (s[30] >>> 23);
+      b47 = (s[30] << 9) | (s[31] >>> 23);
+      b28 = (s[40] << 18) | (s[41] >>> 14);
+      b29 = (s[41] << 18) | (s[40] >>> 14);
+      b20 = (s[2] << 1) | (s[3] >>> 31);
+      b21 = (s[3] << 1) | (s[2] >>> 31);
+      b2 = (s[13] << 12) | (s[12] >>> 20);
+      b3 = (s[12] << 12) | (s[13] >>> 20);
+      b34 = (s[22] << 10) | (s[23] >>> 22);
+      b35 = (s[23] << 10) | (s[22] >>> 22);
+      b16 = (s[33] << 13) | (s[32] >>> 19);
+      b17 = (s[32] << 13) | (s[33] >>> 19);
+      b48 = (s[42] << 2) | (s[43] >>> 30);
+      b49 = (s[43] << 2) | (s[42] >>> 30);
+      b40 = (s[5] << 30) | (s[4] >>> 2);
+      b41 = (s[4] << 30) | (s[5] >>> 2);
+      b22 = (s[14] << 6) | (s[15] >>> 26);
+      b23 = (s[15] << 6) | (s[14] >>> 26);
+      b4 = (s[25] << 11) | (s[24] >>> 21);
+      b5 = (s[24] << 11) | (s[25] >>> 21);
+      b36 = (s[34] << 15) | (s[35] >>> 17);
+      b37 = (s[35] << 15) | (s[34] >>> 17);
+      b18 = (s[45] << 29) | (s[44] >>> 3);
+      b19 = (s[44] << 29) | (s[45] >>> 3);
+      b10 = (s[6] << 28) | (s[7] >>> 4);
+      b11 = (s[7] << 28) | (s[6] >>> 4);
+      b42 = (s[17] << 23) | (s[16] >>> 9);
+      b43 = (s[16] << 23) | (s[17] >>> 9);
+      b24 = (s[26] << 25) | (s[27] >>> 7);
+      b25 = (s[27] << 25) | (s[26] >>> 7);
+      b6 = (s[36] << 21) | (s[37] >>> 11);
+      b7 = (s[37] << 21) | (s[36] >>> 11);
+      b38 = (s[47] << 24) | (s[46] >>> 8);
+      b39 = (s[46] << 24) | (s[47] >>> 8);
+      b30 = (s[8] << 27) | (s[9] >>> 5);
+      b31 = (s[9] << 27) | (s[8] >>> 5);
+      b12 = (s[18] << 20) | (s[19] >>> 12);
+      b13 = (s[19] << 20) | (s[18] >>> 12);
+      b44 = (s[29] << 7) | (s[28] >>> 25);
+      b45 = (s[28] << 7) | (s[29] >>> 25);
+      b26 = (s[38] << 8) | (s[39] >>> 24);
+      b27 = (s[39] << 8) | (s[38] >>> 24);
+      b8 = (s[48] << 14) | (s[49] >>> 18);
+      b9 = (s[49] << 14) | (s[48] >>> 18);
+
+      s[0] = b0 ^ (~b2 & b4);
+      s[1] = b1 ^ (~b3 & b5);
+      s[10] = b10 ^ (~b12 & b14);
+      s[11] = b11 ^ (~b13 & b15);
+      s[20] = b20 ^ (~b22 & b24);
+      s[21] = b21 ^ (~b23 & b25);
+      s[30] = b30 ^ (~b32 & b34);
+      s[31] = b31 ^ (~b33 & b35);
+      s[40] = b40 ^ (~b42 & b44);
+      s[41] = b41 ^ (~b43 & b45);
+      s[2] = b2 ^ (~b4 & b6);
+      s[3] = b3 ^ (~b5 & b7);
+      s[12] = b12 ^ (~b14 & b16);
+      s[13] = b13 ^ (~b15 & b17);
+      s[22] = b22 ^ (~b24 & b26);
+      s[23] = b23 ^ (~b25 & b27);
+      s[32] = b32 ^ (~b34 & b36);
+      s[33] = b33 ^ (~b35 & b37);
+      s[42] = b42 ^ (~b44 & b46);
+      s[43] = b43 ^ (~b45 & b47);
+      s[4] = b4 ^ (~b6 & b8);
+      s[5] = b5 ^ (~b7 & b9);
+      s[14] = b14 ^ (~b16 & b18);
+      s[15] = b15 ^ (~b17 & b19);
+      s[24] = b24 ^ (~b26 & b28);
+      s[25] = b25 ^ (~b27 & b29);
+      s[34] = b34 ^ (~b36 & b38);
+      s[35] = b35 ^ (~b37 & b39);
+      s[44] = b44 ^ (~b46 & b48);
+      s[45] = b45 ^ (~b47 & b49);
+      s[6] = b6 ^ (~b8 & b0);
+      s[7] = b7 ^ (~b9 & b1);
+      s[16] = b16 ^ (~b18 & b10);
+      s[17] = b17 ^ (~b19 & b11);
+      s[26] = b26 ^ (~b28 & b20);
+      s[27] = b27 ^ (~b29 & b21);
+      s[36] = b36 ^ (~b38 & b30);
+      s[37] = b37 ^ (~b39 & b31);
+      s[46] = b46 ^ (~b48 & b40);
+      s[47] = b47 ^ (~b49 & b41);
+      s[8] = b8 ^ (~b0 & b2);
+      s[9] = b9 ^ (~b1 & b3);
+      s[18] = b18 ^ (~b10 & b12);
+      s[19] = b19 ^ (~b11 & b13);
+      s[28] = b28 ^ (~b20 & b22);
+      s[29] = b29 ^ (~b21 & b23);
+      s[38] = b38 ^ (~b30 & b32);
+      s[39] = b39 ^ (~b31 & b33);
+      s[48] = b48 ^ (~b40 & b42);
+      s[49] = b49 ^ (~b41 & b43);
+
+      s[0] ^= RC[n];
+      s[1] ^= RC[n + 1];
+    }
+  }
+
+  if (COMMON_JS) {
+    module.exports = methods;
+  } else if (root) {
+    for (var key in methods) {
+      root[key] = methods[key];
+    }
+  }
+}(this));
+
+}).call(this,_dereq_('_process'),typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
+
+},{"_process":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/browserify/node_modules/process/browser.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/ethjs-ens/abis/registry.json":[function(_dereq_,module,exports){
 module.exports=[
   {
     "constant": true,
@@ -22146,7 +24311,7 @@ module.exports=[
     "type": "function"
   }
 ]
-},{}],135:[function(_dereq_,module,exports){
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/ethjs-ens/abis/resolver.json":[function(_dereq_,module,exports){
 module.exports=[
   {
     "constant": true,
@@ -22295,7 +24460,7 @@ module.exports=[
     "type": "function"
   }
 ]
-},{}],136:[function(_dereq_,module,exports){
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/ethjs-ens/index.js":[function(_dereq_,module,exports){
 // External Deps
 const Eth = _dereq_('ethjs-query')
 const EthContract = _dereq_('ethjs-contract')
@@ -22436,7 +24601,7 @@ class Ens {
 
 module.exports = Ens
 
-},{"./abis/registry.json":134,"./abis/resolver.json":135,"eth-ens-namehash":126,"ethereum-ens-network-map":129,"ethjs-contract":133,"ethjs-query":140}],137:[function(_dereq_,module,exports){
+},{"./abis/registry.json":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/ethjs-ens/abis/registry.json","./abis/resolver.json":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/ethjs-ens/abis/resolver.json","eth-ens-namehash":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/eth-ens-namehash/index.js","ethereum-ens-network-map":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/ethereum-ens-network-map/index.js","ethjs-contract":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/ethjs-contract/lib/index.js","ethjs-query":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/ethjs-query/lib/index.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/ethjs-ens/lib/network-map.json":[function(_dereq_,module,exports){
 module.exports={
   "1": {
     "registry": "314159265dd8dbb310642f98f50c066173c1259b"
@@ -22447,7 +24612,7 @@ module.exports={
   }
 }
 
-},{}],138:[function(_dereq_,module,exports){
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/ethjs-filter/lib/index.js":[function(_dereq_,module,exports){
 'use strict';
 
 function constructFilter(filterName, query) {
@@ -22605,7 +24770,7 @@ function EthFilter(query) {
 
 // export EthFilter
 module.exports = EthFilter;
-},{}],139:[function(_dereq_,module,exports){
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/ethjs-format/lib/index.js":[function(_dereq_,module,exports){
 'use strict';
 
 var schema = _dereq_('ethjs-schema');
@@ -22852,397 +25017,7 @@ module.exports = {
   formatInputs: formatInputs,
   formatOutputs: formatOutputs
 };
-},{"ethjs-schema":142,"ethjs-util":143,"number-to-bn":231,"strip-hex-prefix":484}],140:[function(_dereq_,module,exports){
-'use strict';
-
-var format = _dereq_('ethjs-format');
-var EthRPC = _dereq_('ethjs-rpc');
-
-module.exports = Eth;
-
-function Eth(provider, options) {
-  var self = this;
-  var optionsObject = options || {};
-
-  if (!(this instanceof Eth)) {
-    throw new Error('[ethjs-query] the Eth object requires the "new" flag in order to function normally (i.e. `const eth = new Eth(provider);`).');
-  }
-  if (typeof provider !== 'object') {
-    throw new Error('[ethjs-query] the Eth object requires that the first input \'provider\' must be an object, got \'' + typeof provider + '\' (i.e. \'const eth = new Eth(provider);\')');
-  }
-
-  self.options = Object.assign({
-    debug: optionsObject.debug || false,
-    logger: optionsObject.logger || console,
-    jsonSpace: optionsObject.jsonSpace || 0
-  });
-  self.rpc = new EthRPC(provider);
-  self.setProvider = self.rpc.setProvider;
-}
-
-Eth.prototype.log = function log(message) {
-  var self = this;
-  if (self.options.debug) self.options.logger.log('[ethjs-query log] ' + message);
-};
-
-Object.keys(format.schema.methods).forEach(function (rpcMethodName) {
-  Object.defineProperty(Eth.prototype, rpcMethodName.replace('eth_', ''), {
-    enumerable: true,
-    value: generateFnFor(rpcMethodName, format.schema.methods[rpcMethodName])
-  });
-});
-
-function generateFnFor(method, methodObject) {
-  return function outputMethod() {
-    var protoCallback = function protoCallback() {}; // eslint-disable-line
-    var inputs = null; // eslint-disable-line
-    var inputError = null; // eslint-disable-line
-    var self = this;
-    var args = [].slice.call(arguments); // eslint-disable-line
-    var protoMethod = method.replace('eth_', ''); // eslint-disable-line
-
-    if (args.length > 0 && typeof args[args.length - 1] === 'function') {
-      protoCallback = args.pop();
-    }
-
-    return new Promise(function (resolve, reject) {
-      var cb = function cb(callbackError, callbackResult) {
-        if (callbackError) {
-          reject(callbackError);
-          protoCallback(callbackError, null);
-        } else {
-          try {
-            self.log('attempting method formatting for \'' + protoMethod + '\' with raw outputs: ' + JSON.stringify(callbackResult, null, self.options.jsonSpace));
-            var methodOutputs = format.formatOutputs(method, callbackResult);
-            self.log('method formatting success for \'' + protoMethod + '\' formatted result: ' + JSON.stringify(methodOutputs, null, self.options.jsonSpace));
-
-            resolve(methodOutputs);
-            protoCallback(null, methodOutputs);
-          } catch (outputFormattingError) {
-            var outputError = new Error('[ethjs-query] while formatting outputs from RPC \'' + JSON.stringify(callbackResult, null, self.options.jsonSpace) + '\' for method \'' + protoMethod + '\' ' + outputFormattingError);
-
-            reject(outputError);
-            protoCallback(outputError, null);
-          }
-        }
-      };
-
-      if (args.length < methodObject[2]) {
-        return cb(new Error('[ethjs-query] method \'' + protoMethod + '\' requires at least ' + methodObject[2] + ' input (format type ' + methodObject[0][0] + '), ' + args.length + ' provided. For more information visit: https://github.com/ethereum/wiki/wiki/JSON-RPC#' + method.toLowerCase()));
-      }
-
-      if (args.length > methodObject[0].length) {
-        return cb(new Error('[ethjs-query] method \'' + protoMethod + '\' requires at most ' + methodObject[0].length + ' params, ' + args.length + ' provided \'' + JSON.stringify(args, null, self.options.jsonSpace) + '\'. For more information visit: https://github.com/ethereum/wiki/wiki/JSON-RPC#' + method.toLowerCase()));
-      }
-
-      if (methodObject[3] && args.length < methodObject[3]) {
-        args.push('latest');
-      }
-
-      self.log('attempting method formatting for \'' + protoMethod + '\' with inputs ' + JSON.stringify(args, null, self.options.jsonSpace));
-
-      try {
-        inputs = format.formatInputs(method, args);
-        self.log('method formatting success for \'' + protoMethod + '\' with formatted result: ' + JSON.stringify(inputs, null, self.options.jsonSpace));
-      } catch (formattingError) {
-        return cb(new Error('[ethjs-query] while formatting inputs \'' + JSON.stringify(args, null, self.options.jsonSpace) + '\' for method \'' + protoMethod + '\' error: ' + formattingError));
-      }
-
-      return self.rpc.sendAsync({ method: method, params: inputs }, cb);
-    });
-  };
-}
-},{"ethjs-format":139,"ethjs-rpc":141}],141:[function(_dereq_,module,exports){
-'use strict';
-
-module.exports = EthRPC;
-
-/**
- * Constructs the EthRPC instance
- *
- * @method EthRPC
- * @param {Object} cprovider the eth rpc provider web3 standard..
- * @param {Object} options the options, if any
- * @returns {Object} ethrpc instance
- */
-function EthRPC(cprovider, options) {
-  var self = this;
-  var optionsObject = options || {};
-
-  if (!(this instanceof EthRPC)) {
-    throw new Error('[ethjs-rpc] the EthRPC object requires the "new" flag in order to function normally (i.e. `const eth = new EthRPC(provider);`).');
-  }
-
-  self.options = Object.assign({
-    jsonSpace: optionsObject.jsonSpace || 0,
-    max: optionsObject.max || 9999999999999
-  });
-  self.idCounter = Math.floor(Math.random() * self.options.max);
-  self.setProvider = function (provider) {
-    if (typeof provider !== 'object') {
-      throw new Error('[ethjs-rpc] the EthRPC object requires that the first input \'provider\' must be an object, got \'' + typeof provider + '\' (i.e. \'const eth = new EthRPC(provider);\')');
-    }
-
-    self.currentProvider = provider;
-  };
-  self.setProvider(cprovider);
-}
-
-/**
- * The main send async method
- *
- * @method sendAsync
- * @param {Object} payload the rpc payload object
- * @param {Function} cb the async standard callback
- * @callback {Object|Array|Boolean|String} vary result instance output
- */
-EthRPC.prototype.sendAsync = function sendAsync(payload, cb) {
-  var self = this;
-  self.idCounter = self.idCounter % self.options.max;
-  var parsedPayload = createPayload(payload, self.idCounter++);
-  self.currentProvider.sendAsync(parsedPayload, function (err, response) {
-    var responseObject = response || {};
-
-    if (err || responseObject.error) {
-      var payloadErrorMessage = '[ethjs-rpc] ' + (responseObject.error && 'rpc' || '') + ' error with payload ' + JSON.stringify(parsedPayload, null, self.options.jsonSpace) + ' ' + (String(err) || JSON.stringify(responseObject.error, null, self.options.jsonSpace));
-      var payloadError = new Error(payloadErrorMessage);
-      payloadError.value = err || responseObject.error;
-      return cb(payloadError, null);
-    }
-
-    return cb(null, responseObject.result);
-  });
-};
-
-/**
- * A simple create payload method
- *
- * @method createPayload
- * @param {Object} data the rpc payload data
- * @param {String} id the rpc data payload ID
- * @returns {Object} payload the completed payload object
- */
-function createPayload(data, id) {
-  return Object.assign({}, {
-    id: id,
-    jsonrpc: '2.0',
-    params: []
-  }, data);
-}
-},{}],142:[function(_dereq_,module,exports){
-module.exports={
-  "methods": {
-    "web3_clientVersion": [[], "S"],
-    "web3_sha3": [["S"], "D", 1],
-    "net_version": [[], "S"],
-    "net_peerCount": [[], "Q"],
-    "net_listening": [[], "B"],
-    "personal_sign": [["D20", "D", "S"], "D", 2],
-    "personal_ecRecover": [["D", "D"], "D20", 2],
-    "eth_protocolVersion": [[], "S"],
-    "eth_syncing": [[], "Boolean|EthSyncing"],
-    "eth_coinbase": [[], "D20"],
-    "eth_mining": [[], "B"],
-    "eth_hashrate": [[], "Q"],
-    "eth_gasPrice": [[], "Q"],
-    "eth_accounts": [[], ["D20"]],
-    "eth_blockNumber": [[], "Q"],
-    "eth_getBalance": [["D20", "Q|T"], "Q", 1, 2],
-    "eth_getStorageAt": [["D20", "Q", "Q|T"], "D", 2, 2],
-    "eth_getTransactionCount": [["D20", "Q|T"], "Q", 1, 2],
-    "eth_getBlockTransactionCountByHash": [["D32"], "Q", 1],
-    "eth_getBlockTransactionCountByNumber": [["Q|T"], "Q", 1],
-    "eth_getUncleCountByBlockHash": [["D32"], "Q", 1],
-    "eth_getUncleCountByBlockNumber": [["Q"], "Q", 1],
-    "eth_getCode": [["D20", "Q|T"], "D", 1, 2],
-    "eth_sign": [["D20", "D32"], "D", 2],
-    "eth_sendTransaction": [["SendTransaction"], "D", 1],
-    "eth_sendRawTransaction": [["D"], "D32", 1],
-    "eth_call": [["CallTransaction", "Q|T"], "D", 1, 2],
-    "eth_estimateGas": [["EstimateTransaction", "Q|T"], "Q", 1],
-    "eth_getBlockByHash": [["D32", "B"], "Block", 2],
-    "eth_getBlockByNumber": [["Q|T", "B"], "Block", 2],
-    "eth_getTransactionByHash": [["D32"], "Transaction", 1],
-    "eth_getTransactionByBlockHashAndIndex": [["D32", "Q"], "Transaction", 2],
-    "eth_getTransactionByBlockNumberAndIndex": [["Q|T", "Q"], "Transaction", 2],
-    "eth_getTransactionReceipt": [["D32"], "Receipt", 1],
-    "eth_getUncleByBlockHashAndIndex": [["D32", "Q"], "Block", 1],
-    "eth_getUncleByBlockNumberAndIndex": [["Q|T", "Q"], "Block", 2],
-    "eth_getCompilers": [[], ["S"]],
-    "eth_compileLLL": [["S"], "D", 1],
-    "eth_compileSolidity": [["S"], "D", 1],
-    "eth_compileSerpent": [["S"], "D", 1],
-    "eth_newFilter": [["Filter"], "Q", 1],
-    "eth_newBlockFilter": [[], "Q"],
-    "eth_newPendingTransactionFilter": [[], "Q"],
-    "eth_uninstallFilter": [["Q"], "B", 1],
-    "eth_getFilterChanges": [["Q"], ["FilterChange"], 1],
-    "eth_getFilterLogs": [["Q"], ["FilterChange"], 1],
-    "eth_getLogs": [["Filter"], ["FilterChange"], 1],
-    "eth_getWork": [[], ["D"]],
-    "eth_submitWork": [["D", "D32", "D32"], "B", 3],
-    "eth_submitHashrate": [["D", "D"], "B", 2],
-    "db_putString": [["S", "S", "S"], "B", 2],
-    "db_getString": [["S", "S"], "S", 2],
-    "db_putHex": [["S", "S", "D"], "B", 2],
-    "db_getHex": [["S", "S"], "D", 2],
-    "shh_post": [["SHHPost"], "B", 1],
-    "shh_version": [[], "S"],
-    "shh_newIdentity": [[], "D"],
-    "shh_hasIdentity": [["D"], "B"],
-    "shh_newGroup": [[], "D"],
-    "shh_addToGroup": [["D"], "B", 1],
-    "shh_newFilter": [["SHHFilter"], "Q", 1],
-    "shh_uninstallFilter": [["Q"], "B", 1],
-    "shh_getFilterChanges": [["Q"], ["SHHFilterChange"], 1],
-    "shh_getMessages": [["Q"], ["SHHFilterChange"], 1]
-  },
-  "tags": ["latest", "earliest", "pending"],
-  "objects": {
-    "EthSyncing": {
-      "__required": [],
-      "startingBlock": "Q",
-      "currentBlock": "Q",
-      "highestBlock": "Q"
-    },
-    "SendTransaction": {
-      "__required": ["from", "data"],
-      "from": "D20",
-      "to": "D20",
-      "gas": "Q",
-      "gasPrice": "Q",
-      "value": "Q",
-      "data": "D",
-      "nonce": "Q"
-    },
-    "EstimateTransaction": {
-      "__required": [],
-      "from": "D20",
-      "to": "D20",
-      "gas": "Q",
-      "gasPrice": "Q",
-      "value": "Q",
-      "data": "D",
-      "nonce": "Q"
-    },
-    "CallTransaction": {
-      "__required": ["to"],
-      "from": "D20",
-      "to": "D20",
-      "gas": "Q",
-      "gasPrice": "Q",
-      "value": "Q",
-      "data": "D",
-      "nonce": "Q"
-    },
-    "Block": {
-      "__required": [],
-      "number": "Q",
-      "hash": "D32",
-      "parentHash": "D32",
-      "nonce": "D",
-      "sha3Uncles": "D",
-      "logsBloom": "D",
-      "transactionsRoot": "D",
-      "stateRoot": "D",
-      "receiptsRoot": "D",
-      "miner": "D",
-      "difficulty": "Q",
-      "totalDifficulty": "Q",
-      "extraData": "D",
-      "size": "Q",
-      "gasLimit": "Q",
-      "gasUsed": "Q",
-      "timestamp": "Q",
-      "transactions": ["DATA|Transaction"],
-      "uncles": ["D"]
-    },
-    "Transaction": {
-      "__required": [],
-      "hash": "D32",
-      "nonce": "Q",
-      "blockHash": "D32",
-      "blockNumber": "Q",
-      "transactionIndex": "Q",
-      "from": "D20",
-      "to": "D20",
-      "value": "Q",
-      "gasPrice": "Q",
-      "gas": "Q",
-      "input": "D"
-    },
-    "Receipt": {
-      "__required": [],
-      "transactionHash": "D32",
-      "transactionIndex": "Q",
-      "blockHash": "D32",
-      "blockNumber": "Q",
-      "cumulativeGasUsed": "Q",
-      "gasUsed": "Q",
-      "contractAddress": "D20",
-      "logs": ["FilterChange"]
-    },
-    "Filter": {
-      "__required": [],
-      "fromBlock": "Q|T",
-      "toBlock": "Q|T",
-      "address": "Array|Data",
-      "topics": ["D"]
-    },
-    "FilterChange": {
-      "__required": [],
-      "removed": "B",
-      "logIndex": "Q",
-      "transactionIndex": "Q",
-      "transactionHash": "D32",
-      "blockHash": "D32",
-      "blockNumber": "Q",
-      "address": "D20",
-      "data": "Array|DATA",
-      "topics": ["D"]
-    },
-    "SHHPost": {
-      "__required": ["topics", "payload", "priority", "ttl"],
-      "from": "D",
-      "to": "D",
-      "topics": ["D"],
-      "payload": "D",
-      "priority": "Q",
-      "ttl": "Q"
-    },
-    "SHHFilter": {
-      "__required": ["topics"],
-      "to": "D",
-      "topics": ["D"]
-    },
-    "SHHFilterChange": {
-      "__required": [],
-      "hash": "D",
-      "from": "D",
-      "to": "D",
-      "expiry": "Q",
-      "ttl": "Q",
-      "sent": "Q",
-      "topics": ["D"],
-      "payload": "D",
-      "workProved": "Q"
-    },
-    "SHHMessage": {
-      "__required": [],
-      "hash": "D",
-      "from": "D",
-      "to": "D",
-      "expiry": "Q",
-      "ttl": "Q",
-      "sent": "Q",
-      "topics": ["D"],
-      "payload": "D",
-      "workProved": "Q"
-    }
-  }
-}
-
-},{}],143:[function(_dereq_,module,exports){
+},{"ethjs-schema":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/ethjs-schema/src/schema.json","ethjs-util":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/ethjs-format/node_modules/ethjs-util/lib/index.js","number-to-bn":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/number-to-bn/src/index.js","strip-hex-prefix":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/strip-hex-prefix/src/index.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/ethjs-format/node_modules/ethjs-util/lib/index.js":[function(_dereq_,module,exports){
 (function (Buffer){
 'use strict';
 
@@ -23465,7 +25240,398 @@ module.exports = {
   isHexString: isHexString
 };
 }).call(this,_dereq_("buffer").Buffer)
-},{"buffer":24,"is-hex-prefixed":195,"strip-hex-prefix":484}],144:[function(_dereq_,module,exports){
+
+},{"buffer":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/buffer/index.js","is-hex-prefixed":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/is-hex-prefixed/src/index.js","strip-hex-prefix":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/strip-hex-prefix/src/index.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/ethjs-query/lib/index.js":[function(_dereq_,module,exports){
+'use strict';
+
+var format = _dereq_('ethjs-format');
+var EthRPC = _dereq_('ethjs-rpc');
+
+module.exports = Eth;
+
+function Eth(provider, options) {
+  var self = this;
+  var optionsObject = options || {};
+
+  if (!(this instanceof Eth)) {
+    throw new Error('[ethjs-query] the Eth object requires the "new" flag in order to function normally (i.e. `const eth = new Eth(provider);`).');
+  }
+  if (typeof provider !== 'object') {
+    throw new Error('[ethjs-query] the Eth object requires that the first input \'provider\' must be an object, got \'' + typeof provider + '\' (i.e. \'const eth = new Eth(provider);\')');
+  }
+
+  self.options = Object.assign({
+    debug: optionsObject.debug || false,
+    logger: optionsObject.logger || console,
+    jsonSpace: optionsObject.jsonSpace || 0
+  });
+  self.rpc = new EthRPC(provider);
+  self.setProvider = self.rpc.setProvider;
+}
+
+Eth.prototype.log = function log(message) {
+  var self = this;
+  if (self.options.debug) self.options.logger.log('[ethjs-query log] ' + message);
+};
+
+Object.keys(format.schema.methods).forEach(function (rpcMethodName) {
+  Object.defineProperty(Eth.prototype, rpcMethodName.replace('eth_', ''), {
+    enumerable: true,
+    value: generateFnFor(rpcMethodName, format.schema.methods[rpcMethodName])
+  });
+});
+
+function generateFnFor(method, methodObject) {
+  return function outputMethod() {
+    var protoCallback = function protoCallback() {}; // eslint-disable-line
+    var inputs = null; // eslint-disable-line
+    var inputError = null; // eslint-disable-line
+    var self = this;
+    var args = [].slice.call(arguments); // eslint-disable-line
+    var protoMethod = method.replace('eth_', ''); // eslint-disable-line
+
+    if (args.length > 0 && typeof args[args.length - 1] === 'function') {
+      protoCallback = args.pop();
+    }
+
+    return new Promise(function (resolve, reject) {
+      var cb = function cb(callbackError, callbackResult) {
+        if (callbackError) {
+          reject(callbackError);
+          protoCallback(callbackError, null);
+        } else {
+          try {
+            self.log('attempting method formatting for \'' + protoMethod + '\' with raw outputs: ' + JSON.stringify(callbackResult, null, self.options.jsonSpace));
+            var methodOutputs = format.formatOutputs(method, callbackResult);
+            self.log('method formatting success for \'' + protoMethod + '\' formatted result: ' + JSON.stringify(methodOutputs, null, self.options.jsonSpace));
+
+            resolve(methodOutputs);
+            protoCallback(null, methodOutputs);
+          } catch (outputFormattingError) {
+            var outputError = new Error('[ethjs-query] while formatting outputs from RPC \'' + JSON.stringify(callbackResult, null, self.options.jsonSpace) + '\' for method \'' + protoMethod + '\' ' + outputFormattingError);
+
+            reject(outputError);
+            protoCallback(outputError, null);
+          }
+        }
+      };
+
+      if (args.length < methodObject[2]) {
+        return cb(new Error('[ethjs-query] method \'' + protoMethod + '\' requires at least ' + methodObject[2] + ' input (format type ' + methodObject[0][0] + '), ' + args.length + ' provided. For more information visit: https://github.com/ethereum/wiki/wiki/JSON-RPC#' + method.toLowerCase()));
+      }
+
+      if (args.length > methodObject[0].length) {
+        return cb(new Error('[ethjs-query] method \'' + protoMethod + '\' requires at most ' + methodObject[0].length + ' params, ' + args.length + ' provided \'' + JSON.stringify(args, null, self.options.jsonSpace) + '\'. For more information visit: https://github.com/ethereum/wiki/wiki/JSON-RPC#' + method.toLowerCase()));
+      }
+
+      if (methodObject[3] && args.length < methodObject[3]) {
+        args.push('latest');
+      }
+
+      self.log('attempting method formatting for \'' + protoMethod + '\' with inputs ' + JSON.stringify(args, null, self.options.jsonSpace));
+
+      try {
+        inputs = format.formatInputs(method, args);
+        self.log('method formatting success for \'' + protoMethod + '\' with formatted result: ' + JSON.stringify(inputs, null, self.options.jsonSpace));
+      } catch (formattingError) {
+        return cb(new Error('[ethjs-query] while formatting inputs \'' + JSON.stringify(args, null, self.options.jsonSpace) + '\' for method \'' + protoMethod + '\' error: ' + formattingError));
+      }
+
+      return self.rpc.sendAsync({ method: method, params: inputs }, cb);
+    });
+  };
+}
+},{"ethjs-format":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/ethjs-format/lib/index.js","ethjs-rpc":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/ethjs-rpc/lib/index.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/ethjs-rpc/lib/index.js":[function(_dereq_,module,exports){
+'use strict';
+
+module.exports = EthRPC;
+
+/**
+ * Constructs the EthRPC instance
+ *
+ * @method EthRPC
+ * @param {Object} cprovider the eth rpc provider web3 standard..
+ * @param {Object} options the options, if any
+ * @returns {Object} ethrpc instance
+ */
+function EthRPC(cprovider, options) {
+  var self = this;
+  var optionsObject = options || {};
+
+  if (!(this instanceof EthRPC)) {
+    throw new Error('[ethjs-rpc] the EthRPC object requires the "new" flag in order to function normally (i.e. `const eth = new EthRPC(provider);`).');
+  }
+
+  self.options = Object.assign({
+    jsonSpace: optionsObject.jsonSpace || 0,
+    max: optionsObject.max || 9999999999999
+  });
+  self.idCounter = Math.floor(Math.random() * self.options.max);
+  self.setProvider = function (provider) {
+    if (typeof provider !== 'object') {
+      throw new Error('[ethjs-rpc] the EthRPC object requires that the first input \'provider\' must be an object, got \'' + typeof provider + '\' (i.e. \'const eth = new EthRPC(provider);\')');
+    }
+
+    self.currentProvider = provider;
+  };
+  self.setProvider(cprovider);
+}
+
+/**
+ * The main send async method
+ *
+ * @method sendAsync
+ * @param {Object} payload the rpc payload object
+ * @param {Function} cb the async standard callback
+ * @callback {Object|Array|Boolean|String} vary result instance output
+ */
+EthRPC.prototype.sendAsync = function sendAsync(payload, cb) {
+  var self = this;
+  self.idCounter = self.idCounter % self.options.max;
+  var parsedPayload = createPayload(payload, self.idCounter++);
+  self.currentProvider.sendAsync(parsedPayload, function (err, response) {
+    var responseObject = response || {};
+
+    if (err || responseObject.error) {
+      var payloadErrorMessage = '[ethjs-rpc] ' + (responseObject.error && 'rpc' || '') + ' error with payload ' + JSON.stringify(parsedPayload, null, self.options.jsonSpace) + ' ' + (String(err) || JSON.stringify(responseObject.error, null, self.options.jsonSpace));
+      var payloadError = new Error(payloadErrorMessage);
+      payloadError.value = err || responseObject.error;
+      return cb(payloadError, null);
+    }
+
+    return cb(null, responseObject.result);
+  });
+};
+
+/**
+ * A simple create payload method
+ *
+ * @method createPayload
+ * @param {Object} data the rpc payload data
+ * @param {String} id the rpc data payload ID
+ * @returns {Object} payload the completed payload object
+ */
+function createPayload(data, id) {
+  return Object.assign({}, {
+    id: id,
+    jsonrpc: '2.0',
+    params: []
+  }, data);
+}
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/ethjs-schema/src/schema.json":[function(_dereq_,module,exports){
+module.exports={
+  "methods": {
+    "web3_clientVersion": [[], "S"],
+    "web3_sha3": [["S"], "D", 1],
+    "net_version": [[], "S"],
+    "net_peerCount": [[], "Q"],
+    "net_listening": [[], "B"],
+    "personal_sign": [["D20", "D", "S"], "D", 2],
+    "personal_ecRecover": [["D", "D"], "D20", 2],
+    "eth_protocolVersion": [[], "S"],
+    "eth_syncing": [[], "Boolean|EthSyncing"],
+    "eth_coinbase": [[], "D20"],
+    "eth_mining": [[], "B"],
+    "eth_hashrate": [[], "Q"],
+    "eth_gasPrice": [[], "Q"],
+    "eth_accounts": [[], ["D20"]],
+    "eth_blockNumber": [[], "Q"],
+    "eth_getBalance": [["D20", "Q|T"], "Q", 1, 2],
+    "eth_getStorageAt": [["D20", "Q", "Q|T"], "D", 2, 2],
+    "eth_getTransactionCount": [["D20", "Q|T"], "Q", 1, 2],
+    "eth_getBlockTransactionCountByHash": [["D32"], "Q", 1],
+    "eth_getBlockTransactionCountByNumber": [["Q|T"], "Q", 1],
+    "eth_getUncleCountByBlockHash": [["D32"], "Q", 1],
+    "eth_getUncleCountByBlockNumber": [["Q"], "Q", 1],
+    "eth_getCode": [["D20", "Q|T"], "D", 1, 2],
+    "eth_sign": [["D20", "D32"], "D", 2],
+    "eth_sendTransaction": [["SendTransaction"], "D", 1],
+    "eth_sendRawTransaction": [["D"], "D32", 1],
+    "eth_call": [["CallTransaction", "Q|T"], "D", 1, 2],
+    "eth_estimateGas": [["EstimateTransaction", "Q|T"], "Q", 1],
+    "eth_getBlockByHash": [["D32", "B"], "Block", 2],
+    "eth_getBlockByNumber": [["Q|T", "B"], "Block", 2],
+    "eth_getTransactionByHash": [["D32"], "Transaction", 1],
+    "eth_getTransactionByBlockHashAndIndex": [["D32", "Q"], "Transaction", 2],
+    "eth_getTransactionByBlockNumberAndIndex": [["Q|T", "Q"], "Transaction", 2],
+    "eth_getTransactionReceipt": [["D32"], "Receipt", 1],
+    "eth_getUncleByBlockHashAndIndex": [["D32", "Q"], "Block", 1],
+    "eth_getUncleByBlockNumberAndIndex": [["Q|T", "Q"], "Block", 2],
+    "eth_getCompilers": [[], ["S"]],
+    "eth_compileLLL": [["S"], "D", 1],
+    "eth_compileSolidity": [["S"], "D", 1],
+    "eth_compileSerpent": [["S"], "D", 1],
+    "eth_newFilter": [["Filter"], "Q", 1],
+    "eth_newBlockFilter": [[], "Q"],
+    "eth_newPendingTransactionFilter": [[], "Q"],
+    "eth_uninstallFilter": [["Q"], "B", 1],
+    "eth_getFilterChanges": [["Q"], ["FilterChange"], 1],
+    "eth_getFilterLogs": [["Q"], ["FilterChange"], 1],
+    "eth_getLogs": [["Filter"], ["FilterChange"], 1],
+    "eth_getWork": [[], ["D"]],
+    "eth_submitWork": [["D", "D32", "D32"], "B", 3],
+    "eth_submitHashrate": [["D", "D"], "B", 2],
+    "db_putString": [["S", "S", "S"], "B", 2],
+    "db_getString": [["S", "S"], "S", 2],
+    "db_putHex": [["S", "S", "D"], "B", 2],
+    "db_getHex": [["S", "S"], "D", 2],
+    "shh_post": [["SHHPost"], "B", 1],
+    "shh_version": [[], "S"],
+    "shh_newIdentity": [[], "D"],
+    "shh_hasIdentity": [["D"], "B"],
+    "shh_newGroup": [[], "D"],
+    "shh_addToGroup": [["D"], "B", 1],
+    "shh_newFilter": [["SHHFilter"], "Q", 1],
+    "shh_uninstallFilter": [["Q"], "B", 1],
+    "shh_getFilterChanges": [["Q"], ["SHHFilterChange"], 1],
+    "shh_getMessages": [["Q"], ["SHHFilterChange"], 1]
+  },
+  "tags": ["latest", "earliest", "pending"],
+  "objects": {
+    "EthSyncing": {
+      "__required": [],
+      "startingBlock": "Q",
+      "currentBlock": "Q",
+      "highestBlock": "Q"
+    },
+    "SendTransaction": {
+      "__required": ["from", "data"],
+      "from": "D20",
+      "to": "D20",
+      "gas": "Q",
+      "gasPrice": "Q",
+      "value": "Q",
+      "data": "D",
+      "nonce": "Q"
+    },
+    "EstimateTransaction": {
+      "__required": [],
+      "from": "D20",
+      "to": "D20",
+      "gas": "Q",
+      "gasPrice": "Q",
+      "value": "Q",
+      "data": "D",
+      "nonce": "Q"
+    },
+    "CallTransaction": {
+      "__required": ["to"],
+      "from": "D20",
+      "to": "D20",
+      "gas": "Q",
+      "gasPrice": "Q",
+      "value": "Q",
+      "data": "D",
+      "nonce": "Q"
+    },
+    "Block": {
+      "__required": [],
+      "number": "Q",
+      "hash": "D32",
+      "parentHash": "D32",
+      "nonce": "D",
+      "sha3Uncles": "D",
+      "logsBloom": "D",
+      "transactionsRoot": "D",
+      "stateRoot": "D",
+      "receiptsRoot": "D",
+      "miner": "D",
+      "difficulty": "Q",
+      "totalDifficulty": "Q",
+      "extraData": "D",
+      "size": "Q",
+      "gasLimit": "Q",
+      "gasUsed": "Q",
+      "timestamp": "Q",
+      "transactions": ["DATA|Transaction"],
+      "uncles": ["D"]
+    },
+    "Transaction": {
+      "__required": [],
+      "hash": "D32",
+      "nonce": "Q",
+      "blockHash": "D32",
+      "blockNumber": "Q",
+      "transactionIndex": "Q",
+      "from": "D20",
+      "to": "D20",
+      "value": "Q",
+      "gasPrice": "Q",
+      "gas": "Q",
+      "input": "D"
+    },
+    "Receipt": {
+      "__required": [],
+      "transactionHash": "D32",
+      "transactionIndex": "Q",
+      "blockHash": "D32",
+      "blockNumber": "Q",
+      "cumulativeGasUsed": "Q",
+      "gasUsed": "Q",
+      "contractAddress": "D20",
+      "logs": ["FilterChange"]
+    },
+    "Filter": {
+      "__required": [],
+      "fromBlock": "Q|T",
+      "toBlock": "Q|T",
+      "address": "Array|Data",
+      "topics": ["D"]
+    },
+    "FilterChange": {
+      "__required": [],
+      "removed": "B",
+      "logIndex": "Q",
+      "transactionIndex": "Q",
+      "transactionHash": "D32",
+      "blockHash": "D32",
+      "blockNumber": "Q",
+      "address": "D20",
+      "data": "Array|DATA",
+      "topics": ["D"]
+    },
+    "SHHPost": {
+      "__required": ["topics", "payload", "priority", "ttl"],
+      "from": "D",
+      "to": "D",
+      "topics": ["D"],
+      "payload": "D",
+      "priority": "Q",
+      "ttl": "Q"
+    },
+    "SHHFilter": {
+      "__required": ["topics"],
+      "to": "D",
+      "topics": ["D"]
+    },
+    "SHHFilterChange": {
+      "__required": [],
+      "hash": "D",
+      "from": "D",
+      "to": "D",
+      "expiry": "Q",
+      "ttl": "Q",
+      "sent": "Q",
+      "topics": ["D"],
+      "payload": "D",
+      "workProved": "Q"
+    },
+    "SHHMessage": {
+      "__required": [],
+      "hash": "D",
+      "from": "D",
+      "to": "D",
+      "expiry": "Q",
+      "ttl": "Q",
+      "sent": "Q",
+      "topics": ["D"],
+      "payload": "D",
+      "workProved": "Q"
+    }
+  }
+}
+
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/events/events.js":[function(_dereq_,module,exports){
 // Copyright Joyent, Inc. and other Node contributors.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a
@@ -23769,7 +25935,7 @@ function isUndefined(arg) {
   return arg === void 0;
 }
 
-},{}],145:[function(_dereq_,module,exports){
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/extension-link-enabler/index.js":[function(_dereq_,module,exports){
 const extension = _dereq_('extensionizer')
 
 module.exports = {
@@ -23795,7 +25961,7 @@ function clickHandler (event) {
   }
 }
 
-},{"extensionizer":147}],146:[function(_dereq_,module,exports){
+},{"extensionizer":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/extensionizer/index.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/extensionizer/extension-instance.js":[function(_dereq_,module,exports){
 const apis = [
   'alarms',
   'bookmarks',
@@ -23865,7 +26031,7 @@ function Extension () {
 
 module.exports = Extension
 
-},{}],147:[function(_dereq_,module,exports){
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/extensionizer/index.js":[function(_dereq_,module,exports){
 /* Extension.js
  *
  * A module for unifying browser differences in the WebExtension API.
@@ -23881,7 +26047,7 @@ module.exports = Extension
 const Extension = _dereq_('./extension-instance')
 module.exports = new Extension()
 
-},{"./extension-instance":146}],148:[function(_dereq_,module,exports){
+},{"./extension-instance":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/extensionizer/extension-instance.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/CSSCore.js":[function(_dereq_,module,exports){
 (function (process){
 'use strict';
 
@@ -24005,7 +26171,8 @@ var CSSCore = {
 
 module.exports = CSSCore;
 }).call(this,_dereq_('_process'))
-},{"./invariant":164,"_process":237}],149:[function(_dereq_,module,exports){
+
+},{"./invariant":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/invariant.js","_process":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/browserify/node_modules/process/browser.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/EventListener.js":[function(_dereq_,module,exports){
 (function (process){
 'use strict';
 
@@ -24091,7 +26258,8 @@ var EventListener = {
 
 module.exports = EventListener;
 }).call(this,_dereq_('_process'))
-},{"./emptyFunction":156,"_process":237}],150:[function(_dereq_,module,exports){
+
+},{"./emptyFunction":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/emptyFunction.js","_process":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/browserify/node_modules/process/browser.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/ExecutionEnvironment.js":[function(_dereq_,module,exports){
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  * All rights reserved.
@@ -24127,7 +26295,7 @@ var ExecutionEnvironment = {
 };
 
 module.exports = ExecutionEnvironment;
-},{}],151:[function(_dereq_,module,exports){
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/camelize.js":[function(_dereq_,module,exports){
 "use strict";
 
 /**
@@ -24159,7 +26327,7 @@ function camelize(string) {
 }
 
 module.exports = camelize;
-},{}],152:[function(_dereq_,module,exports){
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/camelizeStyleName.js":[function(_dereq_,module,exports){
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  * All rights reserved.
@@ -24199,7 +26367,7 @@ function camelizeStyleName(string) {
 }
 
 module.exports = camelizeStyleName;
-},{"./camelize":151}],153:[function(_dereq_,module,exports){
+},{"./camelize":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/camelize.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/containsNode.js":[function(_dereq_,module,exports){
 'use strict';
 
 /**
@@ -24239,7 +26407,7 @@ function containsNode(outerNode, innerNode) {
 }
 
 module.exports = containsNode;
-},{"./isTextNode":166}],154:[function(_dereq_,module,exports){
+},{"./isTextNode":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/isTextNode.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/createArrayFromMixed.js":[function(_dereq_,module,exports){
 (function (process){
 'use strict';
 
@@ -24368,7 +26536,8 @@ function createArrayFromMixed(obj) {
 
 module.exports = createArrayFromMixed;
 }).call(this,_dereq_('_process'))
-},{"./invariant":164,"_process":237}],155:[function(_dereq_,module,exports){
+
+},{"./invariant":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/invariant.js","_process":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/browserify/node_modules/process/browser.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/createNodesFromMarkup.js":[function(_dereq_,module,exports){
 (function (process){
 'use strict';
 
@@ -24454,7 +26623,8 @@ function createNodesFromMarkup(markup, handleScript) {
 
 module.exports = createNodesFromMarkup;
 }).call(this,_dereq_('_process'))
-},{"./ExecutionEnvironment":150,"./createArrayFromMixed":154,"./getMarkupWrap":160,"./invariant":164,"_process":237}],156:[function(_dereq_,module,exports){
+
+},{"./ExecutionEnvironment":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/ExecutionEnvironment.js","./createArrayFromMixed":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/createArrayFromMixed.js","./getMarkupWrap":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/getMarkupWrap.js","./invariant":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/invariant.js","_process":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/browserify/node_modules/process/browser.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/emptyFunction.js":[function(_dereq_,module,exports){
 "use strict";
 
 /**
@@ -24493,7 +26663,7 @@ emptyFunction.thatReturnsArgument = function (arg) {
 };
 
 module.exports = emptyFunction;
-},{}],157:[function(_dereq_,module,exports){
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/emptyObject.js":[function(_dereq_,module,exports){
 (function (process){
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
@@ -24515,7 +26685,8 @@ if (process.env.NODE_ENV !== 'production') {
 
 module.exports = emptyObject;
 }).call(this,_dereq_('_process'))
-},{"_process":237}],158:[function(_dereq_,module,exports){
+
+},{"_process":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/browserify/node_modules/process/browser.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/focusNode.js":[function(_dereq_,module,exports){
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  * All rights reserved.
@@ -24542,7 +26713,7 @@ function focusNode(node) {
 }
 
 module.exports = focusNode;
-},{}],159:[function(_dereq_,module,exports){
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/getActiveElement.js":[function(_dereq_,module,exports){
 'use strict';
 
 /**
@@ -24581,7 +26752,7 @@ function getActiveElement(doc) /*?DOMElement*/{
 }
 
 module.exports = getActiveElement;
-},{}],160:[function(_dereq_,module,exports){
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/getMarkupWrap.js":[function(_dereq_,module,exports){
 (function (process){
 'use strict';
 
@@ -24678,7 +26849,8 @@ function getMarkupWrap(nodeName) {
 
 module.exports = getMarkupWrap;
 }).call(this,_dereq_('_process'))
-},{"./ExecutionEnvironment":150,"./invariant":164,"_process":237}],161:[function(_dereq_,module,exports){
+
+},{"./ExecutionEnvironment":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/ExecutionEnvironment.js","./invariant":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/invariant.js","_process":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/browserify/node_modules/process/browser.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/getUnboundedScrollPosition.js":[function(_dereq_,module,exports){
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  * All rights reserved.
@@ -24717,7 +26889,7 @@ function getUnboundedScrollPosition(scrollable) {
 }
 
 module.exports = getUnboundedScrollPosition;
-},{}],162:[function(_dereq_,module,exports){
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/hyphenate.js":[function(_dereq_,module,exports){
 'use strict';
 
 /**
@@ -24750,7 +26922,7 @@ function hyphenate(string) {
 }
 
 module.exports = hyphenate;
-},{}],163:[function(_dereq_,module,exports){
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/hyphenateStyleName.js":[function(_dereq_,module,exports){
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  * All rights reserved.
@@ -24789,7 +26961,7 @@ function hyphenateStyleName(string) {
 }
 
 module.exports = hyphenateStyleName;
-},{"./hyphenate":162}],164:[function(_dereq_,module,exports){
+},{"./hyphenate":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/hyphenate.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/invariant.js":[function(_dereq_,module,exports){
 (function (process){
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
@@ -24847,7 +27019,8 @@ function invariant(condition, format, a, b, c, d, e, f) {
 
 module.exports = invariant;
 }).call(this,_dereq_('_process'))
-},{"_process":237}],165:[function(_dereq_,module,exports){
+
+},{"_process":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/browserify/node_modules/process/browser.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/isNode.js":[function(_dereq_,module,exports){
 'use strict';
 
 /**
@@ -24872,7 +27045,7 @@ function isNode(object) {
 }
 
 module.exports = isNode;
-},{}],166:[function(_dereq_,module,exports){
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/isTextNode.js":[function(_dereq_,module,exports){
 'use strict';
 
 /**
@@ -24897,7 +27070,7 @@ function isTextNode(object) {
 }
 
 module.exports = isTextNode;
-},{"./isNode":165}],167:[function(_dereq_,module,exports){
+},{"./isNode":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/isNode.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/memoizeStringOnly.js":[function(_dereq_,module,exports){
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  * All rights reserved.
@@ -24927,7 +27100,7 @@ function memoizeStringOnly(callback) {
 }
 
 module.exports = memoizeStringOnly;
-},{}],168:[function(_dereq_,module,exports){
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/performance.js":[function(_dereq_,module,exports){
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  * All rights reserved.
@@ -24950,7 +27123,7 @@ if (ExecutionEnvironment.canUseDOM) {
 }
 
 module.exports = performance || {};
-},{"./ExecutionEnvironment":150}],169:[function(_dereq_,module,exports){
+},{"./ExecutionEnvironment":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/ExecutionEnvironment.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/performanceNow.js":[function(_dereq_,module,exports){
 'use strict';
 
 /**
@@ -24984,7 +27157,7 @@ if (performance.now) {
 }
 
 module.exports = performanceNow;
-},{"./performance":168}],170:[function(_dereq_,module,exports){
+},{"./performance":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/performance.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/shallowEqual.js":[function(_dereq_,module,exports){
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  * All rights reserved.
@@ -25052,7 +27225,7 @@ function shallowEqual(objA, objB) {
 }
 
 module.exports = shallowEqual;
-},{}],171:[function(_dereq_,module,exports){
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/warning.js":[function(_dereq_,module,exports){
 (function (process){
 /**
  * Copyright 2014-2015, Facebook, Inc.
@@ -25121,7 +27294,8 @@ if (process.env.NODE_ENV !== 'production') {
 
 module.exports = warning;
 }).call(this,_dereq_('_process'))
-},{"./emptyFunction":156,"_process":237}],172:[function(_dereq_,module,exports){
+
+},{"./emptyFunction":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/emptyFunction.js","_process":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/browserify/node_modules/process/browser.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/gl-mat4/identity.js":[function(_dereq_,module,exports){
 module.exports = identity;
 
 /**
@@ -25149,7 +27323,7 @@ function identity(out) {
     out[15] = 1;
     return out;
 };
-},{}],173:[function(_dereq_,module,exports){
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/gl-mat4/invert.js":[function(_dereq_,module,exports){
 module.exports = invert;
 
 /**
@@ -25205,7 +27379,7 @@ function invert(out, a) {
 
     return out;
 };
-},{}],174:[function(_dereq_,module,exports){
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/gl-mat4/lookAt.js":[function(_dereq_,module,exports){
 var identity = _dereq_('./identity');
 
 module.exports = lookAt;
@@ -25296,7 +27470,7 @@ function lookAt(out, eye, center, up) {
 
     return out;
 };
-},{"./identity":172}],175:[function(_dereq_,module,exports){
+},{"./identity":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/gl-mat4/identity.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/gl-mat4/multiply.js":[function(_dereq_,module,exports){
 module.exports = multiply;
 
 /**
@@ -25339,7 +27513,7 @@ function multiply(out, a, b) {
     out[15] = b0*a03 + b1*a13 + b2*a23 + b3*a33;
     return out;
 };
-},{}],176:[function(_dereq_,module,exports){
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/gl-mat4/perspective.js":[function(_dereq_,module,exports){
 module.exports = perspective;
 
 /**
@@ -25373,7 +27547,7 @@ function perspective(out, fovy, aspect, near, far) {
     out[15] = 0;
     return out;
 };
-},{}],177:[function(_dereq_,module,exports){
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/gl-mat4/rotate.js":[function(_dereq_,module,exports){
 module.exports = rotate;
 
 /**
@@ -25438,7 +27612,7 @@ function rotate(out, a, rad, axis) {
     }
     return out;
 };
-},{}],178:[function(_dereq_,module,exports){
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/gl-vec3/transformMat4.js":[function(_dereq_,module,exports){
 module.exports = transformMat4;
 
 /**
@@ -25459,7 +27633,7 @@ function transformMat4(out, a, m) {
     out[2] = (m[2] * x + m[6] * y + m[10] * z + m[14]) / w
     return out
 }
-},{}],179:[function(_dereq_,module,exports){
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/hash-base/index.js":[function(_dereq_,module,exports){
 (function (Buffer){
 'use strict'
 var Transform = _dereq_('stream').Transform
@@ -25546,7 +27720,8 @@ HashBase.prototype._digest = function () {
 module.exports = HashBase
 
 }).call(this,_dereq_("buffer").Buffer)
-},{"buffer":24,"inherits":191,"stream":481}],180:[function(_dereq_,module,exports){
+
+},{"buffer":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/buffer/index.js","inherits":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/inherits/inherits_browser.js","stream":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/stream-browserify/index.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/hash.js/lib/hash.js":[function(_dereq_,module,exports){
 var hash = exports;
 
 hash.utils = _dereq_('./hash/utils');
@@ -25563,7 +27738,7 @@ hash.sha384 = hash.sha.sha384;
 hash.sha512 = hash.sha.sha512;
 hash.ripemd160 = hash.ripemd.ripemd160;
 
-},{"./hash/common":181,"./hash/hmac":182,"./hash/ripemd":183,"./hash/sha":184,"./hash/utils":185}],181:[function(_dereq_,module,exports){
+},{"./hash/common":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/hash.js/lib/hash/common.js","./hash/hmac":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/hash.js/lib/hash/hmac.js","./hash/ripemd":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/hash.js/lib/hash/ripemd.js","./hash/sha":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/hash.js/lib/hash/sha.js","./hash/utils":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/hash.js/lib/hash/utils.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/hash.js/lib/hash/common.js":[function(_dereq_,module,exports){
 var hash = _dereq_('../hash');
 var utils = hash.utils;
 var assert = utils.assert;
@@ -25656,7 +27831,7 @@ BlockHash.prototype._pad = function pad() {
   return res;
 };
 
-},{"../hash":180}],182:[function(_dereq_,module,exports){
+},{"../hash":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/hash.js/lib/hash.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/hash.js/lib/hash/hmac.js":[function(_dereq_,module,exports){
 var hmac = exports;
 
 var hash = _dereq_('../hash');
@@ -25706,7 +27881,7 @@ Hmac.prototype.digest = function digest(enc) {
   return this.outer.digest(enc);
 };
 
-},{"../hash":180}],183:[function(_dereq_,module,exports){
+},{"../hash":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/hash.js/lib/hash.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/hash.js/lib/hash/ripemd.js":[function(_dereq_,module,exports){
 var hash = _dereq_('../hash');
 var utils = hash.utils;
 
@@ -25852,7 +28027,7 @@ var sh = [
   8, 5, 12, 9, 12, 5, 14, 6, 8, 13, 6, 5, 15, 13, 11, 11
 ];
 
-},{"../hash":180}],184:[function(_dereq_,module,exports){
+},{"../hash":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/hash.js/lib/hash.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/hash.js/lib/hash/sha.js":[function(_dereq_,module,exports){
 var hash = _dereq_('../hash');
 var utils = hash.utils;
 var assert = utils.assert;
@@ -26418,7 +28593,7 @@ function g1_512_lo(xh, xl) {
   return r;
 }
 
-},{"../hash":180}],185:[function(_dereq_,module,exports){
+},{"../hash":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/hash.js/lib/hash.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/hash.js/lib/hash/utils.js":[function(_dereq_,module,exports){
 var utils = exports;
 var inherits = _dereq_('inherits');
 
@@ -26677,7 +28852,7 @@ function shr64_lo(ah, al, num) {
 };
 exports.shr64_lo = shr64_lo;
 
-},{"inherits":191}],186:[function(_dereq_,module,exports){
+},{"inherits":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/inherits/inherits_browser.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/hmac-drbg/lib/hmac-drbg.js":[function(_dereq_,module,exports){
 'use strict';
 
 var hash = _dereq_('hash.js');
@@ -26792,7 +28967,7 @@ HmacDRBG.prototype.generate = function generate(len, enc, add, addEnc) {
   return utils.encode(res, enc);
 };
 
-},{"hash.js":180,"minimalistic-assert":229,"minimalistic-crypto-utils":230}],187:[function(_dereq_,module,exports){
+},{"hash.js":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/hash.js/lib/hash.js","minimalistic-assert":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/minimalistic-assert/index.js","minimalistic-crypto-utils":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/minimalistic-crypto-utils/lib/utils.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/hoist-non-react-statics/index.js":[function(_dereq_,module,exports){
 /**
  * Copyright 2015, Yahoo! Inc.
  * Copyrights licensed under the New BSD License. See the accompanying LICENSE file for terms.
@@ -26844,7 +29019,7 @@ module.exports = function hoistNonReactStatics(targetComponent, sourceComponent,
     return targetComponent;
 };
 
-},{}],188:[function(_dereq_,module,exports){
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/idna-uts46/idna-map.js":[function(_dereq_,module,exports){
 /* This file is generated from the Unicode IDNA table, using
    the build-unicode-tables.py script. Please edit that
    script instead of this file. */
@@ -27603,7 +29778,7 @@ return {
 };
 }));
 
-},{}],189:[function(_dereq_,module,exports){
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/idna-uts46/uts46.js":[function(_dereq_,module,exports){
 /* istanbul ignore next */
 (function (root, factory) {
   if (typeof define === 'function' && define.amd) {
@@ -27723,7 +29898,7 @@ return {
 };
 }));
 
-},{"./idna-map":188,"punycode":244}],190:[function(_dereq_,module,exports){
+},{"./idna-map":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/idna-uts46/idna-map.js","punycode":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/browserify/node_modules/punycode/punycode.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/ieee754/index.js":[function(_dereq_,module,exports){
 exports.read = function (buffer, offset, isLE, mLen, nBytes) {
   var e, m
   var eLen = nBytes * 8 - mLen - 1
@@ -27809,7 +29984,7 @@ exports.write = function (buffer, value, offset, isLE, mLen, nBytes) {
   buffer[offset + i - d] |= s * 128
 }
 
-},{}],191:[function(_dereq_,module,exports){
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/inherits/inherits_browser.js":[function(_dereq_,module,exports){
 if (typeof Object.create === 'function') {
   // implementation from standard node.js 'util' module
   module.exports = function inherits(ctor, superCtor) {
@@ -27834,7 +30009,7 @@ if (typeof Object.create === 'function') {
   }
 }
 
-},{}],192:[function(_dereq_,module,exports){
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/inject-css/index.js":[function(_dereq_,module,exports){
 'use strict';
 
 var inserted = {};
@@ -27866,7 +30041,7 @@ module.exports = function(css, options) {
     head.removeChild(elm);
   };
 };
-},{}],193:[function(_dereq_,module,exports){
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/invariant/browser.js":[function(_dereq_,module,exports){
 (function (process){
 /**
  * Copyright 2013-2015, Facebook, Inc.
@@ -27921,7 +30096,8 @@ var invariant = function(condition, format, a, b, c, d, e, f) {
 module.exports = invariant;
 
 }).call(this,_dereq_('_process'))
-},{"_process":237}],194:[function(_dereq_,module,exports){
+
+},{"_process":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/browserify/node_modules/process/browser.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/is-buffer/index.js":[function(_dereq_,module,exports){
 /*!
  * Determine if an object is a Buffer
  *
@@ -27944,7 +30120,7 @@ function isSlowBuffer (obj) {
   return typeof obj.readFloatLE === 'function' && typeof obj.slice === 'function' && isBuffer(obj.slice(0, 0))
 }
 
-},{}],195:[function(_dereq_,module,exports){
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/is-hex-prefixed/src/index.js":[function(_dereq_,module,exports){
 /**
  * Returns a `Boolean` on whether or not the a `String` starts with '0x'
  * @param {String} str the string input value
@@ -27959,7 +30135,14 @@ module.exports = function isHexPrefixed(str) {
   return str.slice(0, 2) === '0x';
 }
 
-},{}],196:[function(_dereq_,module,exports){
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/isarray/index.js":[function(_dereq_,module,exports){
+var toString = {}.toString;
+
+module.exports = Array.isArray || function (arr) {
+  return toString.call(arr) == '[object Array]';
+};
+
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/jazzicon/colors.js":[function(_dereq_,module,exports){
 module.exports = [
 	'#01888C', // teal
   '#FC7500', // bright orange
@@ -27973,7 +30156,7 @@ module.exports = [
   '#F19E02', // gold
 ]
 
-},{}],197:[function(_dereq_,module,exports){
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/jazzicon/index.js":[function(_dereq_,module,exports){
 var MersenneTwister = _dereq_('mersenne-twister');
 var paperGen = _dereq_('./paper')
 var Color = _dereq_('color')
@@ -28033,7 +30216,7 @@ function hueShift(colors, generator) {
   })
 }
 
-},{"./colors":196,"./paper":198,"color":34,"mersenne-twister":226}],198:[function(_dereq_,module,exports){
+},{"./colors":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/jazzicon/colors.js","./paper":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/jazzicon/paper.js","color":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/color/index.js","mersenne-twister":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/mersenne-twister/src/mersenne-twister.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/jazzicon/paper.js":[function(_dereq_,module,exports){
 var Raphael = _dereq_('raphael')
 
 function newPaper(diameter) {
@@ -28054,482 +30237,7 @@ function newPaper(diameter) {
 
 module.exports = newPaper
 
-},{"raphael":246}],199:[function(_dereq_,module,exports){
-(function (process,global){
-/**
- * [js-sha3]{@link https://github.com/emn178/js-sha3}
- *
- * @version 0.5.5
- * @author Chen, Yi-Cyuan [emn178@gmail.com]
- * @copyright Chen, Yi-Cyuan 2015-2016
- * @license MIT
- */
-(function (root) {
-  'use strict';
-
-  var NODE_JS = typeof process == 'object' && process.versions && process.versions.node;
-  if (NODE_JS) {
-    root = global;
-  }
-  var COMMON_JS = !root.JS_SHA3_TEST && typeof module == 'object' && module.exports;
-  var HEX_CHARS = '0123456789abcdef'.split('');
-  var SHAKE_PADDING = [31, 7936, 2031616, 520093696];
-  var KECCAK_PADDING = [1, 256, 65536, 16777216];
-  var PADDING = [6, 1536, 393216, 100663296];
-  var SHIFT = [0, 8, 16, 24];
-  var RC = [1, 0, 32898, 0, 32906, 2147483648, 2147516416, 2147483648, 32907, 0, 2147483649,
-            0, 2147516545, 2147483648, 32777, 2147483648, 138, 0, 136, 0, 2147516425, 0, 
-            2147483658, 0, 2147516555, 0, 139, 2147483648, 32905, 2147483648, 32771, 
-            2147483648, 32770, 2147483648, 128, 2147483648, 32778, 0, 2147483658, 2147483648,
-            2147516545, 2147483648, 32896, 2147483648, 2147483649, 0, 2147516424, 2147483648];
-  var BITS = [224, 256, 384, 512];
-  var SHAKE_BITS = [128, 256];
-  var OUTPUT_TYPES = ['hex', 'buffer', 'arrayBuffer', 'array'];
-
-  var createOutputMethod = function (bits, padding, outputType) {
-    return function (message) {
-      return new Keccak(bits, padding, bits).update(message)[outputType]();
-    }
-  };
-
-  var createShakeOutputMethod = function (bits, padding, outputType) {
-    return function (message, outputBits) {
-      return new Keccak(bits, padding, outputBits).update(message)[outputType]();
-    }
-  };
-
-  var createMethod = function (bits, padding) {
-    var method = createOutputMethod(bits, padding, 'hex');
-    method.create = function () {
-      return new Keccak(bits, padding, bits);
-    };
-    method.update = function (message) {
-      return method.create().update(message);
-    };
-    for (var i = 0;i < OUTPUT_TYPES.length;++i) {
-      var type = OUTPUT_TYPES[i];
-      method[type] = createOutputMethod(bits, padding, type);
-    }
-    return method;
-  };
-
-  var createShakeMethod = function (bits, padding) {
-    var method = createShakeOutputMethod(bits, padding, 'hex');
-    method.create = function (outputBits) {
-      return new Keccak(bits, padding, outputBits);
-    };
-    method.update = function (message, outputBits) {
-      return method.create(outputBits).update(message);
-    };
-    for (var i = 0;i < OUTPUT_TYPES.length;++i) {
-      var type = OUTPUT_TYPES[i];
-      method[type] = createShakeOutputMethod(bits, padding, type);
-    }
-    return method;
-  };
-
-  var algorithms = [
-    {name: 'keccak', padding: KECCAK_PADDING, bits: BITS, createMethod: createMethod},
-    {name: 'sha3', padding: PADDING, bits: BITS, createMethod: createMethod},
-    {name: 'shake', padding: SHAKE_PADDING, bits: SHAKE_BITS, createMethod: createShakeMethod}
-  ];
-
-  var methods = {};
-
-  for (var i = 0;i < algorithms.length;++i) {
-    var algorithm = algorithms[i];
-    var bits  = algorithm.bits;
-    for (var j = 0;j < bits.length;++j) {
-      methods[algorithm.name +'_' + bits[j]] = algorithm.createMethod(bits[j], algorithm.padding);
-    }
-  }
-
-  function Keccak(bits, padding, outputBits) {
-    this.blocks = [];
-    this.s = [];
-    this.padding = padding;
-    this.outputBits = outputBits;
-    this.reset = true;
-    this.block = 0;
-    this.start = 0;
-    this.blockCount = (1600 - (bits << 1)) >> 5;
-    this.byteCount = this.blockCount << 2;
-    this.outputBlocks = outputBits >> 5;
-    this.extraBytes = (outputBits & 31) >> 3;
-
-    for (var i = 0;i < 50;++i) {
-      this.s[i] = 0;
-    }
-  };
-
-  Keccak.prototype.update = function (message) {
-    var notString = typeof message != 'string';
-    if (notString && message.constructor == root.ArrayBuffer) {
-      message = new Uint8Array(message);
-    }
-    var length = message.length, blocks = this.blocks, byteCount = this.byteCount, 
-        blockCount = this.blockCount, index = 0, s = this.s, i, code;
-    
-    while (index < length) {
-      if (this.reset) {
-        this.reset = false;
-        blocks[0] = this.block;
-        for (i = 1;i < blockCount + 1;++i) {
-          blocks[i] = 0;
-        }
-      }
-      if (notString) {
-        for (i = this.start;index < length && i < byteCount;++index) {
-          blocks[i >> 2] |= message[index] << SHIFT[i++ & 3];
-        }
-      } else {
-        for (i = this.start;index < length && i < byteCount;++index) {
-          code = message.charCodeAt(index);
-          if (code < 0x80) {
-            blocks[i >> 2] |= code << SHIFT[i++ & 3];
-          } else if (code < 0x800) {
-            blocks[i >> 2] |= (0xc0 | (code >> 6)) << SHIFT[i++ & 3];
-            blocks[i >> 2] |= (0x80 | (code & 0x3f)) << SHIFT[i++ & 3];
-          } else if (code < 0xd800 || code >= 0xe000) {
-            blocks[i >> 2] |= (0xe0 | (code >> 12)) << SHIFT[i++ & 3];
-            blocks[i >> 2] |= (0x80 | ((code >> 6) & 0x3f)) << SHIFT[i++ & 3];
-            blocks[i >> 2] |= (0x80 | (code & 0x3f)) << SHIFT[i++ & 3];
-          } else {
-            code = 0x10000 + (((code & 0x3ff) << 10) | (message.charCodeAt(++index) & 0x3ff));
-            blocks[i >> 2] |= (0xf0 | (code >> 18)) << SHIFT[i++ & 3];
-            blocks[i >> 2] |= (0x80 | ((code >> 12) & 0x3f)) << SHIFT[i++ & 3];
-            blocks[i >> 2] |= (0x80 | ((code >> 6) & 0x3f)) << SHIFT[i++ & 3];
-            blocks[i >> 2] |= (0x80 | (code & 0x3f)) << SHIFT[i++ & 3];
-          }
-        }
-      }
-      this.lastByteIndex = i;
-      if (i >= byteCount) {
-        this.start = i - byteCount;
-        this.block = blocks[blockCount];
-        for (i = 0;i < blockCount;++i) {
-          s[i] ^= blocks[i];
-        }
-        f(s);
-        this.reset = true;
-      } else {
-        this.start = i;
-      }
-    }
-    return this;
-  };
-
-  Keccak.prototype.finalize = function () {
-    var blocks = this.blocks, i = this.lastByteIndex, blockCount = this.blockCount, s = this.s;
-    blocks[i >> 2] |= this.padding[i & 3];
-    if (this.lastByteIndex == this.byteCount) {
-      blocks[0] = blocks[blockCount];
-      for (i = 1;i < blockCount + 1;++i) {
-        blocks[i] = 0;
-      }
-    }
-    blocks[blockCount - 1] |= 0x80000000;
-    for (i = 0;i < blockCount;++i) {
-      s[i] ^= blocks[i];
-    }
-    f(s);
-  };
-
-  Keccak.prototype.toString = Keccak.prototype.hex = function () {
-    this.finalize();
-
-    var blockCount = this.blockCount, s = this.s, outputBlocks = this.outputBlocks, 
-        extraBytes = this.extraBytes, i = 0, j = 0;
-    var hex = '', block;
-    while (j < outputBlocks) {
-      for (i = 0;i < blockCount && j < outputBlocks;++i, ++j) {
-        block = s[i];
-        hex += HEX_CHARS[(block >> 4) & 0x0F] + HEX_CHARS[block & 0x0F] +
-               HEX_CHARS[(block >> 12) & 0x0F] + HEX_CHARS[(block >> 8) & 0x0F] +
-               HEX_CHARS[(block >> 20) & 0x0F] + HEX_CHARS[(block >> 16) & 0x0F] +
-               HEX_CHARS[(block >> 28) & 0x0F] + HEX_CHARS[(block >> 24) & 0x0F];
-      }
-      if (j % blockCount == 0) {
-        f(s);
-        i = 0;
-      }
-    }
-    if (extraBytes) {
-      block = s[i];
-      if (extraBytes > 0) {
-        hex += HEX_CHARS[(block >> 4) & 0x0F] + HEX_CHARS[block & 0x0F];
-      }
-      if (extraBytes > 1) {
-        hex += HEX_CHARS[(block >> 12) & 0x0F] + HEX_CHARS[(block >> 8) & 0x0F];
-      }
-      if (extraBytes > 2) {
-        hex += HEX_CHARS[(block >> 20) & 0x0F] + HEX_CHARS[(block >> 16) & 0x0F];
-      }
-    }
-    return hex;
-  };
-
-  Keccak.prototype.arrayBuffer = function () {
-    this.finalize();
-
-    var blockCount = this.blockCount, s = this.s, outputBlocks = this.outputBlocks, 
-        extraBytes = this.extraBytes, i = 0, j = 0;
-    var bytes = this.outputBits >> 3;
-    var buffer;
-    if (extraBytes) {
-      buffer = new ArrayBuffer((outputBlocks + 1) << 2);
-    } else {
-      buffer = new ArrayBuffer(bytes);
-    }
-    var array = new Uint32Array(buffer);
-    while (j < outputBlocks) {
-      for (i = 0;i < blockCount && j < outputBlocks;++i, ++j) {
-        array[j] = s[i];
-      }
-      if (j % blockCount == 0) {
-        f(s);
-      }
-    }
-    if (extraBytes) {
-      array[i] = s[i];
-      buffer = buffer.slice(0, bytes);
-    }
-    return buffer;
-  };
-
-  Keccak.prototype.buffer = Keccak.prototype.arrayBuffer;
-
-  Keccak.prototype.digest = Keccak.prototype.array = function () {
-    this.finalize();
-
-    var blockCount = this.blockCount, s = this.s, outputBlocks = this.outputBlocks, 
-        extraBytes = this.extraBytes, i = 0, j = 0;
-    var array = [], offset, block;
-    while (j < outputBlocks) {
-      for (i = 0;i < blockCount && j < outputBlocks;++i, ++j) {
-        offset = j << 2;
-        block = s[i];
-        array[offset] = block & 0xFF;
-        array[offset + 1] = (block >> 8) & 0xFF;
-        array[offset + 2] = (block >> 16) & 0xFF;
-        array[offset + 3] = (block >> 24) & 0xFF;
-      }
-      if (j % blockCount == 0) {
-        f(s);
-      }
-    }
-    if (extraBytes) {
-      offset = j << 2;
-      block = s[i];
-      if (extraBytes > 0) {
-        array[offset] = block & 0xFF;
-      }
-      if (extraBytes > 1) {
-        array[offset + 1] = (block >> 8) & 0xFF;
-      }
-      if (extraBytes > 2) {
-        array[offset + 2] = (block >> 16) & 0xFF;
-      }
-    }
-    return array;
-  };
-
-  var f = function (s) {
-    var h, l, n, c0, c1, c2, c3, c4, c5, c6, c7, c8, c9, 
-        b0, b1, b2, b3, b4, b5, b6, b7, b8, b9, b10, b11, b12, b13, b14, b15, b16, b17, 
-        b18, b19, b20, b21, b22, b23, b24, b25, b26, b27, b28, b29, b30, b31, b32, b33, 
-        b34, b35, b36, b37, b38, b39, b40, b41, b42, b43, b44, b45, b46, b47, b48, b49;
-    for (n = 0;n < 48;n += 2) {
-      c0 = s[0] ^ s[10] ^ s[20] ^ s[30] ^ s[40];
-      c1 = s[1] ^ s[11] ^ s[21] ^ s[31] ^ s[41];
-      c2 = s[2] ^ s[12] ^ s[22] ^ s[32] ^ s[42];
-      c3 = s[3] ^ s[13] ^ s[23] ^ s[33] ^ s[43];
-      c4 = s[4] ^ s[14] ^ s[24] ^ s[34] ^ s[44];
-      c5 = s[5] ^ s[15] ^ s[25] ^ s[35] ^ s[45];
-      c6 = s[6] ^ s[16] ^ s[26] ^ s[36] ^ s[46];
-      c7 = s[7] ^ s[17] ^ s[27] ^ s[37] ^ s[47];
-      c8 = s[8] ^ s[18] ^ s[28] ^ s[38] ^ s[48];
-      c9 = s[9] ^ s[19] ^ s[29] ^ s[39] ^ s[49];
-
-      h = c8 ^ ((c2 << 1) | (c3 >>> 31));
-      l = c9 ^ ((c3 << 1) | (c2 >>> 31));
-      s[0] ^= h;
-      s[1] ^= l;
-      s[10] ^= h;
-      s[11] ^= l;
-      s[20] ^= h;
-      s[21] ^= l;
-      s[30] ^= h;
-      s[31] ^= l;
-      s[40] ^= h;
-      s[41] ^= l;
-      h = c0 ^ ((c4 << 1) | (c5 >>> 31));
-      l = c1 ^ ((c5 << 1) | (c4 >>> 31));
-      s[2] ^= h;
-      s[3] ^= l;
-      s[12] ^= h;
-      s[13] ^= l;
-      s[22] ^= h;
-      s[23] ^= l;
-      s[32] ^= h;
-      s[33] ^= l;
-      s[42] ^= h;
-      s[43] ^= l;
-      h = c2 ^ ((c6 << 1) | (c7 >>> 31));
-      l = c3 ^ ((c7 << 1) | (c6 >>> 31));
-      s[4] ^= h;
-      s[5] ^= l;
-      s[14] ^= h;
-      s[15] ^= l;
-      s[24] ^= h;
-      s[25] ^= l;
-      s[34] ^= h;
-      s[35] ^= l;
-      s[44] ^= h;
-      s[45] ^= l;
-      h = c4 ^ ((c8 << 1) | (c9 >>> 31));
-      l = c5 ^ ((c9 << 1) | (c8 >>> 31));
-      s[6] ^= h;
-      s[7] ^= l;
-      s[16] ^= h;
-      s[17] ^= l;
-      s[26] ^= h;
-      s[27] ^= l;
-      s[36] ^= h;
-      s[37] ^= l;
-      s[46] ^= h;
-      s[47] ^= l;
-      h = c6 ^ ((c0 << 1) | (c1 >>> 31));
-      l = c7 ^ ((c1 << 1) | (c0 >>> 31));
-      s[8] ^= h;
-      s[9] ^= l;
-      s[18] ^= h;
-      s[19] ^= l;
-      s[28] ^= h;
-      s[29] ^= l;
-      s[38] ^= h;
-      s[39] ^= l;
-      s[48] ^= h;
-      s[49] ^= l;
-
-      b0 = s[0];
-      b1 = s[1];
-      b32 = (s[11] << 4) | (s[10] >>> 28);
-      b33 = (s[10] << 4) | (s[11] >>> 28);
-      b14 = (s[20] << 3) | (s[21] >>> 29);
-      b15 = (s[21] << 3) | (s[20] >>> 29);
-      b46 = (s[31] << 9) | (s[30] >>> 23);
-      b47 = (s[30] << 9) | (s[31] >>> 23);
-      b28 = (s[40] << 18) | (s[41] >>> 14);
-      b29 = (s[41] << 18) | (s[40] >>> 14);
-      b20 = (s[2] << 1) | (s[3] >>> 31);
-      b21 = (s[3] << 1) | (s[2] >>> 31);
-      b2 = (s[13] << 12) | (s[12] >>> 20);
-      b3 = (s[12] << 12) | (s[13] >>> 20);
-      b34 = (s[22] << 10) | (s[23] >>> 22);
-      b35 = (s[23] << 10) | (s[22] >>> 22);
-      b16 = (s[33] << 13) | (s[32] >>> 19);
-      b17 = (s[32] << 13) | (s[33] >>> 19);
-      b48 = (s[42] << 2) | (s[43] >>> 30);
-      b49 = (s[43] << 2) | (s[42] >>> 30);
-      b40 = (s[5] << 30) | (s[4] >>> 2);
-      b41 = (s[4] << 30) | (s[5] >>> 2);
-      b22 = (s[14] << 6) | (s[15] >>> 26);
-      b23 = (s[15] << 6) | (s[14] >>> 26);
-      b4 = (s[25] << 11) | (s[24] >>> 21);
-      b5 = (s[24] << 11) | (s[25] >>> 21);
-      b36 = (s[34] << 15) | (s[35] >>> 17);
-      b37 = (s[35] << 15) | (s[34] >>> 17);
-      b18 = (s[45] << 29) | (s[44] >>> 3);
-      b19 = (s[44] << 29) | (s[45] >>> 3);
-      b10 = (s[6] << 28) | (s[7] >>> 4);
-      b11 = (s[7] << 28) | (s[6] >>> 4);
-      b42 = (s[17] << 23) | (s[16] >>> 9);
-      b43 = (s[16] << 23) | (s[17] >>> 9);
-      b24 = (s[26] << 25) | (s[27] >>> 7);
-      b25 = (s[27] << 25) | (s[26] >>> 7);
-      b6 = (s[36] << 21) | (s[37] >>> 11);
-      b7 = (s[37] << 21) | (s[36] >>> 11);
-      b38 = (s[47] << 24) | (s[46] >>> 8);
-      b39 = (s[46] << 24) | (s[47] >>> 8);
-      b30 = (s[8] << 27) | (s[9] >>> 5);
-      b31 = (s[9] << 27) | (s[8] >>> 5);
-      b12 = (s[18] << 20) | (s[19] >>> 12);
-      b13 = (s[19] << 20) | (s[18] >>> 12);
-      b44 = (s[29] << 7) | (s[28] >>> 25);
-      b45 = (s[28] << 7) | (s[29] >>> 25);
-      b26 = (s[38] << 8) | (s[39] >>> 24);
-      b27 = (s[39] << 8) | (s[38] >>> 24);
-      b8 = (s[48] << 14) | (s[49] >>> 18);
-      b9 = (s[49] << 14) | (s[48] >>> 18);
-
-      s[0] = b0 ^ (~b2 & b4);
-      s[1] = b1 ^ (~b3 & b5);
-      s[10] = b10 ^ (~b12 & b14);
-      s[11] = b11 ^ (~b13 & b15);
-      s[20] = b20 ^ (~b22 & b24);
-      s[21] = b21 ^ (~b23 & b25);
-      s[30] = b30 ^ (~b32 & b34);
-      s[31] = b31 ^ (~b33 & b35);
-      s[40] = b40 ^ (~b42 & b44);
-      s[41] = b41 ^ (~b43 & b45);
-      s[2] = b2 ^ (~b4 & b6);
-      s[3] = b3 ^ (~b5 & b7);
-      s[12] = b12 ^ (~b14 & b16);
-      s[13] = b13 ^ (~b15 & b17);
-      s[22] = b22 ^ (~b24 & b26);
-      s[23] = b23 ^ (~b25 & b27);
-      s[32] = b32 ^ (~b34 & b36);
-      s[33] = b33 ^ (~b35 & b37);
-      s[42] = b42 ^ (~b44 & b46);
-      s[43] = b43 ^ (~b45 & b47);
-      s[4] = b4 ^ (~b6 & b8);
-      s[5] = b5 ^ (~b7 & b9);
-      s[14] = b14 ^ (~b16 & b18);
-      s[15] = b15 ^ (~b17 & b19);
-      s[24] = b24 ^ (~b26 & b28);
-      s[25] = b25 ^ (~b27 & b29);
-      s[34] = b34 ^ (~b36 & b38);
-      s[35] = b35 ^ (~b37 & b39);
-      s[44] = b44 ^ (~b46 & b48);
-      s[45] = b45 ^ (~b47 & b49);
-      s[6] = b6 ^ (~b8 & b0);
-      s[7] = b7 ^ (~b9 & b1);
-      s[16] = b16 ^ (~b18 & b10);
-      s[17] = b17 ^ (~b19 & b11);
-      s[26] = b26 ^ (~b28 & b20);
-      s[27] = b27 ^ (~b29 & b21);
-      s[36] = b36 ^ (~b38 & b30);
-      s[37] = b37 ^ (~b39 & b31);
-      s[46] = b46 ^ (~b48 & b40);
-      s[47] = b47 ^ (~b49 & b41);
-      s[8] = b8 ^ (~b0 & b2);
-      s[9] = b9 ^ (~b1 & b3);
-      s[18] = b18 ^ (~b10 & b12);
-      s[19] = b19 ^ (~b11 & b13);
-      s[28] = b28 ^ (~b20 & b22);
-      s[29] = b29 ^ (~b21 & b23);
-      s[38] = b38 ^ (~b30 & b32);
-      s[39] = b39 ^ (~b31 & b33);
-      s[48] = b48 ^ (~b40 & b42);
-      s[49] = b49 ^ (~b41 & b43);
-
-      s[0] ^= RC[n];
-      s[1] ^= RC[n + 1];
-    }
-  }
-
-  if (COMMON_JS) {
-    module.exports = methods;
-  } else if (root) {
-    for (var key in methods) {
-      root[key] = methods[key];
-    }
-  }
-}(this));
-
-}).call(this,_dereq_('_process'),typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"_process":237}],200:[function(_dereq_,module,exports){
+},{"raphael":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/raphael/raphael.min.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/json-rpc-random-id/index.js":[function(_dereq_,module,exports){
 module.exports = IdIterator
 
 function IdIterator(opts){
@@ -28543,11 +30251,11 @@ function IdIterator(opts){
   }
 
 }
-},{}],201:[function(_dereq_,module,exports){
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/jsonify/index.js":[function(_dereq_,module,exports){
 exports.parse = _dereq_('./lib/parse');
 exports.stringify = _dereq_('./lib/stringify');
 
-},{"./lib/parse":202,"./lib/stringify":203}],202:[function(_dereq_,module,exports){
+},{"./lib/parse":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/jsonify/lib/parse.js","./lib/stringify":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/jsonify/lib/stringify.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/jsonify/lib/parse.js":[function(_dereq_,module,exports){
 var at, // The index of the current character
     ch, // The current character
     escapee = {
@@ -28822,7 +30530,7 @@ module.exports = function (source, reviver) {
     }({'': result}, '')) : result;
 };
 
-},{}],203:[function(_dereq_,module,exports){
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/jsonify/lib/stringify.js":[function(_dereq_,module,exports){
 var cx = /[\u0000\u00ad\u0600-\u0604\u070f\u17b4\u17b5\u200c-\u200f\u2028-\u202f\u2060-\u206f\ufeff\ufff0-\uffff]/g,
     escapable = /[\\\"\x00-\x1f\x7f-\x9f\u00ad\u0600-\u0604\u070f\u17b4\u17b5\u200c-\u200f\u2028-\u202f\u2060-\u206f\ufeff\ufff0-\uffff]/g,
     gap,
@@ -28978,11 +30686,11 @@ module.exports = function (value, replacer, space) {
     return str('', {'': value});
 };
 
-},{}],204:[function(_dereq_,module,exports){
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/keccak/js.js":[function(_dereq_,module,exports){
 'use strict'
 module.exports = _dereq_('./lib/api')(_dereq_('./lib/keccak'))
 
-},{"./lib/api":205,"./lib/keccak":209}],205:[function(_dereq_,module,exports){
+},{"./lib/api":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/keccak/lib/api/index.js","./lib/keccak":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/keccak/lib/keccak.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/keccak/lib/api/index.js":[function(_dereq_,module,exports){
 'use strict'
 var createKeccak = _dereq_('./keccak')
 var createShake = _dereq_('./shake')
@@ -29012,7 +30720,7 @@ module.exports = function (KeccakState) {
   }
 }
 
-},{"./keccak":206,"./shake":207}],206:[function(_dereq_,module,exports){
+},{"./keccak":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/keccak/lib/api/keccak.js","./shake":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/keccak/lib/api/shake.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/keccak/lib/api/keccak.js":[function(_dereq_,module,exports){
 (function (Buffer){
 'use strict'
 var Transform = _dereq_('stream').Transform
@@ -29099,7 +30807,8 @@ module.exports = function (KeccakState) {
 }
 
 }).call(this,_dereq_("buffer").Buffer)
-},{"buffer":24,"inherits":191,"stream":481}],207:[function(_dereq_,module,exports){
+
+},{"buffer":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/buffer/index.js","inherits":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/inherits/inherits_browser.js","stream":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/stream-browserify/index.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/keccak/lib/api/shake.js":[function(_dereq_,module,exports){
 (function (Buffer){
 'use strict'
 var Transform = _dereq_('stream').Transform
@@ -29177,7 +30886,8 @@ module.exports = function (KeccakState) {
 }
 
 }).call(this,_dereq_("buffer").Buffer)
-},{"buffer":24,"inherits":191,"stream":481}],208:[function(_dereq_,module,exports){
+
+},{"buffer":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/buffer/index.js","inherits":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/inherits/inherits_browser.js","stream":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/stream-browserify/index.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/keccak/lib/keccak-state-unroll.js":[function(_dereq_,module,exports){
 'use strict'
 var P1600_ROUND_CONSTANTS = [1, 0, 32898, 0, 32906, 2147483648, 2147516416, 2147483648, 32907, 0, 2147483649, 0, 2147516545, 2147483648, 32777, 2147483648, 138, 0, 136, 0, 2147516425, 0, 2147483658, 0, 2147516555, 0, 139, 2147483648, 32905, 2147483648, 32771, 2147483648, 32770, 2147483648, 128, 2147483648, 32778, 0, 2147483658, 2147483648, 2147516545, 2147483648, 32896, 2147483648, 2147483649, 0, 2147516424, 2147483648]
 
@@ -29366,7 +31076,7 @@ exports.p1600 = function (s) {
   }
 }
 
-},{}],209:[function(_dereq_,module,exports){
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/keccak/lib/keccak.js":[function(_dereq_,module,exports){
 (function (Buffer){
 'use strict'
 var keccakState = _dereq_('./keccak-state-unroll')
@@ -29439,7 +31149,8 @@ Keccak.prototype.copy = function (dest) {
 module.exports = Keccak
 
 }).call(this,_dereq_("buffer").Buffer)
-},{"./keccak-state-unroll":208,"buffer":24}],210:[function(_dereq_,module,exports){
+
+},{"./keccak-state-unroll":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/keccak/lib/keccak-state-unroll.js","buffer":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/buffer/index.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/lodash.assign/index.js":[function(_dereq_,module,exports){
 /**
  * lodash (Custom Build) <https://lodash.com/>
  * Build: `lodash modularize exports="npm" -o ./`
@@ -30078,7 +31789,7 @@ function keys(object) {
 
 module.exports = assign;
 
-},{}],211:[function(_dereq_,module,exports){
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/lodash.isplainobject/index.js":[function(_dereq_,module,exports){
 /**
  * lodash (Custom Build) <https://lodash.com/>
  * Build: `lodash modularize exports="npm" -o ./`
@@ -30219,7 +31930,7 @@ function isPlainObject(value) {
 
 module.exports = isPlainObject;
 
-},{}],212:[function(_dereq_,module,exports){
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/lodash/_Symbol.js":[function(_dereq_,module,exports){
 var root = _dereq_('./_root');
 
 /** Built-in value references. */
@@ -30227,7 +31938,7 @@ var Symbol = root.Symbol;
 
 module.exports = Symbol;
 
-},{"./_root":219}],213:[function(_dereq_,module,exports){
+},{"./_root":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/lodash/_root.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/lodash/_baseGetTag.js":[function(_dereq_,module,exports){
 var Symbol = _dereq_('./_Symbol'),
     getRawTag = _dereq_('./_getRawTag'),
     objectToString = _dereq_('./_objectToString');
@@ -30257,7 +31968,7 @@ function baseGetTag(value) {
 
 module.exports = baseGetTag;
 
-},{"./_Symbol":212,"./_getRawTag":216,"./_objectToString":217}],214:[function(_dereq_,module,exports){
+},{"./_Symbol":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/lodash/_Symbol.js","./_getRawTag":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/lodash/_getRawTag.js","./_objectToString":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/lodash/_objectToString.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/lodash/_freeGlobal.js":[function(_dereq_,module,exports){
 (function (global){
 /** Detect free variable `global` from Node.js. */
 var freeGlobal = typeof global == 'object' && global && global.Object === Object && global;
@@ -30265,7 +31976,8 @@ var freeGlobal = typeof global == 'object' && global && global.Object === Object
 module.exports = freeGlobal;
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{}],215:[function(_dereq_,module,exports){
+
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/lodash/_getPrototype.js":[function(_dereq_,module,exports){
 var overArg = _dereq_('./_overArg');
 
 /** Built-in value references. */
@@ -30273,7 +31985,7 @@ var getPrototype = overArg(Object.getPrototypeOf, Object);
 
 module.exports = getPrototype;
 
-},{"./_overArg":218}],216:[function(_dereq_,module,exports){
+},{"./_overArg":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/lodash/_overArg.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/lodash/_getRawTag.js":[function(_dereq_,module,exports){
 var Symbol = _dereq_('./_Symbol');
 
 /** Used for built-in method references. */
@@ -30321,7 +32033,7 @@ function getRawTag(value) {
 
 module.exports = getRawTag;
 
-},{"./_Symbol":212}],217:[function(_dereq_,module,exports){
+},{"./_Symbol":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/lodash/_Symbol.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/lodash/_objectToString.js":[function(_dereq_,module,exports){
 /** Used for built-in method references. */
 var objectProto = Object.prototype;
 
@@ -30345,7 +32057,7 @@ function objectToString(value) {
 
 module.exports = objectToString;
 
-},{}],218:[function(_dereq_,module,exports){
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/lodash/_overArg.js":[function(_dereq_,module,exports){
 /**
  * Creates a unary function that invokes `func` with its argument transformed.
  *
@@ -30362,7 +32074,7 @@ function overArg(func, transform) {
 
 module.exports = overArg;
 
-},{}],219:[function(_dereq_,module,exports){
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/lodash/_root.js":[function(_dereq_,module,exports){
 var freeGlobal = _dereq_('./_freeGlobal');
 
 /** Detect free variable `self`. */
@@ -30373,7 +32085,7 @@ var root = freeGlobal || freeSelf || Function('return this')();
 
 module.exports = root;
 
-},{"./_freeGlobal":214}],220:[function(_dereq_,module,exports){
+},{"./_freeGlobal":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/lodash/_freeGlobal.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/lodash/isObjectLike.js":[function(_dereq_,module,exports){
 /**
  * Checks if `value` is object-like. A value is object-like if it's not `null`
  * and has a `typeof` result of "object".
@@ -30404,7 +32116,7 @@ function isObjectLike(value) {
 
 module.exports = isObjectLike;
 
-},{}],221:[function(_dereq_,module,exports){
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/lodash/isPlainObject.js":[function(_dereq_,module,exports){
 var baseGetTag = _dereq_('./_baseGetTag'),
     getPrototype = _dereq_('./_getPrototype'),
     isObjectLike = _dereq_('./isObjectLike');
@@ -30468,7 +32180,7 @@ function isPlainObject(value) {
 
 module.exports = isPlainObject;
 
-},{"./_baseGetTag":213,"./_getPrototype":215,"./isObjectLike":220}],222:[function(_dereq_,module,exports){
+},{"./_baseGetTag":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/lodash/_baseGetTag.js","./_getPrototype":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/lodash/_getPrototype.js","./isObjectLike":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/lodash/isObjectLike.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/loglevel/lib/loglevel.js":[function(_dereq_,module,exports){
 /*
 * loglevel - https://github.com/pimterry/loglevel
 *
@@ -30693,7 +32405,7 @@ module.exports = isPlainObject;
     return defaultLogger;
 }));
 
-},{}],223:[function(_dereq_,module,exports){
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/mdurl/decode.js":[function(_dereq_,module,exports){
 
 'use strict';
 
@@ -30817,7 +32529,7 @@ decode.componentChars = '';
 
 module.exports = decode;
 
-},{}],224:[function(_dereq_,module,exports){
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/mdurl/encode.js":[function(_dereq_,module,exports){
 
 'use strict';
 
@@ -30917,7 +32629,7 @@ encode.componentChars = "-_.!~*'()";
 
 module.exports = encode;
 
-},{}],225:[function(_dereq_,module,exports){
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/menu-droppo/index.js":[function(_dereq_,module,exports){
 'use strict';
 
 var Component = _dereq_('react').Component;
@@ -31021,7 +32733,7 @@ function isDescendant(parent, child) {
   return false;
 }
 
-},{"raphael":246,"react":435,"react-addons-css-transition-group":247,"react-dom":248,"react-hyperscript":378,"util":495}],226:[function(_dereq_,module,exports){
+},{"raphael":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/raphael/raphael.min.js","react":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/react.js","react-addons-css-transition-group":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-addons-css-transition-group/index.js","react-dom":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/index.js","react-hyperscript":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-hyperscript/index.js","util":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/util/util.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/mersenne-twister/src/mersenne-twister.js":[function(_dereq_,module,exports){
 /*
   https://github.com/banksean wrapped Makoto Matsumoto and Takuji Nishimura's code in a namespace
   so it's better encapsulated. Now you can have multiple random number generators
@@ -31233,7 +32945,7 @@ MersenneTwister.prototype.random_long = function() {
 
 module.exports = MersenneTwister;
 
-},{}],227:[function(_dereq_,module,exports){
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/metamask-logo/fox.json":[function(_dereq_,module,exports){
 module.exports={
   "positions": [
     [
@@ -32661,7 +34373,7 @@ module.exports={
   ]
 }
 
-},{}],228:[function(_dereq_,module,exports){
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/metamask-logo/index.js":[function(_dereq_,module,exports){
 var perspective = _dereq_('gl-mat4/perspective')
 var multiply = _dereq_('gl-mat4/multiply')
 var lookAt = _dereq_('gl-mat4/lookAt')
@@ -32963,7 +34675,7 @@ module.exports = function createLogo (options_) {
 
 }
 
-},{"./fox.json":227,"gl-mat4/invert":173,"gl-mat4/lookAt":174,"gl-mat4/multiply":175,"gl-mat4/perspective":176,"gl-mat4/rotate":177,"gl-vec3/transformMat4":178}],229:[function(_dereq_,module,exports){
+},{"./fox.json":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/metamask-logo/fox.json","gl-mat4/invert":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/gl-mat4/invert.js","gl-mat4/lookAt":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/gl-mat4/lookAt.js","gl-mat4/multiply":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/gl-mat4/multiply.js","gl-mat4/perspective":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/gl-mat4/perspective.js","gl-mat4/rotate":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/gl-mat4/rotate.js","gl-vec3/transformMat4":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/gl-vec3/transformMat4.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/minimalistic-assert/index.js":[function(_dereq_,module,exports){
 module.exports = assert;
 
 function assert(val, msg) {
@@ -32976,7 +34688,7 @@ assert.equal = function assertEqual(l, r, msg) {
     throw new Error(msg || ('Assertion failed: ' + l + ' != ' + r));
 };
 
-},{}],230:[function(_dereq_,module,exports){
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/minimalistic-crypto-utils/lib/utils.js":[function(_dereq_,module,exports){
 'use strict';
 
 var utils = exports;
@@ -33036,7 +34748,7 @@ utils.encode = function encode(arr, enc) {
     return arr;
 };
 
-},{}],231:[function(_dereq_,module,exports){
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/number-to-bn/src/index.js":[function(_dereq_,module,exports){
 var BN = _dereq_('bn.js');
 var stripHexPrefix = _dereq_('strip-hex-prefix');
 
@@ -33076,7 +34788,7 @@ module.exports = function numberToBN(arg) {
   throw new Error('[number-to-bn] while converting number ' + JSON.stringify(arg) + ' to BN.js instance, error: invalid number value. Value must be an integer, hex string, BN or BigNumber instance. Note, decimals are not supported.');
 }
 
-},{"bn.js":20,"strip-hex-prefix":484}],232:[function(_dereq_,module,exports){
+},{"bn.js":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/bn.js/lib/bn.js","strip-hex-prefix":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/strip-hex-prefix/src/index.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/object-assign/index.js":[function(_dereq_,module,exports){
 /*
 object-assign
 (c) Sindre Sorhus
@@ -33168,7 +34880,7 @@ module.exports = shouldUseNative() ? Object.assign : function (target, source) {
 	return to;
 };
 
-},{}],233:[function(_dereq_,module,exports){
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/once/once.js":[function(_dereq_,module,exports){
 var wrappy = _dereq_('wrappy')
 module.exports = wrappy(once)
 module.exports.strict = wrappy(onceStrict)
@@ -33212,7 +34924,7 @@ function onceStrict (fn) {
   return f
 }
 
-},{"wrappy":499}],234:[function(_dereq_,module,exports){
+},{"wrappy":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/wrappy/wrappy.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/pascalcase/index.js":[function(_dereq_,module,exports){
 /*!
  * pascalcase <https://github.com/jonschlinkert/pascalcase>
  *
@@ -33235,7 +34947,7 @@ function pascalcase(str) {
 
 module.exports = pascalcase;
 
-},{}],235:[function(_dereq_,module,exports){
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/path-browserify/index.js":[function(_dereq_,module,exports){
 (function (process){
 // Copyright Joyent, Inc. and other Node contributors.
 //
@@ -33463,7 +35175,8 @@ var substr = 'ab'.substr(-1) === 'b'
 ;
 
 }).call(this,_dereq_('_process'))
-},{"_process":237}],236:[function(_dereq_,module,exports){
+
+},{"_process":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/browserify/node_modules/process/browser.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/process-nextick-args/index.js":[function(_dereq_,module,exports){
 (function (process){
 'use strict';
 
@@ -33510,193 +35223,8 @@ function nextTick(fn, arg1, arg2, arg3) {
 }
 
 }).call(this,_dereq_('_process'))
-},{"_process":237}],237:[function(_dereq_,module,exports){
-// shim for using process in browser
-var process = module.exports = {};
 
-// cached from whatever global is present so that test runners that stub it
-// don't break things.  But we need to wrap it in a try catch in case it is
-// wrapped in strict mode code which doesn't define any globals.  It's inside a
-// function because try/catches deoptimize in certain engines.
-
-var cachedSetTimeout;
-var cachedClearTimeout;
-
-function defaultSetTimout() {
-    throw new Error('setTimeout has not been defined');
-}
-function defaultClearTimeout () {
-    throw new Error('clearTimeout has not been defined');
-}
-(function () {
-    try {
-        if (typeof setTimeout === 'function') {
-            cachedSetTimeout = setTimeout;
-        } else {
-            cachedSetTimeout = defaultSetTimout;
-        }
-    } catch (e) {
-        cachedSetTimeout = defaultSetTimout;
-    }
-    try {
-        if (typeof clearTimeout === 'function') {
-            cachedClearTimeout = clearTimeout;
-        } else {
-            cachedClearTimeout = defaultClearTimeout;
-        }
-    } catch (e) {
-        cachedClearTimeout = defaultClearTimeout;
-    }
-} ())
-function runTimeout(fun) {
-    if (cachedSetTimeout === setTimeout) {
-        //normal enviroments in sane situations
-        return setTimeout(fun, 0);
-    }
-    // if setTimeout wasn't available but was latter defined
-    if ((cachedSetTimeout === defaultSetTimout || !cachedSetTimeout) && setTimeout) {
-        cachedSetTimeout = setTimeout;
-        return setTimeout(fun, 0);
-    }
-    try {
-        // when when somebody has screwed with setTimeout but no I.E. maddness
-        return cachedSetTimeout(fun, 0);
-    } catch(e){
-        try {
-            // When we are in I.E. but the script has been evaled so I.E. doesn't trust the global object when called normally
-            return cachedSetTimeout.call(null, fun, 0);
-        } catch(e){
-            // same as above but when it's a version of I.E. that must have the global object for 'this', hopfully our context correct otherwise it will throw a global error
-            return cachedSetTimeout.call(this, fun, 0);
-        }
-    }
-
-
-}
-function runClearTimeout(marker) {
-    if (cachedClearTimeout === clearTimeout) {
-        //normal enviroments in sane situations
-        return clearTimeout(marker);
-    }
-    // if clearTimeout wasn't available but was latter defined
-    if ((cachedClearTimeout === defaultClearTimeout || !cachedClearTimeout) && clearTimeout) {
-        cachedClearTimeout = clearTimeout;
-        return clearTimeout(marker);
-    }
-    try {
-        // when when somebody has screwed with setTimeout but no I.E. maddness
-        return cachedClearTimeout(marker);
-    } catch (e){
-        try {
-            // When we are in I.E. but the script has been evaled so I.E. doesn't  trust the global object when called normally
-            return cachedClearTimeout.call(null, marker);
-        } catch (e){
-            // same as above but when it's a version of I.E. that must have the global object for 'this', hopfully our context correct otherwise it will throw a global error.
-            // Some versions of I.E. have different rules for clearTimeout vs setTimeout
-            return cachedClearTimeout.call(this, marker);
-        }
-    }
-
-
-
-}
-var queue = [];
-var draining = false;
-var currentQueue;
-var queueIndex = -1;
-
-function cleanUpNextTick() {
-    if (!draining || !currentQueue) {
-        return;
-    }
-    draining = false;
-    if (currentQueue.length) {
-        queue = currentQueue.concat(queue);
-    } else {
-        queueIndex = -1;
-    }
-    if (queue.length) {
-        drainQueue();
-    }
-}
-
-function drainQueue() {
-    if (draining) {
-        return;
-    }
-    var timeout = runTimeout(cleanUpNextTick);
-    draining = true;
-
-    var len = queue.length;
-    while(len) {
-        currentQueue = queue;
-        queue = [];
-        while (++queueIndex < len) {
-            if (currentQueue) {
-                currentQueue[queueIndex].run();
-            }
-        }
-        queueIndex = -1;
-        len = queue.length;
-    }
-    currentQueue = null;
-    draining = false;
-    runClearTimeout(timeout);
-}
-
-process.nextTick = function (fun) {
-    var args = new Array(arguments.length - 1);
-    if (arguments.length > 1) {
-        for (var i = 1; i < arguments.length; i++) {
-            args[i - 1] = arguments[i];
-        }
-    }
-    queue.push(new Item(fun, args));
-    if (queue.length === 1 && !draining) {
-        runTimeout(drainQueue);
-    }
-};
-
-// v8 likes predictible objects
-function Item(fun, array) {
-    this.fun = fun;
-    this.array = array;
-}
-Item.prototype.run = function () {
-    this.fun.apply(null, this.array);
-};
-process.title = 'browser';
-process.browser = true;
-process.env = {};
-process.argv = [];
-process.version = ''; // empty string to avoid regexp issues
-process.versions = {};
-
-function noop() {}
-
-process.on = noop;
-process.addListener = noop;
-process.once = noop;
-process.off = noop;
-process.removeListener = noop;
-process.removeAllListeners = noop;
-process.emit = noop;
-process.prependListener = noop;
-process.prependOnceListener = noop;
-
-process.listeners = function (name) { return [] }
-
-process.binding = function (name) {
-    throw new Error('process.binding is not supported');
-};
-
-process.cwd = function () { return '/' };
-process.chdir = function (dir) {
-    throw new Error('process.chdir is not supported');
-};
-process.umask = function() { return 0; };
-
-},{}],238:[function(_dereq_,module,exports){
+},{"_process":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/browserify/node_modules/process/browser.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/prop-types/checkPropTypes.js":[function(_dereq_,module,exports){
 (function (process){
 /**
  * Copyright 2013-present, Facebook, Inc.
@@ -33761,7 +35289,8 @@ function checkPropTypes(typeSpecs, values, location, componentName, getStack) {
 module.exports = checkPropTypes;
 
 }).call(this,_dereq_('_process'))
-},{"./lib/ReactPropTypesSecret":243,"_process":237,"fbjs/lib/invariant":164,"fbjs/lib/warning":171}],239:[function(_dereq_,module,exports){
+
+},{"./lib/ReactPropTypesSecret":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/prop-types/lib/ReactPropTypesSecret.js","_process":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/invariant":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/invariant.js","fbjs/lib/warning":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/warning.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/prop-types/factory.js":[function(_dereq_,module,exports){
 /**
  * Copyright 2013-present, Facebook, Inc.
  * All rights reserved.
@@ -33784,7 +35313,7 @@ module.exports = function(isValidElement) {
   return factory(isValidElement, throwOnDirectAccess);
 };
 
-},{"./factoryWithTypeCheckers":241}],240:[function(_dereq_,module,exports){
+},{"./factoryWithTypeCheckers":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/prop-types/factoryWithTypeCheckers.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/prop-types/factoryWithThrowingShims.js":[function(_dereq_,module,exports){
 /**
  * Copyright 2013-present, Facebook, Inc.
  * All rights reserved.
@@ -33845,7 +35374,7 @@ module.exports = function() {
   return ReactPropTypes;
 };
 
-},{"./lib/ReactPropTypesSecret":243,"fbjs/lib/emptyFunction":156,"fbjs/lib/invariant":164}],241:[function(_dereq_,module,exports){
+},{"./lib/ReactPropTypesSecret":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/prop-types/lib/ReactPropTypesSecret.js","fbjs/lib/emptyFunction":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/emptyFunction.js","fbjs/lib/invariant":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/invariant.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/prop-types/factoryWithTypeCheckers.js":[function(_dereq_,module,exports){
 (function (process){
 /**
  * Copyright 2013-present, Facebook, Inc.
@@ -34361,7 +35890,8 @@ module.exports = function(isValidElement, throwOnDirectAccess) {
 };
 
 }).call(this,_dereq_('_process'))
-},{"./checkPropTypes":238,"./lib/ReactPropTypesSecret":243,"_process":237,"fbjs/lib/emptyFunction":156,"fbjs/lib/invariant":164,"fbjs/lib/warning":171}],242:[function(_dereq_,module,exports){
+
+},{"./checkPropTypes":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/prop-types/checkPropTypes.js","./lib/ReactPropTypesSecret":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/prop-types/lib/ReactPropTypesSecret.js","_process":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/emptyFunction":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/emptyFunction.js","fbjs/lib/invariant":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/invariant.js","fbjs/lib/warning":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/warning.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/prop-types/index.js":[function(_dereq_,module,exports){
 (function (process){
 /**
  * Copyright 2013-present, Facebook, Inc.
@@ -34395,7 +35925,8 @@ if (process.env.NODE_ENV !== 'production') {
 }
 
 }).call(this,_dereq_('_process'))
-},{"./factoryWithThrowingShims":240,"./factoryWithTypeCheckers":241,"_process":237}],243:[function(_dereq_,module,exports){
+
+},{"./factoryWithThrowingShims":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/prop-types/factoryWithThrowingShims.js","./factoryWithTypeCheckers":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/prop-types/factoryWithTypeCheckers.js","_process":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/browserify/node_modules/process/browser.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/prop-types/lib/ReactPropTypesSecret.js":[function(_dereq_,module,exports){
 /**
  * Copyright 2013-present, Facebook, Inc.
  * All rights reserved.
@@ -34411,544 +35942,7 @@ var ReactPropTypesSecret = 'SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED';
 
 module.exports = ReactPropTypesSecret;
 
-},{}],244:[function(_dereq_,module,exports){
-(function (global){
-/*! https://mths.be/punycode v1.4.1 by @mathias */
-;(function(root) {
-
-	/** Detect free variables */
-	var freeExports = typeof exports == 'object' && exports &&
-		!exports.nodeType && exports;
-	var freeModule = typeof module == 'object' && module &&
-		!module.nodeType && module;
-	var freeGlobal = typeof global == 'object' && global;
-	if (
-		freeGlobal.global === freeGlobal ||
-		freeGlobal.window === freeGlobal ||
-		freeGlobal.self === freeGlobal
-	) {
-		root = freeGlobal;
-	}
-
-	/**
-	 * The `punycode` object.
-	 * @name punycode
-	 * @type Object
-	 */
-	var punycode,
-
-	/** Highest positive signed 32-bit float value */
-	maxInt = 2147483647, // aka. 0x7FFFFFFF or 2^31-1
-
-	/** Bootstring parameters */
-	base = 36,
-	tMin = 1,
-	tMax = 26,
-	skew = 38,
-	damp = 700,
-	initialBias = 72,
-	initialN = 128, // 0x80
-	delimiter = '-', // '\x2D'
-
-	/** Regular expressions */
-	regexPunycode = /^xn--/,
-	regexNonASCII = /[^\x20-\x7E]/, // unprintable ASCII chars + non-ASCII chars
-	regexSeparators = /[\x2E\u3002\uFF0E\uFF61]/g, // RFC 3490 separators
-
-	/** Error messages */
-	errors = {
-		'overflow': 'Overflow: input needs wider integers to process',
-		'not-basic': 'Illegal input >= 0x80 (not a basic code point)',
-		'invalid-input': 'Invalid input'
-	},
-
-	/** Convenience shortcuts */
-	baseMinusTMin = base - tMin,
-	floor = Math.floor,
-	stringFromCharCode = String.fromCharCode,
-
-	/** Temporary variable */
-	key;
-
-	/*--------------------------------------------------------------------------*/
-
-	/**
-	 * A generic error utility function.
-	 * @private
-	 * @param {String} type The error type.
-	 * @returns {Error} Throws a `RangeError` with the applicable error message.
-	 */
-	function error(type) {
-		throw new RangeError(errors[type]);
-	}
-
-	/**
-	 * A generic `Array#map` utility function.
-	 * @private
-	 * @param {Array} array The array to iterate over.
-	 * @param {Function} callback The function that gets called for every array
-	 * item.
-	 * @returns {Array} A new array of values returned by the callback function.
-	 */
-	function map(array, fn) {
-		var length = array.length;
-		var result = [];
-		while (length--) {
-			result[length] = fn(array[length]);
-		}
-		return result;
-	}
-
-	/**
-	 * A simple `Array#map`-like wrapper to work with domain name strings or email
-	 * addresses.
-	 * @private
-	 * @param {String} domain The domain name or email address.
-	 * @param {Function} callback The function that gets called for every
-	 * character.
-	 * @returns {Array} A new string of characters returned by the callback
-	 * function.
-	 */
-	function mapDomain(string, fn) {
-		var parts = string.split('@');
-		var result = '';
-		if (parts.length > 1) {
-			// In email addresses, only the domain name should be punycoded. Leave
-			// the local part (i.e. everything up to `@`) intact.
-			result = parts[0] + '@';
-			string = parts[1];
-		}
-		// Avoid `split(regex)` for IE8 compatibility. See #17.
-		string = string.replace(regexSeparators, '\x2E');
-		var labels = string.split('.');
-		var encoded = map(labels, fn).join('.');
-		return result + encoded;
-	}
-
-	/**
-	 * Creates an array containing the numeric code points of each Unicode
-	 * character in the string. While JavaScript uses UCS-2 internally,
-	 * this function will convert a pair of surrogate halves (each of which
-	 * UCS-2 exposes as separate characters) into a single code point,
-	 * matching UTF-16.
-	 * @see `punycode.ucs2.encode`
-	 * @see <https://mathiasbynens.be/notes/javascript-encoding>
-	 * @memberOf punycode.ucs2
-	 * @name decode
-	 * @param {String} string The Unicode input string (UCS-2).
-	 * @returns {Array} The new array of code points.
-	 */
-	function ucs2decode(string) {
-		var output = [],
-		    counter = 0,
-		    length = string.length,
-		    value,
-		    extra;
-		while (counter < length) {
-			value = string.charCodeAt(counter++);
-			if (value >= 0xD800 && value <= 0xDBFF && counter < length) {
-				// high surrogate, and there is a next character
-				extra = string.charCodeAt(counter++);
-				if ((extra & 0xFC00) == 0xDC00) { // low surrogate
-					output.push(((value & 0x3FF) << 10) + (extra & 0x3FF) + 0x10000);
-				} else {
-					// unmatched surrogate; only append this code unit, in case the next
-					// code unit is the high surrogate of a surrogate pair
-					output.push(value);
-					counter--;
-				}
-			} else {
-				output.push(value);
-			}
-		}
-		return output;
-	}
-
-	/**
-	 * Creates a string based on an array of numeric code points.
-	 * @see `punycode.ucs2.decode`
-	 * @memberOf punycode.ucs2
-	 * @name encode
-	 * @param {Array} codePoints The array of numeric code points.
-	 * @returns {String} The new Unicode string (UCS-2).
-	 */
-	function ucs2encode(array) {
-		return map(array, function(value) {
-			var output = '';
-			if (value > 0xFFFF) {
-				value -= 0x10000;
-				output += stringFromCharCode(value >>> 10 & 0x3FF | 0xD800);
-				value = 0xDC00 | value & 0x3FF;
-			}
-			output += stringFromCharCode(value);
-			return output;
-		}).join('');
-	}
-
-	/**
-	 * Converts a basic code point into a digit/integer.
-	 * @see `digitToBasic()`
-	 * @private
-	 * @param {Number} codePoint The basic numeric code point value.
-	 * @returns {Number} The numeric value of a basic code point (for use in
-	 * representing integers) in the range `0` to `base - 1`, or `base` if
-	 * the code point does not represent a value.
-	 */
-	function basicToDigit(codePoint) {
-		if (codePoint - 48 < 10) {
-			return codePoint - 22;
-		}
-		if (codePoint - 65 < 26) {
-			return codePoint - 65;
-		}
-		if (codePoint - 97 < 26) {
-			return codePoint - 97;
-		}
-		return base;
-	}
-
-	/**
-	 * Converts a digit/integer into a basic code point.
-	 * @see `basicToDigit()`
-	 * @private
-	 * @param {Number} digit The numeric value of a basic code point.
-	 * @returns {Number} The basic code point whose value (when used for
-	 * representing integers) is `digit`, which needs to be in the range
-	 * `0` to `base - 1`. If `flag` is non-zero, the uppercase form is
-	 * used; else, the lowercase form is used. The behavior is undefined
-	 * if `flag` is non-zero and `digit` has no uppercase form.
-	 */
-	function digitToBasic(digit, flag) {
-		//  0..25 map to ASCII a..z or A..Z
-		// 26..35 map to ASCII 0..9
-		return digit + 22 + 75 * (digit < 26) - ((flag != 0) << 5);
-	}
-
-	/**
-	 * Bias adaptation function as per section 3.4 of RFC 3492.
-	 * https://tools.ietf.org/html/rfc3492#section-3.4
-	 * @private
-	 */
-	function adapt(delta, numPoints, firstTime) {
-		var k = 0;
-		delta = firstTime ? floor(delta / damp) : delta >> 1;
-		delta += floor(delta / numPoints);
-		for (/* no initialization */; delta > baseMinusTMin * tMax >> 1; k += base) {
-			delta = floor(delta / baseMinusTMin);
-		}
-		return floor(k + (baseMinusTMin + 1) * delta / (delta + skew));
-	}
-
-	/**
-	 * Converts a Punycode string of ASCII-only symbols to a string of Unicode
-	 * symbols.
-	 * @memberOf punycode
-	 * @param {String} input The Punycode string of ASCII-only symbols.
-	 * @returns {String} The resulting string of Unicode symbols.
-	 */
-	function decode(input) {
-		// Don't use UCS-2
-		var output = [],
-		    inputLength = input.length,
-		    out,
-		    i = 0,
-		    n = initialN,
-		    bias = initialBias,
-		    basic,
-		    j,
-		    index,
-		    oldi,
-		    w,
-		    k,
-		    digit,
-		    t,
-		    /** Cached calculation results */
-		    baseMinusT;
-
-		// Handle the basic code points: let `basic` be the number of input code
-		// points before the last delimiter, or `0` if there is none, then copy
-		// the first basic code points to the output.
-
-		basic = input.lastIndexOf(delimiter);
-		if (basic < 0) {
-			basic = 0;
-		}
-
-		for (j = 0; j < basic; ++j) {
-			// if it's not a basic code point
-			if (input.charCodeAt(j) >= 0x80) {
-				error('not-basic');
-			}
-			output.push(input.charCodeAt(j));
-		}
-
-		// Main decoding loop: start just after the last delimiter if any basic code
-		// points were copied; start at the beginning otherwise.
-
-		for (index = basic > 0 ? basic + 1 : 0; index < inputLength; /* no final expression */) {
-
-			// `index` is the index of the next character to be consumed.
-			// Decode a generalized variable-length integer into `delta`,
-			// which gets added to `i`. The overflow checking is easier
-			// if we increase `i` as we go, then subtract off its starting
-			// value at the end to obtain `delta`.
-			for (oldi = i, w = 1, k = base; /* no condition */; k += base) {
-
-				if (index >= inputLength) {
-					error('invalid-input');
-				}
-
-				digit = basicToDigit(input.charCodeAt(index++));
-
-				if (digit >= base || digit > floor((maxInt - i) / w)) {
-					error('overflow');
-				}
-
-				i += digit * w;
-				t = k <= bias ? tMin : (k >= bias + tMax ? tMax : k - bias);
-
-				if (digit < t) {
-					break;
-				}
-
-				baseMinusT = base - t;
-				if (w > floor(maxInt / baseMinusT)) {
-					error('overflow');
-				}
-
-				w *= baseMinusT;
-
-			}
-
-			out = output.length + 1;
-			bias = adapt(i - oldi, out, oldi == 0);
-
-			// `i` was supposed to wrap around from `out` to `0`,
-			// incrementing `n` each time, so we'll fix that now:
-			if (floor(i / out) > maxInt - n) {
-				error('overflow');
-			}
-
-			n += floor(i / out);
-			i %= out;
-
-			// Insert `n` at position `i` of the output
-			output.splice(i++, 0, n);
-
-		}
-
-		return ucs2encode(output);
-	}
-
-	/**
-	 * Converts a string of Unicode symbols (e.g. a domain name label) to a
-	 * Punycode string of ASCII-only symbols.
-	 * @memberOf punycode
-	 * @param {String} input The string of Unicode symbols.
-	 * @returns {String} The resulting Punycode string of ASCII-only symbols.
-	 */
-	function encode(input) {
-		var n,
-		    delta,
-		    handledCPCount,
-		    basicLength,
-		    bias,
-		    j,
-		    m,
-		    q,
-		    k,
-		    t,
-		    currentValue,
-		    output = [],
-		    /** `inputLength` will hold the number of code points in `input`. */
-		    inputLength,
-		    /** Cached calculation results */
-		    handledCPCountPlusOne,
-		    baseMinusT,
-		    qMinusT;
-
-		// Convert the input in UCS-2 to Unicode
-		input = ucs2decode(input);
-
-		// Cache the length
-		inputLength = input.length;
-
-		// Initialize the state
-		n = initialN;
-		delta = 0;
-		bias = initialBias;
-
-		// Handle the basic code points
-		for (j = 0; j < inputLength; ++j) {
-			currentValue = input[j];
-			if (currentValue < 0x80) {
-				output.push(stringFromCharCode(currentValue));
-			}
-		}
-
-		handledCPCount = basicLength = output.length;
-
-		// `handledCPCount` is the number of code points that have been handled;
-		// `basicLength` is the number of basic code points.
-
-		// Finish the basic string - if it is not empty - with a delimiter
-		if (basicLength) {
-			output.push(delimiter);
-		}
-
-		// Main encoding loop:
-		while (handledCPCount < inputLength) {
-
-			// All non-basic code points < n have been handled already. Find the next
-			// larger one:
-			for (m = maxInt, j = 0; j < inputLength; ++j) {
-				currentValue = input[j];
-				if (currentValue >= n && currentValue < m) {
-					m = currentValue;
-				}
-			}
-
-			// Increase `delta` enough to advance the decoder's <n,i> state to <m,0>,
-			// but guard against overflow
-			handledCPCountPlusOne = handledCPCount + 1;
-			if (m - n > floor((maxInt - delta) / handledCPCountPlusOne)) {
-				error('overflow');
-			}
-
-			delta += (m - n) * handledCPCountPlusOne;
-			n = m;
-
-			for (j = 0; j < inputLength; ++j) {
-				currentValue = input[j];
-
-				if (currentValue < n && ++delta > maxInt) {
-					error('overflow');
-				}
-
-				if (currentValue == n) {
-					// Represent delta as a generalized variable-length integer
-					for (q = delta, k = base; /* no condition */; k += base) {
-						t = k <= bias ? tMin : (k >= bias + tMax ? tMax : k - bias);
-						if (q < t) {
-							break;
-						}
-						qMinusT = q - t;
-						baseMinusT = base - t;
-						output.push(
-							stringFromCharCode(digitToBasic(t + qMinusT % baseMinusT, 0))
-						);
-						q = floor(qMinusT / baseMinusT);
-					}
-
-					output.push(stringFromCharCode(digitToBasic(q, 0)));
-					bias = adapt(delta, handledCPCountPlusOne, handledCPCount == basicLength);
-					delta = 0;
-					++handledCPCount;
-				}
-			}
-
-			++delta;
-			++n;
-
-		}
-		return output.join('');
-	}
-
-	/**
-	 * Converts a Punycode string representing a domain name or an email address
-	 * to Unicode. Only the Punycoded parts of the input will be converted, i.e.
-	 * it doesn't matter if you call it on a string that has already been
-	 * converted to Unicode.
-	 * @memberOf punycode
-	 * @param {String} input The Punycoded domain name or email address to
-	 * convert to Unicode.
-	 * @returns {String} The Unicode representation of the given Punycode
-	 * string.
-	 */
-	function toUnicode(input) {
-		return mapDomain(input, function(string) {
-			return regexPunycode.test(string)
-				? decode(string.slice(4).toLowerCase())
-				: string;
-		});
-	}
-
-	/**
-	 * Converts a Unicode string representing a domain name or an email address to
-	 * Punycode. Only the non-ASCII parts of the domain name will be converted,
-	 * i.e. it doesn't matter if you call it with a domain that's already in
-	 * ASCII.
-	 * @memberOf punycode
-	 * @param {String} input The domain name or email address to convert, as a
-	 * Unicode string.
-	 * @returns {String} The Punycode representation of the given domain name or
-	 * email address.
-	 */
-	function toASCII(input) {
-		return mapDomain(input, function(string) {
-			return regexNonASCII.test(string)
-				? 'xn--' + encode(string)
-				: string;
-		});
-	}
-
-	/*--------------------------------------------------------------------------*/
-
-	/** Define the public API */
-	punycode = {
-		/**
-		 * A string representing the current Punycode.js version number.
-		 * @memberOf punycode
-		 * @type String
-		 */
-		'version': '1.4.1',
-		/**
-		 * An object of methods to convert from JavaScript's internal character
-		 * representation (UCS-2) to Unicode code points, and back.
-		 * @see <https://mathiasbynens.be/notes/javascript-encoding>
-		 * @memberOf punycode
-		 * @type Object
-		 */
-		'ucs2': {
-			'decode': ucs2decode,
-			'encode': ucs2encode
-		},
-		'decode': decode,
-		'encode': encode,
-		'toASCII': toASCII,
-		'toUnicode': toUnicode
-	};
-
-	/** Expose `punycode` */
-	// Some AMD build optimizers, like r.js, check for specific condition patterns
-	// like the following:
-	if (
-		typeof define == 'function' &&
-		typeof define.amd == 'object' &&
-		define.amd
-	) {
-		define('punycode', function() {
-			return punycode;
-		});
-	} else if (freeExports && freeModule) {
-		if (module.exports == freeExports) {
-			// in Node.js, io.js, or RingoJS v0.8.0+
-			freeModule.exports = punycode;
-		} else {
-			// in Narwhal or RingoJS v0.7.0-
-			for (key in punycode) {
-				punycode.hasOwnProperty(key) && (freeExports[key] = punycode[key]);
-			}
-		}
-	} else {
-		// in Rhino or a web browser
-		root.punycode = punycode;
-	}
-
-}(this));
-
-}).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{}],245:[function(_dereq_,module,exports){
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/qrcode-npm/qrcode.js":[function(_dereq_,module,exports){
 //---------------------------------------------------------------------
 //
 // QR Code Generator for JavaScript
@@ -36584,18 +37578,18 @@ exports.qrcode = function() {
 	return qrcode;
 }();
 
-},{}],246:[function(_dereq_,module,exports){
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/raphael/raphael.min.js":[function(_dereq_,module,exports){
 !function t(e,r){"object"==typeof exports&&"object"==typeof module?module.exports=r():"function"==typeof define&&define.amd?define([],r):"object"==typeof exports?exports.Raphael=r():e.Raphael=r()}(this,function(){return function(t){function e(i){if(r[i])return r[i].exports;var n=r[i]={exports:{},id:i,loaded:!1};return t[i].call(n.exports,n,n.exports,e),n.loaded=!0,n.exports}var r={};return e.m=t,e.c=r,e.p="",e(0)}([function(t,e,r){var i,n;i=[r(1),r(3),r(4)],n=function(t){return t}.apply(e,i),!(void 0!==n&&(t.exports=n))},function(t,e,r){var i,n;i=[r(2)],n=function(t){function e(r){if(e.is(r,"function"))return w?r():t.on("raphael.DOMload",r);if(e.is(r,Q))return e._engine.create[z](e,r.splice(0,3+e.is(r[0],$))).add(r);var i=Array.prototype.slice.call(arguments,0);if(e.is(i[i.length-1],"function")){var n=i.pop();return w?n.call(e._engine.create[z](e,i)):t.on("raphael.DOMload",function(){n.call(e._engine.create[z](e,i))})}return e._engine.create[z](e,arguments)}function r(t){if("function"==typeof t||Object(t)!==t)return t;var e=new t.constructor;for(var i in t)t[A](i)&&(e[i]=r(t[i]));return e}function i(t,e){for(var r=0,i=t.length;r<i;r++)if(t[r]===e)return t.push(t.splice(r,1)[0])}function n(t,e,r){function n(){var a=Array.prototype.slice.call(arguments,0),s=a.join("␀"),o=n.cache=n.cache||{},l=n.count=n.count||[];return o[A](s)?(i(l,s),r?r(o[s]):o[s]):(l.length>=1e3&&delete o[l.shift()],l.push(s),o[s]=t[z](e,a),r?r(o[s]):o[s])}return n}function a(){return this.hex}function s(t,e){for(var r=[],i=0,n=t.length;n-2*!e>i;i+=2){var a=[{x:+t[i-2],y:+t[i-1]},{x:+t[i],y:+t[i+1]},{x:+t[i+2],y:+t[i+3]},{x:+t[i+4],y:+t[i+5]}];e?i?n-4==i?a[3]={x:+t[0],y:+t[1]}:n-2==i&&(a[2]={x:+t[0],y:+t[1]},a[3]={x:+t[2],y:+t[3]}):a[0]={x:+t[n-2],y:+t[n-1]}:n-4==i?a[3]=a[2]:i||(a[0]={x:+t[i],y:+t[i+1]}),r.push(["C",(-a[0].x+6*a[1].x+a[2].x)/6,(-a[0].y+6*a[1].y+a[2].y)/6,(a[1].x+6*a[2].x-a[3].x)/6,(a[1].y+6*a[2].y-a[3].y)/6,a[2].x,a[2].y])}return r}function o(t,e,r,i,n){var a=-3*e+9*r-9*i+3*n,s=t*a+6*e-12*r+6*i;return t*s-3*e+3*r}function l(t,e,r,i,n,a,s,l,h){null==h&&(h=1),h=h>1?1:h<0?0:h;for(var u=h/2,c=12,f=[-.1252,.1252,-.3678,.3678,-.5873,.5873,-.7699,.7699,-.9041,.9041,-.9816,.9816],p=[.2491,.2491,.2335,.2335,.2032,.2032,.1601,.1601,.1069,.1069,.0472,.0472],d=0,g=0;g<c;g++){var v=u*f[g]+u,x=o(v,t,r,n,s),y=o(v,e,i,a,l),m=x*x+y*y;d+=p[g]*Y.sqrt(m)}return u*d}function h(t,e,r,i,n,a,s,o,h){if(!(h<0||l(t,e,r,i,n,a,s,o)<h)){var u=1,c=u/2,f=u-c,p,d=.01;for(p=l(t,e,r,i,n,a,s,o,f);H(p-h)>d;)c/=2,f+=(p<h?1:-1)*c,p=l(t,e,r,i,n,a,s,o,f);return f}}function u(t,e,r,i,n,a,s,o){if(!(W(t,r)<G(n,s)||G(t,r)>W(n,s)||W(e,i)<G(a,o)||G(e,i)>W(a,o))){var l=(t*i-e*r)*(n-s)-(t-r)*(n*o-a*s),h=(t*i-e*r)*(a-o)-(e-i)*(n*o-a*s),u=(t-r)*(a-o)-(e-i)*(n-s);if(u){var c=l/u,f=h/u,p=+c.toFixed(2),d=+f.toFixed(2);if(!(p<+G(t,r).toFixed(2)||p>+W(t,r).toFixed(2)||p<+G(n,s).toFixed(2)||p>+W(n,s).toFixed(2)||d<+G(e,i).toFixed(2)||d>+W(e,i).toFixed(2)||d<+G(a,o).toFixed(2)||d>+W(a,o).toFixed(2)))return{x:c,y:f}}}}function c(t,e){return p(t,e)}function f(t,e){return p(t,e,1)}function p(t,r,i){var n=e.bezierBBox(t),a=e.bezierBBox(r);if(!e.isBBoxIntersect(n,a))return i?0:[];for(var s=l.apply(0,t),o=l.apply(0,r),h=W(~~(s/5),1),c=W(~~(o/5),1),f=[],p=[],d={},g=i?0:[],v=0;v<h+1;v++){var x=e.findDotsAtSegment.apply(e,t.concat(v/h));f.push({x:x.x,y:x.y,t:v/h})}for(v=0;v<c+1;v++)x=e.findDotsAtSegment.apply(e,r.concat(v/c)),p.push({x:x.x,y:x.y,t:v/c});for(v=0;v<h;v++)for(var y=0;y<c;y++){var m=f[v],b=f[v+1],_=p[y],w=p[y+1],k=H(b.x-m.x)<.001?"y":"x",B=H(w.x-_.x)<.001?"y":"x",C=u(m.x,m.y,b.x,b.y,_.x,_.y,w.x,w.y);if(C){if(d[C.x.toFixed(4)]==C.y.toFixed(4))continue;d[C.x.toFixed(4)]=C.y.toFixed(4);var S=m.t+H((C[k]-m[k])/(b[k]-m[k]))*(b.t-m.t),A=_.t+H((C[B]-_[B])/(w[B]-_[B]))*(w.t-_.t);S>=0&&S<=1.001&&A>=0&&A<=1.001&&(i?g++:g.push({x:C.x,y:C.y,t1:G(S,1),t2:G(A,1)}))}}return g}function d(t,r,i){t=e._path2curve(t),r=e._path2curve(r);for(var n,a,s,o,l,h,u,c,f,d,g=i?0:[],v=0,x=t.length;v<x;v++){var y=t[v];if("M"==y[0])n=l=y[1],a=h=y[2];else{"C"==y[0]?(f=[n,a].concat(y.slice(1)),n=f[6],a=f[7]):(f=[n,a,n,a,l,h,l,h],n=l,a=h);for(var m=0,b=r.length;m<b;m++){var _=r[m];if("M"==_[0])s=u=_[1],o=c=_[2];else{"C"==_[0]?(d=[s,o].concat(_.slice(1)),s=d[6],o=d[7]):(d=[s,o,s,o,u,c,u,c],s=u,o=c);var w=p(f,d,i);if(i)g+=w;else{for(var k=0,B=w.length;k<B;k++)w[k].segment1=v,w[k].segment2=m,w[k].bez1=f,w[k].bez2=d;g=g.concat(w)}}}}}return g}function g(t,e,r,i,n,a){null!=t?(this.a=+t,this.b=+e,this.c=+r,this.d=+i,this.e=+n,this.f=+a):(this.a=1,this.b=0,this.c=0,this.d=1,this.e=0,this.f=0)}function v(){return this.x+j+this.y}function x(){return this.x+j+this.y+j+this.width+" × "+this.height}function y(t,e,r,i,n,a){function s(t){return((c*t+u)*t+h)*t}function o(t,e){var r=l(t,e);return((d*r+p)*r+f)*r}function l(t,e){var r,i,n,a,o,l;for(n=t,l=0;l<8;l++){if(a=s(n)-t,H(a)<e)return n;if(o=(3*c*n+2*u)*n+h,H(o)<1e-6)break;n-=a/o}if(r=0,i=1,n=t,n<r)return r;if(n>i)return i;for(;r<i;){if(a=s(n),H(a-t)<e)return n;t>a?r=n:i=n,n=(i-r)/2+r}return n}var h=3*e,u=3*(i-e)-h,c=1-h-u,f=3*r,p=3*(n-r)-f,d=1-f-p;return o(t,1/(200*a))}function m(t,e){var r=[],i={};if(this.ms=e,this.times=1,t){for(var n in t)t[A](n)&&(i[ht(n)]=t[n],r.push(ht(n)));r.sort(Bt)}this.anim=i,this.top=r[r.length-1],this.percents=r}function b(r,i,n,a,s,o){n=ht(n);var l,h,u,c=[],f,p,d,v=r.ms,x={},m={},b={};if(a)for(w=0,B=Ee.length;w<B;w++){var _=Ee[w];if(_.el.id==i.id&&_.anim==r){_.percent!=n?(Ee.splice(w,1),u=1):h=_,i.attr(_.totalOrigin);break}}else a=+m;for(var w=0,B=r.percents.length;w<B;w++){if(r.percents[w]==n||r.percents[w]>a*r.top){n=r.percents[w],p=r.percents[w-1]||0,v=v/r.top*(n-p),f=r.percents[w+1],l=r.anim[n];break}a&&i.attr(r.anim[r.percents[w]])}if(l){if(h)h.initstatus=a,h.start=new Date-h.ms*a;else{for(var C in l)if(l[A](C)&&(pt[A](C)||i.paper.customAttributes[A](C)))switch(x[C]=i.attr(C),null==x[C]&&(x[C]=ft[C]),m[C]=l[C],pt[C]){case $:b[C]=(m[C]-x[C])/v;break;case"colour":x[C]=e.getRGB(x[C]);var S=e.getRGB(m[C]);b[C]={r:(S.r-x[C].r)/v,g:(S.g-x[C].g)/v,b:(S.b-x[C].b)/v};break;case"path":var T=Qt(x[C],m[C]),E=T[1];for(x[C]=T[0],b[C]=[],w=0,B=x[C].length;w<B;w++){b[C][w]=[0];for(var M=1,N=x[C][w].length;M<N;M++)b[C][w][M]=(E[w][M]-x[C][w][M])/v}break;case"transform":var L=i._,z=le(L[C],m[C]);if(z)for(x[C]=z.from,m[C]=z.to,b[C]=[],b[C].real=!0,w=0,B=x[C].length;w<B;w++)for(b[C][w]=[x[C][w][0]],M=1,N=x[C][w].length;M<N;M++)b[C][w][M]=(m[C][w][M]-x[C][w][M])/v;else{var F=i.matrix||new g,R={_:{transform:L.transform},getBBox:function(){return i.getBBox(1)}};x[C]=[F.a,F.b,F.c,F.d,F.e,F.f],se(R,m[C]),m[C]=R._.transform,b[C]=[(R.matrix.a-F.a)/v,(R.matrix.b-F.b)/v,(R.matrix.c-F.c)/v,(R.matrix.d-F.d)/v,(R.matrix.e-F.e)/v,(R.matrix.f-F.f)/v]}break;case"csv":var j=I(l[C])[q](k),D=I(x[C])[q](k);if("clip-rect"==C)for(x[C]=D,b[C]=[],w=D.length;w--;)b[C][w]=(j[w]-x[C][w])/v;m[C]=j;break;default:for(j=[][P](l[C]),D=[][P](x[C]),b[C]=[],w=i.paper.customAttributes[C].length;w--;)b[C][w]=((j[w]||0)-(D[w]||0))/v}var V=l.easing,O=e.easing_formulas[V];if(!O)if(O=I(V).match(st),O&&5==O.length){var Y=O;O=function(t){return y(t,+Y[1],+Y[2],+Y[3],+Y[4],v)}}else O=St;if(d=l.start||r.start||+new Date,_={anim:r,percent:n,timestamp:d,start:d+(r.del||0),status:0,initstatus:a||0,stop:!1,ms:v,easing:O,from:x,diff:b,to:m,el:i,callback:l.callback,prev:p,next:f,repeat:o||r.times,origin:i.attr(),totalOrigin:s},Ee.push(_),a&&!h&&!u&&(_.stop=!0,_.start=new Date-v*a,1==Ee.length))return Ne();u&&(_.start=new Date-_.ms*a),1==Ee.length&&Me(Ne)}t("raphael.anim.start."+i.id,i,r)}}function _(t){for(var e=0;e<Ee.length;e++)Ee[e].el.paper==t&&Ee.splice(e--,1)}e.version="2.2.0",e.eve=t;var w,k=/[, ]+/,B={circle:1,rect:1,path:1,ellipse:1,text:1,image:1},C=/\{(\d+)\}/g,S="prototype",A="hasOwnProperty",T={doc:document,win:window},E={was:Object.prototype[A].call(T.win,"Raphael"),is:T.win.Raphael},M=function(){this.ca=this.customAttributes={}},N,L="appendChild",z="apply",P="concat",F="ontouchstart"in T.win||T.win.DocumentTouch&&T.doc instanceof DocumentTouch,R="",j=" ",I=String,q="split",D="click dblclick mousedown mousemove mouseout mouseover mouseup touchstart touchmove touchend touchcancel"[q](j),V={mousedown:"touchstart",mousemove:"touchmove",mouseup:"touchend"},O=I.prototype.toLowerCase,Y=Math,W=Y.max,G=Y.min,H=Y.abs,X=Y.pow,U=Y.PI,$="number",Z="string",Q="array",J="toString",K="fill",tt=Object.prototype.toString,et={},rt="push",it=e._ISURL=/^url\(['"]?(.+?)['"]?\)$/i,nt=/^\s*((#[a-f\d]{6})|(#[a-f\d]{3})|rgba?\(\s*([\d\.]+%?\s*,\s*[\d\.]+%?\s*,\s*[\d\.]+%?(?:\s*,\s*[\d\.]+%?)?)\s*\)|hsba?\(\s*([\d\.]+(?:deg|\xb0|%)?\s*,\s*[\d\.]+%?\s*,\s*[\d\.]+(?:%?\s*,\s*[\d\.]+)?)%?\s*\)|hsla?\(\s*([\d\.]+(?:deg|\xb0|%)?\s*,\s*[\d\.]+%?\s*,\s*[\d\.]+(?:%?\s*,\s*[\d\.]+)?)%?\s*\))\s*$/i,at={NaN:1,Infinity:1,"-Infinity":1},st=/^(?:cubic-)?bezier\(([^,]+),([^,]+),([^,]+),([^\)]+)\)/,ot=Y.round,lt="setAttribute",ht=parseFloat,ut=parseInt,ct=I.prototype.toUpperCase,ft=e._availableAttrs={"arrow-end":"none","arrow-start":"none",blur:0,"clip-rect":"0 0 1e9 1e9",cursor:"default",cx:0,cy:0,fill:"#fff","fill-opacity":1,font:'10px "Arial"',"font-family":'"Arial"',"font-size":"10","font-style":"normal","font-weight":400,gradient:0,height:0,href:"http://raphaeljs.com/","letter-spacing":0,opacity:1,path:"M0,0",r:0,rx:0,ry:0,src:"",stroke:"#000","stroke-dasharray":"","stroke-linecap":"butt","stroke-linejoin":"butt","stroke-miterlimit":0,"stroke-opacity":1,"stroke-width":1,target:"_blank","text-anchor":"middle",title:"Raphael",transform:"",width:0,x:0,y:0,"class":""},pt=e._availableAnimAttrs={blur:$,"clip-rect":"csv",cx:$,cy:$,fill:"colour","fill-opacity":$,"font-size":$,height:$,opacity:$,path:"path",r:$,rx:$,ry:$,stroke:"colour","stroke-opacity":$,"stroke-width":$,transform:"transform",width:$,x:$,y:$},dt=/[\x09\x0a\x0b\x0c\x0d\x20\xa0\u1680\u180e\u2000\u2001\u2002\u2003\u2004\u2005\u2006\u2007\u2008\u2009\u200a\u202f\u205f\u3000\u2028\u2029]/g,gt=/[\x09\x0a\x0b\x0c\x0d\x20\xa0\u1680\u180e\u2000\u2001\u2002\u2003\u2004\u2005\u2006\u2007\u2008\u2009\u200a\u202f\u205f\u3000\u2028\u2029]*,[\x09\x0a\x0b\x0c\x0d\x20\xa0\u1680\u180e\u2000\u2001\u2002\u2003\u2004\u2005\u2006\u2007\u2008\u2009\u200a\u202f\u205f\u3000\u2028\u2029]*/,vt={hs:1,rg:1},xt=/,?([achlmqrstvxz]),?/gi,yt=/([achlmrqstvz])[\x09\x0a\x0b\x0c\x0d\x20\xa0\u1680\u180e\u2000\u2001\u2002\u2003\u2004\u2005\u2006\u2007\u2008\u2009\u200a\u202f\u205f\u3000\u2028\u2029,]*((-?\d*\.?\d*(?:e[\-+]?\d+)?[\x09\x0a\x0b\x0c\x0d\x20\xa0\u1680\u180e\u2000\u2001\u2002\u2003\u2004\u2005\u2006\u2007\u2008\u2009\u200a\u202f\u205f\u3000\u2028\u2029]*,?[\x09\x0a\x0b\x0c\x0d\x20\xa0\u1680\u180e\u2000\u2001\u2002\u2003\u2004\u2005\u2006\u2007\u2008\u2009\u200a\u202f\u205f\u3000\u2028\u2029]*)+)/gi,mt=/([rstm])[\x09\x0a\x0b\x0c\x0d\x20\xa0\u1680\u180e\u2000\u2001\u2002\u2003\u2004\u2005\u2006\u2007\u2008\u2009\u200a\u202f\u205f\u3000\u2028\u2029,]*((-?\d*\.?\d*(?:e[\-+]?\d+)?[\x09\x0a\x0b\x0c\x0d\x20\xa0\u1680\u180e\u2000\u2001\u2002\u2003\u2004\u2005\u2006\u2007\u2008\u2009\u200a\u202f\u205f\u3000\u2028\u2029]*,?[\x09\x0a\x0b\x0c\x0d\x20\xa0\u1680\u180e\u2000\u2001\u2002\u2003\u2004\u2005\u2006\u2007\u2008\u2009\u200a\u202f\u205f\u3000\u2028\u2029]*)+)/gi,bt=/(-?\d*\.?\d*(?:e[\-+]?\d+)?)[\x09\x0a\x0b\x0c\x0d\x20\xa0\u1680\u180e\u2000\u2001\u2002\u2003\u2004\u2005\u2006\u2007\u2008\u2009\u200a\u202f\u205f\u3000\u2028\u2029]*,?[\x09\x0a\x0b\x0c\x0d\x20\xa0\u1680\u180e\u2000\u2001\u2002\u2003\u2004\u2005\u2006\u2007\u2008\u2009\u200a\u202f\u205f\u3000\u2028\u2029]*/gi,_t=e._radial_gradient=/^r(?:\(([^,]+?)[\x09\x0a\x0b\x0c\x0d\x20\xa0\u1680\u180e\u2000\u2001\u2002\u2003\u2004\u2005\u2006\u2007\u2008\u2009\u200a\u202f\u205f\u3000\u2028\u2029]*,[\x09\x0a\x0b\x0c\x0d\x20\xa0\u1680\u180e\u2000\u2001\u2002\u2003\u2004\u2005\u2006\u2007\u2008\u2009\u200a\u202f\u205f\u3000\u2028\u2029]*([^\)]+?)\))?/,wt={},kt=function(t,e){return t.key-e.key},Bt=function(t,e){return ht(t)-ht(e)},Ct=function(){},St=function(t){return t},At=e._rectPath=function(t,e,r,i,n){return n?[["M",t+n,e],["l",r-2*n,0],["a",n,n,0,0,1,n,n],["l",0,i-2*n],["a",n,n,0,0,1,-n,n],["l",2*n-r,0],["a",n,n,0,0,1,-n,-n],["l",0,2*n-i],["a",n,n,0,0,1,n,-n],["z"]]:[["M",t,e],["l",r,0],["l",0,i],["l",-r,0],["z"]]},Tt=function(t,e,r,i){return null==i&&(i=r),[["M",t,e],["m",0,-i],["a",r,i,0,1,1,0,2*i],["a",r,i,0,1,1,0,-2*i],["z"]]},Et=e._getPath={path:function(t){return t.attr("path")},circle:function(t){var e=t.attrs;return Tt(e.cx,e.cy,e.r)},ellipse:function(t){var e=t.attrs;return Tt(e.cx,e.cy,e.rx,e.ry)},rect:function(t){var e=t.attrs;return At(e.x,e.y,e.width,e.height,e.r)},image:function(t){var e=t.attrs;return At(e.x,e.y,e.width,e.height)},text:function(t){var e=t._getBBox();return At(e.x,e.y,e.width,e.height)},set:function(t){var e=t._getBBox();return At(e.x,e.y,e.width,e.height)}},Mt=e.mapPath=function(t,e){if(!e)return t;var r,i,n,a,s,o,l;for(t=Qt(t),n=0,s=t.length;n<s;n++)for(l=t[n],a=1,o=l.length;a<o;a+=2)r=e.x(l[a],l[a+1]),i=e.y(l[a],l[a+1]),l[a]=r,l[a+1]=i;return t};if(e._g=T,e.type=T.win.SVGAngle||T.doc.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#BasicStructure","1.1")?"SVG":"VML","VML"==e.type){var Nt=T.doc.createElement("div"),Lt;if(Nt.innerHTML='<v:shape adj="1"/>',Lt=Nt.firstChild,Lt.style.behavior="url(#default#VML)",!Lt||"object"!=typeof Lt.adj)return e.type=R;Nt=null}e.svg=!(e.vml="VML"==e.type),e._Paper=M,e.fn=N=M.prototype=e.prototype,e._id=0,e.is=function(t,e){return e=O.call(e),"finite"==e?!at[A](+t):"array"==e?t instanceof Array:"null"==e&&null===t||e==typeof t&&null!==t||"object"==e&&t===Object(t)||"array"==e&&Array.isArray&&Array.isArray(t)||tt.call(t).slice(8,-1).toLowerCase()==e},e.angle=function(t,r,i,n,a,s){if(null==a){var o=t-i,l=r-n;return o||l?(180+180*Y.atan2(-l,-o)/U+360)%360:0}return e.angle(t,r,a,s)-e.angle(i,n,a,s)},e.rad=function(t){return t%360*U/180},e.deg=function(t){return Math.round(180*t/U%360*1e3)/1e3},e.snapTo=function(t,r,i){if(i=e.is(i,"finite")?i:10,e.is(t,Q)){for(var n=t.length;n--;)if(H(t[n]-r)<=i)return t[n]}else{t=+t;var a=r%t;if(a<i)return r-a;if(a>t-i)return r-a+t}return r};var zt=e.createUUID=function(t,e){return function(){return"xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(t,e).toUpperCase()}}(/[xy]/g,function(t){var e=16*Y.random()|0,r="x"==t?e:3&e|8;return r.toString(16)});e.setWindow=function(r){t("raphael.setWindow",e,T.win,r),T.win=r,T.doc=T.win.document,e._engine.initWin&&e._engine.initWin(T.win)};var Pt=function(t){if(e.vml){var r=/^\s+|\s+$/g,i;try{var a=new ActiveXObject("htmlfile");a.write("<body>"),a.close(),i=a.body}catch(s){i=createPopup().document.body}var o=i.createTextRange();Pt=n(function(t){try{i.style.color=I(t).replace(r,R);var e=o.queryCommandValue("ForeColor");return e=(255&e)<<16|65280&e|(16711680&e)>>>16,"#"+("000000"+e.toString(16)).slice(-6)}catch(n){return"none"}})}else{var l=T.doc.createElement("i");l.title="Raphaël Colour Picker",l.style.display="none",T.doc.body.appendChild(l),Pt=n(function(t){return l.style.color=t,T.doc.defaultView.getComputedStyle(l,R).getPropertyValue("color")})}return Pt(t)},Ft=function(){return"hsb("+[this.h,this.s,this.b]+")"},Rt=function(){return"hsl("+[this.h,this.s,this.l]+")"},jt=function(){return this.hex},It=function(t,r,i){if(null==r&&e.is(t,"object")&&"r"in t&&"g"in t&&"b"in t&&(i=t.b,r=t.g,t=t.r),null==r&&e.is(t,Z)){var n=e.getRGB(t);t=n.r,r=n.g,i=n.b}return(t>1||r>1||i>1)&&(t/=255,r/=255,i/=255),[t,r,i]},qt=function(t,r,i,n){t*=255,r*=255,i*=255;var a={r:t,g:r,b:i,hex:e.rgb(t,r,i),toString:jt};return e.is(n,"finite")&&(a.opacity=n),a};e.color=function(t){var r;return e.is(t,"object")&&"h"in t&&"s"in t&&"b"in t?(r=e.hsb2rgb(t),t.r=r.r,t.g=r.g,t.b=r.b,t.hex=r.hex):e.is(t,"object")&&"h"in t&&"s"in t&&"l"in t?(r=e.hsl2rgb(t),t.r=r.r,t.g=r.g,t.b=r.b,t.hex=r.hex):(e.is(t,"string")&&(t=e.getRGB(t)),e.is(t,"object")&&"r"in t&&"g"in t&&"b"in t?(r=e.rgb2hsl(t),t.h=r.h,t.s=r.s,t.l=r.l,r=e.rgb2hsb(t),t.v=r.b):(t={hex:"none"},t.r=t.g=t.b=t.h=t.s=t.v=t.l=-1)),t.toString=jt,t},e.hsb2rgb=function(t,e,r,i){this.is(t,"object")&&"h"in t&&"s"in t&&"b"in t&&(r=t.b,e=t.s,i=t.o,t=t.h),t*=360;var n,a,s,o,l;return t=t%360/60,l=r*e,o=l*(1-H(t%2-1)),n=a=s=r-l,t=~~t,n+=[l,o,0,0,o,l][t],a+=[o,l,l,o,0,0][t],s+=[0,0,o,l,l,o][t],qt(n,a,s,i)},e.hsl2rgb=function(t,e,r,i){this.is(t,"object")&&"h"in t&&"s"in t&&"l"in t&&(r=t.l,e=t.s,t=t.h),(t>1||e>1||r>1)&&(t/=360,e/=100,r/=100),t*=360;var n,a,s,o,l;return t=t%360/60,l=2*e*(r<.5?r:1-r),o=l*(1-H(t%2-1)),n=a=s=r-l/2,t=~~t,n+=[l,o,0,0,o,l][t],a+=[o,l,l,o,0,0][t],s+=[0,0,o,l,l,o][t],qt(n,a,s,i)},e.rgb2hsb=function(t,e,r){r=It(t,e,r),t=r[0],e=r[1],r=r[2];var i,n,a,s;return a=W(t,e,r),s=a-G(t,e,r),i=0==s?null:a==t?(e-r)/s:a==e?(r-t)/s+2:(t-e)/s+4,i=(i+360)%6*60/360,n=0==s?0:s/a,{h:i,s:n,b:a,toString:Ft}},e.rgb2hsl=function(t,e,r){r=It(t,e,r),t=r[0],e=r[1],r=r[2];var i,n,a,s,o,l;return s=W(t,e,r),o=G(t,e,r),l=s-o,i=0==l?null:s==t?(e-r)/l:s==e?(r-t)/l+2:(t-e)/l+4,i=(i+360)%6*60/360,a=(s+o)/2,n=0==l?0:a<.5?l/(2*a):l/(2-2*a),{h:i,s:n,l:a,toString:Rt}},e._path2string=function(){return this.join(",").replace(xt,"$1")};var Dt=e._preload=function(t,e){var r=T.doc.createElement("img");r.style.cssText="position:absolute;left:-9999em;top:-9999em",r.onload=function(){e.call(this),this.onload=null,T.doc.body.removeChild(this)},r.onerror=function(){T.doc.body.removeChild(this)},T.doc.body.appendChild(r),r.src=t};e.getRGB=n(function(t){if(!t||(t=I(t)).indexOf("-")+1)return{r:-1,g:-1,b:-1,hex:"none",error:1,toString:a};if("none"==t)return{r:-1,g:-1,b:-1,hex:"none",toString:a};!(vt[A](t.toLowerCase().substring(0,2))||"#"==t.charAt())&&(t=Pt(t));var r,i,n,s,o,l,h,u=t.match(nt);return u?(u[2]&&(s=ut(u[2].substring(5),16),n=ut(u[2].substring(3,5),16),i=ut(u[2].substring(1,3),16)),u[3]&&(s=ut((l=u[3].charAt(3))+l,16),n=ut((l=u[3].charAt(2))+l,16),i=ut((l=u[3].charAt(1))+l,16)),u[4]&&(h=u[4][q](gt),i=ht(h[0]),"%"==h[0].slice(-1)&&(i*=2.55),n=ht(h[1]),"%"==h[1].slice(-1)&&(n*=2.55),s=ht(h[2]),"%"==h[2].slice(-1)&&(s*=2.55),"rgba"==u[1].toLowerCase().slice(0,4)&&(o=ht(h[3])),h[3]&&"%"==h[3].slice(-1)&&(o/=100)),u[5]?(h=u[5][q](gt),i=ht(h[0]),"%"==h[0].slice(-1)&&(i*=2.55),n=ht(h[1]),"%"==h[1].slice(-1)&&(n*=2.55),s=ht(h[2]),"%"==h[2].slice(-1)&&(s*=2.55),("deg"==h[0].slice(-3)||"°"==h[0].slice(-1))&&(i/=360),"hsba"==u[1].toLowerCase().slice(0,4)&&(o=ht(h[3])),h[3]&&"%"==h[3].slice(-1)&&(o/=100),e.hsb2rgb(i,n,s,o)):u[6]?(h=u[6][q](gt),i=ht(h[0]),"%"==h[0].slice(-1)&&(i*=2.55),n=ht(h[1]),"%"==h[1].slice(-1)&&(n*=2.55),s=ht(h[2]),"%"==h[2].slice(-1)&&(s*=2.55),("deg"==h[0].slice(-3)||"°"==h[0].slice(-1))&&(i/=360),"hsla"==u[1].toLowerCase().slice(0,4)&&(o=ht(h[3])),h[3]&&"%"==h[3].slice(-1)&&(o/=100),e.hsl2rgb(i,n,s,o)):(u={r:i,g:n,b:s,toString:a},u.hex="#"+(16777216|s|n<<8|i<<16).toString(16).slice(1),e.is(o,"finite")&&(u.opacity=o),u)):{r:-1,g:-1,b:-1,hex:"none",error:1,toString:a}},e),e.hsb=n(function(t,r,i){return e.hsb2rgb(t,r,i).hex}),e.hsl=n(function(t,r,i){return e.hsl2rgb(t,r,i).hex}),e.rgb=n(function(t,e,r){function i(t){return t+.5|0}return"#"+(16777216|i(r)|i(e)<<8|i(t)<<16).toString(16).slice(1)}),e.getColor=function(t){var e=this.getColor.start=this.getColor.start||{h:0,s:1,b:t||.75},r=this.hsb2rgb(e.h,e.s,e.b);return e.h+=.075,e.h>1&&(e.h=0,e.s-=.2,e.s<=0&&(this.getColor.start={h:0,s:1,b:e.b})),r.hex},e.getColor.reset=function(){delete this.start},e.parsePathString=function(t){if(!t)return null;var r=Vt(t);if(r.arr)return Yt(r.arr);var i={a:7,c:6,h:1,l:2,m:2,r:4,q:4,s:4,t:2,v:1,z:0},n=[];return e.is(t,Q)&&e.is(t[0],Q)&&(n=Yt(t)),n.length||I(t).replace(yt,function(t,e,r){var a=[],s=e.toLowerCase();if(r.replace(bt,function(t,e){e&&a.push(+e)}),"m"==s&&a.length>2&&(n.push([e][P](a.splice(0,2))),s="l",e="m"==e?"l":"L"),"r"==s)n.push([e][P](a));else for(;a.length>=i[s]&&(n.push([e][P](a.splice(0,i[s]))),i[s]););}),n.toString=e._path2string,r.arr=Yt(n),n},e.parseTransformString=n(function(t){if(!t)return null;var r={r:3,s:4,t:2,m:6},i=[];return e.is(t,Q)&&e.is(t[0],Q)&&(i=Yt(t)),i.length||I(t).replace(mt,function(t,e,r){var n=[],a=O.call(e);r.replace(bt,function(t,e){e&&n.push(+e)}),i.push([e][P](n))}),i.toString=e._path2string,i});var Vt=function(t){var e=Vt.ps=Vt.ps||{};return e[t]?e[t].sleep=100:e[t]={sleep:100},setTimeout(function(){for(var r in e)e[A](r)&&r!=t&&(e[r].sleep--,!e[r].sleep&&delete e[r])}),e[t]};e.findDotsAtSegment=function(t,e,r,i,n,a,s,o,l){var h=1-l,u=X(h,3),c=X(h,2),f=l*l,p=f*l,d=u*t+3*c*l*r+3*h*l*l*n+p*s,g=u*e+3*c*l*i+3*h*l*l*a+p*o,v=t+2*l*(r-t)+f*(n-2*r+t),x=e+2*l*(i-e)+f*(a-2*i+e),y=r+2*l*(n-r)+f*(s-2*n+r),m=i+2*l*(a-i)+f*(o-2*a+i),b=h*t+l*r,_=h*e+l*i,w=h*n+l*s,k=h*a+l*o,B=90-180*Y.atan2(v-y,x-m)/U;return(v>y||x<m)&&(B+=180),{x:d,y:g,m:{x:v,y:x},n:{x:y,y:m},start:{x:b,y:_},end:{x:w,y:k},alpha:B}},e.bezierBBox=function(t,r,i,n,a,s,o,l){e.is(t,"array")||(t=[t,r,i,n,a,s,o,l]);var h=Zt.apply(null,t);return{x:h.min.x,y:h.min.y,x2:h.max.x,y2:h.max.y,width:h.max.x-h.min.x,height:h.max.y-h.min.y}},e.isPointInsideBBox=function(t,e,r){return e>=t.x&&e<=t.x2&&r>=t.y&&r<=t.y2},e.isBBoxIntersect=function(t,r){var i=e.isPointInsideBBox;return i(r,t.x,t.y)||i(r,t.x2,t.y)||i(r,t.x,t.y2)||i(r,t.x2,t.y2)||i(t,r.x,r.y)||i(t,r.x2,r.y)||i(t,r.x,r.y2)||i(t,r.x2,r.y2)||(t.x<r.x2&&t.x>r.x||r.x<t.x2&&r.x>t.x)&&(t.y<r.y2&&t.y>r.y||r.y<t.y2&&r.y>t.y)},e.pathIntersection=function(t,e){return d(t,e)},e.pathIntersectionNumber=function(t,e){return d(t,e,1)},e.isPointInsidePath=function(t,r,i){var n=e.pathBBox(t);return e.isPointInsideBBox(n,r,i)&&d(t,[["M",r,i],["H",n.x2+10]],1)%2==1},e._removedFactory=function(e){return function(){t("raphael.log",null,"Raphaël: you are calling to method “"+e+"” of removed object",e)}};var Ot=e.pathBBox=function(t){var e=Vt(t);if(e.bbox)return r(e.bbox);if(!t)return{x:0,y:0,width:0,height:0,x2:0,y2:0};t=Qt(t);for(var i=0,n=0,a=[],s=[],o,l=0,h=t.length;l<h;l++)if(o=t[l],"M"==o[0])i=o[1],n=o[2],a.push(i),s.push(n);else{var u=Zt(i,n,o[1],o[2],o[3],o[4],o[5],o[6]);a=a[P](u.min.x,u.max.x),s=s[P](u.min.y,u.max.y),i=o[5],n=o[6]}var c=G[z](0,a),f=G[z](0,s),p=W[z](0,a),d=W[z](0,s),g=p-c,v=d-f,x={x:c,y:f,x2:p,y2:d,width:g,height:v,cx:c+g/2,cy:f+v/2};return e.bbox=r(x),x},Yt=function(t){var i=r(t);return i.toString=e._path2string,i},Wt=e._pathToRelative=function(t){var r=Vt(t);if(r.rel)return Yt(r.rel);e.is(t,Q)&&e.is(t&&t[0],Q)||(t=e.parsePathString(t));var i=[],n=0,a=0,s=0,o=0,l=0;"M"==t[0][0]&&(n=t[0][1],a=t[0][2],s=n,o=a,l++,i.push(["M",n,a]));for(var h=l,u=t.length;h<u;h++){var c=i[h]=[],f=t[h];if(f[0]!=O.call(f[0]))switch(c[0]=O.call(f[0]),c[0]){case"a":c[1]=f[1],c[2]=f[2],c[3]=f[3],c[4]=f[4],c[5]=f[5],c[6]=+(f[6]-n).toFixed(3),c[7]=+(f[7]-a).toFixed(3);break;case"v":c[1]=+(f[1]-a).toFixed(3);break;case"m":s=f[1],o=f[2];default:for(var p=1,d=f.length;p<d;p++)c[p]=+(f[p]-(p%2?n:a)).toFixed(3)}else{c=i[h]=[],"m"==f[0]&&(s=f[1]+n,o=f[2]+a);for(var g=0,v=f.length;g<v;g++)i[h][g]=f[g]}var x=i[h].length;switch(i[h][0]){case"z":n=s,a=o;break;case"h":n+=+i[h][x-1];break;case"v":a+=+i[h][x-1];break;default:n+=+i[h][x-2],a+=+i[h][x-1]}}return i.toString=e._path2string,r.rel=Yt(i),i},Gt=e._pathToAbsolute=function(t){var r=Vt(t);if(r.abs)return Yt(r.abs);if(e.is(t,Q)&&e.is(t&&t[0],Q)||(t=e.parsePathString(t)),!t||!t.length)return[["M",0,0]];var i=[],n=0,a=0,o=0,l=0,h=0;"M"==t[0][0]&&(n=+t[0][1],a=+t[0][2],o=n,l=a,h++,i[0]=["M",n,a]);for(var u=3==t.length&&"M"==t[0][0]&&"R"==t[1][0].toUpperCase()&&"Z"==t[2][0].toUpperCase(),c,f,p=h,d=t.length;p<d;p++){if(i.push(c=[]),f=t[p],f[0]!=ct.call(f[0]))switch(c[0]=ct.call(f[0]),c[0]){case"A":c[1]=f[1],c[2]=f[2],c[3]=f[3],c[4]=f[4],c[5]=f[5],c[6]=+(f[6]+n),c[7]=+(f[7]+a);break;case"V":c[1]=+f[1]+a;break;case"H":c[1]=+f[1]+n;break;case"R":for(var g=[n,a][P](f.slice(1)),v=2,x=g.length;v<x;v++)g[v]=+g[v]+n,g[++v]=+g[v]+a;i.pop(),i=i[P](s(g,u));break;case"M":o=+f[1]+n,l=+f[2]+a;default:for(v=1,x=f.length;v<x;v++)c[v]=+f[v]+(v%2?n:a)}else if("R"==f[0])g=[n,a][P](f.slice(1)),i.pop(),i=i[P](s(g,u)),c=["R"][P](f.slice(-2));else for(var y=0,m=f.length;y<m;y++)c[y]=f[y];switch(c[0]){case"Z":n=o,a=l;break;case"H":n=c[1];break;case"V":a=c[1];break;case"M":o=c[c.length-2],l=c[c.length-1];default:n=c[c.length-2],a=c[c.length-1]}}return i.toString=e._path2string,r.abs=Yt(i),i},Ht=function(t,e,r,i){return[t,e,r,i,r,i]},Xt=function(t,e,r,i,n,a){var s=1/3,o=2/3;return[s*t+o*r,s*e+o*i,s*n+o*r,s*a+o*i,n,a]},Ut=function(t,e,r,i,a,s,o,l,h,u){var c=120*U/180,f=U/180*(+a||0),p=[],d,g=n(function(t,e,r){var i=t*Y.cos(r)-e*Y.sin(r),n=t*Y.sin(r)+e*Y.cos(r);return{x:i,y:n}});if(u)S=u[0],A=u[1],B=u[2],C=u[3];else{d=g(t,e,-f),t=d.x,e=d.y,d=g(l,h,-f),l=d.x,h=d.y;var v=Y.cos(U/180*a),x=Y.sin(U/180*a),y=(t-l)/2,m=(e-h)/2,b=y*y/(r*r)+m*m/(i*i);b>1&&(b=Y.sqrt(b),r=b*r,i=b*i);var _=r*r,w=i*i,k=(s==o?-1:1)*Y.sqrt(H((_*w-_*m*m-w*y*y)/(_*m*m+w*y*y))),B=k*r*m/i+(t+l)/2,C=k*-i*y/r+(e+h)/2,S=Y.asin(((e-C)/i).toFixed(9)),A=Y.asin(((h-C)/i).toFixed(9));S=t<B?U-S:S,A=l<B?U-A:A,S<0&&(S=2*U+S),A<0&&(A=2*U+A),o&&S>A&&(S-=2*U),!o&&A>S&&(A-=2*U)}var T=A-S;if(H(T)>c){var E=A,M=l,N=h;A=S+c*(o&&A>S?1:-1),l=B+r*Y.cos(A),h=C+i*Y.sin(A),p=Ut(l,h,r,i,a,0,o,M,N,[A,E,B,C])}T=A-S;var L=Y.cos(S),z=Y.sin(S),F=Y.cos(A),R=Y.sin(A),j=Y.tan(T/4),I=4/3*r*j,D=4/3*i*j,V=[t,e],O=[t+I*z,e-D*L],W=[l+I*R,h-D*F],G=[l,h];if(O[0]=2*V[0]-O[0],O[1]=2*V[1]-O[1],u)return[O,W,G][P](p);p=[O,W,G][P](p).join()[q](",");for(var X=[],$=0,Z=p.length;$<Z;$++)X[$]=$%2?g(p[$-1],p[$],f).y:g(p[$],p[$+1],f).x;return X},$t=function(t,e,r,i,n,a,s,o,l){var h=1-l;return{x:X(h,3)*t+3*X(h,2)*l*r+3*h*l*l*n+X(l,3)*s,y:X(h,3)*e+3*X(h,2)*l*i+3*h*l*l*a+X(l,3)*o}},Zt=n(function(t,e,r,i,n,a,s,o){var l=n-2*r+t-(s-2*n+r),h=2*(r-t)-2*(n-r),u=t-r,c=(-h+Y.sqrt(h*h-4*l*u))/2/l,f=(-h-Y.sqrt(h*h-4*l*u))/2/l,p=[e,o],d=[t,s],g;return H(c)>"1e12"&&(c=.5),H(f)>"1e12"&&(f=.5),c>0&&c<1&&(g=$t(t,e,r,i,n,a,s,o,c),d.push(g.x),p.push(g.y)),f>0&&f<1&&(g=$t(t,e,r,i,n,a,s,o,f),d.push(g.x),p.push(g.y)),l=a-2*i+e-(o-2*a+i),h=2*(i-e)-2*(a-i),u=e-i,c=(-h+Y.sqrt(h*h-4*l*u))/2/l,f=(-h-Y.sqrt(h*h-4*l*u))/2/l,H(c)>"1e12"&&(c=.5),H(f)>"1e12"&&(f=.5),c>0&&c<1&&(g=$t(t,e,r,i,n,a,s,o,c),d.push(g.x),p.push(g.y)),f>0&&f<1&&(g=$t(t,e,r,i,n,a,s,o,f),d.push(g.x),p.push(g.y)),{min:{x:G[z](0,d),y:G[z](0,p)},max:{x:W[z](0,d),y:W[z](0,p)}}}),Qt=e._path2curve=n(function(t,e){var r=!e&&Vt(t);if(!e&&r.curve)return Yt(r.curve);for(var i=Gt(t),n=e&&Gt(e),a={x:0,y:0,bx:0,by:0,X:0,Y:0,qx:null,qy:null},s={x:0,y:0,bx:0,by:0,X:0,Y:0,qx:null,qy:null},o=(function(t,e,r){var i,n,a={T:1,Q:1};if(!t)return["C",e.x,e.y,e.x,e.y,e.x,e.y];switch(!(t[0]in a)&&(e.qx=e.qy=null),t[0]){case"M":e.X=t[1],e.Y=t[2];break;case"A":t=["C"][P](Ut[z](0,[e.x,e.y][P](t.slice(1))));break;case"S":"C"==r||"S"==r?(i=2*e.x-e.bx,n=2*e.y-e.by):(i=e.x,n=e.y),t=["C",i,n][P](t.slice(1));break;case"T":"Q"==r||"T"==r?(e.qx=2*e.x-e.qx,e.qy=2*e.y-e.qy):(e.qx=e.x,e.qy=e.y),t=["C"][P](Xt(e.x,e.y,e.qx,e.qy,t[1],t[2]));break;case"Q":e.qx=t[1],e.qy=t[2],t=["C"][P](Xt(e.x,e.y,t[1],t[2],t[3],t[4]));break;case"L":t=["C"][P](Ht(e.x,e.y,t[1],t[2]));break;case"H":t=["C"][P](Ht(e.x,e.y,t[1],e.y));break;case"V":t=["C"][P](Ht(e.x,e.y,e.x,t[1]));break;case"Z":t=["C"][P](Ht(e.x,e.y,e.X,e.Y))}return t}),l=function(t,e){if(t[e].length>7){t[e].shift();for(var r=t[e];r.length;)u[e]="A",n&&(c[e]="A"),t.splice(e++,0,["C"][P](r.splice(0,6)));t.splice(e,1),g=W(i.length,n&&n.length||0)}},h=function(t,e,r,a,s){t&&e&&"M"==t[s][0]&&"M"!=e[s][0]&&(e.splice(s,0,["M",a.x,a.y]),r.bx=0,r.by=0,r.x=t[s][1],r.y=t[s][2],g=W(i.length,n&&n.length||0))},u=[],c=[],f="",p="",d=0,g=W(i.length,n&&n.length||0);d<g;d++){i[d]&&(f=i[d][0]),"C"!=f&&(u[d]=f,d&&(p=u[d-1])),i[d]=o(i[d],a,p),"A"!=u[d]&&"C"==f&&(u[d]="C"),l(i,d),n&&(n[d]&&(f=n[d][0]),"C"!=f&&(c[d]=f,d&&(p=c[d-1])),n[d]=o(n[d],s,p),"A"!=c[d]&&"C"==f&&(c[d]="C"),l(n,d)),h(i,n,a,s,d),h(n,i,s,a,d);var v=i[d],x=n&&n[d],y=v.length,m=n&&x.length;a.x=v[y-2],a.y=v[y-1],a.bx=ht(v[y-4])||a.x,a.by=ht(v[y-3])||a.y,s.bx=n&&(ht(x[m-4])||s.x),s.by=n&&(ht(x[m-3])||s.y),s.x=n&&x[m-2],s.y=n&&x[m-1]}return n||(r.curve=Yt(i)),n?[i,n]:i},null,Yt),Jt=e._parseDots=n(function(t){for(var r=[],i=0,n=t.length;i<n;i++){var a={},s=t[i].match(/^([^:]*):?([\d\.]*)/);if(a.color=e.getRGB(s[1]),a.color.error)return null;a.opacity=a.color.opacity,a.color=a.color.hex,s[2]&&(a.offset=s[2]+"%"),r.push(a)}for(i=1,n=r.length-1;i<n;i++)if(!r[i].offset){for(var o=ht(r[i-1].offset||0),l=0,h=i+1;h<n;h++)if(r[h].offset){l=r[h].offset;break}l||(l=100,h=n),l=ht(l);for(var u=(l-o)/(h-i+1);i<h;i++)o+=u,r[i].offset=o+"%"}return r}),Kt=e._tear=function(t,e){t==e.top&&(e.top=t.prev),t==e.bottom&&(e.bottom=t.next),t.next&&(t.next.prev=t.prev),t.prev&&(t.prev.next=t.next)},te=e._tofront=function(t,e){e.top!==t&&(Kt(t,e),t.next=null,t.prev=e.top,e.top.next=t,e.top=t)},ee=e._toback=function(t,e){e.bottom!==t&&(Kt(t,e),t.next=e.bottom,t.prev=null,e.bottom.prev=t,e.bottom=t)},re=e._insertafter=function(t,e,r){Kt(t,r),e==r.top&&(r.top=t),e.next&&(e.next.prev=t),t.next=e.next,t.prev=e,e.next=t},ie=e._insertbefore=function(t,e,r){Kt(t,r),e==r.bottom&&(r.bottom=t),e.prev&&(e.prev.next=t),t.prev=e.prev,e.prev=t,t.next=e},ne=e.toMatrix=function(t,e){var r=Ot(t),i={_:{transform:R},getBBox:function(){return r}};return se(i,e),i.matrix},ae=e.transformPath=function(t,e){return Mt(t,ne(t,e))},se=e._extractTransform=function(t,r){if(null==r)return t._.transform;r=I(r).replace(/\.{3}|\u2026/g,t._.transform||R);var i=e.parseTransformString(r),n=0,a=0,s=0,o=1,l=1,h=t._,u=new g;if(h.transform=i||[],i)for(var c=0,f=i.length;c<f;c++){var p=i[c],d=p.length,v=I(p[0]).toLowerCase(),x=p[0]!=v,y=x?u.invert():0,m,b,_,w,k;"t"==v&&3==d?x?(m=y.x(0,0),b=y.y(0,0),_=y.x(p[1],p[2]),w=y.y(p[1],p[2]),u.translate(_-m,w-b)):u.translate(p[1],p[2]):"r"==v?2==d?(k=k||t.getBBox(1),u.rotate(p[1],k.x+k.width/2,k.y+k.height/2),n+=p[1]):4==d&&(x?(_=y.x(p[2],p[3]),w=y.y(p[2],p[3]),u.rotate(p[1],_,w)):u.rotate(p[1],p[2],p[3]),n+=p[1]):"s"==v?2==d||3==d?(k=k||t.getBBox(1),u.scale(p[1],p[d-1],k.x+k.width/2,k.y+k.height/2),o*=p[1],l*=p[d-1]):5==d&&(x?(_=y.x(p[3],p[4]),w=y.y(p[3],p[4]),u.scale(p[1],p[2],_,w)):u.scale(p[1],p[2],p[3],p[4]),o*=p[1],l*=p[2]):"m"==v&&7==d&&u.add(p[1],p[2],p[3],p[4],p[5],p[6]),h.dirtyT=1,t.matrix=u}t.matrix=u,h.sx=o,h.sy=l,h.deg=n,h.dx=a=u.e,h.dy=s=u.f,1==o&&1==l&&!n&&h.bbox?(h.bbox.x+=+a,h.bbox.y+=+s):h.dirtyT=1},oe=function(t){var e=t[0];switch(e.toLowerCase()){case"t":return[e,0,0];case"m":return[e,1,0,0,1,0,0];case"r":return 4==t.length?[e,0,t[2],t[3]]:[e,0];case"s":return 5==t.length?[e,1,1,t[3],t[4]]:3==t.length?[e,1,1]:[e,1]}},le=e._equaliseTransform=function(t,r){r=I(r).replace(/\.{3}|\u2026/g,t),t=e.parseTransformString(t)||[],r=e.parseTransformString(r)||[];for(var i=W(t.length,r.length),n=[],a=[],s=0,o,l,h,u;s<i;s++){if(h=t[s]||oe(r[s]),u=r[s]||oe(h),h[0]!=u[0]||"r"==h[0].toLowerCase()&&(h[2]!=u[2]||h[3]!=u[3])||"s"==h[0].toLowerCase()&&(h[3]!=u[3]||h[4]!=u[4]))return;for(n[s]=[],a[s]=[],o=0,l=W(h.length,u.length);o<l;o++)o in h&&(n[s][o]=h[o]),o in u&&(a[s][o]=u[o])}return{from:n,to:a}};e._getContainer=function(t,r,i,n){var a;if(a=null!=n||e.is(t,"object")?t:T.doc.getElementById(t),null!=a)return a.tagName?null==r?{container:a,width:a.style.pixelWidth||a.offsetWidth,height:a.style.pixelHeight||a.offsetHeight}:{container:a,width:r,height:i}:{container:1,x:t,y:r,width:i,height:n}},e.pathToRelative=Wt,e._engine={},e.path2curve=Qt,e.matrix=function(t,e,r,i,n,a){return new g(t,e,r,i,n,a)},function(t){function r(t){return t[0]*t[0]+t[1]*t[1]}function i(t){var e=Y.sqrt(r(t));t[0]&&(t[0]/=e),t[1]&&(t[1]/=e)}t.add=function(t,e,r,i,n,a){var s=[[],[],[]],o=[[this.a,this.c,this.e],[this.b,this.d,this.f],[0,0,1]],l=[[t,r,n],[e,i,a],[0,0,1]],h,u,c,f;for(t&&t instanceof g&&(l=[[t.a,t.c,t.e],[t.b,t.d,t.f],[0,0,1]]),h=0;h<3;h++)for(u=0;u<3;u++){for(f=0,c=0;c<3;c++)f+=o[h][c]*l[c][u];s[h][u]=f}this.a=s[0][0],this.b=s[1][0],this.c=s[0][1],this.d=s[1][1],this.e=s[0][2],this.f=s[1][2]},t.invert=function(){var t=this,e=t.a*t.d-t.b*t.c;return new g(t.d/e,-t.b/e,-t.c/e,t.a/e,(t.c*t.f-t.d*t.e)/e,(t.b*t.e-t.a*t.f)/e)},t.clone=function(){return new g(this.a,this.b,this.c,this.d,this.e,this.f)},t.translate=function(t,e){
 this.add(1,0,0,1,t,e)},t.scale=function(t,e,r,i){null==e&&(e=t),(r||i)&&this.add(1,0,0,1,r,i),this.add(t,0,0,e,0,0),(r||i)&&this.add(1,0,0,1,-r,-i)},t.rotate=function(t,r,i){t=e.rad(t),r=r||0,i=i||0;var n=+Y.cos(t).toFixed(9),a=+Y.sin(t).toFixed(9);this.add(n,a,-a,n,r,i),this.add(1,0,0,1,-r,-i)},t.x=function(t,e){return t*this.a+e*this.c+this.e},t.y=function(t,e){return t*this.b+e*this.d+this.f},t.get=function(t){return+this[I.fromCharCode(97+t)].toFixed(4)},t.toString=function(){return e.svg?"matrix("+[this.get(0),this.get(1),this.get(2),this.get(3),this.get(4),this.get(5)].join()+")":[this.get(0),this.get(2),this.get(1),this.get(3),0,0].join()},t.toFilter=function(){return"progid:DXImageTransform.Microsoft.Matrix(M11="+this.get(0)+", M12="+this.get(2)+", M21="+this.get(1)+", M22="+this.get(3)+", Dx="+this.get(4)+", Dy="+this.get(5)+", sizingmethod='auto expand')"},t.offset=function(){return[this.e.toFixed(4),this.f.toFixed(4)]},t.split=function(){var t={};t.dx=this.e,t.dy=this.f;var n=[[this.a,this.c],[this.b,this.d]];t.scalex=Y.sqrt(r(n[0])),i(n[0]),t.shear=n[0][0]*n[1][0]+n[0][1]*n[1][1],n[1]=[n[1][0]-n[0][0]*t.shear,n[1][1]-n[0][1]*t.shear],t.scaley=Y.sqrt(r(n[1])),i(n[1]),t.shear/=t.scaley;var a=-n[0][1],s=n[1][1];return s<0?(t.rotate=e.deg(Y.acos(s)),a<0&&(t.rotate=360-t.rotate)):t.rotate=e.deg(Y.asin(a)),t.isSimple=!(+t.shear.toFixed(9)||t.scalex.toFixed(9)!=t.scaley.toFixed(9)&&t.rotate),t.isSuperSimple=!+t.shear.toFixed(9)&&t.scalex.toFixed(9)==t.scaley.toFixed(9)&&!t.rotate,t.noRotation=!+t.shear.toFixed(9)&&!t.rotate,t},t.toTransformString=function(t){var e=t||this[q]();return e.isSimple?(e.scalex=+e.scalex.toFixed(4),e.scaley=+e.scaley.toFixed(4),e.rotate=+e.rotate.toFixed(4),(e.dx||e.dy?"t"+[e.dx,e.dy]:R)+(1!=e.scalex||1!=e.scaley?"s"+[e.scalex,e.scaley,0,0]:R)+(e.rotate?"r"+[e.rotate,0,0]:R)):"m"+[this.get(0),this.get(1),this.get(2),this.get(3),this.get(4),this.get(5)]}}(g.prototype);for(var he=function(){this.returnValue=!1},ue=function(){return this.originalEvent.preventDefault()},ce=function(){this.cancelBubble=!0},fe=function(){return this.originalEvent.stopPropagation()},pe=function(t){var e=T.doc.documentElement.scrollTop||T.doc.body.scrollTop,r=T.doc.documentElement.scrollLeft||T.doc.body.scrollLeft;return{x:t.clientX+r,y:t.clientY+e}},de=function(){return T.doc.addEventListener?function(t,e,r,i){var n=function(t){var e=pe(t);return r.call(i,t,e.x,e.y)};if(t.addEventListener(e,n,!1),F&&V[e]){var a=function(e){for(var n=pe(e),a=e,s=0,o=e.targetTouches&&e.targetTouches.length;s<o;s++)if(e.targetTouches[s].target==t){e=e.targetTouches[s],e.originalEvent=a,e.preventDefault=ue,e.stopPropagation=fe;break}return r.call(i,e,n.x,n.y)};t.addEventListener(V[e],a,!1)}return function(){return t.removeEventListener(e,n,!1),F&&V[e]&&t.removeEventListener(V[e],a,!1),!0}}:T.doc.attachEvent?function(t,e,r,i){var n=function(t){t=t||T.win.event;var e=T.doc.documentElement.scrollTop||T.doc.body.scrollTop,n=T.doc.documentElement.scrollLeft||T.doc.body.scrollLeft,a=t.clientX+n,s=t.clientY+e;return t.preventDefault=t.preventDefault||he,t.stopPropagation=t.stopPropagation||ce,r.call(i,t,a,s)};t.attachEvent("on"+e,n);var a=function(){return t.detachEvent("on"+e,n),!0};return a}:void 0}(),ge=[],ve=function(e){for(var r=e.clientX,i=e.clientY,n=T.doc.documentElement.scrollTop||T.doc.body.scrollTop,a=T.doc.documentElement.scrollLeft||T.doc.body.scrollLeft,s,o=ge.length;o--;){if(s=ge[o],F&&e.touches){for(var l=e.touches.length,h;l--;)if(h=e.touches[l],h.identifier==s.el._drag.id){r=h.clientX,i=h.clientY,(e.originalEvent?e.originalEvent:e).preventDefault();break}}else e.preventDefault();var u=s.el.node,c,f=u.nextSibling,p=u.parentNode,d=u.style.display;T.win.opera&&p.removeChild(u),u.style.display="none",c=s.el.paper.getElementByPoint(r,i),u.style.display=d,T.win.opera&&(f?p.insertBefore(u,f):p.appendChild(u)),c&&t("raphael.drag.over."+s.el.id,s.el,c),r+=a,i+=n,t("raphael.drag.move."+s.el.id,s.move_scope||s.el,r-s.el._drag.x,i-s.el._drag.y,r,i,e)}},xe=function(r){e.unmousemove(ve).unmouseup(xe);for(var i=ge.length,n;i--;)n=ge[i],n.el._drag={},t("raphael.drag.end."+n.el.id,n.end_scope||n.start_scope||n.move_scope||n.el,r);ge=[]},ye=e.el={},me=D.length;me--;)!function(t){e[t]=ye[t]=function(r,i){return e.is(r,"function")&&(this.events=this.events||[],this.events.push({name:t,f:r,unbind:de(this.shape||this.node||T.doc,t,r,i||this)})),this},e["un"+t]=ye["un"+t]=function(r){for(var i=this.events||[],n=i.length;n--;)i[n].name!=t||!e.is(r,"undefined")&&i[n].f!=r||(i[n].unbind(),i.splice(n,1),!i.length&&delete this.events);return this}}(D[me]);ye.data=function(r,i){var n=wt[this.id]=wt[this.id]||{};if(0==arguments.length)return n;if(1==arguments.length){if(e.is(r,"object")){for(var a in r)r[A](a)&&this.data(a,r[a]);return this}return t("raphael.data.get."+this.id,this,n[r],r),n[r]}return n[r]=i,t("raphael.data.set."+this.id,this,i,r),this},ye.removeData=function(t){return null==t?wt[this.id]={}:wt[this.id]&&delete wt[this.id][t],this},ye.getData=function(){return r(wt[this.id]||{})},ye.hover=function(t,e,r,i){return this.mouseover(t,r).mouseout(e,i||r)},ye.unhover=function(t,e){return this.unmouseover(t).unmouseout(e)};var be=[];ye.drag=function(r,i,n,a,s,o){function l(l){(l.originalEvent||l).preventDefault();var h=l.clientX,u=l.clientY,c=T.doc.documentElement.scrollTop||T.doc.body.scrollTop,f=T.doc.documentElement.scrollLeft||T.doc.body.scrollLeft;if(this._drag.id=l.identifier,F&&l.touches)for(var p=l.touches.length,d;p--;)if(d=l.touches[p],this._drag.id=d.identifier,d.identifier==this._drag.id){h=d.clientX,u=d.clientY;break}this._drag.x=h+f,this._drag.y=u+c,!ge.length&&e.mousemove(ve).mouseup(xe),ge.push({el:this,move_scope:a,start_scope:s,end_scope:o}),i&&t.on("raphael.drag.start."+this.id,i),r&&t.on("raphael.drag.move."+this.id,r),n&&t.on("raphael.drag.end."+this.id,n),t("raphael.drag.start."+this.id,s||a||this,l.clientX+f,l.clientY+c,l)}return this._drag={},be.push({el:this,start:l}),this.mousedown(l),this},ye.onDragOver=function(e){e?t.on("raphael.drag.over."+this.id,e):t.unbind("raphael.drag.over."+this.id)},ye.undrag=function(){for(var r=be.length;r--;)be[r].el==this&&(this.unmousedown(be[r].start),be.splice(r,1),t.unbind("raphael.drag.*."+this.id));!be.length&&e.unmousemove(ve).unmouseup(xe),ge=[]},N.circle=function(t,r,i){var n=e._engine.circle(this,t||0,r||0,i||0);return this.__set__&&this.__set__.push(n),n},N.rect=function(t,r,i,n,a){var s=e._engine.rect(this,t||0,r||0,i||0,n||0,a||0);return this.__set__&&this.__set__.push(s),s},N.ellipse=function(t,r,i,n){var a=e._engine.ellipse(this,t||0,r||0,i||0,n||0);return this.__set__&&this.__set__.push(a),a},N.path=function(t){t&&!e.is(t,Z)&&!e.is(t[0],Q)&&(t+=R);var r=e._engine.path(e.format[z](e,arguments),this);return this.__set__&&this.__set__.push(r),r},N.image=function(t,r,i,n,a){var s=e._engine.image(this,t||"about:blank",r||0,i||0,n||0,a||0);return this.__set__&&this.__set__.push(s),s},N.text=function(t,r,i){var n=e._engine.text(this,t||0,r||0,I(i));return this.__set__&&this.__set__.push(n),n},N.set=function(t){!e.is(t,"array")&&(t=Array.prototype.splice.call(arguments,0,arguments.length));var r=new ze(t);return this.__set__&&this.__set__.push(r),r.paper=this,r.type="set",r},N.setStart=function(t){this.__set__=t||this.set()},N.setFinish=function(t){var e=this.__set__;return delete this.__set__,e},N.getSize=function(){var t=this.canvas.parentNode;return{width:t.offsetWidth,height:t.offsetHeight}},N.setSize=function(t,r){return e._engine.setSize.call(this,t,r)},N.setViewBox=function(t,r,i,n,a){return e._engine.setViewBox.call(this,t,r,i,n,a)},N.top=N.bottom=null,N.raphael=e;var _e=function(t){var e=t.getBoundingClientRect(),r=t.ownerDocument,i=r.body,n=r.documentElement,a=n.clientTop||i.clientTop||0,s=n.clientLeft||i.clientLeft||0,o=e.top+(T.win.pageYOffset||n.scrollTop||i.scrollTop)-a,l=e.left+(T.win.pageXOffset||n.scrollLeft||i.scrollLeft)-s;return{y:o,x:l}};N.getElementByPoint=function(t,e){var r=this,i=r.canvas,n=T.doc.elementFromPoint(t,e);if(T.win.opera&&"svg"==n.tagName){var a=_e(i),s=i.createSVGRect();s.x=t-a.x,s.y=e-a.y,s.width=s.height=1;var o=i.getIntersectionList(s,null);o.length&&(n=o[o.length-1])}if(!n)return null;for(;n.parentNode&&n!=i.parentNode&&!n.raphael;)n=n.parentNode;return n==r.canvas.parentNode&&(n=i),n=n&&n.raphael?r.getById(n.raphaelid):null},N.getElementsByBBox=function(t){var r=this.set();return this.forEach(function(i){e.isBBoxIntersect(i.getBBox(),t)&&r.push(i)}),r},N.getById=function(t){for(var e=this.bottom;e;){if(e.id==t)return e;e=e.next}return null},N.forEach=function(t,e){for(var r=this.bottom;r;){if(t.call(e,r)===!1)return this;r=r.next}return this},N.getElementsByPoint=function(t,e){var r=this.set();return this.forEach(function(i){i.isPointInside(t,e)&&r.push(i)}),r},ye.isPointInside=function(t,r){var i=this.realPath=Et[this.type](this);return this.attr("transform")&&this.attr("transform").length&&(i=e.transformPath(i,this.attr("transform"))),e.isPointInsidePath(i,t,r)},ye.getBBox=function(t){if(this.removed)return{};var e=this._;return t?(!e.dirty&&e.bboxwt||(this.realPath=Et[this.type](this),e.bboxwt=Ot(this.realPath),e.bboxwt.toString=x,e.dirty=0),e.bboxwt):((e.dirty||e.dirtyT||!e.bbox)&&(!e.dirty&&this.realPath||(e.bboxwt=0,this.realPath=Et[this.type](this)),e.bbox=Ot(Mt(this.realPath,this.matrix)),e.bbox.toString=x,e.dirty=e.dirtyT=0),e.bbox)},ye.clone=function(){if(this.removed)return null;var t=this.paper[this.type]().attr(this.attr());return this.__set__&&this.__set__.push(t),t},ye.glow=function(t){if("text"==this.type)return null;t=t||{};var e={width:(t.width||10)+(+this.attr("stroke-width")||1),fill:t.fill||!1,opacity:null==t.opacity?.5:t.opacity,offsetx:t.offsetx||0,offsety:t.offsety||0,color:t.color||"#000"},r=e.width/2,i=this.paper,n=i.set(),a=this.realPath||Et[this.type](this);a=this.matrix?Mt(a,this.matrix):a;for(var s=1;s<r+1;s++)n.push(i.path(a).attr({stroke:e.color,fill:e.fill?e.color:"none","stroke-linejoin":"round","stroke-linecap":"round","stroke-width":+(e.width/r*s).toFixed(3),opacity:+(e.opacity/r).toFixed(3)}));return n.insertBefore(this).translate(e.offsetx,e.offsety)};var we={},ke=function(t,r,i,n,a,s,o,u,c){return null==c?l(t,r,i,n,a,s,o,u):e.findDotsAtSegment(t,r,i,n,a,s,o,u,h(t,r,i,n,a,s,o,u,c))},Be=function(t,r){return function(i,n,a){i=Qt(i);for(var s,o,l,h,u="",c={},f,p=0,d=0,g=i.length;d<g;d++){if(l=i[d],"M"==l[0])s=+l[1],o=+l[2];else{if(h=ke(s,o,l[1],l[2],l[3],l[4],l[5],l[6]),p+h>n){if(r&&!c.start){if(f=ke(s,o,l[1],l[2],l[3],l[4],l[5],l[6],n-p),u+=["C"+f.start.x,f.start.y,f.m.x,f.m.y,f.x,f.y],a)return u;c.start=u,u=["M"+f.x,f.y+"C"+f.n.x,f.n.y,f.end.x,f.end.y,l[5],l[6]].join(),p+=h,s=+l[5],o=+l[6];continue}if(!t&&!r)return f=ke(s,o,l[1],l[2],l[3],l[4],l[5],l[6],n-p),{x:f.x,y:f.y,alpha:f.alpha}}p+=h,s=+l[5],o=+l[6]}u+=l.shift()+l}return c.end=u,f=t?p:r?c:e.findDotsAtSegment(s,o,l[0],l[1],l[2],l[3],l[4],l[5],1),f.alpha&&(f={x:f.x,y:f.y,alpha:f.alpha}),f}},Ce=Be(1),Se=Be(),Ae=Be(0,1);e.getTotalLength=Ce,e.getPointAtLength=Se,e.getSubpath=function(t,e,r){if(this.getTotalLength(t)-r<1e-6)return Ae(t,e).end;var i=Ae(t,r,1);return e?Ae(i,e).end:i},ye.getTotalLength=function(){var t=this.getPath();if(t)return this.node.getTotalLength?this.node.getTotalLength():Ce(t)},ye.getPointAtLength=function(t){var e=this.getPath();if(e)return Se(e,t)},ye.getPath=function(){var t,r=e._getPath[this.type];if("text"!=this.type&&"set"!=this.type)return r&&(t=r(this)),t},ye.getSubpath=function(t,r){var i=this.getPath();if(i)return e.getSubpath(i,t,r)};var Te=e.easing_formulas={linear:function(t){return t},"<":function(t){return X(t,1.7)},">":function(t){return X(t,.48)},"<>":function(t){var e=.48-t/1.04,r=Y.sqrt(.1734+e*e),i=r-e,n=X(H(i),1/3)*(i<0?-1:1),a=-r-e,s=X(H(a),1/3)*(a<0?-1:1),o=n+s+.5;return 3*(1-o)*o*o+o*o*o},backIn:function(t){var e=1.70158;return t*t*((e+1)*t-e)},backOut:function(t){t-=1;var e=1.70158;return t*t*((e+1)*t+e)+1},elastic:function(t){return t==!!t?t:X(2,-10*t)*Y.sin((t-.075)*(2*U)/.3)+1},bounce:function(t){var e=7.5625,r=2.75,i;return t<1/r?i=e*t*t:t<2/r?(t-=1.5/r,i=e*t*t+.75):t<2.5/r?(t-=2.25/r,i=e*t*t+.9375):(t-=2.625/r,i=e*t*t+.984375),i}};Te.easeIn=Te["ease-in"]=Te["<"],Te.easeOut=Te["ease-out"]=Te[">"],Te.easeInOut=Te["ease-in-out"]=Te["<>"],Te["back-in"]=Te.backIn,Te["back-out"]=Te.backOut;var Ee=[],Me=window.requestAnimationFrame||window.webkitRequestAnimationFrame||window.mozRequestAnimationFrame||window.oRequestAnimationFrame||window.msRequestAnimationFrame||function(t){setTimeout(t,16)},Ne=function(){for(var r=+new Date,i=0;i<Ee.length;i++){var n=Ee[i];if(!n.el.removed&&!n.paused){var a=r-n.start,s=n.ms,o=n.easing,l=n.from,h=n.diff,u=n.to,c=n.t,f=n.el,p={},d,g={},v;if(n.initstatus?(a=(n.initstatus*n.anim.top-n.prev)/(n.percent-n.prev)*s,n.status=n.initstatus,delete n.initstatus,n.stop&&Ee.splice(i--,1)):n.status=(n.prev+(n.percent-n.prev)*(a/s))/n.anim.top,!(a<0))if(a<s){var x=o(a/s);for(var y in l)if(l[A](y)){switch(pt[y]){case $:d=+l[y]+x*s*h[y];break;case"colour":d="rgb("+[Le(ot(l[y].r+x*s*h[y].r)),Le(ot(l[y].g+x*s*h[y].g)),Le(ot(l[y].b+x*s*h[y].b))].join(",")+")";break;case"path":d=[];for(var m=0,_=l[y].length;m<_;m++){d[m]=[l[y][m][0]];for(var w=1,k=l[y][m].length;w<k;w++)d[m][w]=+l[y][m][w]+x*s*h[y][m][w];d[m]=d[m].join(j)}d=d.join(j);break;case"transform":if(h[y].real)for(d=[],m=0,_=l[y].length;m<_;m++)for(d[m]=[l[y][m][0]],w=1,k=l[y][m].length;w<k;w++)d[m][w]=l[y][m][w]+x*s*h[y][m][w];else{var B=function(t){return+l[y][t]+x*s*h[y][t]};d=[["m",B(0),B(1),B(2),B(3),B(4),B(5)]]}break;case"csv":if("clip-rect"==y)for(d=[],m=4;m--;)d[m]=+l[y][m]+x*s*h[y][m];break;default:var C=[][P](l[y]);for(d=[],m=f.paper.customAttributes[y].length;m--;)d[m]=+C[m]+x*s*h[y][m]}p[y]=d}f.attr(p),function(e,r,i){setTimeout(function(){t("raphael.anim.frame."+e,r,i)})}(f.id,f,n.anim)}else{if(function(r,i,n){setTimeout(function(){t("raphael.anim.frame."+i.id,i,n),t("raphael.anim.finish."+i.id,i,n),e.is(r,"function")&&r.call(i)})}(n.callback,f,n.anim),f.attr(u),Ee.splice(i--,1),n.repeat>1&&!n.next){for(v in u)u[A](v)&&(g[v]=n.totalOrigin[v]);n.el.attr(g),b(n.anim,n.el,n.anim.percents[0],null,n.totalOrigin,n.repeat-1)}n.next&&!n.stop&&b(n.anim,n.el,n.next,null,n.totalOrigin,n.repeat)}}}Ee.length&&Me(Ne)},Le=function(t){return t>255?255:t<0?0:t};ye.animateWith=function(t,r,i,n,a,s){var o=this;if(o.removed)return s&&s.call(o),o;var l=i instanceof m?i:e.animation(i,n,a,s),h,u;b(l,o,l.percents[0],null,o.attr());for(var c=0,f=Ee.length;c<f;c++)if(Ee[c].anim==r&&Ee[c].el==t){Ee[f-1].start=Ee[c].start;break}return o},ye.onAnimation=function(e){return e?t.on("raphael.anim.frame."+this.id,e):t.unbind("raphael.anim.frame."+this.id),this},m.prototype.delay=function(t){var e=new m(this.anim,this.ms);return e.times=this.times,e.del=+t||0,e},m.prototype.repeat=function(t){var e=new m(this.anim,this.ms);return e.del=this.del,e.times=Y.floor(W(t,0))||1,e},e.animation=function(t,r,i,n){if(t instanceof m)return t;!e.is(i,"function")&&i||(n=n||i||null,i=null),t=Object(t),r=+r||0;var a={},s,o;for(o in t)t[A](o)&&ht(o)!=o&&ht(o)+"%"!=o&&(s=!0,a[o]=t[o]);if(s)return i&&(a.easing=i),n&&(a.callback=n),new m({100:a},r);if(n){var l=0;for(var h in t){var u=ut(h);t[A](h)&&u>l&&(l=u)}l+="%",!t[l].callback&&(t[l].callback=n)}return new m(t,r)},ye.animate=function(t,r,i,n){var a=this;if(a.removed)return n&&n.call(a),a;var s=t instanceof m?t:e.animation(t,r,i,n);return b(s,a,s.percents[0],null,a.attr()),a},ye.setTime=function(t,e){return t&&null!=e&&this.status(t,G(e,t.ms)/t.ms),this},ye.status=function(t,e){var r=[],i=0,n,a;if(null!=e)return b(t,this,-1,G(e,1)),this;for(n=Ee.length;i<n;i++)if(a=Ee[i],a.el.id==this.id&&(!t||a.anim==t)){if(t)return a.status;r.push({anim:a.anim,status:a.status})}return t?0:r},ye.pause=function(e){for(var r=0;r<Ee.length;r++)Ee[r].el.id!=this.id||e&&Ee[r].anim!=e||t("raphael.anim.pause."+this.id,this,Ee[r].anim)!==!1&&(Ee[r].paused=!0);return this},ye.resume=function(e){for(var r=0;r<Ee.length;r++)if(Ee[r].el.id==this.id&&(!e||Ee[r].anim==e)){var i=Ee[r];t("raphael.anim.resume."+this.id,this,i.anim)!==!1&&(delete i.paused,this.status(i.anim,i.status))}return this},ye.stop=function(e){for(var r=0;r<Ee.length;r++)Ee[r].el.id!=this.id||e&&Ee[r].anim!=e||t("raphael.anim.stop."+this.id,this,Ee[r].anim)!==!1&&Ee.splice(r--,1);return this},t.on("raphael.remove",_),t.on("raphael.clear",_),ye.toString=function(){return"Raphaël’s object"};var ze=function(t){if(this.items=[],this.length=0,this.type="set",t)for(var e=0,r=t.length;e<r;e++)!t[e]||t[e].constructor!=ye.constructor&&t[e].constructor!=ze||(this[this.items.length]=this.items[this.items.length]=t[e],this.length++)},Pe=ze.prototype;Pe.push=function(){for(var t,e,r=0,i=arguments.length;r<i;r++)t=arguments[r],!t||t.constructor!=ye.constructor&&t.constructor!=ze||(e=this.items.length,this[e]=this.items[e]=t,this.length++);return this},Pe.pop=function(){return this.length&&delete this[this.length--],this.items.pop()},Pe.forEach=function(t,e){for(var r=0,i=this.items.length;r<i;r++)if(t.call(e,this.items[r],r)===!1)return this;return this};for(var Fe in ye)ye[A](Fe)&&(Pe[Fe]=function(t){return function(){var e=arguments;return this.forEach(function(r){r[t][z](r,e)})}}(Fe));return Pe.attr=function(t,r){if(t&&e.is(t,Q)&&e.is(t[0],"object"))for(var i=0,n=t.length;i<n;i++)this.items[i].attr(t[i]);else for(var a=0,s=this.items.length;a<s;a++)this.items[a].attr(t,r);return this},Pe.clear=function(){for(;this.length;)this.pop()},Pe.splice=function(t,e,r){t=t<0?W(this.length+t,0):t,e=W(0,G(this.length-t,e));var i=[],n=[],a=[],s;for(s=2;s<arguments.length;s++)a.push(arguments[s]);for(s=0;s<e;s++)n.push(this[t+s]);for(;s<this.length-t;s++)i.push(this[t+s]);var o=a.length;for(s=0;s<o+i.length;s++)this.items[t+s]=this[t+s]=s<o?a[s]:i[s-o];for(s=this.items.length=this.length-=e-o;this[s];)delete this[s++];return new ze(n)},Pe.exclude=function(t){for(var e=0,r=this.length;e<r;e++)if(this[e]==t)return this.splice(e,1),!0},Pe.animate=function(t,r,i,n){(e.is(i,"function")||!i)&&(n=i||null);var a=this.items.length,s=a,o,l=this,h;if(!a)return this;n&&(h=function(){!--a&&n.call(l)}),i=e.is(i,Z)?i:h;var u=e.animation(t,r,i,h);for(o=this.items[--s].animate(u);s--;)this.items[s]&&!this.items[s].removed&&this.items[s].animateWith(o,u,u),this.items[s]&&!this.items[s].removed||a--;return this},Pe.insertAfter=function(t){for(var e=this.items.length;e--;)this.items[e].insertAfter(t);return this},Pe.getBBox=function(){for(var t=[],e=[],r=[],i=[],n=this.items.length;n--;)if(!this.items[n].removed){var a=this.items[n].getBBox();t.push(a.x),e.push(a.y),r.push(a.x+a.width),i.push(a.y+a.height)}return t=G[z](0,t),e=G[z](0,e),r=W[z](0,r),i=W[z](0,i),{x:t,y:e,x2:r,y2:i,width:r-t,height:i-e}},Pe.clone=function(t){t=this.paper.set();for(var e=0,r=this.items.length;e<r;e++)t.push(this.items[e].clone());return t},Pe.toString=function(){return"Raphaël‘s set"},Pe.glow=function(t){var e=this.paper.set();return this.forEach(function(r,i){var n=r.glow(t);null!=n&&n.forEach(function(t,r){e.push(t)})}),e},Pe.isPointInside=function(t,e){var r=!1;return this.forEach(function(i){if(i.isPointInside(t,e))return r=!0,!1}),r},e.registerFont=function(t){if(!t.face)return t;this.fonts=this.fonts||{};var e={w:t.w,face:{},glyphs:{}},r=t.face["font-family"];for(var i in t.face)t.face[A](i)&&(e.face[i]=t.face[i]);if(this.fonts[r]?this.fonts[r].push(e):this.fonts[r]=[e],!t.svg){e.face["units-per-em"]=ut(t.face["units-per-em"],10);for(var n in t.glyphs)if(t.glyphs[A](n)){var a=t.glyphs[n];if(e.glyphs[n]={w:a.w,k:{},d:a.d&&"M"+a.d.replace(/[mlcxtrv]/g,function(t){return{l:"L",c:"C",x:"z",t:"m",r:"l",v:"c"}[t]||"M"})+"z"},a.k)for(var s in a.k)a[A](s)&&(e.glyphs[n].k[s]=a.k[s])}}return t},N.getFont=function(t,r,i,n){if(n=n||"normal",i=i||"normal",r=+r||{normal:400,bold:700,lighter:300,bolder:800}[r]||400,e.fonts){var a=e.fonts[t];if(!a){var s=new RegExp("(^|\\s)"+t.replace(/[^\w\d\s+!~.:_-]/g,R)+"(\\s|$)","i");for(var o in e.fonts)if(e.fonts[A](o)&&s.test(o)){a=e.fonts[o];break}}var l;if(a)for(var h=0,u=a.length;h<u&&(l=a[h],l.face["font-weight"]!=r||l.face["font-style"]!=i&&l.face["font-style"]||l.face["font-stretch"]!=n);h++);return l}},N.print=function(t,r,i,n,a,s,o,l){s=s||"middle",o=W(G(o||0,1),-1),l=W(G(l||1,3),1);var h=I(i)[q](R),u=0,c=0,f=R,p;if(e.is(n,"string")&&(n=this.getFont(n)),n){p=(a||16)/n.face["units-per-em"];for(var d=n.face.bbox[q](k),g=+d[0],v=d[3]-d[1],x=0,y=+d[1]+("baseline"==s?v+ +n.face.descent:v/2),m=0,b=h.length;m<b;m++){if("\n"==h[m])u=0,w=0,c=0,x+=v*l;else{var _=c&&n.glyphs[h[m-1]]||{},w=n.glyphs[h[m]];u+=c?(_.w||n.w)+(_.k&&_.k[h[m]]||0)+n.w*o:0,c=1}w&&w.d&&(f+=e.transformPath(w.d,["t",u*p,x*p,"s",p,p,g,y,"t",(t-g)/p,(r-y)/p]))}}return this.path(f).attr({fill:"#000",stroke:"none"})},N.add=function(t){if(e.is(t,"array"))for(var r=this.set(),i=0,n=t.length,a;i<n;i++)a=t[i]||{},B[A](a.type)&&r.push(this[a.type]().attr(a));return r},e.format=function(t,r){var i=e.is(r,Q)?[0][P](r):arguments;return t&&e.is(t,Z)&&i.length-1&&(t=t.replace(C,function(t,e){return null==i[++e]?R:i[e]})),t||R},e.fullfill=function(){var t=/\{([^\}]+)\}/g,e=/(?:(?:^|\.)(.+?)(?=\[|\.|$|\()|\[('|")(.+?)\2\])(\(\))?/g,r=function(t,r,i){var n=i;return r.replace(e,function(t,e,r,i,a){e=e||i,n&&(e in n&&(n=n[e]),"function"==typeof n&&a&&(n=n()))}),n=(null==n||n==i?t:n)+""};return function(e,i){return String(e).replace(t,function(t,e){return r(t,e,i)})}}(),e.ninja=function(){if(E.was)T.win.Raphael=E.is;else{window.Raphael=void 0;try{delete window.Raphael}catch(t){}}return e},e.st=Pe,t.on("raphael.DOMload",function(){w=!0}),function(t,r,i){function n(){/in/.test(t.readyState)?setTimeout(n,9):e.eve("raphael.DOMload")}null==t.readyState&&t.addEventListener&&(t.addEventListener(r,i=function(){t.removeEventListener(r,i,!1),t.readyState="complete"},!1),t.readyState="loading"),n()}(document,"DOMContentLoaded"),e}.apply(e,i),!(void 0!==n&&(t.exports=n))},function(t,e,r){var i,n;!function(r){var a="0.5.0",s="hasOwnProperty",o=/[\.\/]/,l=/\s*,\s*/,h="*",u=function(){},c=function(t,e){return t-e},f,p,d={n:{}},g=function(){for(var t=0,e=this.length;t<e;t++)if("undefined"!=typeof this[t])return this[t]},v=function(){for(var t=this.length;--t;)if("undefined"!=typeof this[t])return this[t]},x=Object.prototype.toString,y=String,m=Array.isArray||function(t){return t instanceof Array||"[object Array]"==x.call(t)};eve=function(t,e){var r=d,i=p,n=Array.prototype.slice.call(arguments,2),a=eve.listeners(t),s=0,o=!1,l,h=[],u={},x=[],y=f,m=[];x.firstDefined=g,x.lastDefined=v,f=t,p=0;for(var b=0,_=a.length;b<_;b++)"zIndex"in a[b]&&(h.push(a[b].zIndex),a[b].zIndex<0&&(u[a[b].zIndex]=a[b]));for(h.sort(c);h[s]<0;)if(l=u[h[s++]],x.push(l.apply(e,n)),p)return p=i,x;for(b=0;b<_;b++)if(l=a[b],"zIndex"in l)if(l.zIndex==h[s]){if(x.push(l.apply(e,n)),p)break;do if(s++,l=u[h[s]],l&&x.push(l.apply(e,n)),p)break;while(l)}else u[l.zIndex]=l;else if(x.push(l.apply(e,n)),p)break;return p=i,f=y,x},eve._events=d,eve.listeners=function(t){var e=m(t)?t:t.split(o),r=d,i,n,a,s,l,u,c,f,p=[r],g=[];for(s=0,l=e.length;s<l;s++){for(f=[],u=0,c=p.length;u<c;u++)for(r=p[u].n,n=[r[e[s]],r[h]],a=2;a--;)i=n[a],i&&(f.push(i),g=g.concat(i.f||[]));p=f}return g},eve.separator=function(t){t?(t=y(t).replace(/(?=[\.\^\]\[\-])/g,"\\"),t="["+t+"]",o=new RegExp(t)):o=/[\.\/]/},eve.on=function(t,e){if("function"!=typeof e)return function(){};for(var r=m(t)?m(t[0])?t:[t]:y(t).split(l),i=0,n=r.length;i<n;i++)!function(t){for(var r=m(t)?t:y(t).split(o),i=d,n,a=0,s=r.length;a<s;a++)i=i.n,i=i.hasOwnProperty(r[a])&&i[r[a]]||(i[r[a]]={n:{}});for(i.f=i.f||[],a=0,s=i.f.length;a<s;a++)if(i.f[a]==e){n=!0;break}!n&&i.f.push(e)}(r[i]);return function(t){+t==+t&&(e.zIndex=+t)}},eve.f=function(t){var e=[].slice.call(arguments,1);return function(){eve.apply(null,[t,null].concat(e).concat([].slice.call(arguments,0)))}},eve.stop=function(){p=1},eve.nt=function(t){var e=m(f)?f.join("."):f;return t?new RegExp("(?:\\.|\\/|^)"+t+"(?:\\.|\\/|$)").test(e):e},eve.nts=function(){return m(f)?f:f.split(o)},eve.off=eve.unbind=function(t,e){if(!t)return void(eve._events=d={n:{}});var r=m(t)?m(t[0])?t:[t]:y(t).split(l);if(r.length>1)for(var i=0,n=r.length;i<n;i++)eve.off(r[i],e);else{r=m(t)?t:y(t).split(o);var a,u,c,i,n,f,p,g=[d];for(i=0,n=r.length;i<n;i++)for(f=0;f<g.length;f+=c.length-2){if(c=[f,1],a=g[f].n,r[i]!=h)a[r[i]]&&c.push(a[r[i]]);else for(u in a)a[s](u)&&c.push(a[u]);g.splice.apply(g,c)}for(i=0,n=g.length;i<n;i++)for(a=g[i];a.n;){if(e){if(a.f){for(f=0,p=a.f.length;f<p;f++)if(a.f[f]==e){a.f.splice(f,1);break}!a.f.length&&delete a.f}for(u in a.n)if(a.n[s](u)&&a.n[u].f){var v=a.n[u].f;for(f=0,p=v.length;f<p;f++)if(v[f]==e){v.splice(f,1);break}!v.length&&delete a.n[u].f}}else{delete a.f;for(u in a.n)a.n[s](u)&&a.n[u].f&&delete a.n[u].f}a=a.n}}},eve.once=function(t,e){var r=function(){return eve.off(t,r),e.apply(this,arguments)};return eve.on(t,r)},eve.version=a,eve.toString=function(){return"You are running Eve "+a},"undefined"!=typeof t&&t.exports?t.exports=eve:(i=[],n=function(){return eve}.apply(e,i),!(void 0!==n&&(t.exports=n)))}(this)},function(t,e,r){var i,n;i=[r(1)],n=function(t){if(!t||t.svg){var e="hasOwnProperty",r=String,i=parseFloat,n=parseInt,a=Math,s=a.max,o=a.abs,l=a.pow,h=/[, ]+/,u=t.eve,c="",f=" ",p="http://www.w3.org/1999/xlink",d={block:"M5,0 0,2.5 5,5z",classic:"M5,0 0,2.5 5,5 3.5,3 3.5,2z",diamond:"M2.5,0 5,2.5 2.5,5 0,2.5z",open:"M6,1 1,3.5 6,6",oval:"M2.5,0A2.5,2.5,0,0,1,2.5,5 2.5,2.5,0,0,1,2.5,0z"},g={};t.toString=function(){return"Your browser supports SVG.\nYou are running Raphaël "+this.version};var v=function(i,n){if(n){"string"==typeof i&&(i=v(i));for(var a in n)n[e](a)&&("xlink:"==a.substring(0,6)?i.setAttributeNS(p,a.substring(6),r(n[a])):i.setAttribute(a,r(n[a])))}else i=t._g.doc.createElementNS("http://www.w3.org/2000/svg",i),i.style&&(i.style.webkitTapHighlightColor="rgba(0,0,0,0)");return i},x=function(e,n){var h="linear",u=e.id+n,f=.5,p=.5,d=e.node,g=e.paper,x=d.style,y=t._g.doc.getElementById(u);if(!y){if(n=r(n).replace(t._radial_gradient,function(t,e,r){if(h="radial",e&&r){f=i(e),p=i(r);var n=2*(p>.5)-1;l(f-.5,2)+l(p-.5,2)>.25&&(p=a.sqrt(.25-l(f-.5,2))*n+.5)&&.5!=p&&(p=p.toFixed(5)-1e-5*n)}return c}),n=n.split(/\s*\-\s*/),"linear"==h){var b=n.shift();if(b=-i(b),isNaN(b))return null;var _=[0,0,a.cos(t.rad(b)),a.sin(t.rad(b))],w=1/(s(o(_[2]),o(_[3]))||1);_[2]*=w,_[3]*=w,_[2]<0&&(_[0]=-_[2],_[2]=0),_[3]<0&&(_[1]=-_[3],_[3]=0)}var k=t._parseDots(n);if(!k)return null;if(u=u.replace(/[\(\)\s,\xb0#]/g,"_"),e.gradient&&u!=e.gradient.id&&(g.defs.removeChild(e.gradient),delete e.gradient),!e.gradient){y=v(h+"Gradient",{id:u}),e.gradient=y,v(y,"radial"==h?{fx:f,fy:p}:{x1:_[0],y1:_[1],x2:_[2],y2:_[3],gradientTransform:e.matrix.invert()}),g.defs.appendChild(y);for(var B=0,C=k.length;B<C;B++)y.appendChild(v("stop",{offset:k[B].offset?k[B].offset:B?"100%":"0%","stop-color":k[B].color||"#fff","stop-opacity":isFinite(k[B].opacity)?k[B].opacity:1}))}}return v(d,{fill:m(u),opacity:1,"fill-opacity":1}),x.fill=c,x.opacity=1,x.fillOpacity=1,1},y=function(){var t=document.documentMode;return t&&(9===t||10===t)},m=function(t){if(y())return"url('#"+t+"')";var e=document.location,r=e.protocol+"//"+e.host+e.pathname+e.search;return"url('"+r+"#"+t+"')"},b=function(t){var e=t.getBBox(1);v(t.pattern,{patternTransform:t.matrix.invert()+" translate("+e.x+","+e.y+")"})},_=function(i,n,a){if("path"==i.type){for(var s=r(n).toLowerCase().split("-"),o=i.paper,l=a?"end":"start",h=i.node,u=i.attrs,f=u["stroke-width"],p=s.length,x="classic",y,m,b,_,w,k=3,B=3,C=5;p--;)switch(s[p]){case"block":case"classic":case"oval":case"diamond":case"open":case"none":x=s[p];break;case"wide":B=5;break;case"narrow":B=2;break;case"long":k=5;break;case"short":k=2}if("open"==x?(k+=2,B+=2,C+=2,b=1,_=a?4:1,w={fill:"none",stroke:u.stroke}):(_=b=k/2,w={fill:u.stroke,stroke:"none"}),i._.arrows?a?(i._.arrows.endPath&&g[i._.arrows.endPath]--,i._.arrows.endMarker&&g[i._.arrows.endMarker]--):(i._.arrows.startPath&&g[i._.arrows.startPath]--,i._.arrows.startMarker&&g[i._.arrows.startMarker]--):i._.arrows={},"none"!=x){var S="raphael-marker-"+x,A="raphael-marker-"+l+x+k+B+"-obj"+i.id;t._g.doc.getElementById(S)?g[S]++:(o.defs.appendChild(v(v("path"),{"stroke-linecap":"round",d:d[x],id:S})),g[S]=1);var T=t._g.doc.getElementById(A),E;T?(g[A]++,E=T.getElementsByTagName("use")[0]):(T=v(v("marker"),{id:A,markerHeight:B,markerWidth:k,orient:"auto",refX:_,refY:B/2}),E=v(v("use"),{"xlink:href":"#"+S,transform:(a?"rotate(180 "+k/2+" "+B/2+") ":c)+"scale("+k/C+","+B/C+")","stroke-width":(1/((k/C+B/C)/2)).toFixed(4)}),T.appendChild(E),o.defs.appendChild(T),g[A]=1),v(E,w);var M=b*("diamond"!=x&&"oval"!=x);a?(y=i._.arrows.startdx*f||0,m=t.getTotalLength(u.path)-M*f):(y=M*f,m=t.getTotalLength(u.path)-(i._.arrows.enddx*f||0)),w={},w["marker-"+l]="url(#"+A+")",(m||y)&&(w.d=t.getSubpath(u.path,y,m)),v(h,w),i._.arrows[l+"Path"]=S,i._.arrows[l+"Marker"]=A,i._.arrows[l+"dx"]=M,i._.arrows[l+"Type"]=x,i._.arrows[l+"String"]=n}else a?(y=i._.arrows.startdx*f||0,m=t.getTotalLength(u.path)-y):(y=0,m=t.getTotalLength(u.path)-(i._.arrows.enddx*f||0)),i._.arrows[l+"Path"]&&v(h,{d:t.getSubpath(u.path,y,m)}),delete i._.arrows[l+"Path"],delete i._.arrows[l+"Marker"],delete i._.arrows[l+"dx"],delete i._.arrows[l+"Type"],delete i._.arrows[l+"String"];for(w in g)if(g[e](w)&&!g[w]){var N=t._g.doc.getElementById(w);N&&N.parentNode.removeChild(N)}}},w={"-":[3,1],".":[1,1],"-.":[3,1,1,1],"-..":[3,1,1,1,1,1],". ":[1,3],"- ":[4,3],"--":[8,3],"- .":[4,3,1,3],"--.":[8,3,1,3],"--..":[8,3,1,3,1,3]},k=function(t,e,i){if(e=w[r(e).toLowerCase()]){for(var n=t.attrs["stroke-width"]||"1",a={round:n,square:n,butt:0}[t.attrs["stroke-linecap"]||i["stroke-linecap"]]||0,s=[],o=e.length;o--;)s[o]=e[o]*n+(o%2?1:-1)*a;v(t.node,{"stroke-dasharray":s.join(",")})}else v(t.node,{"stroke-dasharray":"none"})},B=function(i,a){var l=i.node,u=i.attrs,f=l.style.visibility;l.style.visibility="hidden";for(var d in a)if(a[e](d)){if(!t._availableAttrs[e](d))continue;var g=a[d];switch(u[d]=g,d){case"blur":i.blur(g);break;case"title":var y=l.getElementsByTagName("title");if(y.length&&(y=y[0]))y.firstChild.nodeValue=g;else{y=v("title");var m=t._g.doc.createTextNode(g);y.appendChild(m),l.appendChild(y)}break;case"href":case"target":var w=l.parentNode;if("a"!=w.tagName.toLowerCase()){var B=v("a");w.insertBefore(B,l),B.appendChild(l),w=B}"target"==d?w.setAttributeNS(p,"show","blank"==g?"new":g):w.setAttributeNS(p,d,g);break;case"cursor":l.style.cursor=g;break;case"transform":i.transform(g);break;case"arrow-start":_(i,g);break;case"arrow-end":_(i,g,1);break;case"clip-rect":var C=r(g).split(h);if(4==C.length){i.clip&&i.clip.parentNode.parentNode.removeChild(i.clip.parentNode);var A=v("clipPath"),T=v("rect");A.id=t.createUUID(),v(T,{x:C[0],y:C[1],width:C[2],height:C[3]}),A.appendChild(T),i.paper.defs.appendChild(A),v(l,{"clip-path":"url(#"+A.id+")"}),i.clip=T}if(!g){var E=l.getAttribute("clip-path");if(E){var M=t._g.doc.getElementById(E.replace(/(^url\(#|\)$)/g,c));M&&M.parentNode.removeChild(M),v(l,{"clip-path":c}),delete i.clip}}break;case"path":"path"==i.type&&(v(l,{d:g?u.path=t._pathToAbsolute(g):"M0,0"}),i._.dirty=1,i._.arrows&&("startString"in i._.arrows&&_(i,i._.arrows.startString),"endString"in i._.arrows&&_(i,i._.arrows.endString,1)));break;case"width":if(l.setAttribute(d,g),i._.dirty=1,!u.fx)break;d="x",g=u.x;case"x":u.fx&&(g=-u.x-(u.width||0));case"rx":if("rx"==d&&"rect"==i.type)break;case"cx":l.setAttribute(d,g),i.pattern&&b(i),i._.dirty=1;break;case"height":if(l.setAttribute(d,g),i._.dirty=1,!u.fy)break;d="y",g=u.y;case"y":u.fy&&(g=-u.y-(u.height||0));case"ry":if("ry"==d&&"rect"==i.type)break;case"cy":l.setAttribute(d,g),i.pattern&&b(i),i._.dirty=1;break;case"r":"rect"==i.type?v(l,{rx:g,ry:g}):l.setAttribute(d,g),i._.dirty=1;break;case"src":"image"==i.type&&l.setAttributeNS(p,"href",g);break;case"stroke-width":1==i._.sx&&1==i._.sy||(g/=s(o(i._.sx),o(i._.sy))||1),l.setAttribute(d,g),u["stroke-dasharray"]&&k(i,u["stroke-dasharray"],a),
 i._.arrows&&("startString"in i._.arrows&&_(i,i._.arrows.startString),"endString"in i._.arrows&&_(i,i._.arrows.endString,1));break;case"stroke-dasharray":k(i,g,a);break;case"fill":var N=r(g).match(t._ISURL);if(N){A=v("pattern");var L=v("image");A.id=t.createUUID(),v(A,{x:0,y:0,patternUnits:"userSpaceOnUse",height:1,width:1}),v(L,{x:0,y:0,"xlink:href":N[1]}),A.appendChild(L),function(e){t._preload(N[1],function(){var t=this.offsetWidth,r=this.offsetHeight;v(e,{width:t,height:r}),v(L,{width:t,height:r})})}(A),i.paper.defs.appendChild(A),v(l,{fill:"url(#"+A.id+")"}),i.pattern=A,i.pattern&&b(i);break}var z=t.getRGB(g);if(z.error){if(("circle"==i.type||"ellipse"==i.type||"r"!=r(g).charAt())&&x(i,g)){if("opacity"in u||"fill-opacity"in u){var P=t._g.doc.getElementById(l.getAttribute("fill").replace(/^url\(#|\)$/g,c));if(P){var F=P.getElementsByTagName("stop");v(F[F.length-1],{"stop-opacity":("opacity"in u?u.opacity:1)*("fill-opacity"in u?u["fill-opacity"]:1)})}}u.gradient=g,u.fill="none";break}}else delete a.gradient,delete u.gradient,!t.is(u.opacity,"undefined")&&t.is(a.opacity,"undefined")&&v(l,{opacity:u.opacity}),!t.is(u["fill-opacity"],"undefined")&&t.is(a["fill-opacity"],"undefined")&&v(l,{"fill-opacity":u["fill-opacity"]});z[e]("opacity")&&v(l,{"fill-opacity":z.opacity>1?z.opacity/100:z.opacity});case"stroke":z=t.getRGB(g),l.setAttribute(d,z.hex),"stroke"==d&&z[e]("opacity")&&v(l,{"stroke-opacity":z.opacity>1?z.opacity/100:z.opacity}),"stroke"==d&&i._.arrows&&("startString"in i._.arrows&&_(i,i._.arrows.startString),"endString"in i._.arrows&&_(i,i._.arrows.endString,1));break;case"gradient":("circle"==i.type||"ellipse"==i.type||"r"!=r(g).charAt())&&x(i,g);break;case"opacity":u.gradient&&!u[e]("stroke-opacity")&&v(l,{"stroke-opacity":g>1?g/100:g});case"fill-opacity":if(u.gradient){P=t._g.doc.getElementById(l.getAttribute("fill").replace(/^url\(#|\)$/g,c)),P&&(F=P.getElementsByTagName("stop"),v(F[F.length-1],{"stop-opacity":g}));break}default:"font-size"==d&&(g=n(g,10)+"px");var R=d.replace(/(\-.)/g,function(t){return t.substring(1).toUpperCase()});l.style[R]=g,i._.dirty=1,l.setAttribute(d,g)}}S(i,a),l.style.visibility=f},C=1.2,S=function(i,a){if("text"==i.type&&(a[e]("text")||a[e]("font")||a[e]("font-size")||a[e]("x")||a[e]("y"))){var s=i.attrs,o=i.node,l=o.firstChild?n(t._g.doc.defaultView.getComputedStyle(o.firstChild,c).getPropertyValue("font-size"),10):10;if(a[e]("text")){for(s.text=a.text;o.firstChild;)o.removeChild(o.firstChild);for(var h=r(a.text).split("\n"),u=[],f,p=0,d=h.length;p<d;p++)f=v("tspan"),p&&v(f,{dy:l*C,x:s.x}),f.appendChild(t._g.doc.createTextNode(h[p])),o.appendChild(f),u[p]=f}else for(u=o.getElementsByTagName("tspan"),p=0,d=u.length;p<d;p++)p?v(u[p],{dy:l*C,x:s.x}):v(u[0],{dy:0});v(o,{x:s.x,y:s.y}),i._.dirty=1;var g=i._getBBox(),x=s.y-(g.y+g.height/2);x&&t.is(x,"finite")&&v(u[0],{dy:x})}},A=function(t){return t.parentNode&&"a"===t.parentNode.tagName.toLowerCase()?t.parentNode:t},T=function(e,r){function i(){return("0000"+(Math.random()*Math.pow(36,5)<<0).toString(36)).slice(-5)}var n=0,a=0;this[0]=this.node=e,e.raphael=!0,this.id=i(),e.raphaelid=this.id,this.matrix=t.matrix(),this.realPath=null,this.paper=r,this.attrs=this.attrs||{},this._={transform:[],sx:1,sy:1,deg:0,dx:0,dy:0,dirty:1},!r.bottom&&(r.bottom=this),this.prev=r.top,r.top&&(r.top.next=this),r.top=this,this.next=null},E=t.el;T.prototype=E,E.constructor=T,t._engine.path=function(t,e){var r=v("path");e.canvas&&e.canvas.appendChild(r);var i=new T(r,e);return i.type="path",B(i,{fill:"none",stroke:"#000",path:t}),i},E.rotate=function(t,e,n){if(this.removed)return this;if(t=r(t).split(h),t.length-1&&(e=i(t[1]),n=i(t[2])),t=i(t[0]),null==n&&(e=n),null==e||null==n){var a=this.getBBox(1);e=a.x+a.width/2,n=a.y+a.height/2}return this.transform(this._.transform.concat([["r",t,e,n]])),this},E.scale=function(t,e,n,a){if(this.removed)return this;if(t=r(t).split(h),t.length-1&&(e=i(t[1]),n=i(t[2]),a=i(t[3])),t=i(t[0]),null==e&&(e=t),null==a&&(n=a),null==n||null==a)var s=this.getBBox(1);return n=null==n?s.x+s.width/2:n,a=null==a?s.y+s.height/2:a,this.transform(this._.transform.concat([["s",t,e,n,a]])),this},E.translate=function(t,e){return this.removed?this:(t=r(t).split(h),t.length-1&&(e=i(t[1])),t=i(t[0])||0,e=+e||0,this.transform(this._.transform.concat([["t",t,e]])),this)},E.transform=function(r){var i=this._;if(null==r)return i.transform;if(t._extractTransform(this,r),this.clip&&v(this.clip,{transform:this.matrix.invert()}),this.pattern&&b(this),this.node&&v(this.node,{transform:this.matrix}),1!=i.sx||1!=i.sy){var n=this.attrs[e]("stroke-width")?this.attrs["stroke-width"]:1;this.attr({"stroke-width":n})}return this},E.hide=function(){return this.removed||(this.node.style.display="none"),this},E.show=function(){return this.removed||(this.node.style.display=""),this},E.remove=function(){var e=A(this.node);if(!this.removed&&e.parentNode){var r=this.paper;r.__set__&&r.__set__.exclude(this),u.unbind("raphael.*.*."+this.id),this.gradient&&r.defs.removeChild(this.gradient),t._tear(this,r),e.parentNode.removeChild(e),this.removeData();for(var i in this)this[i]="function"==typeof this[i]?t._removedFactory(i):null;this.removed=!0}},E._getBBox=function(){if("none"==this.node.style.display){this.show();var t=!0}var e=!1,r;this.paper.canvas.parentElement?r=this.paper.canvas.parentElement.style:this.paper.canvas.parentNode&&(r=this.paper.canvas.parentNode.style),r&&"none"==r.display&&(e=!0,r.display="");var i={};try{i=this.node.getBBox()}catch(n){i={x:this.node.clientLeft,y:this.node.clientTop,width:this.node.clientWidth,height:this.node.clientHeight}}finally{i=i||{},e&&(r.display="none")}return t&&this.hide(),i},E.attr=function(r,i){if(this.removed)return this;if(null==r){var n={};for(var a in this.attrs)this.attrs[e](a)&&(n[a]=this.attrs[a]);return n.gradient&&"none"==n.fill&&(n.fill=n.gradient)&&delete n.gradient,n.transform=this._.transform,n}if(null==i&&t.is(r,"string")){if("fill"==r&&"none"==this.attrs.fill&&this.attrs.gradient)return this.attrs.gradient;if("transform"==r)return this._.transform;for(var s=r.split(h),o={},l=0,c=s.length;l<c;l++)r=s[l],r in this.attrs?o[r]=this.attrs[r]:t.is(this.paper.customAttributes[r],"function")?o[r]=this.paper.customAttributes[r].def:o[r]=t._availableAttrs[r];return c-1?o:o[s[0]]}if(null==i&&t.is(r,"array")){for(o={},l=0,c=r.length;l<c;l++)o[r[l]]=this.attr(r[l]);return o}if(null!=i){var f={};f[r]=i}else null!=r&&t.is(r,"object")&&(f=r);for(var p in f)u("raphael.attr."+p+"."+this.id,this,f[p]);for(p in this.paper.customAttributes)if(this.paper.customAttributes[e](p)&&f[e](p)&&t.is(this.paper.customAttributes[p],"function")){var d=this.paper.customAttributes[p].apply(this,[].concat(f[p]));this.attrs[p]=f[p];for(var g in d)d[e](g)&&(f[g]=d[g])}return B(this,f),this},E.toFront=function(){if(this.removed)return this;var e=A(this.node);e.parentNode.appendChild(e);var r=this.paper;return r.top!=this&&t._tofront(this,r),this},E.toBack=function(){if(this.removed)return this;var e=A(this.node),r=e.parentNode;r.insertBefore(e,r.firstChild),t._toback(this,this.paper);var i=this.paper;return this},E.insertAfter=function(e){if(this.removed||!e)return this;var r=A(this.node),i=A(e.node||e[e.length-1].node);return i.nextSibling?i.parentNode.insertBefore(r,i.nextSibling):i.parentNode.appendChild(r),t._insertafter(this,e,this.paper),this},E.insertBefore=function(e){if(this.removed||!e)return this;var r=A(this.node),i=A(e.node||e[0].node);return i.parentNode.insertBefore(r,i),t._insertbefore(this,e,this.paper),this},E.blur=function(e){var r=this;if(0!==+e){var i=v("filter"),n=v("feGaussianBlur");r.attrs.blur=e,i.id=t.createUUID(),v(n,{stdDeviation:+e||1.5}),i.appendChild(n),r.paper.defs.appendChild(i),r._blur=i,v(r.node,{filter:"url(#"+i.id+")"})}else r._blur&&(r._blur.parentNode.removeChild(r._blur),delete r._blur,delete r.attrs.blur),r.node.removeAttribute("filter");return r},t._engine.circle=function(t,e,r,i){var n=v("circle");t.canvas&&t.canvas.appendChild(n);var a=new T(n,t);return a.attrs={cx:e,cy:r,r:i,fill:"none",stroke:"#000"},a.type="circle",v(n,a.attrs),a},t._engine.rect=function(t,e,r,i,n,a){var s=v("rect");t.canvas&&t.canvas.appendChild(s);var o=new T(s,t);return o.attrs={x:e,y:r,width:i,height:n,rx:a||0,ry:a||0,fill:"none",stroke:"#000"},o.type="rect",v(s,o.attrs),o},t._engine.ellipse=function(t,e,r,i,n){var a=v("ellipse");t.canvas&&t.canvas.appendChild(a);var s=new T(a,t);return s.attrs={cx:e,cy:r,rx:i,ry:n,fill:"none",stroke:"#000"},s.type="ellipse",v(a,s.attrs),s},t._engine.image=function(t,e,r,i,n,a){var s=v("image");v(s,{x:r,y:i,width:n,height:a,preserveAspectRatio:"none"}),s.setAttributeNS(p,"href",e),t.canvas&&t.canvas.appendChild(s);var o=new T(s,t);return o.attrs={x:r,y:i,width:n,height:a,src:e},o.type="image",o},t._engine.text=function(e,r,i,n){var a=v("text");e.canvas&&e.canvas.appendChild(a);var s=new T(a,e);return s.attrs={x:r,y:i,"text-anchor":"middle",text:n,"font-family":t._availableAttrs["font-family"],"font-size":t._availableAttrs["font-size"],stroke:"none",fill:"#000"},s.type="text",B(s,s.attrs),s},t._engine.setSize=function(t,e){return this.width=t||this.width,this.height=e||this.height,this.canvas.setAttribute("width",this.width),this.canvas.setAttribute("height",this.height),this._viewBox&&this.setViewBox.apply(this,this._viewBox),this},t._engine.create=function(){var e=t._getContainer.apply(0,arguments),r=e&&e.container,i=e.x,n=e.y,a=e.width,s=e.height;if(!r)throw new Error("SVG container not found.");var o=v("svg"),l="overflow:hidden;",h;return i=i||0,n=n||0,a=a||512,s=s||342,v(o,{height:s,version:1.1,width:a,xmlns:"http://www.w3.org/2000/svg","xmlns:xlink":"http://www.w3.org/1999/xlink"}),1==r?(o.style.cssText=l+"position:absolute;left:"+i+"px;top:"+n+"px",t._g.doc.body.appendChild(o),h=1):(o.style.cssText=l+"position:relative",r.firstChild?r.insertBefore(o,r.firstChild):r.appendChild(o)),r=new t._Paper,r.width=a,r.height=s,r.canvas=o,r.clear(),r._left=r._top=0,h&&(r.renderfix=function(){}),r.renderfix(),r},t._engine.setViewBox=function(t,e,r,i,n){u("raphael.setViewBox",this,this._viewBox,[t,e,r,i,n]);var a=this.getSize(),o=s(r/a.width,i/a.height),l=this.top,h=n?"xMidYMid meet":"xMinYMin",c,p;for(null==t?(this._vbSize&&(o=1),delete this._vbSize,c="0 0 "+this.width+f+this.height):(this._vbSize=o,c=t+f+e+f+r+f+i),v(this.canvas,{viewBox:c,preserveAspectRatio:h});o&&l;)p="stroke-width"in l.attrs?l.attrs["stroke-width"]:1,l.attr({"stroke-width":p}),l._.dirty=1,l._.dirtyT=1,l=l.prev;return this._viewBox=[t,e,r,i,!!n],this},t.prototype.renderfix=function(){var t=this.canvas,e=t.style,r;try{r=t.getScreenCTM()||t.createSVGMatrix()}catch(i){r=t.createSVGMatrix()}var n=-r.e%1,a=-r.f%1;(n||a)&&(n&&(this._left=(this._left+n)%1,e.left=this._left+"px"),a&&(this._top=(this._top+a)%1,e.top=this._top+"px"))},t.prototype.clear=function(){t.eve("raphael.clear",this);for(var e=this.canvas;e.firstChild;)e.removeChild(e.firstChild);this.bottom=this.top=null,(this.desc=v("desc")).appendChild(t._g.doc.createTextNode("Created with Raphaël "+t.version)),e.appendChild(this.desc),e.appendChild(this.defs=v("defs"))},t.prototype.remove=function(){u("raphael.remove",this),this.canvas.parentNode&&this.canvas.parentNode.removeChild(this.canvas);for(var e in this)this[e]="function"==typeof this[e]?t._removedFactory(e):null};var M=t.st;for(var N in E)E[e](N)&&!M[e](N)&&(M[N]=function(t){return function(){var e=arguments;return this.forEach(function(r){r[t].apply(r,e)})}}(N))}}.apply(e,i),!(void 0!==n&&(t.exports=n))},function(t,e,r){var i,n;i=[r(1)],n=function(t){if(!t||t.vml){var e="hasOwnProperty",r=String,i=parseFloat,n=Math,a=n.round,s=n.max,o=n.min,l=n.abs,h="fill",u=/[, ]+/,c=t.eve,f=" progid:DXImageTransform.Microsoft",p=" ",d="",g={M:"m",L:"l",C:"c",Z:"x",m:"t",l:"r",c:"v",z:"x"},v=/([clmz]),?([^clmz]*)/gi,x=/ progid:\S+Blur\([^\)]+\)/g,y=/-?[^,\s-]+/g,m="position:absolute;left:0;top:0;width:1px;height:1px;behavior:url(#default#VML)",b=21600,_={path:1,rect:1,image:1},w={circle:1,ellipse:1},k=function(e){var i=/[ahqstv]/gi,n=t._pathToAbsolute;if(r(e).match(i)&&(n=t._path2curve),i=/[clmz]/g,n==t._pathToAbsolute&&!r(e).match(i)){var s=r(e).replace(v,function(t,e,r){var i=[],n="m"==e.toLowerCase(),s=g[e];return r.replace(y,function(t){n&&2==i.length&&(s+=i+g["m"==e?"l":"L"],i=[]),i.push(a(t*b))}),s+i});return s}var o=n(e),l,h;s=[];for(var u=0,c=o.length;u<c;u++){l=o[u],h=o[u][0].toLowerCase(),"z"==h&&(h="x");for(var f=1,x=l.length;f<x;f++)h+=a(l[f]*b)+(f!=x-1?",":d);s.push(h)}return s.join(p)},B=function(e,r,i){var n=t.matrix();return n.rotate(-e,.5,.5),{dx:n.x(r,i),dy:n.y(r,i)}},C=function(t,e,r,i,n,a){var s=t._,o=t.matrix,u=s.fillpos,c=t.node,f=c.style,d=1,g="",v,x=b/e,y=b/r;if(f.visibility="hidden",e&&r){if(c.coordsize=l(x)+p+l(y),f.rotation=a*(e*r<0?-1:1),a){var m=B(a,i,n);i=m.dx,n=m.dy}if(e<0&&(g+="x"),r<0&&(g+=" y")&&(d=-1),f.flip=g,c.coordorigin=i*-x+p+n*-y,u||s.fillsize){var _=c.getElementsByTagName(h);_=_&&_[0],c.removeChild(_),u&&(m=B(a,o.x(u[0],u[1]),o.y(u[0],u[1])),_.position=m.dx*d+p+m.dy*d),s.fillsize&&(_.size=s.fillsize[0]*l(e)+p+s.fillsize[1]*l(r)),c.appendChild(_)}f.visibility="visible"}};t.toString=function(){return"Your browser doesn’t support SVG. Falling down to VML.\nYou are running Raphaël "+this.version};var S=function(t,e,i){for(var n=r(e).toLowerCase().split("-"),a=i?"end":"start",s=n.length,o="classic",l="medium",h="medium";s--;)switch(n[s]){case"block":case"classic":case"oval":case"diamond":case"open":case"none":o=n[s];break;case"wide":case"narrow":h=n[s];break;case"long":case"short":l=n[s]}var u=t.node.getElementsByTagName("stroke")[0];u[a+"arrow"]=o,u[a+"arrowlength"]=l,u[a+"arrowwidth"]=h},A=function(n,l){n.attrs=n.attrs||{};var c=n.node,f=n.attrs,g=c.style,v,x=_[n.type]&&(l.x!=f.x||l.y!=f.y||l.width!=f.width||l.height!=f.height||l.cx!=f.cx||l.cy!=f.cy||l.rx!=f.rx||l.ry!=f.ry||l.r!=f.r),y=w[n.type]&&(f.cx!=l.cx||f.cy!=l.cy||f.r!=l.r||f.rx!=l.rx||f.ry!=l.ry),m=n;for(var B in l)l[e](B)&&(f[B]=l[B]);if(x&&(f.path=t._getPath[n.type](n),n._.dirty=1),l.href&&(c.href=l.href),l.title&&(c.title=l.title),l.target&&(c.target=l.target),l.cursor&&(g.cursor=l.cursor),"blur"in l&&n.blur(l.blur),(l.path&&"path"==n.type||x)&&(c.path=k(~r(f.path).toLowerCase().indexOf("r")?t._pathToAbsolute(f.path):f.path),n._.dirty=1,"image"==n.type&&(n._.fillpos=[f.x,f.y],n._.fillsize=[f.width,f.height],C(n,1,1,0,0,0))),"transform"in l&&n.transform(l.transform),y){var A=+f.cx,E=+f.cy,M=+f.rx||+f.r||0,L=+f.ry||+f.r||0;c.path=t.format("ar{0},{1},{2},{3},{4},{1},{4},{1}x",a((A-M)*b),a((E-L)*b),a((A+M)*b),a((E+L)*b),a(A*b)),n._.dirty=1}if("clip-rect"in l){var z=r(l["clip-rect"]).split(u);if(4==z.length){z[2]=+z[2]+ +z[0],z[3]=+z[3]+ +z[1];var P=c.clipRect||t._g.doc.createElement("div"),F=P.style;F.clip=t.format("rect({1}px {2}px {3}px {0}px)",z),c.clipRect||(F.position="absolute",F.top=0,F.left=0,F.width=n.paper.width+"px",F.height=n.paper.height+"px",c.parentNode.insertBefore(P,c),P.appendChild(c),c.clipRect=P)}l["clip-rect"]||c.clipRect&&(c.clipRect.style.clip="auto")}if(n.textpath){var R=n.textpath.style;l.font&&(R.font=l.font),l["font-family"]&&(R.fontFamily='"'+l["font-family"].split(",")[0].replace(/^['"]+|['"]+$/g,d)+'"'),l["font-size"]&&(R.fontSize=l["font-size"]),l["font-weight"]&&(R.fontWeight=l["font-weight"]),l["font-style"]&&(R.fontStyle=l["font-style"])}if("arrow-start"in l&&S(m,l["arrow-start"]),"arrow-end"in l&&S(m,l["arrow-end"],1),null!=l.opacity||null!=l.fill||null!=l.src||null!=l.stroke||null!=l["stroke-width"]||null!=l["stroke-opacity"]||null!=l["fill-opacity"]||null!=l["stroke-dasharray"]||null!=l["stroke-miterlimit"]||null!=l["stroke-linejoin"]||null!=l["stroke-linecap"]){var j=c.getElementsByTagName(h),I=!1;if(j=j&&j[0],!j&&(I=j=N(h)),"image"==n.type&&l.src&&(j.src=l.src),l.fill&&(j.on=!0),null!=j.on&&"none"!=l.fill&&null!==l.fill||(j.on=!1),j.on&&l.fill){var q=r(l.fill).match(t._ISURL);if(q){j.parentNode==c&&c.removeChild(j),j.rotate=!0,j.src=q[1],j.type="tile";var D=n.getBBox(1);j.position=D.x+p+D.y,n._.fillpos=[D.x,D.y],t._preload(q[1],function(){n._.fillsize=[this.offsetWidth,this.offsetHeight]})}else j.color=t.getRGB(l.fill).hex,j.src=d,j.type="solid",t.getRGB(l.fill).error&&(m.type in{circle:1,ellipse:1}||"r"!=r(l.fill).charAt())&&T(m,l.fill,j)&&(f.fill="none",f.gradient=l.fill,j.rotate=!1)}if("fill-opacity"in l||"opacity"in l){var V=((+f["fill-opacity"]+1||2)-1)*((+f.opacity+1||2)-1)*((+t.getRGB(l.fill).o+1||2)-1);V=o(s(V,0),1),j.opacity=V,j.src&&(j.color="none")}c.appendChild(j);var O=c.getElementsByTagName("stroke")&&c.getElementsByTagName("stroke")[0],Y=!1;!O&&(Y=O=N("stroke")),(l.stroke&&"none"!=l.stroke||l["stroke-width"]||null!=l["stroke-opacity"]||l["stroke-dasharray"]||l["stroke-miterlimit"]||l["stroke-linejoin"]||l["stroke-linecap"])&&(O.on=!0),("none"==l.stroke||null===l.stroke||null==O.on||0==l.stroke||0==l["stroke-width"])&&(O.on=!1);var W=t.getRGB(l.stroke);O.on&&l.stroke&&(O.color=W.hex),V=((+f["stroke-opacity"]+1||2)-1)*((+f.opacity+1||2)-1)*((+W.o+1||2)-1);var G=.75*(i(l["stroke-width"])||1);if(V=o(s(V,0),1),null==l["stroke-width"]&&(G=f["stroke-width"]),l["stroke-width"]&&(O.weight=G),G&&G<1&&(V*=G)&&(O.weight=1),O.opacity=V,l["stroke-linejoin"]&&(O.joinstyle=l["stroke-linejoin"]||"miter"),O.miterlimit=l["stroke-miterlimit"]||8,l["stroke-linecap"]&&(O.endcap="butt"==l["stroke-linecap"]?"flat":"square"==l["stroke-linecap"]?"square":"round"),"stroke-dasharray"in l){var H={"-":"shortdash",".":"shortdot","-.":"shortdashdot","-..":"shortdashdotdot",". ":"dot","- ":"dash","--":"longdash","- .":"dashdot","--.":"longdashdot","--..":"longdashdotdot"};O.dashstyle=H[e](l["stroke-dasharray"])?H[l["stroke-dasharray"]]:d}Y&&c.appendChild(O)}if("text"==m.type){m.paper.canvas.style.display=d;var X=m.paper.span,U=100,$=f.font&&f.font.match(/\d+(?:\.\d*)?(?=px)/);g=X.style,f.font&&(g.font=f.font),f["font-family"]&&(g.fontFamily=f["font-family"]),f["font-weight"]&&(g.fontWeight=f["font-weight"]),f["font-style"]&&(g.fontStyle=f["font-style"]),$=i(f["font-size"]||$&&$[0])||10,g.fontSize=$*U+"px",m.textpath.string&&(X.innerHTML=r(m.textpath.string).replace(/</g,"&#60;").replace(/&/g,"&#38;").replace(/\n/g,"<br>"));var Z=X.getBoundingClientRect();m.W=f.w=(Z.right-Z.left)/U,m.H=f.h=(Z.bottom-Z.top)/U,m.X=f.x,m.Y=f.y+m.H/2,("x"in l||"y"in l)&&(m.path.v=t.format("m{0},{1}l{2},{1}",a(f.x*b),a(f.y*b),a(f.x*b)+1));for(var Q=["x","y","text","font","font-family","font-weight","font-style","font-size"],J=0,K=Q.length;J<K;J++)if(Q[J]in l){m._.dirty=1;break}switch(f["text-anchor"]){case"start":m.textpath.style["v-text-align"]="left",m.bbx=m.W/2;break;case"end":m.textpath.style["v-text-align"]="right",m.bbx=-m.W/2;break;default:m.textpath.style["v-text-align"]="center",m.bbx=0}m.textpath.style["v-text-kern"]=!0}},T=function(e,a,s){e.attrs=e.attrs||{};var o=e.attrs,l=Math.pow,h,u,c="linear",f=".5 .5";if(e.attrs.gradient=a,a=r(a).replace(t._radial_gradient,function(t,e,r){return c="radial",e&&r&&(e=i(e),r=i(r),l(e-.5,2)+l(r-.5,2)>.25&&(r=n.sqrt(.25-l(e-.5,2))*(2*(r>.5)-1)+.5),f=e+p+r),d}),a=a.split(/\s*\-\s*/),"linear"==c){var g=a.shift();if(g=-i(g),isNaN(g))return null}var v=t._parseDots(a);if(!v)return null;if(e=e.shape||e.node,v.length){e.removeChild(s),s.on=!0,s.method="none",s.color=v[0].color,s.color2=v[v.length-1].color;for(var x=[],y=0,m=v.length;y<m;y++)v[y].offset&&x.push(v[y].offset+p+v[y].color);s.colors=x.length?x.join():"0% "+s.color,"radial"==c?(s.type="gradientTitle",s.focus="100%",s.focussize="0 0",s.focusposition=f,s.angle=0):(s.type="gradient",s.angle=(270-g)%360),e.appendChild(s)}return 1},E=function(e,r){this[0]=this.node=e,e.raphael=!0,this.id=t._oid++,e.raphaelid=this.id,this.X=0,this.Y=0,this.attrs={},this.paper=r,this.matrix=t.matrix(),this._={transform:[],sx:1,sy:1,dx:0,dy:0,deg:0,dirty:1,dirtyT:1},!r.bottom&&(r.bottom=this),this.prev=r.top,r.top&&(r.top.next=this),r.top=this,this.next=null},M=t.el;E.prototype=M,M.constructor=E,M.transform=function(e){if(null==e)return this._.transform;var i=this.paper._viewBoxShift,n=i?"s"+[i.scale,i.scale]+"-1-1t"+[i.dx,i.dy]:d,a;i&&(a=e=r(e).replace(/\.{3}|\u2026/g,this._.transform||d)),t._extractTransform(this,n+e);var s=this.matrix.clone(),o=this.skew,l=this.node,h,u=~r(this.attrs.fill).indexOf("-"),c=!r(this.attrs.fill).indexOf("url(");if(s.translate(1,1),c||u||"image"==this.type)if(o.matrix="1 0 0 1",o.offset="0 0",h=s.split(),u&&h.noRotation||!h.isSimple){l.style.filter=s.toFilter();var f=this.getBBox(),g=this.getBBox(1),v=f.x-g.x,x=f.y-g.y;l.coordorigin=v*-b+p+x*-b,C(this,1,1,v,x,0)}else l.style.filter=d,C(this,h.scalex,h.scaley,h.dx,h.dy,h.rotate);else l.style.filter=d,o.matrix=r(s),o.offset=s.offset();return null!==a&&(this._.transform=a,t._extractTransform(this,a)),this},M.rotate=function(t,e,n){if(this.removed)return this;if(null!=t){if(t=r(t).split(u),t.length-1&&(e=i(t[1]),n=i(t[2])),t=i(t[0]),null==n&&(e=n),null==e||null==n){var a=this.getBBox(1);e=a.x+a.width/2,n=a.y+a.height/2}return this._.dirtyT=1,this.transform(this._.transform.concat([["r",t,e,n]])),this}},M.translate=function(t,e){return this.removed?this:(t=r(t).split(u),t.length-1&&(e=i(t[1])),t=i(t[0])||0,e=+e||0,this._.bbox&&(this._.bbox.x+=t,this._.bbox.y+=e),this.transform(this._.transform.concat([["t",t,e]])),this)},M.scale=function(t,e,n,a){if(this.removed)return this;if(t=r(t).split(u),t.length-1&&(e=i(t[1]),n=i(t[2]),a=i(t[3]),isNaN(n)&&(n=null),isNaN(a)&&(a=null)),t=i(t[0]),null==e&&(e=t),null==a&&(n=a),null==n||null==a)var s=this.getBBox(1);return n=null==n?s.x+s.width/2:n,a=null==a?s.y+s.height/2:a,this.transform(this._.transform.concat([["s",t,e,n,a]])),this._.dirtyT=1,this},M.hide=function(){return!this.removed&&(this.node.style.display="none"),this},M.show=function(){return!this.removed&&(this.node.style.display=d),this},M.auxGetBBox=t.el.getBBox,M.getBBox=function(){var t=this.auxGetBBox();if(this.paper&&this.paper._viewBoxShift){var e={},r=1/this.paper._viewBoxShift.scale;return e.x=t.x-this.paper._viewBoxShift.dx,e.x*=r,e.y=t.y-this.paper._viewBoxShift.dy,e.y*=r,e.width=t.width*r,e.height=t.height*r,e.x2=e.x+e.width,e.y2=e.y+e.height,e}return t},M._getBBox=function(){return this.removed?{}:{x:this.X+(this.bbx||0)-this.W/2,y:this.Y-this.H,width:this.W,height:this.H}},M.remove=function(){if(!this.removed&&this.node.parentNode){this.paper.__set__&&this.paper.__set__.exclude(this),t.eve.unbind("raphael.*.*."+this.id),t._tear(this,this.paper),this.node.parentNode.removeChild(this.node),this.shape&&this.shape.parentNode.removeChild(this.shape);for(var e in this)this[e]="function"==typeof this[e]?t._removedFactory(e):null;this.removed=!0}},M.attr=function(r,i){if(this.removed)return this;if(null==r){var n={};for(var a in this.attrs)this.attrs[e](a)&&(n[a]=this.attrs[a]);return n.gradient&&"none"==n.fill&&(n.fill=n.gradient)&&delete n.gradient,n.transform=this._.transform,n}if(null==i&&t.is(r,"string")){if(r==h&&"none"==this.attrs.fill&&this.attrs.gradient)return this.attrs.gradient;for(var s=r.split(u),o={},l=0,f=s.length;l<f;l++)r=s[l],r in this.attrs?o[r]=this.attrs[r]:t.is(this.paper.customAttributes[r],"function")?o[r]=this.paper.customAttributes[r].def:o[r]=t._availableAttrs[r];return f-1?o:o[s[0]]}if(this.attrs&&null==i&&t.is(r,"array")){for(o={},l=0,f=r.length;l<f;l++)o[r[l]]=this.attr(r[l]);return o}var p;null!=i&&(p={},p[r]=i),null==i&&t.is(r,"object")&&(p=r);for(var d in p)c("raphael.attr."+d+"."+this.id,this,p[d]);if(p){for(d in this.paper.customAttributes)if(this.paper.customAttributes[e](d)&&p[e](d)&&t.is(this.paper.customAttributes[d],"function")){var g=this.paper.customAttributes[d].apply(this,[].concat(p[d]));this.attrs[d]=p[d];for(var v in g)g[e](v)&&(p[v]=g[v])}p.text&&"text"==this.type&&(this.textpath.string=p.text),A(this,p)}return this},M.toFront=function(){return!this.removed&&this.node.parentNode.appendChild(this.node),this.paper&&this.paper.top!=this&&t._tofront(this,this.paper),this},M.toBack=function(){return this.removed?this:(this.node.parentNode.firstChild!=this.node&&(this.node.parentNode.insertBefore(this.node,this.node.parentNode.firstChild),t._toback(this,this.paper)),this)},M.insertAfter=function(e){return this.removed?this:(e.constructor==t.st.constructor&&(e=e[e.length-1]),e.node.nextSibling?e.node.parentNode.insertBefore(this.node,e.node.nextSibling):e.node.parentNode.appendChild(this.node),t._insertafter(this,e,this.paper),this)},M.insertBefore=function(e){return this.removed?this:(e.constructor==t.st.constructor&&(e=e[0]),e.node.parentNode.insertBefore(this.node,e.node),t._insertbefore(this,e,this.paper),this)},M.blur=function(e){var r=this.node.runtimeStyle,i=r.filter;return i=i.replace(x,d),0!==+e?(this.attrs.blur=e,r.filter=i+p+f+".Blur(pixelradius="+(+e||1.5)+")",r.margin=t.format("-{0}px 0 0 -{0}px",a(+e||1.5))):(r.filter=i,r.margin=0,delete this.attrs.blur),this},t._engine.path=function(t,e){var r=N("shape");r.style.cssText=m,r.coordsize=b+p+b,r.coordorigin=e.coordorigin;var i=new E(r,e),n={fill:"none",stroke:"#000"};t&&(n.path=t),i.type="path",i.path=[],i.Path=d,A(i,n),e.canvas&&e.canvas.appendChild(r);var a=N("skew");return a.on=!0,r.appendChild(a),i.skew=a,i.transform(d),i},t._engine.rect=function(e,r,i,n,a,s){var o=t._rectPath(r,i,n,a,s),l=e.path(o),h=l.attrs;return l.X=h.x=r,l.Y=h.y=i,l.W=h.width=n,l.H=h.height=a,h.r=s,h.path=o,l.type="rect",l},t._engine.ellipse=function(t,e,r,i,n){var a=t.path(),s=a.attrs;return a.X=e-i,a.Y=r-n,a.W=2*i,a.H=2*n,a.type="ellipse",A(a,{cx:e,cy:r,rx:i,ry:n}),a},t._engine.circle=function(t,e,r,i){var n=t.path(),a=n.attrs;return n.X=e-i,n.Y=r-i,n.W=n.H=2*i,n.type="circle",A(n,{cx:e,cy:r,r:i}),n},t._engine.image=function(e,r,i,n,a,s){var o=t._rectPath(i,n,a,s),l=e.path(o).attr({stroke:"none"}),u=l.attrs,c=l.node,f=c.getElementsByTagName(h)[0];return u.src=r,l.X=u.x=i,l.Y=u.y=n,l.W=u.width=a,l.H=u.height=s,u.path=o,l.type="image",f.parentNode==c&&c.removeChild(f),f.rotate=!0,f.src=r,f.type="tile",l._.fillpos=[i,n],l._.fillsize=[a,s],c.appendChild(f),C(l,1,1,0,0,0),l},t._engine.text=function(e,i,n,s){var o=N("shape"),l=N("path"),h=N("textpath");i=i||0,n=n||0,s=s||"",l.v=t.format("m{0},{1}l{2},{1}",a(i*b),a(n*b),a(i*b)+1),l.textpathok=!0,h.string=r(s),h.on=!0,o.style.cssText=m,o.coordsize=b+p+b,o.coordorigin="0 0";var u=new E(o,e),c={fill:"#000",stroke:"none",font:t._availableAttrs.font,text:s};u.shape=o,u.path=l,u.textpath=h,u.type="text",u.attrs.text=r(s),u.attrs.x=i,u.attrs.y=n,u.attrs.w=1,u.attrs.h=1,A(u,c),o.appendChild(h),o.appendChild(l),e.canvas.appendChild(o);var f=N("skew");return f.on=!0,o.appendChild(f),u.skew=f,u.transform(d),u},t._engine.setSize=function(e,r){var i=this.canvas.style;return this.width=e,this.height=r,e==+e&&(e+="px"),r==+r&&(r+="px"),i.width=e,i.height=r,i.clip="rect(0 "+e+" "+r+" 0)",this._viewBox&&t._engine.setViewBox.apply(this,this._viewBox),this},t._engine.setViewBox=function(e,r,i,n,a){t.eve("raphael.setViewBox",this,this._viewBox,[e,r,i,n,a]);var s=this.getSize(),o=s.width,l=s.height,h,u;return a&&(h=l/n,u=o/i,i*h<o&&(e-=(o-i*h)/2/h),n*u<l&&(r-=(l-n*u)/2/u)),this._viewBox=[e,r,i,n,!!a],this._viewBoxShift={dx:-e,dy:-r,scale:s},this.forEach(function(t){t.transform("...")}),this};var N;t._engine.initWin=function(t){var e=t.document;e.styleSheets.length<31?e.createStyleSheet().addRule(".rvml","behavior:url(#default#VML)"):e.styleSheets[0].addRule(".rvml","behavior:url(#default#VML)");try{!e.namespaces.rvml&&e.namespaces.add("rvml","urn:schemas-microsoft-com:vml"),N=function(t){return e.createElement("<rvml:"+t+' class="rvml">')}}catch(r){N=function(t){return e.createElement("<"+t+' xmlns="urn:schemas-microsoft.com:vml" class="rvml">')}}},t._engine.initWin(t._g.win),t._engine.create=function(){var e=t._getContainer.apply(0,arguments),r=e.container,i=e.height,n,a=e.width,s=e.x,o=e.y;if(!r)throw new Error("VML container not found.");var l=new t._Paper,h=l.canvas=t._g.doc.createElement("div"),u=h.style;return s=s||0,o=o||0,a=a||512,i=i||342,l.width=a,l.height=i,a==+a&&(a+="px"),i==+i&&(i+="px"),l.coordsize=1e3*b+p+1e3*b,l.coordorigin="0 0",l.span=t._g.doc.createElement("span"),l.span.style.cssText="position:absolute;left:-9999em;top:-9999em;padding:0;margin:0;line-height:1;",h.appendChild(l.span),u.cssText=t.format("top:0;left:0;width:{0};height:{1};display:inline-block;position:relative;clip:rect(0 {0} {1} 0);overflow:hidden",a,i),1==r?(t._g.doc.body.appendChild(h),u.left=s+"px",u.top=o+"px",u.position="absolute"):r.firstChild?r.insertBefore(h,r.firstChild):r.appendChild(h),l.renderfix=function(){},l},t.prototype.clear=function(){t.eve("raphael.clear",this),this.canvas.innerHTML=d,this.span=t._g.doc.createElement("span"),this.span.style.cssText="position:absolute;left:-9999em;top:-9999em;padding:0;margin:0;line-height:1;display:inline;",this.canvas.appendChild(this.span),this.bottom=this.top=null},t.prototype.remove=function(){t.eve("raphael.remove",this),this.canvas.parentNode.removeChild(this.canvas);for(var e in this)this[e]="function"==typeof this[e]?t._removedFactory(e):null;return!0};var L=t.st;for(var z in M)M[e](z)&&!L[e](z)&&(L[z]=function(t){return function(){var e=arguments;return this.forEach(function(r){r[t].apply(r,e)})}}(z))}}.apply(e,i),!(void 0!==n&&(t.exports=n))}])});
-},{}],247:[function(_dereq_,module,exports){
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-addons-css-transition-group/index.js":[function(_dereq_,module,exports){
 module.exports = _dereq_('react/lib/ReactCSSTransitionGroup');
-},{"react/lib/ReactCSSTransitionGroup":407}],248:[function(_dereq_,module,exports){
+},{"react/lib/ReactCSSTransitionGroup":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/lib/ReactCSSTransitionGroup.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/index.js":[function(_dereq_,module,exports){
 'use strict';
 
 module.exports = _dereq_('./lib/ReactDOM');
 
-},{"./lib/ReactDOM":279}],249:[function(_dereq_,module,exports){
+},{"./lib/ReactDOM":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactDOM.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ARIADOMPropertyConfig.js":[function(_dereq_,module,exports){
 /**
  * Copyright 2013-present, Facebook, Inc.
  * All rights reserved.
@@ -36669,7 +37663,7 @@ var ARIADOMPropertyConfig = {
 };
 
 module.exports = ARIADOMPropertyConfig;
-},{}],250:[function(_dereq_,module,exports){
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/AutoFocusUtils.js":[function(_dereq_,module,exports){
 /**
  * Copyright 2013-present, Facebook, Inc.
  * All rights reserved.
@@ -36693,7 +37687,7 @@ var AutoFocusUtils = {
 };
 
 module.exports = AutoFocusUtils;
-},{"./ReactDOMComponentTree":282,"fbjs/lib/focusNode":158}],251:[function(_dereq_,module,exports){
+},{"./ReactDOMComponentTree":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactDOMComponentTree.js","fbjs/lib/focusNode":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/focusNode.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/BeforeInputEventPlugin.js":[function(_dereq_,module,exports){
 /**
  * Copyright 2013-present Facebook, Inc.
  * All rights reserved.
@@ -37078,7 +38072,7 @@ var BeforeInputEventPlugin = {
 };
 
 module.exports = BeforeInputEventPlugin;
-},{"./EventPropagators":268,"./FallbackCompositionState":269,"./SyntheticCompositionEvent":336,"./SyntheticInputEvent":340,"fbjs/lib/ExecutionEnvironment":150}],252:[function(_dereq_,module,exports){
+},{"./EventPropagators":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/EventPropagators.js","./FallbackCompositionState":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/FallbackCompositionState.js","./SyntheticCompositionEvent":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/SyntheticCompositionEvent.js","./SyntheticInputEvent":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/SyntheticInputEvent.js","fbjs/lib/ExecutionEnvironment":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/ExecutionEnvironment.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/CSSProperty.js":[function(_dereq_,module,exports){
 /**
  * Copyright 2013-present, Facebook, Inc.
  * All rights reserved.
@@ -37226,7 +38220,7 @@ var CSSProperty = {
 };
 
 module.exports = CSSProperty;
-},{}],253:[function(_dereq_,module,exports){
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/CSSPropertyOperations.js":[function(_dereq_,module,exports){
 (function (process){
 /**
  * Copyright 2013-present, Facebook, Inc.
@@ -37437,7 +38431,8 @@ var CSSPropertyOperations = {
 
 module.exports = CSSPropertyOperations;
 }).call(this,_dereq_('_process'))
-},{"./CSSProperty":252,"./ReactInstrumentation":311,"./dangerousStyleValue":353,"_process":237,"fbjs/lib/ExecutionEnvironment":150,"fbjs/lib/camelizeStyleName":152,"fbjs/lib/hyphenateStyleName":163,"fbjs/lib/memoizeStringOnly":167,"fbjs/lib/warning":171}],254:[function(_dereq_,module,exports){
+
+},{"./CSSProperty":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/CSSProperty.js","./ReactInstrumentation":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactInstrumentation.js","./dangerousStyleValue":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/dangerousStyleValue.js","_process":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/ExecutionEnvironment":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/ExecutionEnvironment.js","fbjs/lib/camelizeStyleName":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/camelizeStyleName.js","fbjs/lib/hyphenateStyleName":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/hyphenateStyleName.js","fbjs/lib/memoizeStringOnly":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/memoizeStringOnly.js","fbjs/lib/warning":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/warning.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/CallbackQueue.js":[function(_dereq_,module,exports){
 (function (process){
 /**
  * Copyright 2013-present, Facebook, Inc.
@@ -37558,7 +38553,8 @@ var CallbackQueue = function () {
 
 module.exports = PooledClass.addPoolingTo(CallbackQueue);
 }).call(this,_dereq_('_process'))
-},{"./PooledClass":273,"./reactProdInvariant":371,"_process":237,"fbjs/lib/invariant":164}],255:[function(_dereq_,module,exports){
+
+},{"./PooledClass":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/PooledClass.js","./reactProdInvariant":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/reactProdInvariant.js","_process":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/invariant":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/invariant.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ChangeEventPlugin.js":[function(_dereq_,module,exports){
 /**
  * Copyright 2013-present, Facebook, Inc.
  * All rights reserved.
@@ -37904,7 +38900,7 @@ var ChangeEventPlugin = {
 };
 
 module.exports = ChangeEventPlugin;
-},{"./EventPluginHub":265,"./EventPropagators":268,"./ReactDOMComponentTree":282,"./ReactUpdates":329,"./SyntheticEvent":338,"./getEventTarget":361,"./isEventSupported":368,"./isTextInputElement":369,"fbjs/lib/ExecutionEnvironment":150}],256:[function(_dereq_,module,exports){
+},{"./EventPluginHub":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/EventPluginHub.js","./EventPropagators":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/EventPropagators.js","./ReactDOMComponentTree":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactDOMComponentTree.js","./ReactUpdates":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactUpdates.js","./SyntheticEvent":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/SyntheticEvent.js","./getEventTarget":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/getEventTarget.js","./isEventSupported":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/isEventSupported.js","./isTextInputElement":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/isTextInputElement.js","fbjs/lib/ExecutionEnvironment":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/ExecutionEnvironment.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/DOMChildrenOperations.js":[function(_dereq_,module,exports){
 (function (process){
 /**
  * Copyright 2013-present, Facebook, Inc.
@@ -38131,7 +39127,8 @@ var DOMChildrenOperations = {
 
 module.exports = DOMChildrenOperations;
 }).call(this,_dereq_('_process'))
-},{"./DOMLazyTree":257,"./Danger":261,"./ReactDOMComponentTree":282,"./ReactInstrumentation":311,"./createMicrosoftUnsafeLocalFunction":352,"./setInnerHTML":373,"./setTextContent":374,"_process":237}],257:[function(_dereq_,module,exports){
+
+},{"./DOMLazyTree":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/DOMLazyTree.js","./Danger":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/Danger.js","./ReactDOMComponentTree":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactDOMComponentTree.js","./ReactInstrumentation":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactInstrumentation.js","./createMicrosoftUnsafeLocalFunction":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/createMicrosoftUnsafeLocalFunction.js","./setInnerHTML":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/setInnerHTML.js","./setTextContent":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/setTextContent.js","_process":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/browserify/node_modules/process/browser.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/DOMLazyTree.js":[function(_dereq_,module,exports){
 /**
  * Copyright 2015-present, Facebook, Inc.
  * All rights reserved.
@@ -38249,7 +39246,7 @@ DOMLazyTree.queueHTML = queueHTML;
 DOMLazyTree.queueText = queueText;
 
 module.exports = DOMLazyTree;
-},{"./DOMNamespaces":258,"./createMicrosoftUnsafeLocalFunction":352,"./setInnerHTML":373,"./setTextContent":374}],258:[function(_dereq_,module,exports){
+},{"./DOMNamespaces":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/DOMNamespaces.js","./createMicrosoftUnsafeLocalFunction":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/createMicrosoftUnsafeLocalFunction.js","./setInnerHTML":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/setInnerHTML.js","./setTextContent":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/setTextContent.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/DOMNamespaces.js":[function(_dereq_,module,exports){
 /**
  * Copyright 2013-present, Facebook, Inc.
  * All rights reserved.
@@ -38269,7 +39266,7 @@ var DOMNamespaces = {
 };
 
 module.exports = DOMNamespaces;
-},{}],259:[function(_dereq_,module,exports){
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/DOMProperty.js":[function(_dereq_,module,exports){
 (function (process){
 /**
  * Copyright 2013-present, Facebook, Inc.
@@ -38481,7 +39478,8 @@ var DOMProperty = {
 
 module.exports = DOMProperty;
 }).call(this,_dereq_('_process'))
-},{"./reactProdInvariant":371,"_process":237,"fbjs/lib/invariant":164}],260:[function(_dereq_,module,exports){
+
+},{"./reactProdInvariant":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/reactProdInvariant.js","_process":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/invariant":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/invariant.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/DOMPropertyOperations.js":[function(_dereq_,module,exports){
 (function (process){
 /**
  * Copyright 2013-present, Facebook, Inc.
@@ -38720,7 +39718,8 @@ var DOMPropertyOperations = {
 
 module.exports = DOMPropertyOperations;
 }).call(this,_dereq_('_process'))
-},{"./DOMProperty":259,"./ReactDOMComponentTree":282,"./ReactInstrumentation":311,"./quoteAttributeValueForBrowser":370,"_process":237,"fbjs/lib/warning":171}],261:[function(_dereq_,module,exports){
+
+},{"./DOMProperty":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/DOMProperty.js","./ReactDOMComponentTree":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactDOMComponentTree.js","./ReactInstrumentation":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactInstrumentation.js","./quoteAttributeValueForBrowser":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/quoteAttributeValueForBrowser.js","_process":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/warning":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/warning.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/Danger.js":[function(_dereq_,module,exports){
 (function (process){
 /**
  * Copyright 2013-present, Facebook, Inc.
@@ -38770,7 +39769,8 @@ var Danger = {
 
 module.exports = Danger;
 }).call(this,_dereq_('_process'))
-},{"./DOMLazyTree":257,"./reactProdInvariant":371,"_process":237,"fbjs/lib/ExecutionEnvironment":150,"fbjs/lib/createNodesFromMarkup":155,"fbjs/lib/emptyFunction":156,"fbjs/lib/invariant":164}],262:[function(_dereq_,module,exports){
+
+},{"./DOMLazyTree":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/DOMLazyTree.js","./reactProdInvariant":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/reactProdInvariant.js","_process":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/ExecutionEnvironment":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/ExecutionEnvironment.js","fbjs/lib/createNodesFromMarkup":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/createNodesFromMarkup.js","fbjs/lib/emptyFunction":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/emptyFunction.js","fbjs/lib/invariant":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/invariant.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/DefaultEventPluginOrder.js":[function(_dereq_,module,exports){
 /**
  * Copyright 2013-present, Facebook, Inc.
  * All rights reserved.
@@ -38796,7 +39796,7 @@ module.exports = Danger;
 var DefaultEventPluginOrder = ['ResponderEventPlugin', 'SimpleEventPlugin', 'TapEventPlugin', 'EnterLeaveEventPlugin', 'ChangeEventPlugin', 'SelectEventPlugin', 'BeforeInputEventPlugin'];
 
 module.exports = DefaultEventPluginOrder;
-},{}],263:[function(_dereq_,module,exports){
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/EnterLeaveEventPlugin.js":[function(_dereq_,module,exports){
 /**
  * Copyright 2013-present, Facebook, Inc.
  * All rights reserved.
@@ -38896,7 +39896,7 @@ var EnterLeaveEventPlugin = {
 };
 
 module.exports = EnterLeaveEventPlugin;
-},{"./EventPropagators":268,"./ReactDOMComponentTree":282,"./SyntheticMouseEvent":342}],264:[function(_dereq_,module,exports){
+},{"./EventPropagators":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/EventPropagators.js","./ReactDOMComponentTree":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactDOMComponentTree.js","./SyntheticMouseEvent":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/SyntheticMouseEvent.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/EventConstants.js":[function(_dereq_,module,exports){
 /**
  * Copyright 2013-present, Facebook, Inc.
  * All rights reserved.
@@ -38988,7 +39988,7 @@ var EventConstants = {
 };
 
 module.exports = EventConstants;
-},{}],265:[function(_dereq_,module,exports){
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/EventPluginHub.js":[function(_dereq_,module,exports){
 (function (process){
 /**
  * Copyright 2013-present, Facebook, Inc.
@@ -39268,7 +40268,8 @@ var EventPluginHub = {
 
 module.exports = EventPluginHub;
 }).call(this,_dereq_('_process'))
-},{"./EventPluginRegistry":266,"./EventPluginUtils":267,"./ReactErrorUtils":302,"./accumulateInto":349,"./forEachAccumulated":357,"./reactProdInvariant":371,"_process":237,"fbjs/lib/invariant":164}],266:[function(_dereq_,module,exports){
+
+},{"./EventPluginRegistry":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/EventPluginRegistry.js","./EventPluginUtils":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/EventPluginUtils.js","./ReactErrorUtils":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactErrorUtils.js","./accumulateInto":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/accumulateInto.js","./forEachAccumulated":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/forEachAccumulated.js","./reactProdInvariant":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/reactProdInvariant.js","_process":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/invariant":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/invariant.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/EventPluginRegistry.js":[function(_dereq_,module,exports){
 (function (process){
 /**
  * Copyright 2013-present, Facebook, Inc.
@@ -39525,7 +40526,8 @@ var EventPluginRegistry = {
 
 module.exports = EventPluginRegistry;
 }).call(this,_dereq_('_process'))
-},{"./reactProdInvariant":371,"_process":237,"fbjs/lib/invariant":164}],267:[function(_dereq_,module,exports){
+
+},{"./reactProdInvariant":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/reactProdInvariant.js","_process":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/invariant":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/invariant.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/EventPluginUtils.js":[function(_dereq_,module,exports){
 (function (process){
 /**
  * Copyright 2013-present, Facebook, Inc.
@@ -39753,7 +40755,8 @@ var EventPluginUtils = {
 
 module.exports = EventPluginUtils;
 }).call(this,_dereq_('_process'))
-},{"./ReactErrorUtils":302,"./reactProdInvariant":371,"_process":237,"fbjs/lib/invariant":164,"fbjs/lib/warning":171}],268:[function(_dereq_,module,exports){
+
+},{"./ReactErrorUtils":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactErrorUtils.js","./reactProdInvariant":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/reactProdInvariant.js","_process":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/invariant":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/invariant.js","fbjs/lib/warning":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/warning.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/EventPropagators.js":[function(_dereq_,module,exports){
 (function (process){
 /**
  * Copyright 2013-present, Facebook, Inc.
@@ -39889,7 +40892,8 @@ var EventPropagators = {
 
 module.exports = EventPropagators;
 }).call(this,_dereq_('_process'))
-},{"./EventPluginHub":265,"./EventPluginUtils":267,"./accumulateInto":349,"./forEachAccumulated":357,"_process":237,"fbjs/lib/warning":171}],269:[function(_dereq_,module,exports){
+
+},{"./EventPluginHub":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/EventPluginHub.js","./EventPluginUtils":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/EventPluginUtils.js","./accumulateInto":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/accumulateInto.js","./forEachAccumulated":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/forEachAccumulated.js","_process":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/warning":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/warning.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/FallbackCompositionState.js":[function(_dereq_,module,exports){
 /**
  * Copyright 2013-present, Facebook, Inc.
  * All rights reserved.
@@ -39984,7 +40988,7 @@ _assign(FallbackCompositionState.prototype, {
 PooledClass.addPoolingTo(FallbackCompositionState);
 
 module.exports = FallbackCompositionState;
-},{"./PooledClass":273,"./getTextContentAccessor":365,"object-assign":232}],270:[function(_dereq_,module,exports){
+},{"./PooledClass":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/PooledClass.js","./getTextContentAccessor":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/getTextContentAccessor.js","object-assign":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/object-assign/index.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/HTMLDOMPropertyConfig.js":[function(_dereq_,module,exports){
 /**
  * Copyright 2013-present, Facebook, Inc.
  * All rights reserved.
@@ -40220,7 +41224,7 @@ var HTMLDOMPropertyConfig = {
 };
 
 module.exports = HTMLDOMPropertyConfig;
-},{"./DOMProperty":259}],271:[function(_dereq_,module,exports){
+},{"./DOMProperty":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/DOMProperty.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/KeyEscapeUtils.js":[function(_dereq_,module,exports){
 /**
  * Copyright 2013-present, Facebook, Inc.
  * All rights reserved.
@@ -40279,7 +41283,7 @@ var KeyEscapeUtils = {
 };
 
 module.exports = KeyEscapeUtils;
-},{}],272:[function(_dereq_,module,exports){
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/LinkedValueUtils.js":[function(_dereq_,module,exports){
 (function (process){
 /**
  * Copyright 2013-present, Facebook, Inc.
@@ -40419,7 +41423,8 @@ var LinkedValueUtils = {
 
 module.exports = LinkedValueUtils;
 }).call(this,_dereq_('_process'))
-},{"./ReactPropTypesSecret":320,"./reactProdInvariant":371,"_process":237,"fbjs/lib/invariant":164,"fbjs/lib/warning":171,"prop-types/factory":239,"react/lib/React":405}],273:[function(_dereq_,module,exports){
+
+},{"./ReactPropTypesSecret":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactPropTypesSecret.js","./reactProdInvariant":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/reactProdInvariant.js","_process":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/invariant":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/invariant.js","fbjs/lib/warning":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/warning.js","prop-types/factory":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/prop-types/factory.js","react/lib/React":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/lib/React.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/PooledClass.js":[function(_dereq_,module,exports){
 (function (process){
 /**
  * Copyright 2013-present, Facebook, Inc.
@@ -40533,7 +41538,8 @@ var PooledClass = {
 
 module.exports = PooledClass;
 }).call(this,_dereq_('_process'))
-},{"./reactProdInvariant":371,"_process":237,"fbjs/lib/invariant":164}],274:[function(_dereq_,module,exports){
+
+},{"./reactProdInvariant":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/reactProdInvariant.js","_process":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/invariant":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/invariant.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactBrowserEventEmitter.js":[function(_dereq_,module,exports){
 /**
  * Copyright 2013-present, Facebook, Inc.
  * All rights reserved.
@@ -40861,7 +41867,7 @@ var ReactBrowserEventEmitter = _assign({}, ReactEventEmitterMixin, {
 });
 
 module.exports = ReactBrowserEventEmitter;
-},{"./EventPluginRegistry":266,"./ReactEventEmitterMixin":303,"./ViewportMetrics":348,"./getVendorPrefixedEventName":366,"./isEventSupported":368,"object-assign":232}],275:[function(_dereq_,module,exports){
+},{"./EventPluginRegistry":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/EventPluginRegistry.js","./ReactEventEmitterMixin":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactEventEmitterMixin.js","./ViewportMetrics":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ViewportMetrics.js","./getVendorPrefixedEventName":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/getVendorPrefixedEventName.js","./isEventSupported":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/isEventSupported.js","object-assign":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/object-assign/index.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactChildReconciler.js":[function(_dereq_,module,exports){
 (function (process){
 /**
  * Copyright 2014-present, Facebook, Inc.
@@ -41017,7 +42023,8 @@ var ReactChildReconciler = {
 
 module.exports = ReactChildReconciler;
 }).call(this,_dereq_('_process'))
-},{"./KeyEscapeUtils":271,"./ReactReconciler":322,"./instantiateReactComponent":367,"./shouldUpdateReactComponent":375,"./traverseAllChildren":376,"_process":237,"fbjs/lib/warning":171,"react/lib/ReactComponentTreeHook":412}],276:[function(_dereq_,module,exports){
+
+},{"./KeyEscapeUtils":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/KeyEscapeUtils.js","./ReactReconciler":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactReconciler.js","./instantiateReactComponent":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/instantiateReactComponent.js","./shouldUpdateReactComponent":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/shouldUpdateReactComponent.js","./traverseAllChildren":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/traverseAllChildren.js","_process":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/warning":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/warning.js","react/lib/ReactComponentTreeHook":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/lib/ReactComponentTreeHook.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactComponentBrowserEnvironment.js":[function(_dereq_,module,exports){
 /**
  * Copyright 2013-present, Facebook, Inc.
  * All rights reserved.
@@ -41047,7 +42054,7 @@ var ReactComponentBrowserEnvironment = {
 };
 
 module.exports = ReactComponentBrowserEnvironment;
-},{"./DOMChildrenOperations":256,"./ReactDOMIDOperations":286}],277:[function(_dereq_,module,exports){
+},{"./DOMChildrenOperations":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/DOMChildrenOperations.js","./ReactDOMIDOperations":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactDOMIDOperations.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactComponentEnvironment.js":[function(_dereq_,module,exports){
 (function (process){
 /**
  * Copyright 2014-present, Facebook, Inc.
@@ -41095,7 +42102,8 @@ var ReactComponentEnvironment = {
 
 module.exports = ReactComponentEnvironment;
 }).call(this,_dereq_('_process'))
-},{"./reactProdInvariant":371,"_process":237,"fbjs/lib/invariant":164}],278:[function(_dereq_,module,exports){
+
+},{"./reactProdInvariant":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/reactProdInvariant.js","_process":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/invariant":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/invariant.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactCompositeComponent.js":[function(_dereq_,module,exports){
 (function (process){
 /**
  * Copyright 2013-present, Facebook, Inc.
@@ -41999,7 +43007,8 @@ var ReactCompositeComponent = {
 
 module.exports = ReactCompositeComponent;
 }).call(this,_dereq_('_process'))
-},{"./ReactComponentEnvironment":277,"./ReactErrorUtils":302,"./ReactInstanceMap":310,"./ReactInstrumentation":311,"./ReactNodeTypes":316,"./ReactReconciler":322,"./checkReactTypeSpec":351,"./reactProdInvariant":371,"./shouldUpdateReactComponent":375,"_process":237,"fbjs/lib/emptyObject":157,"fbjs/lib/invariant":164,"fbjs/lib/shallowEqual":170,"fbjs/lib/warning":171,"object-assign":232,"react/lib/React":405,"react/lib/ReactCurrentOwner":413}],279:[function(_dereq_,module,exports){
+
+},{"./ReactComponentEnvironment":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactComponentEnvironment.js","./ReactErrorUtils":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactErrorUtils.js","./ReactInstanceMap":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactInstanceMap.js","./ReactInstrumentation":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactInstrumentation.js","./ReactNodeTypes":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactNodeTypes.js","./ReactReconciler":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactReconciler.js","./checkReactTypeSpec":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/checkReactTypeSpec.js","./reactProdInvariant":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/reactProdInvariant.js","./shouldUpdateReactComponent":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/shouldUpdateReactComponent.js","_process":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/emptyObject":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/emptyObject.js","fbjs/lib/invariant":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/invariant.js","fbjs/lib/shallowEqual":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/shallowEqual.js","fbjs/lib/warning":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/warning.js","object-assign":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/object-assign/index.js","react/lib/React":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/lib/React.js","react/lib/ReactCurrentOwner":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/lib/ReactCurrentOwner.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactDOM.js":[function(_dereq_,module,exports){
 (function (process){
 /**
  * Copyright 2013-present, Facebook, Inc.
@@ -42112,7 +43121,8 @@ if (process.env.NODE_ENV !== 'production') {
 
 module.exports = ReactDOM;
 }).call(this,_dereq_('_process'))
-},{"./ReactDOMComponentTree":282,"./ReactDOMInvalidARIAHook":288,"./ReactDOMNullInputValuePropHook":289,"./ReactDOMUnknownPropertyHook":296,"./ReactDefaultInjection":299,"./ReactInstrumentation":311,"./ReactMount":314,"./ReactReconciler":322,"./ReactUpdates":329,"./ReactVersion":330,"./findDOMNode":355,"./getHostComponentFromComposite":362,"./renderSubtreeIntoContainer":372,"_process":237,"fbjs/lib/ExecutionEnvironment":150,"fbjs/lib/warning":171}],280:[function(_dereq_,module,exports){
+
+},{"./ReactDOMComponentTree":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactDOMComponentTree.js","./ReactDOMInvalidARIAHook":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactDOMInvalidARIAHook.js","./ReactDOMNullInputValuePropHook":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactDOMNullInputValuePropHook.js","./ReactDOMUnknownPropertyHook":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactDOMUnknownPropertyHook.js","./ReactDefaultInjection":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactDefaultInjection.js","./ReactInstrumentation":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactInstrumentation.js","./ReactMount":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactMount.js","./ReactReconciler":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactReconciler.js","./ReactUpdates":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactUpdates.js","./ReactVersion":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactVersion.js","./findDOMNode":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/findDOMNode.js","./getHostComponentFromComposite":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/getHostComponentFromComposite.js","./renderSubtreeIntoContainer":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/renderSubtreeIntoContainer.js","_process":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/ExecutionEnvironment":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/ExecutionEnvironment.js","fbjs/lib/warning":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/warning.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactDOMComponent.js":[function(_dereq_,module,exports){
 (function (process){
 /**
  * Copyright 2013-present, Facebook, Inc.
@@ -43115,7 +44125,8 @@ _assign(ReactDOMComponent.prototype, ReactDOMComponent.Mixin, ReactMultiChild.Mi
 
 module.exports = ReactDOMComponent;
 }).call(this,_dereq_('_process'))
-},{"./AutoFocusUtils":250,"./CSSPropertyOperations":253,"./DOMLazyTree":257,"./DOMNamespaces":258,"./DOMProperty":259,"./DOMPropertyOperations":260,"./EventPluginHub":265,"./EventPluginRegistry":266,"./ReactBrowserEventEmitter":274,"./ReactDOMComponentFlags":281,"./ReactDOMComponentTree":282,"./ReactDOMInput":287,"./ReactDOMOption":290,"./ReactDOMSelect":291,"./ReactDOMTextarea":294,"./ReactInstrumentation":311,"./ReactMultiChild":315,"./ReactServerRenderingTransaction":324,"./escapeTextContentForBrowser":354,"./isEventSupported":368,"./reactProdInvariant":371,"./validateDOMNesting":377,"_process":237,"fbjs/lib/emptyFunction":156,"fbjs/lib/invariant":164,"fbjs/lib/shallowEqual":170,"fbjs/lib/warning":171,"object-assign":232}],281:[function(_dereq_,module,exports){
+
+},{"./AutoFocusUtils":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/AutoFocusUtils.js","./CSSPropertyOperations":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/CSSPropertyOperations.js","./DOMLazyTree":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/DOMLazyTree.js","./DOMNamespaces":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/DOMNamespaces.js","./DOMProperty":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/DOMProperty.js","./DOMPropertyOperations":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/DOMPropertyOperations.js","./EventPluginHub":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/EventPluginHub.js","./EventPluginRegistry":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/EventPluginRegistry.js","./ReactBrowserEventEmitter":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactBrowserEventEmitter.js","./ReactDOMComponentFlags":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactDOMComponentFlags.js","./ReactDOMComponentTree":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactDOMComponentTree.js","./ReactDOMInput":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactDOMInput.js","./ReactDOMOption":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactDOMOption.js","./ReactDOMSelect":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactDOMSelect.js","./ReactDOMTextarea":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactDOMTextarea.js","./ReactInstrumentation":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactInstrumentation.js","./ReactMultiChild":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactMultiChild.js","./ReactServerRenderingTransaction":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactServerRenderingTransaction.js","./escapeTextContentForBrowser":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/escapeTextContentForBrowser.js","./isEventSupported":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/isEventSupported.js","./reactProdInvariant":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/reactProdInvariant.js","./validateDOMNesting":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/validateDOMNesting.js","_process":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/emptyFunction":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/emptyFunction.js","fbjs/lib/invariant":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/invariant.js","fbjs/lib/shallowEqual":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/shallowEqual.js","fbjs/lib/warning":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/warning.js","object-assign":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/object-assign/index.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactDOMComponentFlags.js":[function(_dereq_,module,exports){
 /**
  * Copyright 2015-present, Facebook, Inc.
  * All rights reserved.
@@ -43133,7 +44144,7 @@ var ReactDOMComponentFlags = {
 };
 
 module.exports = ReactDOMComponentFlags;
-},{}],282:[function(_dereq_,module,exports){
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactDOMComponentTree.js":[function(_dereq_,module,exports){
 (function (process){
 /**
  * Copyright 2013-present, Facebook, Inc.
@@ -43330,7 +44341,8 @@ var ReactDOMComponentTree = {
 
 module.exports = ReactDOMComponentTree;
 }).call(this,_dereq_('_process'))
-},{"./DOMProperty":259,"./ReactDOMComponentFlags":281,"./reactProdInvariant":371,"_process":237,"fbjs/lib/invariant":164}],283:[function(_dereq_,module,exports){
+
+},{"./DOMProperty":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/DOMProperty.js","./ReactDOMComponentFlags":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactDOMComponentFlags.js","./reactProdInvariant":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/reactProdInvariant.js","_process":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/invariant":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/invariant.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactDOMContainerInfo.js":[function(_dereq_,module,exports){
 (function (process){
 /**
  * Copyright 2013-present, Facebook, Inc.
@@ -43365,7 +44377,8 @@ function ReactDOMContainerInfo(topLevelWrapper, node) {
 
 module.exports = ReactDOMContainerInfo;
 }).call(this,_dereq_('_process'))
-},{"./validateDOMNesting":377,"_process":237}],284:[function(_dereq_,module,exports){
+
+},{"./validateDOMNesting":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/validateDOMNesting.js","_process":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/browserify/node_modules/process/browser.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactDOMEmptyComponent.js":[function(_dereq_,module,exports){
 /**
  * Copyright 2014-present, Facebook, Inc.
  * All rights reserved.
@@ -43425,7 +44438,7 @@ _assign(ReactDOMEmptyComponent.prototype, {
 });
 
 module.exports = ReactDOMEmptyComponent;
-},{"./DOMLazyTree":257,"./ReactDOMComponentTree":282,"object-assign":232}],285:[function(_dereq_,module,exports){
+},{"./DOMLazyTree":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/DOMLazyTree.js","./ReactDOMComponentTree":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactDOMComponentTree.js","object-assign":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/object-assign/index.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactDOMFeatureFlags.js":[function(_dereq_,module,exports){
 /**
  * Copyright 2013-present, Facebook, Inc.
  * All rights reserved.
@@ -43444,7 +44457,7 @@ var ReactDOMFeatureFlags = {
 };
 
 module.exports = ReactDOMFeatureFlags;
-},{}],286:[function(_dereq_,module,exports){
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactDOMIDOperations.js":[function(_dereq_,module,exports){
 /**
  * Copyright 2013-present, Facebook, Inc.
  * All rights reserved.
@@ -43478,7 +44491,7 @@ var ReactDOMIDOperations = {
 };
 
 module.exports = ReactDOMIDOperations;
-},{"./DOMChildrenOperations":256,"./ReactDOMComponentTree":282}],287:[function(_dereq_,module,exports){
+},{"./DOMChildrenOperations":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/DOMChildrenOperations.js","./ReactDOMComponentTree":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactDOMComponentTree.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactDOMInput.js":[function(_dereq_,module,exports){
 (function (process){
 /**
  * Copyright 2013-present, Facebook, Inc.
@@ -43765,7 +44778,8 @@ function _handleChange(event) {
 
 module.exports = ReactDOMInput;
 }).call(this,_dereq_('_process'))
-},{"./DOMPropertyOperations":260,"./LinkedValueUtils":272,"./ReactDOMComponentTree":282,"./ReactUpdates":329,"./reactProdInvariant":371,"_process":237,"fbjs/lib/invariant":164,"fbjs/lib/warning":171,"object-assign":232}],288:[function(_dereq_,module,exports){
+
+},{"./DOMPropertyOperations":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/DOMPropertyOperations.js","./LinkedValueUtils":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/LinkedValueUtils.js","./ReactDOMComponentTree":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactDOMComponentTree.js","./ReactUpdates":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactUpdates.js","./reactProdInvariant":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/reactProdInvariant.js","_process":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/invariant":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/invariant.js","fbjs/lib/warning":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/warning.js","object-assign":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/object-assign/index.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactDOMInvalidARIAHook.js":[function(_dereq_,module,exports){
 (function (process){
 /**
  * Copyright 2013-present, Facebook, Inc.
@@ -43860,7 +44874,8 @@ var ReactDOMInvalidARIAHook = {
 
 module.exports = ReactDOMInvalidARIAHook;
 }).call(this,_dereq_('_process'))
-},{"./DOMProperty":259,"_process":237,"fbjs/lib/warning":171,"react/lib/ReactComponentTreeHook":412}],289:[function(_dereq_,module,exports){
+
+},{"./DOMProperty":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/DOMProperty.js","_process":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/warning":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/warning.js","react/lib/ReactComponentTreeHook":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/lib/ReactComponentTreeHook.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactDOMNullInputValuePropHook.js":[function(_dereq_,module,exports){
 (function (process){
 /**
  * Copyright 2013-present, Facebook, Inc.
@@ -43905,7 +44920,8 @@ var ReactDOMNullInputValuePropHook = {
 
 module.exports = ReactDOMNullInputValuePropHook;
 }).call(this,_dereq_('_process'))
-},{"_process":237,"fbjs/lib/warning":171,"react/lib/ReactComponentTreeHook":412}],290:[function(_dereq_,module,exports){
+
+},{"_process":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/warning":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/warning.js","react/lib/ReactComponentTreeHook":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/lib/ReactComponentTreeHook.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactDOMOption.js":[function(_dereq_,module,exports){
 (function (process){
 /**
  * Copyright 2013-present, Facebook, Inc.
@@ -44030,7 +45046,8 @@ var ReactDOMOption = {
 
 module.exports = ReactDOMOption;
 }).call(this,_dereq_('_process'))
-},{"./ReactDOMComponentTree":282,"./ReactDOMSelect":291,"_process":237,"fbjs/lib/warning":171,"object-assign":232,"react/lib/React":405}],291:[function(_dereq_,module,exports){
+
+},{"./ReactDOMComponentTree":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactDOMComponentTree.js","./ReactDOMSelect":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactDOMSelect.js","_process":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/warning":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/warning.js","object-assign":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/object-assign/index.js","react/lib/React":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/lib/React.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactDOMSelect.js":[function(_dereq_,module,exports){
 (function (process){
 /**
  * Copyright 2013-present, Facebook, Inc.
@@ -44232,7 +45249,8 @@ function _handleChange(event) {
 
 module.exports = ReactDOMSelect;
 }).call(this,_dereq_('_process'))
-},{"./LinkedValueUtils":272,"./ReactDOMComponentTree":282,"./ReactUpdates":329,"_process":237,"fbjs/lib/warning":171,"object-assign":232}],292:[function(_dereq_,module,exports){
+
+},{"./LinkedValueUtils":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/LinkedValueUtils.js","./ReactDOMComponentTree":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactDOMComponentTree.js","./ReactUpdates":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactUpdates.js","_process":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/warning":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/warning.js","object-assign":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/object-assign/index.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactDOMSelection.js":[function(_dereq_,module,exports){
 /**
  * Copyright 2013-present, Facebook, Inc.
  * All rights reserved.
@@ -44444,7 +45462,7 @@ var ReactDOMSelection = {
 };
 
 module.exports = ReactDOMSelection;
-},{"./getNodeForCharacterOffset":364,"./getTextContentAccessor":365,"fbjs/lib/ExecutionEnvironment":150}],293:[function(_dereq_,module,exports){
+},{"./getNodeForCharacterOffset":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/getNodeForCharacterOffset.js","./getTextContentAccessor":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/getTextContentAccessor.js","fbjs/lib/ExecutionEnvironment":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/ExecutionEnvironment.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactDOMTextComponent.js":[function(_dereq_,module,exports){
 (function (process){
 /**
  * Copyright 2013-present, Facebook, Inc.
@@ -44610,7 +45628,8 @@ _assign(ReactDOMTextComponent.prototype, {
 
 module.exports = ReactDOMTextComponent;
 }).call(this,_dereq_('_process'))
-},{"./DOMChildrenOperations":256,"./DOMLazyTree":257,"./ReactDOMComponentTree":282,"./escapeTextContentForBrowser":354,"./reactProdInvariant":371,"./validateDOMNesting":377,"_process":237,"fbjs/lib/invariant":164,"object-assign":232}],294:[function(_dereq_,module,exports){
+
+},{"./DOMChildrenOperations":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/DOMChildrenOperations.js","./DOMLazyTree":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/DOMLazyTree.js","./ReactDOMComponentTree":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactDOMComponentTree.js","./escapeTextContentForBrowser":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/escapeTextContentForBrowser.js","./reactProdInvariant":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/reactProdInvariant.js","./validateDOMNesting":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/validateDOMNesting.js","_process":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/invariant":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/invariant.js","object-assign":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/object-assign/index.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactDOMTextarea.js":[function(_dereq_,module,exports){
 (function (process){
 /**
  * Copyright 2013-present, Facebook, Inc.
@@ -44772,7 +45791,8 @@ function _handleChange(event) {
 
 module.exports = ReactDOMTextarea;
 }).call(this,_dereq_('_process'))
-},{"./LinkedValueUtils":272,"./ReactDOMComponentTree":282,"./ReactUpdates":329,"./reactProdInvariant":371,"_process":237,"fbjs/lib/invariant":164,"fbjs/lib/warning":171,"object-assign":232}],295:[function(_dereq_,module,exports){
+
+},{"./LinkedValueUtils":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/LinkedValueUtils.js","./ReactDOMComponentTree":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactDOMComponentTree.js","./ReactUpdates":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactUpdates.js","./reactProdInvariant":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/reactProdInvariant.js","_process":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/invariant":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/invariant.js","fbjs/lib/warning":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/warning.js","object-assign":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/object-assign/index.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactDOMTreeTraversal.js":[function(_dereq_,module,exports){
 (function (process){
 /**
  * Copyright 2015-present, Facebook, Inc.
@@ -44910,7 +45930,8 @@ module.exports = {
   traverseEnterLeave: traverseEnterLeave
 };
 }).call(this,_dereq_('_process'))
-},{"./reactProdInvariant":371,"_process":237,"fbjs/lib/invariant":164}],296:[function(_dereq_,module,exports){
+
+},{"./reactProdInvariant":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/reactProdInvariant.js","_process":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/invariant":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/invariant.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactDOMUnknownPropertyHook.js":[function(_dereq_,module,exports){
 (function (process){
 /**
  * Copyright 2013-present, Facebook, Inc.
@@ -45024,7 +46045,8 @@ var ReactDOMUnknownPropertyHook = {
 
 module.exports = ReactDOMUnknownPropertyHook;
 }).call(this,_dereq_('_process'))
-},{"./DOMProperty":259,"./EventPluginRegistry":266,"_process":237,"fbjs/lib/warning":171,"react/lib/ReactComponentTreeHook":412}],297:[function(_dereq_,module,exports){
+
+},{"./DOMProperty":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/DOMProperty.js","./EventPluginRegistry":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/EventPluginRegistry.js","_process":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/warning":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/warning.js","react/lib/ReactComponentTreeHook":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/lib/ReactComponentTreeHook.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactDebugTool.js":[function(_dereq_,module,exports){
 (function (process){
 /**
  * Copyright 2016-present, Facebook, Inc.
@@ -45385,7 +46407,8 @@ if (/[?&]react_perf\b/.test(url)) {
 
 module.exports = ReactDebugTool;
 }).call(this,_dereq_('_process'))
-},{"./ReactHostOperationHistoryHook":307,"./ReactInvalidSetStateWarningHook":312,"_process":237,"fbjs/lib/ExecutionEnvironment":150,"fbjs/lib/performanceNow":169,"fbjs/lib/warning":171,"react/lib/ReactComponentTreeHook":412}],298:[function(_dereq_,module,exports){
+
+},{"./ReactHostOperationHistoryHook":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactHostOperationHistoryHook.js","./ReactInvalidSetStateWarningHook":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactInvalidSetStateWarningHook.js","_process":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/ExecutionEnvironment":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/ExecutionEnvironment.js","fbjs/lib/performanceNow":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/performanceNow.js","fbjs/lib/warning":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/warning.js","react/lib/ReactComponentTreeHook":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/lib/ReactComponentTreeHook.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactDefaultBatchingStrategy.js":[function(_dereq_,module,exports){
 /**
  * Copyright 2013-present, Facebook, Inc.
  * All rights reserved.
@@ -45453,7 +46476,7 @@ var ReactDefaultBatchingStrategy = {
 };
 
 module.exports = ReactDefaultBatchingStrategy;
-},{"./ReactUpdates":329,"./Transaction":347,"fbjs/lib/emptyFunction":156,"object-assign":232}],299:[function(_dereq_,module,exports){
+},{"./ReactUpdates":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactUpdates.js","./Transaction":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/Transaction.js","fbjs/lib/emptyFunction":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/emptyFunction.js","object-assign":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/object-assign/index.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactDefaultInjection.js":[function(_dereq_,module,exports){
 /**
  * Copyright 2013-present, Facebook, Inc.
  * All rights reserved.
@@ -45539,7 +46562,7 @@ function inject() {
 module.exports = {
   inject: inject
 };
-},{"./ARIADOMPropertyConfig":249,"./BeforeInputEventPlugin":251,"./ChangeEventPlugin":255,"./DefaultEventPluginOrder":262,"./EnterLeaveEventPlugin":263,"./HTMLDOMPropertyConfig":270,"./ReactComponentBrowserEnvironment":276,"./ReactDOMComponent":280,"./ReactDOMComponentTree":282,"./ReactDOMEmptyComponent":284,"./ReactDOMTextComponent":293,"./ReactDOMTreeTraversal":295,"./ReactDefaultBatchingStrategy":298,"./ReactEventListener":304,"./ReactInjection":308,"./ReactReconcileTransaction":321,"./SVGDOMPropertyConfig":331,"./SelectEventPlugin":332,"./SimpleEventPlugin":333}],300:[function(_dereq_,module,exports){
+},{"./ARIADOMPropertyConfig":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ARIADOMPropertyConfig.js","./BeforeInputEventPlugin":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/BeforeInputEventPlugin.js","./ChangeEventPlugin":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ChangeEventPlugin.js","./DefaultEventPluginOrder":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/DefaultEventPluginOrder.js","./EnterLeaveEventPlugin":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/EnterLeaveEventPlugin.js","./HTMLDOMPropertyConfig":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/HTMLDOMPropertyConfig.js","./ReactComponentBrowserEnvironment":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactComponentBrowserEnvironment.js","./ReactDOMComponent":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactDOMComponent.js","./ReactDOMComponentTree":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactDOMComponentTree.js","./ReactDOMEmptyComponent":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactDOMEmptyComponent.js","./ReactDOMTextComponent":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactDOMTextComponent.js","./ReactDOMTreeTraversal":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactDOMTreeTraversal.js","./ReactDefaultBatchingStrategy":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactDefaultBatchingStrategy.js","./ReactEventListener":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactEventListener.js","./ReactInjection":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactInjection.js","./ReactReconcileTransaction":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactReconcileTransaction.js","./SVGDOMPropertyConfig":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/SVGDOMPropertyConfig.js","./SelectEventPlugin":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/SelectEventPlugin.js","./SimpleEventPlugin":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/SimpleEventPlugin.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactElementSymbol.js":[function(_dereq_,module,exports){
 /**
  * Copyright 2014-present, Facebook, Inc.
  * All rights reserved.
@@ -45559,7 +46582,7 @@ module.exports = {
 var REACT_ELEMENT_TYPE = typeof Symbol === 'function' && Symbol['for'] && Symbol['for']('react.element') || 0xeac7;
 
 module.exports = REACT_ELEMENT_TYPE;
-},{}],301:[function(_dereq_,module,exports){
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactEmptyComponent.js":[function(_dereq_,module,exports){
 /**
  * Copyright 2014-present, Facebook, Inc.
  * All rights reserved.
@@ -45589,7 +46612,7 @@ var ReactEmptyComponent = {
 ReactEmptyComponent.injection = ReactEmptyComponentInjection;
 
 module.exports = ReactEmptyComponent;
-},{}],302:[function(_dereq_,module,exports){
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactErrorUtils.js":[function(_dereq_,module,exports){
 (function (process){
 /**
  * Copyright 2013-present, Facebook, Inc.
@@ -45667,7 +46690,8 @@ if (process.env.NODE_ENV !== 'production') {
 
 module.exports = ReactErrorUtils;
 }).call(this,_dereq_('_process'))
-},{"_process":237}],303:[function(_dereq_,module,exports){
+
+},{"_process":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/browserify/node_modules/process/browser.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactEventEmitterMixin.js":[function(_dereq_,module,exports){
 /**
  * Copyright 2013-present, Facebook, Inc.
  * All rights reserved.
@@ -45700,7 +46724,7 @@ var ReactEventEmitterMixin = {
 };
 
 module.exports = ReactEventEmitterMixin;
-},{"./EventPluginHub":265}],304:[function(_dereq_,module,exports){
+},{"./EventPluginHub":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/EventPluginHub.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactEventListener.js":[function(_dereq_,module,exports){
 /**
  * Copyright 2013-present, Facebook, Inc.
  * All rights reserved.
@@ -45855,7 +46879,7 @@ var ReactEventListener = {
 };
 
 module.exports = ReactEventListener;
-},{"./PooledClass":273,"./ReactDOMComponentTree":282,"./ReactUpdates":329,"./getEventTarget":361,"fbjs/lib/EventListener":149,"fbjs/lib/ExecutionEnvironment":150,"fbjs/lib/getUnboundedScrollPosition":161,"object-assign":232}],305:[function(_dereq_,module,exports){
+},{"./PooledClass":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/PooledClass.js","./ReactDOMComponentTree":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactDOMComponentTree.js","./ReactUpdates":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactUpdates.js","./getEventTarget":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/getEventTarget.js","fbjs/lib/EventListener":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/EventListener.js","fbjs/lib/ExecutionEnvironment":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/ExecutionEnvironment.js","fbjs/lib/getUnboundedScrollPosition":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/getUnboundedScrollPosition.js","object-assign":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/object-assign/index.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactFeatureFlags.js":[function(_dereq_,module,exports){
 /**
  * Copyright 2013-present, Facebook, Inc.
  * All rights reserved.
@@ -45877,7 +46901,7 @@ var ReactFeatureFlags = {
 };
 
 module.exports = ReactFeatureFlags;
-},{}],306:[function(_dereq_,module,exports){
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactHostComponent.js":[function(_dereq_,module,exports){
 (function (process){
 /**
  * Copyright 2014-present, Facebook, Inc.
@@ -45947,7 +46971,8 @@ var ReactHostComponent = {
 
 module.exports = ReactHostComponent;
 }).call(this,_dereq_('_process'))
-},{"./reactProdInvariant":371,"_process":237,"fbjs/lib/invariant":164}],307:[function(_dereq_,module,exports){
+
+},{"./reactProdInvariant":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/reactProdInvariant.js","_process":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/invariant":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/invariant.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactHostOperationHistoryHook.js":[function(_dereq_,module,exports){
 /**
  * Copyright 2016-present, Facebook, Inc.
  * All rights reserved.
@@ -45981,7 +47006,7 @@ var ReactHostOperationHistoryHook = {
 };
 
 module.exports = ReactHostOperationHistoryHook;
-},{}],308:[function(_dereq_,module,exports){
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactInjection.js":[function(_dereq_,module,exports){
 /**
  * Copyright 2013-present, Facebook, Inc.
  * All rights reserved.
@@ -46015,7 +47040,7 @@ var ReactInjection = {
 };
 
 module.exports = ReactInjection;
-},{"./DOMProperty":259,"./EventPluginHub":265,"./EventPluginUtils":267,"./ReactBrowserEventEmitter":274,"./ReactComponentEnvironment":277,"./ReactEmptyComponent":301,"./ReactHostComponent":306,"./ReactUpdates":329}],309:[function(_dereq_,module,exports){
+},{"./DOMProperty":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/DOMProperty.js","./EventPluginHub":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/EventPluginHub.js","./EventPluginUtils":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/EventPluginUtils.js","./ReactBrowserEventEmitter":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactBrowserEventEmitter.js","./ReactComponentEnvironment":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactComponentEnvironment.js","./ReactEmptyComponent":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactEmptyComponent.js","./ReactHostComponent":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactHostComponent.js","./ReactUpdates":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactUpdates.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactInputSelection.js":[function(_dereq_,module,exports){
 /**
  * Copyright 2013-present, Facebook, Inc.
  * All rights reserved.
@@ -46139,7 +47164,7 @@ var ReactInputSelection = {
 };
 
 module.exports = ReactInputSelection;
-},{"./ReactDOMSelection":292,"fbjs/lib/containsNode":153,"fbjs/lib/focusNode":158,"fbjs/lib/getActiveElement":159}],310:[function(_dereq_,module,exports){
+},{"./ReactDOMSelection":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactDOMSelection.js","fbjs/lib/containsNode":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/containsNode.js","fbjs/lib/focusNode":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/focusNode.js","fbjs/lib/getActiveElement":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/getActiveElement.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactInstanceMap.js":[function(_dereq_,module,exports){
 /**
  * Copyright 2013-present, Facebook, Inc.
  * All rights reserved.
@@ -46187,7 +47212,7 @@ var ReactInstanceMap = {
 };
 
 module.exports = ReactInstanceMap;
-},{}],311:[function(_dereq_,module,exports){
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactInstrumentation.js":[function(_dereq_,module,exports){
 (function (process){
 /**
  * Copyright 2016-present, Facebook, Inc.
@@ -46213,7 +47238,8 @@ if (process.env.NODE_ENV !== 'production') {
 
 module.exports = { debugTool: debugTool };
 }).call(this,_dereq_('_process'))
-},{"./ReactDebugTool":297,"_process":237}],312:[function(_dereq_,module,exports){
+
+},{"./ReactDebugTool":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactDebugTool.js","_process":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/browserify/node_modules/process/browser.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactInvalidSetStateWarningHook.js":[function(_dereq_,module,exports){
 (function (process){
 /**
  * Copyright 2016-present, Facebook, Inc.
@@ -46252,7 +47278,8 @@ var ReactInvalidSetStateWarningHook = {
 
 module.exports = ReactInvalidSetStateWarningHook;
 }).call(this,_dereq_('_process'))
-},{"_process":237,"fbjs/lib/warning":171}],313:[function(_dereq_,module,exports){
+
+},{"_process":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/warning":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/warning.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactMarkupChecksum.js":[function(_dereq_,module,exports){
 /**
  * Copyright 2013-present, Facebook, Inc.
  * All rights reserved.
@@ -46302,7 +47329,7 @@ var ReactMarkupChecksum = {
 };
 
 module.exports = ReactMarkupChecksum;
-},{"./adler32":350}],314:[function(_dereq_,module,exports){
+},{"./adler32":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/adler32.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactMount.js":[function(_dereq_,module,exports){
 (function (process){
 /**
  * Copyright 2013-present, Facebook, Inc.
@@ -46842,7 +47869,8 @@ var ReactMount = {
 
 module.exports = ReactMount;
 }).call(this,_dereq_('_process'))
-},{"./DOMLazyTree":257,"./DOMProperty":259,"./ReactBrowserEventEmitter":274,"./ReactDOMComponentTree":282,"./ReactDOMContainerInfo":283,"./ReactDOMFeatureFlags":285,"./ReactFeatureFlags":305,"./ReactInstanceMap":310,"./ReactInstrumentation":311,"./ReactMarkupChecksum":313,"./ReactReconciler":322,"./ReactUpdateQueue":328,"./ReactUpdates":329,"./instantiateReactComponent":367,"./reactProdInvariant":371,"./setInnerHTML":373,"./shouldUpdateReactComponent":375,"_process":237,"fbjs/lib/emptyObject":157,"fbjs/lib/invariant":164,"fbjs/lib/warning":171,"react/lib/React":405,"react/lib/ReactCurrentOwner":413}],315:[function(_dereq_,module,exports){
+
+},{"./DOMLazyTree":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/DOMLazyTree.js","./DOMProperty":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/DOMProperty.js","./ReactBrowserEventEmitter":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactBrowserEventEmitter.js","./ReactDOMComponentTree":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactDOMComponentTree.js","./ReactDOMContainerInfo":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactDOMContainerInfo.js","./ReactDOMFeatureFlags":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactDOMFeatureFlags.js","./ReactFeatureFlags":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactFeatureFlags.js","./ReactInstanceMap":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactInstanceMap.js","./ReactInstrumentation":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactInstrumentation.js","./ReactMarkupChecksum":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactMarkupChecksum.js","./ReactReconciler":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactReconciler.js","./ReactUpdateQueue":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactUpdateQueue.js","./ReactUpdates":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactUpdates.js","./instantiateReactComponent":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/instantiateReactComponent.js","./reactProdInvariant":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/reactProdInvariant.js","./setInnerHTML":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/setInnerHTML.js","./shouldUpdateReactComponent":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/shouldUpdateReactComponent.js","_process":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/emptyObject":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/emptyObject.js","fbjs/lib/invariant":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/invariant.js","fbjs/lib/warning":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/warning.js","react/lib/React":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/lib/React.js","react/lib/ReactCurrentOwner":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/lib/ReactCurrentOwner.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactMultiChild.js":[function(_dereq_,module,exports){
 (function (process){
 /**
  * Copyright 2013-present, Facebook, Inc.
@@ -47294,7 +48322,8 @@ var ReactMultiChild = {
 
 module.exports = ReactMultiChild;
 }).call(this,_dereq_('_process'))
-},{"./ReactChildReconciler":275,"./ReactComponentEnvironment":277,"./ReactInstanceMap":310,"./ReactInstrumentation":311,"./ReactReconciler":322,"./flattenChildren":356,"./reactProdInvariant":371,"_process":237,"fbjs/lib/emptyFunction":156,"fbjs/lib/invariant":164,"react/lib/ReactCurrentOwner":413}],316:[function(_dereq_,module,exports){
+
+},{"./ReactChildReconciler":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactChildReconciler.js","./ReactComponentEnvironment":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactComponentEnvironment.js","./ReactInstanceMap":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactInstanceMap.js","./ReactInstrumentation":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactInstrumentation.js","./ReactReconciler":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactReconciler.js","./flattenChildren":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/flattenChildren.js","./reactProdInvariant":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/reactProdInvariant.js","_process":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/emptyFunction":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/emptyFunction.js","fbjs/lib/invariant":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/invariant.js","react/lib/ReactCurrentOwner":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/lib/ReactCurrentOwner.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactNodeTypes.js":[function(_dereq_,module,exports){
 (function (process){
 /**
  * Copyright 2013-present, Facebook, Inc.
@@ -47336,7 +48365,8 @@ var ReactNodeTypes = {
 
 module.exports = ReactNodeTypes;
 }).call(this,_dereq_('_process'))
-},{"./reactProdInvariant":371,"_process":237,"fbjs/lib/invariant":164,"react/lib/React":405}],317:[function(_dereq_,module,exports){
+
+},{"./reactProdInvariant":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/reactProdInvariant.js","_process":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/invariant":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/invariant.js","react/lib/React":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/lib/React.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactOwner.js":[function(_dereq_,module,exports){
 (function (process){
 /**
  * Copyright 2013-present, Facebook, Inc.
@@ -47432,7 +48462,8 @@ var ReactOwner = {
 
 module.exports = ReactOwner;
 }).call(this,_dereq_('_process'))
-},{"./reactProdInvariant":371,"_process":237,"fbjs/lib/invariant":164}],318:[function(_dereq_,module,exports){
+
+},{"./reactProdInvariant":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/reactProdInvariant.js","_process":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/invariant":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/invariant.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactPerf.js":[function(_dereq_,module,exports){
 (function (process){
 /**
  * Copyright 2016-present, Facebook, Inc.
@@ -47935,7 +48966,8 @@ var ReactPerfAnalysis = {
 
 module.exports = ReactPerfAnalysis;
 }).call(this,_dereq_('_process'))
-},{"./ReactDebugTool":297,"_process":237,"fbjs/lib/warning":171,"object-assign":232}],319:[function(_dereq_,module,exports){
+
+},{"./ReactDebugTool":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactDebugTool.js","_process":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/warning":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/warning.js","object-assign":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/object-assign/index.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactPropTypeLocationNames.js":[function(_dereq_,module,exports){
 (function (process){
 /**
  * Copyright 2013-present, Facebook, Inc.
@@ -47962,7 +48994,8 @@ if (process.env.NODE_ENV !== 'production') {
 
 module.exports = ReactPropTypeLocationNames;
 }).call(this,_dereq_('_process'))
-},{"_process":237}],320:[function(_dereq_,module,exports){
+
+},{"_process":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/browserify/node_modules/process/browser.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactPropTypesSecret.js":[function(_dereq_,module,exports){
 /**
  * Copyright 2013-present, Facebook, Inc.
  * All rights reserved.
@@ -47979,7 +49012,7 @@ module.exports = ReactPropTypeLocationNames;
 var ReactPropTypesSecret = 'SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED';
 
 module.exports = ReactPropTypesSecret;
-},{}],321:[function(_dereq_,module,exports){
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactReconcileTransaction.js":[function(_dereq_,module,exports){
 (function (process){
 /**
  * Copyright 2013-present, Facebook, Inc.
@@ -48159,7 +49192,8 @@ PooledClass.addPoolingTo(ReactReconcileTransaction);
 
 module.exports = ReactReconcileTransaction;
 }).call(this,_dereq_('_process'))
-},{"./CallbackQueue":254,"./PooledClass":273,"./ReactBrowserEventEmitter":274,"./ReactInputSelection":309,"./ReactInstrumentation":311,"./ReactUpdateQueue":328,"./Transaction":347,"_process":237,"object-assign":232}],322:[function(_dereq_,module,exports){
+
+},{"./CallbackQueue":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/CallbackQueue.js","./PooledClass":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/PooledClass.js","./ReactBrowserEventEmitter":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactBrowserEventEmitter.js","./ReactInputSelection":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactInputSelection.js","./ReactInstrumentation":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactInstrumentation.js","./ReactUpdateQueue":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactUpdateQueue.js","./Transaction":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/Transaction.js","_process":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/browserify/node_modules/process/browser.js","object-assign":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/object-assign/index.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactReconciler.js":[function(_dereq_,module,exports){
 (function (process){
 /**
  * Copyright 2013-present, Facebook, Inc.
@@ -48329,7 +49363,8 @@ var ReactReconciler = {
 
 module.exports = ReactReconciler;
 }).call(this,_dereq_('_process'))
-},{"./ReactInstrumentation":311,"./ReactRef":323,"_process":237,"fbjs/lib/warning":171}],323:[function(_dereq_,module,exports){
+
+},{"./ReactInstrumentation":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactInstrumentation.js","./ReactRef":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactRef.js","_process":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/warning":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/warning.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactRef.js":[function(_dereq_,module,exports){
 /**
  * Copyright 2013-present, Facebook, Inc.
  * All rights reserved.
@@ -48418,7 +49453,7 @@ ReactRef.detachRefs = function (instance, element) {
 };
 
 module.exports = ReactRef;
-},{"./ReactOwner":317}],324:[function(_dereq_,module,exports){
+},{"./ReactOwner":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactOwner.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactServerRenderingTransaction.js":[function(_dereq_,module,exports){
 (function (process){
 /**
  * Copyright 2014-present, Facebook, Inc.
@@ -48510,7 +49545,8 @@ PooledClass.addPoolingTo(ReactServerRenderingTransaction);
 
 module.exports = ReactServerRenderingTransaction;
 }).call(this,_dereq_('_process'))
-},{"./PooledClass":273,"./ReactInstrumentation":311,"./ReactServerUpdateQueue":325,"./Transaction":347,"_process":237,"object-assign":232}],325:[function(_dereq_,module,exports){
+
+},{"./PooledClass":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/PooledClass.js","./ReactInstrumentation":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactInstrumentation.js","./ReactServerUpdateQueue":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactServerUpdateQueue.js","./Transaction":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/Transaction.js","_process":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/browserify/node_modules/process/browser.js","object-assign":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/object-assign/index.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactServerUpdateQueue.js":[function(_dereq_,module,exports){
 (function (process){
 /**
  * Copyright 2015-present, Facebook, Inc.
@@ -48651,7 +49687,8 @@ var ReactServerUpdateQueue = function () {
 
 module.exports = ReactServerUpdateQueue;
 }).call(this,_dereq_('_process'))
-},{"./ReactUpdateQueue":328,"_process":237,"fbjs/lib/warning":171}],326:[function(_dereq_,module,exports){
+
+},{"./ReactUpdateQueue":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactUpdateQueue.js","_process":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/warning":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/warning.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactShallowRenderer.js":[function(_dereq_,module,exports){
 (function (process){
 /**
  * Copyright 2013-present, Facebook, Inc.
@@ -48804,7 +49841,8 @@ ReactShallowRenderer.createRenderer = function () {
 
 module.exports = ReactShallowRenderer;
 }).call(this,_dereq_('_process'))
-},{"./ReactCompositeComponent":278,"./ReactDefaultBatchingStrategy":298,"./ReactReconcileTransaction":321,"./ReactReconciler":322,"./ReactUpdates":329,"./reactProdInvariant":371,"_process":237,"fbjs/lib/emptyObject":157,"fbjs/lib/invariant":164,"object-assign":232,"react/lib/React":405,"react/lib/getNextDebugID":431}],327:[function(_dereq_,module,exports){
+
+},{"./ReactCompositeComponent":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactCompositeComponent.js","./ReactDefaultBatchingStrategy":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactDefaultBatchingStrategy.js","./ReactReconcileTransaction":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactReconcileTransaction.js","./ReactReconciler":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactReconciler.js","./ReactUpdates":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactUpdates.js","./reactProdInvariant":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/reactProdInvariant.js","_process":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/emptyObject":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/emptyObject.js","fbjs/lib/invariant":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/invariant.js","object-assign":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/object-assign/index.js","react/lib/React":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/lib/React.js","react/lib/getNextDebugID":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/lib/getNextDebugID.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactTestUtils.js":[function(_dereq_,module,exports){
 (function (process){
 /**
  * Copyright 2013-present, Facebook, Inc.
@@ -49228,7 +50266,8 @@ Object.keys(topLevelTypes).forEach(function (eventType) {
 
 module.exports = ReactTestUtils;
 }).call(this,_dereq_('_process'))
-},{"./EventConstants":264,"./EventPluginHub":265,"./EventPluginRegistry":266,"./EventPropagators":268,"./ReactBrowserEventEmitter":274,"./ReactDOM":279,"./ReactDOMComponentTree":282,"./ReactInstanceMap":310,"./ReactShallowRenderer":326,"./ReactUpdates":329,"./SyntheticEvent":338,"./findDOMNode":355,"./reactProdInvariant":371,"_process":237,"fbjs/lib/invariant":164,"fbjs/lib/warning":171,"object-assign":232,"react/lib/React":405}],328:[function(_dereq_,module,exports){
+
+},{"./EventConstants":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/EventConstants.js","./EventPluginHub":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/EventPluginHub.js","./EventPluginRegistry":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/EventPluginRegistry.js","./EventPropagators":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/EventPropagators.js","./ReactBrowserEventEmitter":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactBrowserEventEmitter.js","./ReactDOM":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactDOM.js","./ReactDOMComponentTree":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactDOMComponentTree.js","./ReactInstanceMap":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactInstanceMap.js","./ReactShallowRenderer":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactShallowRenderer.js","./ReactUpdates":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactUpdates.js","./SyntheticEvent":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/SyntheticEvent.js","./findDOMNode":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/findDOMNode.js","./reactProdInvariant":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/reactProdInvariant.js","_process":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/invariant":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/invariant.js","fbjs/lib/warning":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/warning.js","object-assign":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/object-assign/index.js","react/lib/React":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/lib/React.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactUpdateQueue.js":[function(_dereq_,module,exports){
 (function (process){
 /**
  * Copyright 2015-present, Facebook, Inc.
@@ -49466,7 +50505,8 @@ var ReactUpdateQueue = {
 
 module.exports = ReactUpdateQueue;
 }).call(this,_dereq_('_process'))
-},{"./ReactInstanceMap":310,"./ReactInstrumentation":311,"./ReactUpdates":329,"./reactProdInvariant":371,"_process":237,"fbjs/lib/invariant":164,"fbjs/lib/warning":171,"react/lib/ReactCurrentOwner":413}],329:[function(_dereq_,module,exports){
+
+},{"./ReactInstanceMap":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactInstanceMap.js","./ReactInstrumentation":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactInstrumentation.js","./ReactUpdates":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactUpdates.js","./reactProdInvariant":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/reactProdInvariant.js","_process":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/invariant":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/invariant.js","fbjs/lib/warning":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/warning.js","react/lib/ReactCurrentOwner":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/lib/ReactCurrentOwner.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactUpdates.js":[function(_dereq_,module,exports){
 (function (process){
 /**
  * Copyright 2013-present, Facebook, Inc.
@@ -49719,7 +50759,8 @@ var ReactUpdates = {
 
 module.exports = ReactUpdates;
 }).call(this,_dereq_('_process'))
-},{"./CallbackQueue":254,"./PooledClass":273,"./ReactFeatureFlags":305,"./ReactReconciler":322,"./Transaction":347,"./reactProdInvariant":371,"_process":237,"fbjs/lib/invariant":164,"object-assign":232}],330:[function(_dereq_,module,exports){
+
+},{"./CallbackQueue":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/CallbackQueue.js","./PooledClass":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/PooledClass.js","./ReactFeatureFlags":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactFeatureFlags.js","./ReactReconciler":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactReconciler.js","./Transaction":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/Transaction.js","./reactProdInvariant":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/reactProdInvariant.js","_process":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/invariant":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/invariant.js","object-assign":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/object-assign/index.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactVersion.js":[function(_dereq_,module,exports){
 /**
  * Copyright 2013-present, Facebook, Inc.
  * All rights reserved.
@@ -49733,7 +50774,7 @@ module.exports = ReactUpdates;
 'use strict';
 
 module.exports = '15.5.4';
-},{}],331:[function(_dereq_,module,exports){
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/SVGDOMPropertyConfig.js":[function(_dereq_,module,exports){
 /**
  * Copyright 2013-present, Facebook, Inc.
  * All rights reserved.
@@ -50035,7 +51076,7 @@ Object.keys(ATTRS).forEach(function (key) {
 });
 
 module.exports = SVGDOMPropertyConfig;
-},{}],332:[function(_dereq_,module,exports){
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/SelectEventPlugin.js":[function(_dereq_,module,exports){
 /**
  * Copyright 2013-present, Facebook, Inc.
  * All rights reserved.
@@ -50226,7 +51267,7 @@ var SelectEventPlugin = {
 };
 
 module.exports = SelectEventPlugin;
-},{"./EventPropagators":268,"./ReactDOMComponentTree":282,"./ReactInputSelection":309,"./SyntheticEvent":338,"./isTextInputElement":369,"fbjs/lib/ExecutionEnvironment":150,"fbjs/lib/getActiveElement":159,"fbjs/lib/shallowEqual":170}],333:[function(_dereq_,module,exports){
+},{"./EventPropagators":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/EventPropagators.js","./ReactDOMComponentTree":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactDOMComponentTree.js","./ReactInputSelection":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactInputSelection.js","./SyntheticEvent":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/SyntheticEvent.js","./isTextInputElement":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/isTextInputElement.js","fbjs/lib/ExecutionEnvironment":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/ExecutionEnvironment.js","fbjs/lib/getActiveElement":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/getActiveElement.js","fbjs/lib/shallowEqual":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/shallowEqual.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/SimpleEventPlugin.js":[function(_dereq_,module,exports){
 (function (process){
 /**
  * Copyright 2013-present, Facebook, Inc.
@@ -50456,7 +51497,8 @@ var SimpleEventPlugin = {
 
 module.exports = SimpleEventPlugin;
 }).call(this,_dereq_('_process'))
-},{"./EventPropagators":268,"./ReactDOMComponentTree":282,"./SyntheticAnimationEvent":334,"./SyntheticClipboardEvent":335,"./SyntheticDragEvent":337,"./SyntheticEvent":338,"./SyntheticFocusEvent":339,"./SyntheticKeyboardEvent":341,"./SyntheticMouseEvent":342,"./SyntheticTouchEvent":343,"./SyntheticTransitionEvent":344,"./SyntheticUIEvent":345,"./SyntheticWheelEvent":346,"./getEventCharCode":358,"./reactProdInvariant":371,"_process":237,"fbjs/lib/EventListener":149,"fbjs/lib/emptyFunction":156,"fbjs/lib/invariant":164}],334:[function(_dereq_,module,exports){
+
+},{"./EventPropagators":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/EventPropagators.js","./ReactDOMComponentTree":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactDOMComponentTree.js","./SyntheticAnimationEvent":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/SyntheticAnimationEvent.js","./SyntheticClipboardEvent":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/SyntheticClipboardEvent.js","./SyntheticDragEvent":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/SyntheticDragEvent.js","./SyntheticEvent":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/SyntheticEvent.js","./SyntheticFocusEvent":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/SyntheticFocusEvent.js","./SyntheticKeyboardEvent":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/SyntheticKeyboardEvent.js","./SyntheticMouseEvent":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/SyntheticMouseEvent.js","./SyntheticTouchEvent":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/SyntheticTouchEvent.js","./SyntheticTransitionEvent":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/SyntheticTransitionEvent.js","./SyntheticUIEvent":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/SyntheticUIEvent.js","./SyntheticWheelEvent":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/SyntheticWheelEvent.js","./getEventCharCode":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/getEventCharCode.js","./reactProdInvariant":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/reactProdInvariant.js","_process":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/EventListener":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/EventListener.js","fbjs/lib/emptyFunction":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/emptyFunction.js","fbjs/lib/invariant":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/invariant.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/SyntheticAnimationEvent.js":[function(_dereq_,module,exports){
 /**
  * Copyright 2013-present, Facebook, Inc.
  * All rights reserved.
@@ -50495,7 +51537,7 @@ function SyntheticAnimationEvent(dispatchConfig, dispatchMarker, nativeEvent, na
 SyntheticEvent.augmentClass(SyntheticAnimationEvent, AnimationEventInterface);
 
 module.exports = SyntheticAnimationEvent;
-},{"./SyntheticEvent":338}],335:[function(_dereq_,module,exports){
+},{"./SyntheticEvent":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/SyntheticEvent.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/SyntheticClipboardEvent.js":[function(_dereq_,module,exports){
 /**
  * Copyright 2013-present, Facebook, Inc.
  * All rights reserved.
@@ -50533,7 +51575,7 @@ function SyntheticClipboardEvent(dispatchConfig, dispatchMarker, nativeEvent, na
 SyntheticEvent.augmentClass(SyntheticClipboardEvent, ClipboardEventInterface);
 
 module.exports = SyntheticClipboardEvent;
-},{"./SyntheticEvent":338}],336:[function(_dereq_,module,exports){
+},{"./SyntheticEvent":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/SyntheticEvent.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/SyntheticCompositionEvent.js":[function(_dereq_,module,exports){
 /**
  * Copyright 2013-present, Facebook, Inc.
  * All rights reserved.
@@ -50569,7 +51611,7 @@ function SyntheticCompositionEvent(dispatchConfig, dispatchMarker, nativeEvent, 
 SyntheticEvent.augmentClass(SyntheticCompositionEvent, CompositionEventInterface);
 
 module.exports = SyntheticCompositionEvent;
-},{"./SyntheticEvent":338}],337:[function(_dereq_,module,exports){
+},{"./SyntheticEvent":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/SyntheticEvent.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/SyntheticDragEvent.js":[function(_dereq_,module,exports){
 /**
  * Copyright 2013-present, Facebook, Inc.
  * All rights reserved.
@@ -50605,7 +51647,7 @@ function SyntheticDragEvent(dispatchConfig, dispatchMarker, nativeEvent, nativeE
 SyntheticMouseEvent.augmentClass(SyntheticDragEvent, DragEventInterface);
 
 module.exports = SyntheticDragEvent;
-},{"./SyntheticMouseEvent":342}],338:[function(_dereq_,module,exports){
+},{"./SyntheticMouseEvent":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/SyntheticMouseEvent.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/SyntheticEvent.js":[function(_dereq_,module,exports){
 (function (process){
 /**
  * Copyright 2013-present, Facebook, Inc.
@@ -50875,7 +51917,8 @@ function getPooledWarningPropertyDefinition(propName, getVal) {
   }
 }
 }).call(this,_dereq_('_process'))
-},{"./PooledClass":273,"_process":237,"fbjs/lib/emptyFunction":156,"fbjs/lib/warning":171,"object-assign":232}],339:[function(_dereq_,module,exports){
+
+},{"./PooledClass":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/PooledClass.js","_process":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/emptyFunction":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/emptyFunction.js","fbjs/lib/warning":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/warning.js","object-assign":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/object-assign/index.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/SyntheticFocusEvent.js":[function(_dereq_,module,exports){
 /**
  * Copyright 2013-present, Facebook, Inc.
  * All rights reserved.
@@ -50911,7 +51954,7 @@ function SyntheticFocusEvent(dispatchConfig, dispatchMarker, nativeEvent, native
 SyntheticUIEvent.augmentClass(SyntheticFocusEvent, FocusEventInterface);
 
 module.exports = SyntheticFocusEvent;
-},{"./SyntheticUIEvent":345}],340:[function(_dereq_,module,exports){
+},{"./SyntheticUIEvent":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/SyntheticUIEvent.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/SyntheticInputEvent.js":[function(_dereq_,module,exports){
 /**
  * Copyright 2013-present, Facebook, Inc.
  * All rights reserved.
@@ -50948,7 +51991,7 @@ function SyntheticInputEvent(dispatchConfig, dispatchMarker, nativeEvent, native
 SyntheticEvent.augmentClass(SyntheticInputEvent, InputEventInterface);
 
 module.exports = SyntheticInputEvent;
-},{"./SyntheticEvent":338}],341:[function(_dereq_,module,exports){
+},{"./SyntheticEvent":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/SyntheticEvent.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/SyntheticKeyboardEvent.js":[function(_dereq_,module,exports){
 /**
  * Copyright 2013-present, Facebook, Inc.
  * All rights reserved.
@@ -51032,7 +52075,7 @@ function SyntheticKeyboardEvent(dispatchConfig, dispatchMarker, nativeEvent, nat
 SyntheticUIEvent.augmentClass(SyntheticKeyboardEvent, KeyboardEventInterface);
 
 module.exports = SyntheticKeyboardEvent;
-},{"./SyntheticUIEvent":345,"./getEventCharCode":358,"./getEventKey":359,"./getEventModifierState":360}],342:[function(_dereq_,module,exports){
+},{"./SyntheticUIEvent":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/SyntheticUIEvent.js","./getEventCharCode":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/getEventCharCode.js","./getEventKey":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/getEventKey.js","./getEventModifierState":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/getEventModifierState.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/SyntheticMouseEvent.js":[function(_dereq_,module,exports){
 /**
  * Copyright 2013-present, Facebook, Inc.
  * All rights reserved.
@@ -51104,7 +52147,7 @@ function SyntheticMouseEvent(dispatchConfig, dispatchMarker, nativeEvent, native
 SyntheticUIEvent.augmentClass(SyntheticMouseEvent, MouseEventInterface);
 
 module.exports = SyntheticMouseEvent;
-},{"./SyntheticUIEvent":345,"./ViewportMetrics":348,"./getEventModifierState":360}],343:[function(_dereq_,module,exports){
+},{"./SyntheticUIEvent":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/SyntheticUIEvent.js","./ViewportMetrics":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ViewportMetrics.js","./getEventModifierState":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/getEventModifierState.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/SyntheticTouchEvent.js":[function(_dereq_,module,exports){
 /**
  * Copyright 2013-present, Facebook, Inc.
  * All rights reserved.
@@ -51149,7 +52192,7 @@ function SyntheticTouchEvent(dispatchConfig, dispatchMarker, nativeEvent, native
 SyntheticUIEvent.augmentClass(SyntheticTouchEvent, TouchEventInterface);
 
 module.exports = SyntheticTouchEvent;
-},{"./SyntheticUIEvent":345,"./getEventModifierState":360}],344:[function(_dereq_,module,exports){
+},{"./SyntheticUIEvent":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/SyntheticUIEvent.js","./getEventModifierState":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/getEventModifierState.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/SyntheticTransitionEvent.js":[function(_dereq_,module,exports){
 /**
  * Copyright 2013-present, Facebook, Inc.
  * All rights reserved.
@@ -51188,7 +52231,7 @@ function SyntheticTransitionEvent(dispatchConfig, dispatchMarker, nativeEvent, n
 SyntheticEvent.augmentClass(SyntheticTransitionEvent, TransitionEventInterface);
 
 module.exports = SyntheticTransitionEvent;
-},{"./SyntheticEvent":338}],345:[function(_dereq_,module,exports){
+},{"./SyntheticEvent":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/SyntheticEvent.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/SyntheticUIEvent.js":[function(_dereq_,module,exports){
 /**
  * Copyright 2013-present, Facebook, Inc.
  * All rights reserved.
@@ -51247,7 +52290,7 @@ function SyntheticUIEvent(dispatchConfig, dispatchMarker, nativeEvent, nativeEve
 SyntheticEvent.augmentClass(SyntheticUIEvent, UIEventInterface);
 
 module.exports = SyntheticUIEvent;
-},{"./SyntheticEvent":338,"./getEventTarget":361}],346:[function(_dereq_,module,exports){
+},{"./SyntheticEvent":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/SyntheticEvent.js","./getEventTarget":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/getEventTarget.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/SyntheticWheelEvent.js":[function(_dereq_,module,exports){
 /**
  * Copyright 2013-present, Facebook, Inc.
  * All rights reserved.
@@ -51301,7 +52344,7 @@ function SyntheticWheelEvent(dispatchConfig, dispatchMarker, nativeEvent, native
 SyntheticMouseEvent.augmentClass(SyntheticWheelEvent, WheelEventInterface);
 
 module.exports = SyntheticWheelEvent;
-},{"./SyntheticMouseEvent":342}],347:[function(_dereq_,module,exports){
+},{"./SyntheticMouseEvent":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/SyntheticMouseEvent.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/Transaction.js":[function(_dereq_,module,exports){
 (function (process){
 /**
  * Copyright 2013-present, Facebook, Inc.
@@ -51528,7 +52571,8 @@ var TransactionImpl = {
 
 module.exports = TransactionImpl;
 }).call(this,_dereq_('_process'))
-},{"./reactProdInvariant":371,"_process":237,"fbjs/lib/invariant":164}],348:[function(_dereq_,module,exports){
+
+},{"./reactProdInvariant":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/reactProdInvariant.js","_process":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/invariant":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/invariant.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ViewportMetrics.js":[function(_dereq_,module,exports){
 /**
  * Copyright 2013-present, Facebook, Inc.
  * All rights reserved.
@@ -51555,7 +52599,7 @@ var ViewportMetrics = {
 };
 
 module.exports = ViewportMetrics;
-},{}],349:[function(_dereq_,module,exports){
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/accumulateInto.js":[function(_dereq_,module,exports){
 (function (process){
 /**
  * Copyright 2014-present, Facebook, Inc.
@@ -51615,7 +52659,8 @@ function accumulateInto(current, next) {
 
 module.exports = accumulateInto;
 }).call(this,_dereq_('_process'))
-},{"./reactProdInvariant":371,"_process":237,"fbjs/lib/invariant":164}],350:[function(_dereq_,module,exports){
+
+},{"./reactProdInvariant":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/reactProdInvariant.js","_process":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/invariant":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/invariant.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/adler32.js":[function(_dereq_,module,exports){
 /**
  * Copyright 2013-present, Facebook, Inc.
  * All rights reserved.
@@ -51659,7 +52704,7 @@ function adler32(data) {
 }
 
 module.exports = adler32;
-},{}],351:[function(_dereq_,module,exports){
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/checkReactTypeSpec.js":[function(_dereq_,module,exports){
 (function (process){
 /**
  * Copyright 2013-present, Facebook, Inc.
@@ -51748,7 +52793,8 @@ function checkReactTypeSpec(typeSpecs, values, location, componentName, element,
 
 module.exports = checkReactTypeSpec;
 }).call(this,_dereq_('_process'))
-},{"./ReactPropTypeLocationNames":319,"./ReactPropTypesSecret":320,"./reactProdInvariant":371,"_process":237,"fbjs/lib/invariant":164,"fbjs/lib/warning":171,"react/lib/ReactComponentTreeHook":412}],352:[function(_dereq_,module,exports){
+
+},{"./ReactPropTypeLocationNames":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactPropTypeLocationNames.js","./ReactPropTypesSecret":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactPropTypesSecret.js","./reactProdInvariant":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/reactProdInvariant.js","_process":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/invariant":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/invariant.js","fbjs/lib/warning":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/warning.js","react/lib/ReactComponentTreeHook":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/lib/ReactComponentTreeHook.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/createMicrosoftUnsafeLocalFunction.js":[function(_dereq_,module,exports){
 /**
  * Copyright 2013-present, Facebook, Inc.
  * All rights reserved.
@@ -51780,7 +52826,7 @@ var createMicrosoftUnsafeLocalFunction = function (func) {
 };
 
 module.exports = createMicrosoftUnsafeLocalFunction;
-},{}],353:[function(_dereq_,module,exports){
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/dangerousStyleValue.js":[function(_dereq_,module,exports){
 (function (process){
 /**
  * Copyright 2013-present, Facebook, Inc.
@@ -51861,7 +52907,8 @@ function dangerousStyleValue(name, value, component) {
 
 module.exports = dangerousStyleValue;
 }).call(this,_dereq_('_process'))
-},{"./CSSProperty":252,"_process":237,"fbjs/lib/warning":171}],354:[function(_dereq_,module,exports){
+
+},{"./CSSProperty":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/CSSProperty.js","_process":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/warning":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/warning.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/escapeTextContentForBrowser.js":[function(_dereq_,module,exports){
 /**
  * Copyright 2016-present, Facebook, Inc.
  * All rights reserved.
@@ -51984,7 +53031,7 @@ function escapeTextContentForBrowser(text) {
 }
 
 module.exports = escapeTextContentForBrowser;
-},{}],355:[function(_dereq_,module,exports){
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/findDOMNode.js":[function(_dereq_,module,exports){
 (function (process){
 /**
  * Copyright 2013-present, Facebook, Inc.
@@ -52046,7 +53093,8 @@ function findDOMNode(componentOrElement) {
 
 module.exports = findDOMNode;
 }).call(this,_dereq_('_process'))
-},{"./ReactDOMComponentTree":282,"./ReactInstanceMap":310,"./getHostComponentFromComposite":362,"./reactProdInvariant":371,"_process":237,"fbjs/lib/invariant":164,"fbjs/lib/warning":171,"react/lib/ReactCurrentOwner":413}],356:[function(_dereq_,module,exports){
+
+},{"./ReactDOMComponentTree":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactDOMComponentTree.js","./ReactInstanceMap":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactInstanceMap.js","./getHostComponentFromComposite":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/getHostComponentFromComposite.js","./reactProdInvariant":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/reactProdInvariant.js","_process":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/invariant":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/invariant.js","fbjs/lib/warning":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/warning.js","react/lib/ReactCurrentOwner":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/lib/ReactCurrentOwner.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/flattenChildren.js":[function(_dereq_,module,exports){
 (function (process){
 /**
  * Copyright 2013-present, Facebook, Inc.
@@ -52124,7 +53172,8 @@ function flattenChildren(children, selfDebugID) {
 
 module.exports = flattenChildren;
 }).call(this,_dereq_('_process'))
-},{"./KeyEscapeUtils":271,"./traverseAllChildren":376,"_process":237,"fbjs/lib/warning":171,"react/lib/ReactComponentTreeHook":412}],357:[function(_dereq_,module,exports){
+
+},{"./KeyEscapeUtils":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/KeyEscapeUtils.js","./traverseAllChildren":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/traverseAllChildren.js","_process":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/warning":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/warning.js","react/lib/ReactComponentTreeHook":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/lib/ReactComponentTreeHook.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/forEachAccumulated.js":[function(_dereq_,module,exports){
 /**
  * Copyright 2013-present, Facebook, Inc.
  * All rights reserved.
@@ -52155,7 +53204,7 @@ function forEachAccumulated(arr, cb, scope) {
 }
 
 module.exports = forEachAccumulated;
-},{}],358:[function(_dereq_,module,exports){
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/getEventCharCode.js":[function(_dereq_,module,exports){
 /**
  * Copyright 2013-present, Facebook, Inc.
  * All rights reserved.
@@ -52205,7 +53254,7 @@ function getEventCharCode(nativeEvent) {
 }
 
 module.exports = getEventCharCode;
-},{}],359:[function(_dereq_,module,exports){
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/getEventKey.js":[function(_dereq_,module,exports){
 /**
  * Copyright 2013-present, Facebook, Inc.
  * All rights reserved.
@@ -52307,7 +53356,7 @@ function getEventKey(nativeEvent) {
 }
 
 module.exports = getEventKey;
-},{"./getEventCharCode":358}],360:[function(_dereq_,module,exports){
+},{"./getEventCharCode":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/getEventCharCode.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/getEventModifierState.js":[function(_dereq_,module,exports){
 /**
  * Copyright 2013-present, Facebook, Inc.
  * All rights reserved.
@@ -52350,7 +53399,7 @@ function getEventModifierState(nativeEvent) {
 }
 
 module.exports = getEventModifierState;
-},{}],361:[function(_dereq_,module,exports){
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/getEventTarget.js":[function(_dereq_,module,exports){
 /**
  * Copyright 2013-present, Facebook, Inc.
  * All rights reserved.
@@ -52385,7 +53434,7 @@ function getEventTarget(nativeEvent) {
 }
 
 module.exports = getEventTarget;
-},{}],362:[function(_dereq_,module,exports){
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/getHostComponentFromComposite.js":[function(_dereq_,module,exports){
 /**
  * Copyright 2013-present, Facebook, Inc.
  * All rights reserved.
@@ -52415,7 +53464,7 @@ function getHostComponentFromComposite(inst) {
 }
 
 module.exports = getHostComponentFromComposite;
-},{"./ReactNodeTypes":316}],363:[function(_dereq_,module,exports){
+},{"./ReactNodeTypes":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactNodeTypes.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/getIteratorFn.js":[function(_dereq_,module,exports){
 /**
  * Copyright 2013-present, Facebook, Inc.
  * All rights reserved.
@@ -52456,7 +53505,7 @@ function getIteratorFn(maybeIterable) {
 }
 
 module.exports = getIteratorFn;
-},{}],364:[function(_dereq_,module,exports){
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/getNodeForCharacterOffset.js":[function(_dereq_,module,exports){
 /**
  * Copyright 2013-present, Facebook, Inc.
  * All rights reserved.
@@ -52530,7 +53579,7 @@ function getNodeForCharacterOffset(root, offset) {
 }
 
 module.exports = getNodeForCharacterOffset;
-},{}],365:[function(_dereq_,module,exports){
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/getTextContentAccessor.js":[function(_dereq_,module,exports){
 /**
  * Copyright 2013-present, Facebook, Inc.
  * All rights reserved.
@@ -52563,7 +53612,7 @@ function getTextContentAccessor() {
 }
 
 module.exports = getTextContentAccessor;
-},{"fbjs/lib/ExecutionEnvironment":150}],366:[function(_dereq_,module,exports){
+},{"fbjs/lib/ExecutionEnvironment":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/ExecutionEnvironment.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/getVendorPrefixedEventName.js":[function(_dereq_,module,exports){
 /**
  * Copyright 2013-present, Facebook, Inc.
  * All rights reserved.
@@ -52664,7 +53713,7 @@ function getVendorPrefixedEventName(eventName) {
 }
 
 module.exports = getVendorPrefixedEventName;
-},{"fbjs/lib/ExecutionEnvironment":150}],367:[function(_dereq_,module,exports){
+},{"fbjs/lib/ExecutionEnvironment":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/ExecutionEnvironment.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/instantiateReactComponent.js":[function(_dereq_,module,exports){
 (function (process){
 /**
  * Copyright 2013-present, Facebook, Inc.
@@ -52795,7 +53844,8 @@ _assign(ReactCompositeComponentWrapper.prototype, ReactCompositeComponent, {
 
 module.exports = instantiateReactComponent;
 }).call(this,_dereq_('_process'))
-},{"./ReactCompositeComponent":278,"./ReactEmptyComponent":301,"./ReactHostComponent":306,"./reactProdInvariant":371,"_process":237,"fbjs/lib/invariant":164,"fbjs/lib/warning":171,"object-assign":232,"react/lib/getNextDebugID":431}],368:[function(_dereq_,module,exports){
+
+},{"./ReactCompositeComponent":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactCompositeComponent.js","./ReactEmptyComponent":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactEmptyComponent.js","./ReactHostComponent":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactHostComponent.js","./reactProdInvariant":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/reactProdInvariant.js","_process":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/invariant":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/invariant.js","fbjs/lib/warning":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/warning.js","object-assign":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/object-assign/index.js","react/lib/getNextDebugID":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/lib/getNextDebugID.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/isEventSupported.js":[function(_dereq_,module,exports){
 /**
  * Copyright 2013-present, Facebook, Inc.
  * All rights reserved.
@@ -52855,7 +53905,7 @@ function isEventSupported(eventNameSuffix, capture) {
 }
 
 module.exports = isEventSupported;
-},{"fbjs/lib/ExecutionEnvironment":150}],369:[function(_dereq_,module,exports){
+},{"fbjs/lib/ExecutionEnvironment":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/ExecutionEnvironment.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/isTextInputElement.js":[function(_dereq_,module,exports){
 /**
  * Copyright 2013-present, Facebook, Inc.
  * All rights reserved.
@@ -52906,7 +53956,7 @@ function isTextInputElement(elem) {
 }
 
 module.exports = isTextInputElement;
-},{}],370:[function(_dereq_,module,exports){
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/quoteAttributeValueForBrowser.js":[function(_dereq_,module,exports){
 /**
  * Copyright 2013-present, Facebook, Inc.
  * All rights reserved.
@@ -52932,7 +53982,7 @@ function quoteAttributeValueForBrowser(value) {
 }
 
 module.exports = quoteAttributeValueForBrowser;
-},{"./escapeTextContentForBrowser":354}],371:[function(_dereq_,module,exports){
+},{"./escapeTextContentForBrowser":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/escapeTextContentForBrowser.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/reactProdInvariant.js":[function(_dereq_,module,exports){
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  * All rights reserved.
@@ -52971,7 +54021,7 @@ function reactProdInvariant(code) {
 }
 
 module.exports = reactProdInvariant;
-},{}],372:[function(_dereq_,module,exports){
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/renderSubtreeIntoContainer.js":[function(_dereq_,module,exports){
 /**
  * Copyright 2013-present, Facebook, Inc.
  * All rights reserved.
@@ -52987,7 +54037,7 @@ module.exports = reactProdInvariant;
 var ReactMount = _dereq_('./ReactMount');
 
 module.exports = ReactMount.renderSubtreeIntoContainer;
-},{"./ReactMount":314}],373:[function(_dereq_,module,exports){
+},{"./ReactMount":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactMount.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/setInnerHTML.js":[function(_dereq_,module,exports){
 /**
  * Copyright 2013-present, Facebook, Inc.
  * All rights reserved.
@@ -53085,7 +54135,7 @@ if (ExecutionEnvironment.canUseDOM) {
 }
 
 module.exports = setInnerHTML;
-},{"./DOMNamespaces":258,"./createMicrosoftUnsafeLocalFunction":352,"fbjs/lib/ExecutionEnvironment":150}],374:[function(_dereq_,module,exports){
+},{"./DOMNamespaces":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/DOMNamespaces.js","./createMicrosoftUnsafeLocalFunction":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/createMicrosoftUnsafeLocalFunction.js","fbjs/lib/ExecutionEnvironment":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/ExecutionEnvironment.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/setTextContent.js":[function(_dereq_,module,exports){
 /**
  * Copyright 2013-present, Facebook, Inc.
  * All rights reserved.
@@ -53137,7 +54187,7 @@ if (ExecutionEnvironment.canUseDOM) {
 }
 
 module.exports = setTextContent;
-},{"./escapeTextContentForBrowser":354,"./setInnerHTML":373,"fbjs/lib/ExecutionEnvironment":150}],375:[function(_dereq_,module,exports){
+},{"./escapeTextContentForBrowser":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/escapeTextContentForBrowser.js","./setInnerHTML":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/setInnerHTML.js","fbjs/lib/ExecutionEnvironment":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/ExecutionEnvironment.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/shouldUpdateReactComponent.js":[function(_dereq_,module,exports){
 /**
  * Copyright 2013-present, Facebook, Inc.
  * All rights reserved.
@@ -53179,7 +54229,7 @@ function shouldUpdateReactComponent(prevElement, nextElement) {
 }
 
 module.exports = shouldUpdateReactComponent;
-},{}],376:[function(_dereq_,module,exports){
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/traverseAllChildren.js":[function(_dereq_,module,exports){
 (function (process){
 /**
  * Copyright 2013-present, Facebook, Inc.
@@ -53357,7 +54407,8 @@ function traverseAllChildren(children, callback, traverseContext) {
 
 module.exports = traverseAllChildren;
 }).call(this,_dereq_('_process'))
-},{"./KeyEscapeUtils":271,"./ReactElementSymbol":300,"./getIteratorFn":363,"./reactProdInvariant":371,"_process":237,"fbjs/lib/invariant":164,"fbjs/lib/warning":171,"react/lib/ReactCurrentOwner":413}],377:[function(_dereq_,module,exports){
+
+},{"./KeyEscapeUtils":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/KeyEscapeUtils.js","./ReactElementSymbol":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactElementSymbol.js","./getIteratorFn":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/getIteratorFn.js","./reactProdInvariant":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/reactProdInvariant.js","_process":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/invariant":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/invariant.js","fbjs/lib/warning":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/warning.js","react/lib/ReactCurrentOwner":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/lib/ReactCurrentOwner.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/validateDOMNesting.js":[function(_dereq_,module,exports){
 (function (process){
 /**
  * Copyright 2015-present, Facebook, Inc.
@@ -53736,7 +54787,8 @@ if (process.env.NODE_ENV !== 'production') {
 
 module.exports = validateDOMNesting;
 }).call(this,_dereq_('_process'))
-},{"_process":237,"fbjs/lib/emptyFunction":156,"fbjs/lib/warning":171,"object-assign":232}],378:[function(_dereq_,module,exports){
+
+},{"_process":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/emptyFunction":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/emptyFunction.js","fbjs/lib/warning":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/warning.js","object-assign":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/object-assign/index.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-hyperscript/index.js":[function(_dereq_,module,exports){
 'use strict';
 var React = _dereq_('react');
 
@@ -53788,7 +54840,7 @@ function isChildren(x) {
   return typeof x === 'string' || typeof x === 'number' || Array.isArray(x);
 }
 
-},{"./parse-tag":379,"react":435}],379:[function(_dereq_,module,exports){
+},{"./parse-tag":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-hyperscript/parse-tag.js","react":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/react.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-hyperscript/parse-tag.js":[function(_dereq_,module,exports){
 /* eslint-disable complexity, max-statements */
 'use strict';
 
@@ -53845,7 +54897,7 @@ function parseTag(tag, props) {
   return tagName ? tagName.toLowerCase() : 'div';
 }
 
-},{}],380:[function(_dereq_,module,exports){
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-input-autosize/lib/AutosizeInput.js":[function(_dereq_,module,exports){
 'use strict';
 
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
@@ -54011,7 +55063,7 @@ var AutosizeInput = createClass({
 });
 
 module.exports = AutosizeInput;
-},{"create-react-class":88,"prop-types":242,"react":435}],381:[function(_dereq_,module,exports){
+},{"create-react-class":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/create-react-class/index.js","prop-types":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/prop-types/index.js","react":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/react.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-markdown/src/react-markdown.js":[function(_dereq_,module,exports){
 'use strict';
 
 var React = _dereq_('react');
@@ -54086,7 +55138,7 @@ ReactMarkdown.uriTransformer = ReactRenderer.uriTransformer;
 
 module.exports = ReactMarkdown;
 
-},{"commonmark":40,"commonmark-react-renderer":35,"prop-types":242,"react":435}],382:[function(_dereq_,module,exports){
+},{"commonmark":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/commonmark/lib/index.js","commonmark-react-renderer":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/commonmark-react-renderer/src/commonmark-react-renderer.js","prop-types":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/prop-types/index.js","react":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/react.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-redux/lib/components/Provider.js":[function(_dereq_,module,exports){
 (function (process){
 'use strict';
 
@@ -54171,7 +55223,8 @@ Provider.childContextTypes = {
   store: _storeShape2["default"].isRequired
 };
 }).call(this,_dereq_('_process'))
-},{"../utils/storeShape":386,"../utils/warning":387,"_process":237,"prop-types":242,"react":435}],383:[function(_dereq_,module,exports){
+
+},{"../utils/storeShape":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-redux/lib/utils/storeShape.js","../utils/warning":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-redux/lib/utils/warning.js","_process":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/browserify/node_modules/process/browser.js","prop-types":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/prop-types/index.js","react":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/react.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-redux/lib/components/connect.js":[function(_dereq_,module,exports){
 (function (process){
 'use strict';
 
@@ -54569,7 +55622,8 @@ function connect(mapStateToProps, mapDispatchToProps, mergeProps) {
   };
 }
 }).call(this,_dereq_('_process'))
-},{"../utils/shallowEqual":385,"../utils/storeShape":386,"../utils/warning":387,"../utils/wrapActionCreators":388,"_process":237,"hoist-non-react-statics":187,"invariant":193,"lodash/isPlainObject":221,"react":435}],384:[function(_dereq_,module,exports){
+
+},{"../utils/shallowEqual":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-redux/lib/utils/shallowEqual.js","../utils/storeShape":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-redux/lib/utils/storeShape.js","../utils/warning":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-redux/lib/utils/warning.js","../utils/wrapActionCreators":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-redux/lib/utils/wrapActionCreators.js","_process":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/browserify/node_modules/process/browser.js","hoist-non-react-statics":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/hoist-non-react-statics/index.js","invariant":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/invariant/browser.js","lodash/isPlainObject":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/lodash/isPlainObject.js","react":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/react.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-redux/lib/index.js":[function(_dereq_,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -54587,7 +55641,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "d
 
 exports.Provider = _Provider2["default"];
 exports.connect = _connect2["default"];
-},{"./components/Provider":382,"./components/connect":383}],385:[function(_dereq_,module,exports){
+},{"./components/Provider":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-redux/lib/components/Provider.js","./components/connect":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-redux/lib/components/connect.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-redux/lib/utils/shallowEqual.js":[function(_dereq_,module,exports){
 "use strict";
 
 exports.__esModule = true;
@@ -54614,7 +55668,7 @@ function shallowEqual(objA, objB) {
 
   return true;
 }
-},{}],386:[function(_dereq_,module,exports){
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-redux/lib/utils/storeShape.js":[function(_dereq_,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -54630,7 +55684,7 @@ exports["default"] = _propTypes2["default"].shape({
   dispatch: _propTypes2["default"].func.isRequired,
   getState: _propTypes2["default"].func.isRequired
 });
-},{"prop-types":242}],387:[function(_dereq_,module,exports){
+},{"prop-types":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/prop-types/index.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-redux/lib/utils/warning.js":[function(_dereq_,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -54656,7 +55710,7 @@ function warning(message) {
   } catch (e) {}
   /* eslint-enable no-empty */
 }
-},{}],388:[function(_dereq_,module,exports){
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-redux/lib/utils/wrapActionCreators.js":[function(_dereq_,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -54669,7 +55723,7 @@ function wrapActionCreators(actionCreators) {
     return (0, _redux.bindActionCreators)(actionCreators, dispatch);
   };
 }
-},{"redux":461}],389:[function(_dereq_,module,exports){
+},{"redux":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/redux/lib/index.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-select/lib/Async.js":[function(_dereq_,module,exports){
 'use strict';
 
 Object.defineProperty(exports, '__esModule', {
@@ -54940,7 +55994,7 @@ function defaultChildren(props) {
 	return _react2['default'].createElement(_Select2['default'], props);
 }
 module.exports = exports['default'];
-},{"./Select":393,"./utils/stripDiacritics":399,"prop-types":242,"react":435}],390:[function(_dereq_,module,exports){
+},{"./Select":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-select/lib/Select.js","./utils/stripDiacritics":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-select/lib/utils/stripDiacritics.js","prop-types":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/prop-types/index.js","react":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/react.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-select/lib/AsyncCreatable.js":[function(_dereq_,module,exports){
 'use strict';
 
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
@@ -55006,7 +56060,7 @@ var AsyncCreatable = (0, _createReactClass2['default'])({
 });
 
 module.exports = AsyncCreatable;
-},{"./Select":393,"create-react-class":88,"react":435}],391:[function(_dereq_,module,exports){
+},{"./Select":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-select/lib/Select.js","create-react-class":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/create-react-class/index.js","react":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/react.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-select/lib/Creatable.js":[function(_dereq_,module,exports){
 'use strict';
 
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
@@ -55335,7 +56389,7 @@ function shouldKeyDownEventCreateNewOption(_ref6) {
 };
 
 module.exports = Creatable;
-},{"./Select":393,"./utils/defaultFilterOptions":397,"./utils/defaultMenuRenderer":398,"create-react-class":88,"prop-types":242,"react":435}],392:[function(_dereq_,module,exports){
+},{"./Select":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-select/lib/Select.js","./utils/defaultFilterOptions":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-select/lib/utils/defaultFilterOptions.js","./utils/defaultMenuRenderer":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-select/lib/utils/defaultMenuRenderer.js","create-react-class":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/create-react-class/index.js","prop-types":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/prop-types/index.js","react":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/react.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-select/lib/Option.js":[function(_dereq_,module,exports){
 'use strict';
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
@@ -55453,7 +56507,7 @@ var Option = (0, _createReactClass2['default'])({
 });
 
 module.exports = Option;
-},{"classnames":27,"create-react-class":88,"prop-types":242,"react":435}],393:[function(_dereq_,module,exports){
+},{"classnames":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/classnames/index.js","create-react-class":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/create-react-class/index.js","prop-types":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/prop-types/index.js","react":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/react.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-select/lib/Select.js":[function(_dereq_,module,exports){
 /*!
   Copyright (c) 2016 Jed Watson.
   Licensed under the MIT License (MIT), see
@@ -56696,7 +57750,7 @@ var Select = (0, _createReactClass2['default'])({
 
 exports['default'] = Select;
 module.exports = exports['default'];
-},{"./Async":389,"./AsyncCreatable":390,"./Creatable":391,"./Option":392,"./Value":394,"./utils/defaultArrowRenderer":395,"./utils/defaultClearRenderer":396,"./utils/defaultFilterOptions":397,"./utils/defaultMenuRenderer":398,"classnames":27,"create-react-class":88,"prop-types":242,"react":435,"react-dom":248,"react-input-autosize":380}],394:[function(_dereq_,module,exports){
+},{"./Async":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-select/lib/Async.js","./AsyncCreatable":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-select/lib/AsyncCreatable.js","./Creatable":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-select/lib/Creatable.js","./Option":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-select/lib/Option.js","./Value":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-select/lib/Value.js","./utils/defaultArrowRenderer":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-select/lib/utils/defaultArrowRenderer.js","./utils/defaultClearRenderer":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-select/lib/utils/defaultClearRenderer.js","./utils/defaultFilterOptions":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-select/lib/utils/defaultFilterOptions.js","./utils/defaultMenuRenderer":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-select/lib/utils/defaultMenuRenderer.js","classnames":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/classnames/index.js","create-react-class":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/create-react-class/index.js","prop-types":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/prop-types/index.js","react":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/react.js","react-dom":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/index.js","react-input-autosize":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-input-autosize/lib/AutosizeInput.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-select/lib/Value.js":[function(_dereq_,module,exports){
 'use strict';
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
@@ -56811,7 +57865,7 @@ var Value = (0, _createReactClass2['default'])({
 });
 
 module.exports = Value;
-},{"classnames":27,"create-react-class":88,"prop-types":242,"react":435}],395:[function(_dereq_,module,exports){
+},{"classnames":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/classnames/index.js","create-react-class":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/create-react-class/index.js","prop-types":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/prop-types/index.js","react":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/react.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-select/lib/utils/defaultArrowRenderer.js":[function(_dereq_,module,exports){
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -56836,7 +57890,7 @@ function arrowRenderer(_ref) {
 
 ;
 module.exports = exports["default"];
-},{"react":435}],396:[function(_dereq_,module,exports){
+},{"react":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/react.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-select/lib/utils/defaultClearRenderer.js":[function(_dereq_,module,exports){
 'use strict';
 
 Object.defineProperty(exports, '__esModule', {
@@ -56859,7 +57913,7 @@ function clearRenderer() {
 
 ;
 module.exports = exports['default'];
-},{"react":435}],397:[function(_dereq_,module,exports){
+},{"react":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/react.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-select/lib/utils/defaultFilterOptions.js":[function(_dereq_,module,exports){
 'use strict';
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
@@ -56902,7 +57956,7 @@ function filterOptions(options, filterValue, excludeOptions, props) {
 }
 
 module.exports = filterOptions;
-},{"./stripDiacritics":399}],398:[function(_dereq_,module,exports){
+},{"./stripDiacritics":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-select/lib/utils/stripDiacritics.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-select/lib/utils/defaultMenuRenderer.js":[function(_dereq_,module,exports){
 'use strict';
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
@@ -56964,7 +58018,7 @@ function menuRenderer(_ref) {
 }
 
 module.exports = menuRenderer;
-},{"classnames":27,"react":435}],399:[function(_dereq_,module,exports){
+},{"classnames":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/classnames/index.js","react":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/react.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-select/lib/utils/stripDiacritics.js":[function(_dereq_,module,exports){
 'use strict';
 
 var map = [{ 'base': 'A', 'letters': /[\u0041\u24B6\uFF21\u00C0\u00C1\u00C2\u1EA6\u1EA4\u1EAA\u1EA8\u00C3\u0100\u0102\u1EB0\u1EAE\u1EB4\u1EB2\u0226\u01E0\u00C4\u01DE\u1EA2\u00C5\u01FA\u01CD\u0200\u0202\u1EA0\u1EAC\u1EB6\u1E00\u0104\u023A\u2C6F]/g }, { 'base': 'AA', 'letters': /[\uA732]/g }, { 'base': 'AE', 'letters': /[\u00C6\u01FC\u01E2]/g }, { 'base': 'AO', 'letters': /[\uA734]/g }, { 'base': 'AU', 'letters': /[\uA736]/g }, { 'base': 'AV', 'letters': /[\uA738\uA73A]/g }, { 'base': 'AY', 'letters': /[\uA73C]/g }, { 'base': 'B', 'letters': /[\u0042\u24B7\uFF22\u1E02\u1E04\u1E06\u0243\u0182\u0181]/g }, { 'base': 'C', 'letters': /[\u0043\u24B8\uFF23\u0106\u0108\u010A\u010C\u00C7\u1E08\u0187\u023B\uA73E]/g }, { 'base': 'D', 'letters': /[\u0044\u24B9\uFF24\u1E0A\u010E\u1E0C\u1E10\u1E12\u1E0E\u0110\u018B\u018A\u0189\uA779]/g }, { 'base': 'DZ', 'letters': /[\u01F1\u01C4]/g }, { 'base': 'Dz', 'letters': /[\u01F2\u01C5]/g }, { 'base': 'E', 'letters': /[\u0045\u24BA\uFF25\u00C8\u00C9\u00CA\u1EC0\u1EBE\u1EC4\u1EC2\u1EBC\u0112\u1E14\u1E16\u0114\u0116\u00CB\u1EBA\u011A\u0204\u0206\u1EB8\u1EC6\u0228\u1E1C\u0118\u1E18\u1E1A\u0190\u018E]/g }, { 'base': 'F', 'letters': /[\u0046\u24BB\uFF26\u1E1E\u0191\uA77B]/g }, { 'base': 'G', 'letters': /[\u0047\u24BC\uFF27\u01F4\u011C\u1E20\u011E\u0120\u01E6\u0122\u01E4\u0193\uA7A0\uA77D\uA77E]/g }, { 'base': 'H', 'letters': /[\u0048\u24BD\uFF28\u0124\u1E22\u1E26\u021E\u1E24\u1E28\u1E2A\u0126\u2C67\u2C75\uA78D]/g }, { 'base': 'I', 'letters': /[\u0049\u24BE\uFF29\u00CC\u00CD\u00CE\u0128\u012A\u012C\u0130\u00CF\u1E2E\u1EC8\u01CF\u0208\u020A\u1ECA\u012E\u1E2C\u0197]/g }, { 'base': 'J', 'letters': /[\u004A\u24BF\uFF2A\u0134\u0248]/g }, { 'base': 'K', 'letters': /[\u004B\u24C0\uFF2B\u1E30\u01E8\u1E32\u0136\u1E34\u0198\u2C69\uA740\uA742\uA744\uA7A2]/g }, { 'base': 'L', 'letters': /[\u004C\u24C1\uFF2C\u013F\u0139\u013D\u1E36\u1E38\u013B\u1E3C\u1E3A\u0141\u023D\u2C62\u2C60\uA748\uA746\uA780]/g }, { 'base': 'LJ', 'letters': /[\u01C7]/g }, { 'base': 'Lj', 'letters': /[\u01C8]/g }, { 'base': 'M', 'letters': /[\u004D\u24C2\uFF2D\u1E3E\u1E40\u1E42\u2C6E\u019C]/g }, { 'base': 'N', 'letters': /[\u004E\u24C3\uFF2E\u01F8\u0143\u00D1\u1E44\u0147\u1E46\u0145\u1E4A\u1E48\u0220\u019D\uA790\uA7A4]/g }, { 'base': 'NJ', 'letters': /[\u01CA]/g }, { 'base': 'Nj', 'letters': /[\u01CB]/g }, { 'base': 'O', 'letters': /[\u004F\u24C4\uFF2F\u00D2\u00D3\u00D4\u1ED2\u1ED0\u1ED6\u1ED4\u00D5\u1E4C\u022C\u1E4E\u014C\u1E50\u1E52\u014E\u022E\u0230\u00D6\u022A\u1ECE\u0150\u01D1\u020C\u020E\u01A0\u1EDC\u1EDA\u1EE0\u1EDE\u1EE2\u1ECC\u1ED8\u01EA\u01EC\u00D8\u01FE\u0186\u019F\uA74A\uA74C]/g }, { 'base': 'OI', 'letters': /[\u01A2]/g }, { 'base': 'OO', 'letters': /[\uA74E]/g }, { 'base': 'OU', 'letters': /[\u0222]/g }, { 'base': 'P', 'letters': /[\u0050\u24C5\uFF30\u1E54\u1E56\u01A4\u2C63\uA750\uA752\uA754]/g }, { 'base': 'Q', 'letters': /[\u0051\u24C6\uFF31\uA756\uA758\u024A]/g }, { 'base': 'R', 'letters': /[\u0052\u24C7\uFF32\u0154\u1E58\u0158\u0210\u0212\u1E5A\u1E5C\u0156\u1E5E\u024C\u2C64\uA75A\uA7A6\uA782]/g }, { 'base': 'S', 'letters': /[\u0053\u24C8\uFF33\u1E9E\u015A\u1E64\u015C\u1E60\u0160\u1E66\u1E62\u1E68\u0218\u015E\u2C7E\uA7A8\uA784]/g }, { 'base': 'T', 'letters': /[\u0054\u24C9\uFF34\u1E6A\u0164\u1E6C\u021A\u0162\u1E70\u1E6E\u0166\u01AC\u01AE\u023E\uA786]/g }, { 'base': 'TZ', 'letters': /[\uA728]/g }, { 'base': 'U', 'letters': /[\u0055\u24CA\uFF35\u00D9\u00DA\u00DB\u0168\u1E78\u016A\u1E7A\u016C\u00DC\u01DB\u01D7\u01D5\u01D9\u1EE6\u016E\u0170\u01D3\u0214\u0216\u01AF\u1EEA\u1EE8\u1EEE\u1EEC\u1EF0\u1EE4\u1E72\u0172\u1E76\u1E74\u0244]/g }, { 'base': 'V', 'letters': /[\u0056\u24CB\uFF36\u1E7C\u1E7E\u01B2\uA75E\u0245]/g }, { 'base': 'VY', 'letters': /[\uA760]/g }, { 'base': 'W', 'letters': /[\u0057\u24CC\uFF37\u1E80\u1E82\u0174\u1E86\u1E84\u1E88\u2C72]/g }, { 'base': 'X', 'letters': /[\u0058\u24CD\uFF38\u1E8A\u1E8C]/g }, { 'base': 'Y', 'letters': /[\u0059\u24CE\uFF39\u1EF2\u00DD\u0176\u1EF8\u0232\u1E8E\u0178\u1EF6\u1EF4\u01B3\u024E\u1EFE]/g }, { 'base': 'Z', 'letters': /[\u005A\u24CF\uFF3A\u0179\u1E90\u017B\u017D\u1E92\u1E94\u01B5\u0224\u2C7F\u2C6B\uA762]/g }, { 'base': 'a', 'letters': /[\u0061\u24D0\uFF41\u1E9A\u00E0\u00E1\u00E2\u1EA7\u1EA5\u1EAB\u1EA9\u00E3\u0101\u0103\u1EB1\u1EAF\u1EB5\u1EB3\u0227\u01E1\u00E4\u01DF\u1EA3\u00E5\u01FB\u01CE\u0201\u0203\u1EA1\u1EAD\u1EB7\u1E01\u0105\u2C65\u0250]/g }, { 'base': 'aa', 'letters': /[\uA733]/g }, { 'base': 'ae', 'letters': /[\u00E6\u01FD\u01E3]/g }, { 'base': 'ao', 'letters': /[\uA735]/g }, { 'base': 'au', 'letters': /[\uA737]/g }, { 'base': 'av', 'letters': /[\uA739\uA73B]/g }, { 'base': 'ay', 'letters': /[\uA73D]/g }, { 'base': 'b', 'letters': /[\u0062\u24D1\uFF42\u1E03\u1E05\u1E07\u0180\u0183\u0253]/g }, { 'base': 'c', 'letters': /[\u0063\u24D2\uFF43\u0107\u0109\u010B\u010D\u00E7\u1E09\u0188\u023C\uA73F\u2184]/g }, { 'base': 'd', 'letters': /[\u0064\u24D3\uFF44\u1E0B\u010F\u1E0D\u1E11\u1E13\u1E0F\u0111\u018C\u0256\u0257\uA77A]/g }, { 'base': 'dz', 'letters': /[\u01F3\u01C6]/g }, { 'base': 'e', 'letters': /[\u0065\u24D4\uFF45\u00E8\u00E9\u00EA\u1EC1\u1EBF\u1EC5\u1EC3\u1EBD\u0113\u1E15\u1E17\u0115\u0117\u00EB\u1EBB\u011B\u0205\u0207\u1EB9\u1EC7\u0229\u1E1D\u0119\u1E19\u1E1B\u0247\u025B\u01DD]/g }, { 'base': 'f', 'letters': /[\u0066\u24D5\uFF46\u1E1F\u0192\uA77C]/g }, { 'base': 'g', 'letters': /[\u0067\u24D6\uFF47\u01F5\u011D\u1E21\u011F\u0121\u01E7\u0123\u01E5\u0260\uA7A1\u1D79\uA77F]/g }, { 'base': 'h', 'letters': /[\u0068\u24D7\uFF48\u0125\u1E23\u1E27\u021F\u1E25\u1E29\u1E2B\u1E96\u0127\u2C68\u2C76\u0265]/g }, { 'base': 'hv', 'letters': /[\u0195]/g }, { 'base': 'i', 'letters': /[\u0069\u24D8\uFF49\u00EC\u00ED\u00EE\u0129\u012B\u012D\u00EF\u1E2F\u1EC9\u01D0\u0209\u020B\u1ECB\u012F\u1E2D\u0268\u0131]/g }, { 'base': 'j', 'letters': /[\u006A\u24D9\uFF4A\u0135\u01F0\u0249]/g }, { 'base': 'k', 'letters': /[\u006B\u24DA\uFF4B\u1E31\u01E9\u1E33\u0137\u1E35\u0199\u2C6A\uA741\uA743\uA745\uA7A3]/g }, { 'base': 'l', 'letters': /[\u006C\u24DB\uFF4C\u0140\u013A\u013E\u1E37\u1E39\u013C\u1E3D\u1E3B\u017F\u0142\u019A\u026B\u2C61\uA749\uA781\uA747]/g }, { 'base': 'lj', 'letters': /[\u01C9]/g }, { 'base': 'm', 'letters': /[\u006D\u24DC\uFF4D\u1E3F\u1E41\u1E43\u0271\u026F]/g }, { 'base': 'n', 'letters': /[\u006E\u24DD\uFF4E\u01F9\u0144\u00F1\u1E45\u0148\u1E47\u0146\u1E4B\u1E49\u019E\u0272\u0149\uA791\uA7A5]/g }, { 'base': 'nj', 'letters': /[\u01CC]/g }, { 'base': 'o', 'letters': /[\u006F\u24DE\uFF4F\u00F2\u00F3\u00F4\u1ED3\u1ED1\u1ED7\u1ED5\u00F5\u1E4D\u022D\u1E4F\u014D\u1E51\u1E53\u014F\u022F\u0231\u00F6\u022B\u1ECF\u0151\u01D2\u020D\u020F\u01A1\u1EDD\u1EDB\u1EE1\u1EDF\u1EE3\u1ECD\u1ED9\u01EB\u01ED\u00F8\u01FF\u0254\uA74B\uA74D\u0275]/g }, { 'base': 'oi', 'letters': /[\u01A3]/g }, { 'base': 'ou', 'letters': /[\u0223]/g }, { 'base': 'oo', 'letters': /[\uA74F]/g }, { 'base': 'p', 'letters': /[\u0070\u24DF\uFF50\u1E55\u1E57\u01A5\u1D7D\uA751\uA753\uA755]/g }, { 'base': 'q', 'letters': /[\u0071\u24E0\uFF51\u024B\uA757\uA759]/g }, { 'base': 'r', 'letters': /[\u0072\u24E1\uFF52\u0155\u1E59\u0159\u0211\u0213\u1E5B\u1E5D\u0157\u1E5F\u024D\u027D\uA75B\uA7A7\uA783]/g }, { 'base': 's', 'letters': /[\u0073\u24E2\uFF53\u00DF\u015B\u1E65\u015D\u1E61\u0161\u1E67\u1E63\u1E69\u0219\u015F\u023F\uA7A9\uA785\u1E9B]/g }, { 'base': 't', 'letters': /[\u0074\u24E3\uFF54\u1E6B\u1E97\u0165\u1E6D\u021B\u0163\u1E71\u1E6F\u0167\u01AD\u0288\u2C66\uA787]/g }, { 'base': 'tz', 'letters': /[\uA729]/g }, { 'base': 'u', 'letters': /[\u0075\u24E4\uFF55\u00F9\u00FA\u00FB\u0169\u1E79\u016B\u1E7B\u016D\u00FC\u01DC\u01D8\u01D6\u01DA\u1EE7\u016F\u0171\u01D4\u0215\u0217\u01B0\u1EEB\u1EE9\u1EEF\u1EED\u1EF1\u1EE5\u1E73\u0173\u1E77\u1E75\u0289]/g }, { 'base': 'v', 'letters': /[\u0076\u24E5\uFF56\u1E7D\u1E7F\u028B\uA75F\u028C]/g }, { 'base': 'vy', 'letters': /[\uA761]/g }, { 'base': 'w', 'letters': /[\u0077\u24E6\uFF57\u1E81\u1E83\u0175\u1E87\u1E85\u1E98\u1E89\u2C73]/g }, { 'base': 'x', 'letters': /[\u0078\u24E7\uFF58\u1E8B\u1E8D]/g }, { 'base': 'y', 'letters': /[\u0079\u24E8\uFF59\u1EF3\u00FD\u0177\u1EF9\u0233\u1E8F\u00FF\u1EF7\u1E99\u1EF5\u01B4\u024F\u1EFF]/g }, { 'base': 'z', 'letters': /[\u007A\u24E9\uFF5A\u017A\u1E91\u017C\u017E\u1E93\u1E95\u01B6\u0225\u0240\u2C6C\uA763]/g }];
@@ -56975,7 +58029,7 @@ module.exports = function stripDiacritics(str) {
 	}
 	return str;
 };
-},{}],400:[function(_dereq_,module,exports){
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-simple-file-input/lib/index.js":[function(_dereq_,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -57158,7 +58212,7 @@ FileInput.propTypes = {
 };
 
 exports.default = FileInput;
-},{"react":435}],401:[function(_dereq_,module,exports){
+},{"react":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/react.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-tooltip-component/lib/Tooltip.js":[function(_dereq_,module,exports){
 'use strict';
 
 Object.defineProperty(exports, '__esModule', {
@@ -57359,7 +58413,7 @@ var Tooltip = (function (_React$Component) {
 
 exports['default'] = Tooltip;
 module.exports = exports['default'];
-},{"react":435,"react-dom":248}],402:[function(_dereq_,module,exports){
+},{"react":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/react.js","react-dom":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/index.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-tooltip-component/lib/index.js":[function(_dereq_,module,exports){
 'use strict';
 
 Object.defineProperty(exports, '__esModule', {
@@ -57374,11 +58428,124 @@ var _Tooltip2 = _interopRequireDefault(_Tooltip);
 
 exports['default'] = _Tooltip2['default'];
 module.exports = exports['default'];
-},{"./Tooltip":401}],403:[function(_dereq_,module,exports){
-arguments[4][271][0].apply(exports,arguments)
-},{"dup":271}],404:[function(_dereq_,module,exports){
-arguments[4][273][0].apply(exports,arguments)
-},{"./reactProdInvariant":433,"_process":237,"dup":273,"fbjs/lib/invariant":164}],405:[function(_dereq_,module,exports){
+},{"./Tooltip":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-tooltip-component/lib/Tooltip.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/lib/KeyEscapeUtils.js":[function(_dereq_,module,exports){
+arguments[4]["/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/KeyEscapeUtils.js"][0].apply(exports,arguments)
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/lib/PooledClass.js":[function(_dereq_,module,exports){
+(function (process){
+/**
+ * Copyright 2013-present, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ * 
+ */
+
+'use strict';
+
+var _prodInvariant = _dereq_('./reactProdInvariant');
+
+var invariant = _dereq_('fbjs/lib/invariant');
+
+/**
+ * Static poolers. Several custom versions for each potential number of
+ * arguments. A completely generic pooler is easy to implement, but would
+ * require accessing the `arguments` object. In each of these, `this` refers to
+ * the Class itself, not an instance. If any others are needed, simply add them
+ * here, or in their own files.
+ */
+var oneArgumentPooler = function (copyFieldsFrom) {
+  var Klass = this;
+  if (Klass.instancePool.length) {
+    var instance = Klass.instancePool.pop();
+    Klass.call(instance, copyFieldsFrom);
+    return instance;
+  } else {
+    return new Klass(copyFieldsFrom);
+  }
+};
+
+var twoArgumentPooler = function (a1, a2) {
+  var Klass = this;
+  if (Klass.instancePool.length) {
+    var instance = Klass.instancePool.pop();
+    Klass.call(instance, a1, a2);
+    return instance;
+  } else {
+    return new Klass(a1, a2);
+  }
+};
+
+var threeArgumentPooler = function (a1, a2, a3) {
+  var Klass = this;
+  if (Klass.instancePool.length) {
+    var instance = Klass.instancePool.pop();
+    Klass.call(instance, a1, a2, a3);
+    return instance;
+  } else {
+    return new Klass(a1, a2, a3);
+  }
+};
+
+var fourArgumentPooler = function (a1, a2, a3, a4) {
+  var Klass = this;
+  if (Klass.instancePool.length) {
+    var instance = Klass.instancePool.pop();
+    Klass.call(instance, a1, a2, a3, a4);
+    return instance;
+  } else {
+    return new Klass(a1, a2, a3, a4);
+  }
+};
+
+var standardReleaser = function (instance) {
+  var Klass = this;
+  !(instance instanceof Klass) ? process.env.NODE_ENV !== 'production' ? invariant(false, 'Trying to release an instance into a pool of a different type.') : _prodInvariant('25') : void 0;
+  instance.destructor();
+  if (Klass.instancePool.length < Klass.poolSize) {
+    Klass.instancePool.push(instance);
+  }
+};
+
+var DEFAULT_POOL_SIZE = 10;
+var DEFAULT_POOLER = oneArgumentPooler;
+
+/**
+ * Augments `CopyConstructor` to be a poolable class, augmenting only the class
+ * itself (statically) not adding any prototypical fields. Any CopyConstructor
+ * you give this may have a `poolSize` property, and will look for a
+ * prototypical `destructor` on instances.
+ *
+ * @param {Function} CopyConstructor Constructor that can be used to reset.
+ * @param {Function} pooler Customizable pooler.
+ */
+var addPoolingTo = function (CopyConstructor, pooler) {
+  // Casting as any so that flow ignores the actual implementation and trusts
+  // it to match the type we declared
+  var NewKlass = CopyConstructor;
+  NewKlass.instancePool = [];
+  NewKlass.getPooled = pooler || DEFAULT_POOLER;
+  if (!NewKlass.poolSize) {
+    NewKlass.poolSize = DEFAULT_POOL_SIZE;
+  }
+  NewKlass.release = standardReleaser;
+  return NewKlass;
+};
+
+var PooledClass = {
+  addPoolingTo: addPoolingTo,
+  oneArgumentPooler: oneArgumentPooler,
+  twoArgumentPooler: twoArgumentPooler,
+  threeArgumentPooler: threeArgumentPooler,
+  fourArgumentPooler: fourArgumentPooler
+};
+
+module.exports = PooledClass;
+}).call(this,_dereq_('_process'))
+
+},{"./reactProdInvariant":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/lib/reactProdInvariant.js","_process":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/invariant":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/invariant.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/lib/React.js":[function(_dereq_,module,exports){
 (function (process){
 /**
  * Copyright 2013-present, Facebook, Inc.
@@ -57484,7 +58651,8 @@ if (process.env.NODE_ENV !== 'production') {
 
 module.exports = React;
 }).call(this,_dereq_('_process'))
-},{"./ReactChildren":409,"./ReactClass":410,"./ReactComponent":411,"./ReactDOMFactories":414,"./ReactElement":415,"./ReactElementValidator":417,"./ReactPropTypes":420,"./ReactPureComponent":422,"./ReactVersion":426,"./canDefineProperty":427,"./onlyChild":432,"_process":237,"fbjs/lib/warning":171,"object-assign":232}],406:[function(_dereq_,module,exports){
+
+},{"./ReactChildren":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/lib/ReactChildren.js","./ReactClass":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/lib/ReactClass.js","./ReactComponent":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/lib/ReactComponent.js","./ReactDOMFactories":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/lib/ReactDOMFactories.js","./ReactElement":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/lib/ReactElement.js","./ReactElementValidator":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/lib/ReactElementValidator.js","./ReactPropTypes":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/lib/ReactPropTypes.js","./ReactPureComponent":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/lib/ReactPureComponent.js","./ReactVersion":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/lib/ReactVersion.js","./canDefineProperty":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/lib/canDefineProperty.js","./onlyChild":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/lib/onlyChild.js","_process":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/warning":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/warning.js","object-assign":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/object-assign/index.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/lib/ReactAddonsDOMDependencies.js":[function(_dereq_,module,exports){
 (function (process){
 /**
  * Copyright 2013-present, Facebook, Inc.
@@ -57523,7 +58691,8 @@ if (process.env.NODE_ENV !== 'production') {
   };
 }
 }).call(this,_dereq_('_process'))
-},{"_process":237,"react-dom/lib/ReactDOM":279,"react-dom/lib/ReactPerf":318,"react-dom/lib/ReactTestUtils":327}],407:[function(_dereq_,module,exports){
+
+},{"_process":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/browserify/node_modules/process/browser.js","react-dom/lib/ReactDOM":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactDOM.js","react-dom/lib/ReactPerf":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactPerf.js","react-dom/lib/ReactTestUtils":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactTestUtils.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/lib/ReactCSSTransitionGroup.js":[function(_dereq_,module,exports){
 /**
  * Copyright 2013-present, Facebook, Inc.
  * All rights reserved.
@@ -57630,7 +58799,7 @@ ReactCSSTransitionGroup.defaultProps = {
 
 
 module.exports = ReactCSSTransitionGroup;
-},{"./React":405,"./ReactCSSTransitionGroupChild":408,"./ReactTransitionGroup":425,"object-assign":232,"prop-types/factory":239}],408:[function(_dereq_,module,exports){
+},{"./React":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/lib/React.js","./ReactCSSTransitionGroupChild":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/lib/ReactCSSTransitionGroupChild.js","./ReactTransitionGroup":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/lib/ReactTransitionGroup.js","object-assign":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/object-assign/index.js","prop-types/factory":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/prop-types/factory.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/lib/ReactCSSTransitionGroupChild.js":[function(_dereq_,module,exports){
 /**
  * Copyright 2013-present, Facebook, Inc.
  * All rights reserved.
@@ -57815,7 +58984,7 @@ ReactCSSTransitionGroupChild.propTypes = {
 
 
 module.exports = ReactCSSTransitionGroupChild;
-},{"./React":405,"./ReactAddonsDOMDependencies":406,"./ReactTransitionEvents":424,"./onlyChild":432,"fbjs/lib/CSSCore":148,"prop-types/factory":239}],409:[function(_dereq_,module,exports){
+},{"./React":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/lib/React.js","./ReactAddonsDOMDependencies":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/lib/ReactAddonsDOMDependencies.js","./ReactTransitionEvents":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/lib/ReactTransitionEvents.js","./onlyChild":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/lib/onlyChild.js","fbjs/lib/CSSCore":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/CSSCore.js","prop-types/factory":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/prop-types/factory.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/lib/ReactChildren.js":[function(_dereq_,module,exports){
 /**
  * Copyright 2013-present, Facebook, Inc.
  * All rights reserved.
@@ -58006,7 +59175,7 @@ var ReactChildren = {
 };
 
 module.exports = ReactChildren;
-},{"./PooledClass":404,"./ReactElement":415,"./traverseAllChildren":434,"fbjs/lib/emptyFunction":156}],410:[function(_dereq_,module,exports){
+},{"./PooledClass":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/lib/PooledClass.js","./ReactElement":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/lib/ReactElement.js","./traverseAllChildren":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/lib/traverseAllChildren.js","fbjs/lib/emptyFunction":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/emptyFunction.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/lib/ReactClass.js":[function(_dereq_,module,exports){
 (function (process){
 /**
  * Copyright 2013-present, Facebook, Inc.
@@ -58731,7 +59900,8 @@ var ReactClass = {
 
 module.exports = ReactClass;
 }).call(this,_dereq_('_process'))
-},{"./ReactComponent":411,"./ReactElement":415,"./ReactNoopUpdateQueue":418,"./ReactPropTypeLocationNames":419,"./reactProdInvariant":433,"_process":237,"fbjs/lib/emptyObject":157,"fbjs/lib/invariant":164,"fbjs/lib/warning":171,"object-assign":232}],411:[function(_dereq_,module,exports){
+
+},{"./ReactComponent":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/lib/ReactComponent.js","./ReactElement":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/lib/ReactElement.js","./ReactNoopUpdateQueue":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/lib/ReactNoopUpdateQueue.js","./ReactPropTypeLocationNames":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/lib/ReactPropTypeLocationNames.js","./reactProdInvariant":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/lib/reactProdInvariant.js","_process":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/emptyObject":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/emptyObject.js","fbjs/lib/invariant":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/invariant.js","fbjs/lib/warning":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/warning.js","object-assign":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/object-assign/index.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/lib/ReactComponent.js":[function(_dereq_,module,exports){
 (function (process){
 /**
  * Copyright 2013-present, Facebook, Inc.
@@ -58851,7 +60021,8 @@ if (process.env.NODE_ENV !== 'production') {
 
 module.exports = ReactComponent;
 }).call(this,_dereq_('_process'))
-},{"./ReactNoopUpdateQueue":418,"./canDefineProperty":427,"./reactProdInvariant":433,"_process":237,"fbjs/lib/emptyObject":157,"fbjs/lib/invariant":164,"fbjs/lib/warning":171}],412:[function(_dereq_,module,exports){
+
+},{"./ReactNoopUpdateQueue":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/lib/ReactNoopUpdateQueue.js","./canDefineProperty":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/lib/canDefineProperty.js","./reactProdInvariant":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/lib/reactProdInvariant.js","_process":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/emptyObject":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/emptyObject.js","fbjs/lib/invariant":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/invariant.js","fbjs/lib/warning":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/warning.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/lib/ReactComponentTreeHook.js":[function(_dereq_,module,exports){
 (function (process){
 /**
  * Copyright 2016-present, Facebook, Inc.
@@ -59187,7 +60358,8 @@ var ReactComponentTreeHook = {
 
 module.exports = ReactComponentTreeHook;
 }).call(this,_dereq_('_process'))
-},{"./ReactCurrentOwner":413,"./reactProdInvariant":433,"_process":237,"fbjs/lib/invariant":164,"fbjs/lib/warning":171}],413:[function(_dereq_,module,exports){
+
+},{"./ReactCurrentOwner":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/lib/ReactCurrentOwner.js","./reactProdInvariant":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/lib/reactProdInvariant.js","_process":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/invariant":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/invariant.js","fbjs/lib/warning":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/warning.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/lib/ReactCurrentOwner.js":[function(_dereq_,module,exports){
 /**
  * Copyright 2013-present, Facebook, Inc.
  * All rights reserved.
@@ -59218,7 +60390,7 @@ var ReactCurrentOwner = {
 };
 
 module.exports = ReactCurrentOwner;
-},{}],414:[function(_dereq_,module,exports){
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/lib/ReactDOMFactories.js":[function(_dereq_,module,exports){
 (function (process){
 /**
  * Copyright 2013-present, Facebook, Inc.
@@ -59390,7 +60562,8 @@ var ReactDOMFactories = {
 
 module.exports = ReactDOMFactories;
 }).call(this,_dereq_('_process'))
-},{"./ReactElement":415,"./ReactElementValidator":417,"_process":237}],415:[function(_dereq_,module,exports){
+
+},{"./ReactElement":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/lib/ReactElement.js","./ReactElementValidator":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/lib/ReactElementValidator.js","_process":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/browserify/node_modules/process/browser.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/lib/ReactElement.js":[function(_dereq_,module,exports){
 (function (process){
 /**
  * Copyright 2014-present, Facebook, Inc.
@@ -59733,9 +60906,10 @@ ReactElement.isValidElement = function (object) {
 
 module.exports = ReactElement;
 }).call(this,_dereq_('_process'))
-},{"./ReactCurrentOwner":413,"./ReactElementSymbol":416,"./canDefineProperty":427,"_process":237,"fbjs/lib/warning":171,"object-assign":232}],416:[function(_dereq_,module,exports){
-arguments[4][300][0].apply(exports,arguments)
-},{"dup":300}],417:[function(_dereq_,module,exports){
+
+},{"./ReactCurrentOwner":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/lib/ReactCurrentOwner.js","./ReactElementSymbol":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/lib/ReactElementSymbol.js","./canDefineProperty":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/lib/canDefineProperty.js","_process":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/warning":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/warning.js","object-assign":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/object-assign/index.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/lib/ReactElementSymbol.js":[function(_dereq_,module,exports){
+arguments[4]["/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactElementSymbol.js"][0].apply(exports,arguments)
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/lib/ReactElementValidator.js":[function(_dereq_,module,exports){
 (function (process){
 /**
  * Copyright 2014-present, Facebook, Inc.
@@ -59990,7 +61164,8 @@ var ReactElementValidator = {
 
 module.exports = ReactElementValidator;
 }).call(this,_dereq_('_process'))
-},{"./ReactComponentTreeHook":412,"./ReactCurrentOwner":413,"./ReactElement":415,"./canDefineProperty":427,"./checkReactTypeSpec":428,"./getIteratorFn":430,"_process":237,"fbjs/lib/warning":171}],418:[function(_dereq_,module,exports){
+
+},{"./ReactComponentTreeHook":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/lib/ReactComponentTreeHook.js","./ReactCurrentOwner":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/lib/ReactCurrentOwner.js","./ReactElement":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/lib/ReactElement.js","./canDefineProperty":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/lib/canDefineProperty.js","./checkReactTypeSpec":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/lib/checkReactTypeSpec.js","./getIteratorFn":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/lib/getIteratorFn.js","_process":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/warning":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/warning.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/lib/ReactNoopUpdateQueue.js":[function(_dereq_,module,exports){
 (function (process){
 /**
  * Copyright 2015-present, Facebook, Inc.
@@ -60088,9 +61263,36 @@ var ReactNoopUpdateQueue = {
 
 module.exports = ReactNoopUpdateQueue;
 }).call(this,_dereq_('_process'))
-},{"_process":237,"fbjs/lib/warning":171}],419:[function(_dereq_,module,exports){
-arguments[4][319][0].apply(exports,arguments)
-},{"_process":237,"dup":319}],420:[function(_dereq_,module,exports){
+
+},{"_process":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/warning":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/warning.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/lib/ReactPropTypeLocationNames.js":[function(_dereq_,module,exports){
+(function (process){
+/**
+ * Copyright 2013-present, Facebook, Inc.
+ * All rights reserved.
+ *
+ * This source code is licensed under the BSD-style license found in the
+ * LICENSE file in the root directory of this source tree. An additional grant
+ * of patent rights can be found in the PATENTS file in the same directory.
+ *
+ * 
+ */
+
+'use strict';
+
+var ReactPropTypeLocationNames = {};
+
+if (process.env.NODE_ENV !== 'production') {
+  ReactPropTypeLocationNames = {
+    prop: 'prop',
+    context: 'context',
+    childContext: 'child context'
+  };
+}
+
+module.exports = ReactPropTypeLocationNames;
+}).call(this,_dereq_('_process'))
+
+},{"_process":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/browserify/node_modules/process/browser.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/lib/ReactPropTypes.js":[function(_dereq_,module,exports){
 /**
  * Copyright 2013-present, Facebook, Inc.
  * All rights reserved.
@@ -60109,9 +61311,9 @@ var _require = _dereq_('./ReactElement'),
 var factory = _dereq_('prop-types/factory');
 
 module.exports = factory(isValidElement);
-},{"./ReactElement":415,"prop-types/factory":239}],421:[function(_dereq_,module,exports){
-arguments[4][320][0].apply(exports,arguments)
-},{"dup":320}],422:[function(_dereq_,module,exports){
+},{"./ReactElement":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/lib/ReactElement.js","prop-types/factory":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/prop-types/factory.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/lib/ReactPropTypesSecret.js":[function(_dereq_,module,exports){
+arguments[4]["/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactPropTypesSecret.js"][0].apply(exports,arguments)
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/lib/ReactPureComponent.js":[function(_dereq_,module,exports){
 /**
  * Copyright 2013-present, Facebook, Inc.
  * All rights reserved.
@@ -60153,7 +61355,7 @@ _assign(ReactPureComponent.prototype, ReactComponent.prototype);
 ReactPureComponent.prototype.isPureReactComponent = true;
 
 module.exports = ReactPureComponent;
-},{"./ReactComponent":411,"./ReactNoopUpdateQueue":418,"fbjs/lib/emptyObject":157,"object-assign":232}],423:[function(_dereq_,module,exports){
+},{"./ReactComponent":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/lib/ReactComponent.js","./ReactNoopUpdateQueue":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/lib/ReactNoopUpdateQueue.js","fbjs/lib/emptyObject":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/emptyObject.js","object-assign":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/object-assign/index.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/lib/ReactTransitionChildMapping.js":[function(_dereq_,module,exports){
 (function (process){
 /**
  * Copyright 2013-present, Facebook, Inc.
@@ -60258,7 +61460,8 @@ var ReactTransitionChildMapping = {
 
 module.exports = ReactTransitionChildMapping;
 }).call(this,_dereq_('_process'))
-},{"./flattenChildren":429,"_process":237}],424:[function(_dereq_,module,exports){
+
+},{"./flattenChildren":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/lib/flattenChildren.js","_process":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/browserify/node_modules/process/browser.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/lib/ReactTransitionEvents.js":[function(_dereq_,module,exports){
 /**
  * Copyright 2013-present, Facebook, Inc.
  * All rights reserved.
@@ -60331,7 +61534,7 @@ var ReactTransitionEvents = {
 };
 
 module.exports = ReactTransitionEvents;
-},{"fbjs/lib/ExecutionEnvironment":150,"react-dom/lib/getVendorPrefixedEventName":366}],425:[function(_dereq_,module,exports){
+},{"fbjs/lib/ExecutionEnvironment":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/ExecutionEnvironment.js","react-dom/lib/getVendorPrefixedEventName":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/getVendorPrefixedEventName.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/lib/ReactTransitionGroup.js":[function(_dereq_,module,exports){
 /**
  * Copyright 2013-present, Facebook, Inc.
  * All rights reserved.
@@ -60563,9 +61766,9 @@ ReactTransitionGroup.defaultProps = {
 
 
 module.exports = ReactTransitionGroup;
-},{"./React":405,"./ReactTransitionChildMapping":423,"fbjs/lib/emptyFunction":156,"object-assign":232,"prop-types/factory":239}],426:[function(_dereq_,module,exports){
-arguments[4][330][0].apply(exports,arguments)
-},{"dup":330}],427:[function(_dereq_,module,exports){
+},{"./React":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/lib/React.js","./ReactTransitionChildMapping":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/lib/ReactTransitionChildMapping.js","fbjs/lib/emptyFunction":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/emptyFunction.js","object-assign":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/object-assign/index.js","prop-types/factory":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/prop-types/factory.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/lib/ReactVersion.js":[function(_dereq_,module,exports){
+arguments[4]["/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/ReactVersion.js"][0].apply(exports,arguments)
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/lib/canDefineProperty.js":[function(_dereq_,module,exports){
 (function (process){
 /**
  * Copyright 2013-present, Facebook, Inc.
@@ -60593,7 +61796,8 @@ if (process.env.NODE_ENV !== 'production') {
 
 module.exports = canDefineProperty;
 }).call(this,_dereq_('_process'))
-},{"_process":237}],428:[function(_dereq_,module,exports){
+
+},{"_process":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/browserify/node_modules/process/browser.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/lib/checkReactTypeSpec.js":[function(_dereq_,module,exports){
 (function (process){
 /**
  * Copyright 2013-present, Facebook, Inc.
@@ -60682,7 +61886,8 @@ function checkReactTypeSpec(typeSpecs, values, location, componentName, element,
 
 module.exports = checkReactTypeSpec;
 }).call(this,_dereq_('_process'))
-},{"./ReactComponentTreeHook":412,"./ReactPropTypeLocationNames":419,"./ReactPropTypesSecret":421,"./reactProdInvariant":433,"_process":237,"fbjs/lib/invariant":164,"fbjs/lib/warning":171}],429:[function(_dereq_,module,exports){
+
+},{"./ReactComponentTreeHook":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/lib/ReactComponentTreeHook.js","./ReactPropTypeLocationNames":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/lib/ReactPropTypeLocationNames.js","./ReactPropTypesSecret":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/lib/ReactPropTypesSecret.js","./reactProdInvariant":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/lib/reactProdInvariant.js","_process":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/invariant":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/invariant.js","fbjs/lib/warning":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/warning.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/lib/flattenChildren.js":[function(_dereq_,module,exports){
 (function (process){
 /**
  * Copyright 2013-present, Facebook, Inc.
@@ -60760,9 +61965,10 @@ function flattenChildren(children, selfDebugID) {
 
 module.exports = flattenChildren;
 }).call(this,_dereq_('_process'))
-},{"./KeyEscapeUtils":403,"./ReactComponentTreeHook":412,"./traverseAllChildren":434,"_process":237,"fbjs/lib/warning":171}],430:[function(_dereq_,module,exports){
-arguments[4][363][0].apply(exports,arguments)
-},{"dup":363}],431:[function(_dereq_,module,exports){
+
+},{"./KeyEscapeUtils":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/lib/KeyEscapeUtils.js","./ReactComponentTreeHook":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/lib/ReactComponentTreeHook.js","./traverseAllChildren":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/lib/traverseAllChildren.js","_process":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/warning":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/warning.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/lib/getIteratorFn.js":[function(_dereq_,module,exports){
+arguments[4]["/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/getIteratorFn.js"][0].apply(exports,arguments)
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/lib/getNextDebugID.js":[function(_dereq_,module,exports){
 /**
  * Copyright 2013-present, Facebook, Inc.
  * All rights reserved.
@@ -60783,7 +61989,7 @@ function getNextDebugID() {
 }
 
 module.exports = getNextDebugID;
-},{}],432:[function(_dereq_,module,exports){
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/lib/onlyChild.js":[function(_dereq_,module,exports){
 (function (process){
 /**
  * Copyright 2013-present, Facebook, Inc.
@@ -60823,9 +62029,10 @@ function onlyChild(children) {
 
 module.exports = onlyChild;
 }).call(this,_dereq_('_process'))
-},{"./ReactElement":415,"./reactProdInvariant":433,"_process":237,"fbjs/lib/invariant":164}],433:[function(_dereq_,module,exports){
-arguments[4][371][0].apply(exports,arguments)
-},{"dup":371}],434:[function(_dereq_,module,exports){
+
+},{"./ReactElement":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/lib/ReactElement.js","./reactProdInvariant":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/lib/reactProdInvariant.js","_process":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/invariant":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/invariant.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/lib/reactProdInvariant.js":[function(_dereq_,module,exports){
+arguments[4]["/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/lib/reactProdInvariant.js"][0].apply(exports,arguments)
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/lib/traverseAllChildren.js":[function(_dereq_,module,exports){
 (function (process){
 /**
  * Copyright 2013-present, Facebook, Inc.
@@ -61003,15 +62210,16 @@ function traverseAllChildren(children, callback, traverseContext) {
 
 module.exports = traverseAllChildren;
 }).call(this,_dereq_('_process'))
-},{"./KeyEscapeUtils":403,"./ReactCurrentOwner":413,"./ReactElementSymbol":416,"./getIteratorFn":430,"./reactProdInvariant":433,"_process":237,"fbjs/lib/invariant":164,"fbjs/lib/warning":171}],435:[function(_dereq_,module,exports){
+
+},{"./KeyEscapeUtils":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/lib/KeyEscapeUtils.js","./ReactCurrentOwner":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/lib/ReactCurrentOwner.js","./ReactElementSymbol":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/lib/ReactElementSymbol.js","./getIteratorFn":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/lib/getIteratorFn.js","./reactProdInvariant":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/lib/reactProdInvariant.js","_process":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/browserify/node_modules/process/browser.js","fbjs/lib/invariant":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/invariant.js","fbjs/lib/warning":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/fbjs/lib/warning.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/react.js":[function(_dereq_,module,exports){
 'use strict';
 
 module.exports = _dereq_('./lib/React');
 
-},{"./lib/React":405}],436:[function(_dereq_,module,exports){
+},{"./lib/React":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/lib/React.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/readable-stream/duplex-browser.js":[function(_dereq_,module,exports){
 module.exports = _dereq_('./lib/_stream_duplex.js');
 
-},{"./lib/_stream_duplex.js":437}],437:[function(_dereq_,module,exports){
+},{"./lib/_stream_duplex.js":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/readable-stream/lib/_stream_duplex.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/readable-stream/lib/_stream_duplex.js":[function(_dereq_,module,exports){
 // a duplex stream is just a stream that is both readable and writable.
 // Since JS doesn't have multiple prototypal inheritance, this class
 // prototypally inherits from Readable, and then parasitically from
@@ -61087,7 +62295,7 @@ function forEach(xs, f) {
     f(xs[i], i);
   }
 }
-},{"./_stream_readable":439,"./_stream_writable":441,"core-util-is":83,"inherits":191,"process-nextick-args":236}],438:[function(_dereq_,module,exports){
+},{"./_stream_readable":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/readable-stream/lib/_stream_readable.js","./_stream_writable":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/readable-stream/lib/_stream_writable.js","core-util-is":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/core-util-is/lib/util.js","inherits":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/inherits/inherits_browser.js","process-nextick-args":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/process-nextick-args/index.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/readable-stream/lib/_stream_passthrough.js":[function(_dereq_,module,exports){
 // a passthrough stream.
 // basically just the most minimal sort of Transform stream.
 // Every written chunk gets output as-is.
@@ -61114,7 +62322,7 @@ function PassThrough(options) {
 PassThrough.prototype._transform = function (chunk, encoding, cb) {
   cb(null, chunk);
 };
-},{"./_stream_transform":440,"core-util-is":83,"inherits":191}],439:[function(_dereq_,module,exports){
+},{"./_stream_transform":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/readable-stream/lib/_stream_transform.js","core-util-is":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/core-util-is/lib/util.js","inherits":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/inherits/inherits_browser.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/readable-stream/lib/_stream_readable.js":[function(_dereq_,module,exports){
 (function (process){
 'use strict';
 
@@ -62052,7 +63260,8 @@ function indexOf(xs, x) {
   return -1;
 }
 }).call(this,_dereq_('_process'))
-},{"./_stream_duplex":437,"./internal/streams/BufferList":442,"./internal/streams/stream":443,"_process":237,"buffer":24,"buffer-shims":23,"core-util-is":83,"events":144,"inherits":191,"isarray":444,"process-nextick-args":236,"string_decoder/":445,"util":22}],440:[function(_dereq_,module,exports){
+
+},{"./_stream_duplex":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/readable-stream/lib/_stream_duplex.js","./internal/streams/BufferList":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/readable-stream/lib/internal/streams/BufferList.js","./internal/streams/stream":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/readable-stream/lib/internal/streams/stream-browser.js","_process":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/browserify/node_modules/process/browser.js","buffer":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/buffer/index.js","buffer-shims":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/buffer-shims/index.js","core-util-is":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/core-util-is/lib/util.js","events":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/events/events.js","inherits":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/inherits/inherits_browser.js","isarray":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/isarray/index.js","process-nextick-args":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/process-nextick-args/index.js","string_decoder/":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/string_decoder/lib/string_decoder.js","util":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/browser-resolve/empty.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/readable-stream/lib/_stream_transform.js":[function(_dereq_,module,exports){
 // a transform stream is a readable/writable stream where you do
 // something with the data.  Sometimes it's called a "filter",
 // but that's not a great name for it, since that implies a thing where
@@ -62235,7 +63444,7 @@ function done(stream, er, data) {
 
   return stream.push(null);
 }
-},{"./_stream_duplex":437,"core-util-is":83,"inherits":191}],441:[function(_dereq_,module,exports){
+},{"./_stream_duplex":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/readable-stream/lib/_stream_duplex.js","core-util-is":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/core-util-is/lib/util.js","inherits":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/inherits/inherits_browser.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/readable-stream/lib/_stream_writable.js":[function(_dereq_,module,exports){
 (function (process){
 // A bit simpler than readable streams.
 // Implement an async ._write(chunk, encoding, cb), and it'll handle all
@@ -62782,7 +63991,8 @@ function CorkedRequest(state) {
   };
 }
 }).call(this,_dereq_('_process'))
-},{"./_stream_duplex":437,"./internal/streams/stream":443,"_process":237,"buffer":24,"buffer-shims":23,"core-util-is":83,"inherits":191,"process-nextick-args":236,"util-deprecate":492}],442:[function(_dereq_,module,exports){
+
+},{"./_stream_duplex":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/readable-stream/lib/_stream_duplex.js","./internal/streams/stream":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/readable-stream/lib/internal/streams/stream-browser.js","_process":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/browserify/node_modules/process/browser.js","buffer":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/buffer/index.js","buffer-shims":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/buffer-shims/index.js","core-util-is":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/core-util-is/lib/util.js","inherits":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/inherits/inherits_browser.js","process-nextick-args":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/process-nextick-args/index.js","util-deprecate":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/util-deprecate/browser.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/readable-stream/lib/internal/streams/BufferList.js":[function(_dereq_,module,exports){
 'use strict';
 
 var Buffer = _dereq_('buffer').Buffer;
@@ -62847,288 +64057,13 @@ BufferList.prototype.concat = function (n) {
   }
   return ret;
 };
-},{"buffer":24,"buffer-shims":23}],443:[function(_dereq_,module,exports){
+},{"buffer":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/buffer/index.js","buffer-shims":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/buffer-shims/index.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/readable-stream/lib/internal/streams/stream-browser.js":[function(_dereq_,module,exports){
 module.exports = _dereq_('events').EventEmitter;
 
-},{"events":144}],444:[function(_dereq_,module,exports){
-arguments[4][25][0].apply(exports,arguments)
-},{"dup":25}],445:[function(_dereq_,module,exports){
-'use strict';
-
-var Buffer = _dereq_('safe-buffer').Buffer;
-
-var isEncoding = Buffer.isEncoding || function (encoding) {
-  encoding = '' + encoding;
-  switch (encoding && encoding.toLowerCase()) {
-    case 'hex':case 'utf8':case 'utf-8':case 'ascii':case 'binary':case 'base64':case 'ucs2':case 'ucs-2':case 'utf16le':case 'utf-16le':case 'raw':
-      return true;
-    default:
-      return false;
-  }
-};
-
-function _normalizeEncoding(enc) {
-  if (!enc) return 'utf8';
-  var retried;
-  while (true) {
-    switch (enc) {
-      case 'utf8':
-      case 'utf-8':
-        return 'utf8';
-      case 'ucs2':
-      case 'ucs-2':
-      case 'utf16le':
-      case 'utf-16le':
-        return 'utf16le';
-      case 'latin1':
-      case 'binary':
-        return 'latin1';
-      case 'base64':
-      case 'ascii':
-      case 'hex':
-        return enc;
-      default:
-        if (retried) return; // undefined
-        enc = ('' + enc).toLowerCase();
-        retried = true;
-    }
-  }
-};
-
-// Do not cache `Buffer.isEncoding` when checking encoding names as some
-// modules monkey-patch it to support additional encodings
-function normalizeEncoding(enc) {
-  var nenc = _normalizeEncoding(enc);
-  if (typeof nenc !== 'string' && (Buffer.isEncoding === isEncoding || !isEncoding(enc))) throw new Error('Unknown encoding: ' + enc);
-  return nenc || enc;
-}
-
-// StringDecoder provides an interface for efficiently splitting a series of
-// buffers into a series of JS strings without breaking apart multi-byte
-// characters.
-exports.StringDecoder = StringDecoder;
-function StringDecoder(encoding) {
-  this.encoding = normalizeEncoding(encoding);
-  var nb;
-  switch (this.encoding) {
-    case 'utf16le':
-      this.text = utf16Text;
-      this.end = utf16End;
-      nb = 4;
-      break;
-    case 'utf8':
-      this.fillLast = utf8FillLast;
-      nb = 4;
-      break;
-    case 'base64':
-      this.text = base64Text;
-      this.end = base64End;
-      nb = 3;
-      break;
-    default:
-      this.write = simpleWrite;
-      this.end = simpleEnd;
-      return;
-  }
-  this.lastNeed = 0;
-  this.lastTotal = 0;
-  this.lastChar = Buffer.allocUnsafe(nb);
-}
-
-StringDecoder.prototype.write = function (buf) {
-  if (buf.length === 0) return '';
-  var r;
-  var i;
-  if (this.lastNeed) {
-    r = this.fillLast(buf);
-    if (r === undefined) return '';
-    i = this.lastNeed;
-    this.lastNeed = 0;
-  } else {
-    i = 0;
-  }
-  if (i < buf.length) return r ? r + this.text(buf, i) : this.text(buf, i);
-  return r || '';
-};
-
-StringDecoder.prototype.end = utf8End;
-
-// Returns only complete characters in a Buffer
-StringDecoder.prototype.text = utf8Text;
-
-// Attempts to complete a partial non-UTF-8 character using bytes from a Buffer
-StringDecoder.prototype.fillLast = function (buf) {
-  if (this.lastNeed <= buf.length) {
-    buf.copy(this.lastChar, this.lastTotal - this.lastNeed, 0, this.lastNeed);
-    return this.lastChar.toString(this.encoding, 0, this.lastTotal);
-  }
-  buf.copy(this.lastChar, this.lastTotal - this.lastNeed, 0, buf.length);
-  this.lastNeed -= buf.length;
-};
-
-// Checks the type of a UTF-8 byte, whether it's ASCII, a leading byte, or a
-// continuation byte.
-function utf8CheckByte(byte) {
-  if (byte <= 0x7F) return 0;else if (byte >> 5 === 0x06) return 2;else if (byte >> 4 === 0x0E) return 3;else if (byte >> 3 === 0x1E) return 4;
-  return -1;
-}
-
-// Checks at most 3 bytes at the end of a Buffer in order to detect an
-// incomplete multi-byte UTF-8 character. The total number of bytes (2, 3, or 4)
-// needed to complete the UTF-8 character (if applicable) are returned.
-function utf8CheckIncomplete(self, buf, i) {
-  var j = buf.length - 1;
-  if (j < i) return 0;
-  var nb = utf8CheckByte(buf[j]);
-  if (nb >= 0) {
-    if (nb > 0) self.lastNeed = nb - 1;
-    return nb;
-  }
-  if (--j < i) return 0;
-  nb = utf8CheckByte(buf[j]);
-  if (nb >= 0) {
-    if (nb > 0) self.lastNeed = nb - 2;
-    return nb;
-  }
-  if (--j < i) return 0;
-  nb = utf8CheckByte(buf[j]);
-  if (nb >= 0) {
-    if (nb > 0) {
-      if (nb === 2) nb = 0;else self.lastNeed = nb - 3;
-    }
-    return nb;
-  }
-  return 0;
-}
-
-// Validates as many continuation bytes for a multi-byte UTF-8 character as
-// needed or are available. If we see a non-continuation byte where we expect
-// one, we "replace" the validated continuation bytes we've seen so far with
-// UTF-8 replacement characters ('\ufffd'), to match v8's UTF-8 decoding
-// behavior. The continuation byte check is included three times in the case
-// where all of the continuation bytes for a character exist in the same buffer.
-// It is also done this way as a slight performance increase instead of using a
-// loop.
-function utf8CheckExtraBytes(self, buf, p) {
-  if ((buf[0] & 0xC0) !== 0x80) {
-    self.lastNeed = 0;
-    return '\ufffd'.repeat(p);
-  }
-  if (self.lastNeed > 1 && buf.length > 1) {
-    if ((buf[1] & 0xC0) !== 0x80) {
-      self.lastNeed = 1;
-      return '\ufffd'.repeat(p + 1);
-    }
-    if (self.lastNeed > 2 && buf.length > 2) {
-      if ((buf[2] & 0xC0) !== 0x80) {
-        self.lastNeed = 2;
-        return '\ufffd'.repeat(p + 2);
-      }
-    }
-  }
-}
-
-// Attempts to complete a multi-byte UTF-8 character using bytes from a Buffer.
-function utf8FillLast(buf) {
-  var p = this.lastTotal - this.lastNeed;
-  var r = utf8CheckExtraBytes(this, buf, p);
-  if (r !== undefined) return r;
-  if (this.lastNeed <= buf.length) {
-    buf.copy(this.lastChar, p, 0, this.lastNeed);
-    return this.lastChar.toString(this.encoding, 0, this.lastTotal);
-  }
-  buf.copy(this.lastChar, p, 0, buf.length);
-  this.lastNeed -= buf.length;
-}
-
-// Returns all complete UTF-8 characters in a Buffer. If the Buffer ended on a
-// partial character, the character's bytes are buffered until the required
-// number of bytes are available.
-function utf8Text(buf, i) {
-  var total = utf8CheckIncomplete(this, buf, i);
-  if (!this.lastNeed) return buf.toString('utf8', i);
-  this.lastTotal = total;
-  var end = buf.length - (total - this.lastNeed);
-  buf.copy(this.lastChar, 0, end);
-  return buf.toString('utf8', i, end);
-}
-
-// For UTF-8, a replacement character for each buffered byte of a (partial)
-// character needs to be added to the output.
-function utf8End(buf) {
-  var r = buf && buf.length ? this.write(buf) : '';
-  if (this.lastNeed) return r + '\ufffd'.repeat(this.lastTotal - this.lastNeed);
-  return r;
-}
-
-// UTF-16LE typically needs two bytes per character, but even if we have an even
-// number of bytes available, we need to check if we end on a leading/high
-// surrogate. In that case, we need to wait for the next two bytes in order to
-// decode the last character properly.
-function utf16Text(buf, i) {
-  if ((buf.length - i) % 2 === 0) {
-    var r = buf.toString('utf16le', i);
-    if (r) {
-      var c = r.charCodeAt(r.length - 1);
-      if (c >= 0xD800 && c <= 0xDBFF) {
-        this.lastNeed = 2;
-        this.lastTotal = 4;
-        this.lastChar[0] = buf[buf.length - 2];
-        this.lastChar[1] = buf[buf.length - 1];
-        return r.slice(0, -1);
-      }
-    }
-    return r;
-  }
-  this.lastNeed = 1;
-  this.lastTotal = 2;
-  this.lastChar[0] = buf[buf.length - 1];
-  return buf.toString('utf16le', i, buf.length - 1);
-}
-
-// For UTF-16LE we do not explicitly append special replacement characters if we
-// end on a partial character, we simply let v8 handle that.
-function utf16End(buf) {
-  var r = buf && buf.length ? this.write(buf) : '';
-  if (this.lastNeed) {
-    var end = this.lastTotal - this.lastNeed;
-    return r + this.lastChar.toString('utf16le', 0, end);
-  }
-  return r;
-}
-
-function base64Text(buf, i) {
-  var n = (buf.length - i) % 3;
-  if (n === 0) return buf.toString('base64', i);
-  this.lastNeed = 3 - n;
-  this.lastTotal = 3;
-  if (n === 1) {
-    this.lastChar[0] = buf[buf.length - 1];
-  } else {
-    this.lastChar[0] = buf[buf.length - 2];
-    this.lastChar[1] = buf[buf.length - 1];
-  }
-  return buf.toString('base64', i, buf.length - n);
-}
-
-function base64End(buf) {
-  var r = buf && buf.length ? this.write(buf) : '';
-  if (this.lastNeed) return r + this.lastChar.toString('base64', 0, 3 - this.lastNeed);
-  return r;
-}
-
-// Pass bytes on through for single-byte encodings (e.g. ascii, latin1, hex)
-function simpleWrite(buf) {
-  return buf.toString(this.encoding);
-}
-
-function simpleEnd(buf) {
-  return buf && buf.length ? this.write(buf) : '';
-}
-},{"safe-buffer":465}],446:[function(_dereq_,module,exports){
+},{"events":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/events/events.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/readable-stream/passthrough.js":[function(_dereq_,module,exports){
 module.exports = _dereq_('./readable').PassThrough
 
-},{"./readable":447}],447:[function(_dereq_,module,exports){
+},{"./readable":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/readable-stream/readable-browser.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/readable-stream/readable-browser.js":[function(_dereq_,module,exports){
 exports = module.exports = _dereq_('./lib/_stream_readable.js');
 exports.Stream = exports;
 exports.Readable = exports;
@@ -63137,13 +64072,13 @@ exports.Duplex = _dereq_('./lib/_stream_duplex.js');
 exports.Transform = _dereq_('./lib/_stream_transform.js');
 exports.PassThrough = _dereq_('./lib/_stream_passthrough.js');
 
-},{"./lib/_stream_duplex.js":437,"./lib/_stream_passthrough.js":438,"./lib/_stream_readable.js":439,"./lib/_stream_transform.js":440,"./lib/_stream_writable.js":441}],448:[function(_dereq_,module,exports){
+},{"./lib/_stream_duplex.js":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/readable-stream/lib/_stream_duplex.js","./lib/_stream_passthrough.js":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/readable-stream/lib/_stream_passthrough.js","./lib/_stream_readable.js":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/readable-stream/lib/_stream_readable.js","./lib/_stream_transform.js":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/readable-stream/lib/_stream_transform.js","./lib/_stream_writable.js":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/readable-stream/lib/_stream_writable.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/readable-stream/transform.js":[function(_dereq_,module,exports){
 module.exports = _dereq_('./readable').Transform
 
-},{"./readable":447}],449:[function(_dereq_,module,exports){
+},{"./readable":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/readable-stream/readable-browser.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/readable-stream/writable-browser.js":[function(_dereq_,module,exports){
 module.exports = _dereq_('./lib/_stream_writable.js');
 
-},{"./lib/_stream_writable.js":441}],450:[function(_dereq_,module,exports){
+},{"./lib/_stream_writable.js":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/readable-stream/lib/_stream_writable.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/redux-logger/lib/core.js":[function(_dereq_,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -63285,7 +64220,7 @@ function printBuffer(buffer, options) {
     }
   });
 }
-},{"./diff":452,"./helpers":453}],451:[function(_dereq_,module,exports){
+},{"./diff":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/redux-logger/lib/diff.js","./helpers":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/redux-logger/lib/helpers.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/redux-logger/lib/defaults.js":[function(_dereq_,module,exports){
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -63332,7 +64267,7 @@ exports.default = {
   transformer: undefined
 };
 module.exports = exports["default"];
-},{}],452:[function(_dereq_,module,exports){
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/redux-logger/lib/diff.js":[function(_dereq_,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -63427,7 +64362,7 @@ function diffLogger(prevState, newState, logger, isCollapsed) {
   }
 }
 module.exports = exports['default'];
-},{"deep-diff":90}],453:[function(_dereq_,module,exports){
+},{"deep-diff":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/deep-diff/index.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/redux-logger/lib/helpers.js":[function(_dereq_,module,exports){
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -63447,7 +64382,7 @@ var formatTime = exports.formatTime = function formatTime(time) {
 
 // Use performance API if it's available in order to get better precision
 var timer = exports.timer = typeof performance !== "undefined" && performance !== null && typeof performance.now === "function" ? performance : Date;
-},{}],454:[function(_dereq_,module,exports){
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/redux-logger/lib/index.js":[function(_dereq_,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -63581,7 +64516,7 @@ exports.logger = defaultLogger;
 exports.default = createLogger;
 module.exports = exports['default'];
 
-},{"./core":450,"./defaults":451,"./helpers":453}],455:[function(_dereq_,module,exports){
+},{"./core":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/redux-logger/lib/core.js","./defaults":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/redux-logger/lib/defaults.js","./helpers":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/redux-logger/lib/helpers.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/redux-thunk/lib/index.js":[function(_dereq_,module,exports){
 'use strict';
 
 function thunkMiddleware(_ref) {
@@ -63596,7 +64531,7 @@ function thunkMiddleware(_ref) {
 }
 
 module.exports = thunkMiddleware;
-},{}],456:[function(_dereq_,module,exports){
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/redux/lib/applyMiddleware.js":[function(_dereq_,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -63655,7 +64590,7 @@ function applyMiddleware() {
     };
   };
 }
-},{"./compose":459}],457:[function(_dereq_,module,exports){
+},{"./compose":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/redux/lib/compose.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/redux/lib/bindActionCreators.js":[function(_dereq_,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -63707,7 +64642,7 @@ function bindActionCreators(actionCreators, dispatch) {
   }
   return boundActionCreators;
 }
-},{}],458:[function(_dereq_,module,exports){
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/redux/lib/combineReducers.js":[function(_dereq_,module,exports){
 (function (process){
 'use strict';
 
@@ -63852,7 +64787,8 @@ function combineReducers(reducers) {
   };
 }
 }).call(this,_dereq_('_process'))
-},{"./createStore":460,"./utils/warning":462,"_process":237,"lodash/isPlainObject":221}],459:[function(_dereq_,module,exports){
+
+},{"./createStore":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/redux/lib/createStore.js","./utils/warning":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/redux/lib/utils/warning.js","_process":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/browserify/node_modules/process/browser.js","lodash/isPlainObject":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/lodash/isPlainObject.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/redux/lib/compose.js":[function(_dereq_,module,exports){
 "use strict";
 
 exports.__esModule = true;
@@ -63891,7 +64827,7 @@ function compose() {
     }, last.apply(undefined, arguments));
   };
 }
-},{}],460:[function(_dereq_,module,exports){
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/redux/lib/createStore.js":[function(_dereq_,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -64153,7 +65089,7 @@ function createStore(reducer, preloadedState, enhancer) {
     replaceReducer: replaceReducer
   }, _ref2[_symbolObservable2['default']] = observable, _ref2;
 }
-},{"lodash/isPlainObject":221,"symbol-observable":485}],461:[function(_dereq_,module,exports){
+},{"lodash/isPlainObject":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/lodash/isPlainObject.js","symbol-observable":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/symbol-observable/index.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/redux/lib/index.js":[function(_dereq_,module,exports){
 (function (process){
 'use strict';
 
@@ -64202,7 +65138,8 @@ exports.bindActionCreators = _bindActionCreators2['default'];
 exports.applyMiddleware = _applyMiddleware2['default'];
 exports.compose = _compose2['default'];
 }).call(this,_dereq_('_process'))
-},{"./applyMiddleware":456,"./bindActionCreators":457,"./combineReducers":458,"./compose":459,"./createStore":460,"./utils/warning":462,"_process":237}],462:[function(_dereq_,module,exports){
+
+},{"./applyMiddleware":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/redux/lib/applyMiddleware.js","./bindActionCreators":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/redux/lib/bindActionCreators.js","./combineReducers":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/redux/lib/combineReducers.js","./compose":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/redux/lib/compose.js","./createStore":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/redux/lib/createStore.js","./utils/warning":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/redux/lib/utils/warning.js","_process":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/browserify/node_modules/process/browser.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/redux/lib/utils/warning.js":[function(_dereq_,module,exports){
 'use strict';
 
 exports.__esModule = true;
@@ -64228,7 +65165,7 @@ function warning(message) {
   } catch (e) {}
   /* eslint-enable no-empty */
 }
-},{}],463:[function(_dereq_,module,exports){
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/ripemd160/index.js":[function(_dereq_,module,exports){
 (function (Buffer){
 'use strict'
 var inherits = _dereq_('inherits')
@@ -64523,7 +65460,8 @@ function fn5 (a, b, c, d, e, m, k, s) {
 module.exports = RIPEMD160
 
 }).call(this,_dereq_("buffer").Buffer)
-},{"buffer":24,"hash-base":179,"inherits":191}],464:[function(_dereq_,module,exports){
+
+},{"buffer":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/buffer/index.js","hash-base":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/hash-base/index.js","inherits":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/inherits/inherits_browser.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/rlp/index.js":[function(_dereq_,module,exports){
 (function (Buffer){
 const assert = _dereq_('assert')
 /**
@@ -64756,10 +65694,11 @@ function toBuffer (v) {
 }
 
 }).call(this,_dereq_("buffer").Buffer)
-},{"assert":11,"buffer":24}],465:[function(_dereq_,module,exports){
+
+},{"assert":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/assert/assert.js","buffer":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/buffer/index.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/safe-buffer/browser.js":[function(_dereq_,module,exports){
 module.exports = _dereq_('buffer')
 
-},{"buffer":24}],466:[function(_dereq_,module,exports){
+},{"buffer":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/buffer/index.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/sandwich-expando/index.js":[function(_dereq_,module,exports){
 'use strict';
 
 var Component = _dereq_('react').Component;
@@ -64837,11 +65776,11 @@ SandwichExpandoComponent.prototype.render = function () {
   })]);
 };
 
-},{"raphael":246,"react":435,"react-hyperscript":378,"util":495}],467:[function(_dereq_,module,exports){
+},{"raphael":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/raphael/raphael.min.js","react":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/react.js","react-hyperscript":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-hyperscript/index.js","util":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/util/util.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/secp256k1/elliptic.js":[function(_dereq_,module,exports){
 'use strict'
 module.exports = _dereq_('./lib')(_dereq_('./lib/elliptic'))
 
-},{"./lib":471,"./lib/elliptic":470}],468:[function(_dereq_,module,exports){
+},{"./lib":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/secp256k1/lib/index.js","./lib/elliptic":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/secp256k1/lib/elliptic/index.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/secp256k1/lib/assert.js":[function(_dereq_,module,exports){
 (function (Buffer){
 'use strict'
 var toString = Object.prototype.toString
@@ -64889,7 +65828,8 @@ exports.isNumberInInterval = function (number, x, y, message) {
 }
 
 }).call(this,{"isBuffer":_dereq_("../../is-buffer/index.js")})
-},{"../../is-buffer/index.js":194}],469:[function(_dereq_,module,exports){
+
+},{"../../is-buffer/index.js":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/is-buffer/index.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/secp256k1/lib/der.js":[function(_dereq_,module,exports){
 (function (Buffer){
 'use strict'
 var bip66 = _dereq_('bip66')
@@ -65090,7 +66030,8 @@ exports.signatureImportLax = function (sig) {
 }
 
 }).call(this,_dereq_("buffer").Buffer)
-},{"bip66":19,"buffer":24}],470:[function(_dereq_,module,exports){
+
+},{"bip66":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/bip66/index.js","buffer":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/buffer/index.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/secp256k1/lib/elliptic/index.js":[function(_dereq_,module,exports){
 (function (Buffer){
 'use strict'
 var createHash = _dereq_('create-hash')
@@ -65341,7 +66282,8 @@ exports.ecdhUnsafe = function (publicKey, privateKey, compressed) {
 }
 
 }).call(this,_dereq_("buffer").Buffer)
-},{"../messages.json":472,"bn.js":20,"buffer":24,"create-hash":84,"elliptic":99}],471:[function(_dereq_,module,exports){
+
+},{"../messages.json":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/secp256k1/lib/messages.json","bn.js":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/bn.js/lib/bn.js","buffer":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/buffer/index.js","create-hash":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/create-hash/browser.js","elliptic":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/elliptic/lib/elliptic.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/secp256k1/lib/index.js":[function(_dereq_,module,exports){
 'use strict'
 var assert = _dereq_('./assert')
 var der = _dereq_('./der')
@@ -65574,7 +66516,7 @@ module.exports = function (secp256k1) {
   }
 }
 
-},{"./assert":468,"./der":469,"./messages.json":472}],472:[function(_dereq_,module,exports){
+},{"./assert":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/secp256k1/lib/assert.js","./der":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/secp256k1/lib/der.js","./messages.json":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/secp256k1/lib/messages.json"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/secp256k1/lib/messages.json":[function(_dereq_,module,exports){
 module.exports={
   "COMPRESSED_TYPE_INVALID": "compressed should be a boolean",
   "EC_PRIVATE_KEY_TYPE_INVALID": "private key should be a Buffer",
@@ -65612,7 +66554,7 @@ module.exports={
   "TWEAK_LENGTH_INVALID": "tweak length is invalid"
 }
 
-},{}],473:[function(_dereq_,module,exports){
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/sha.js/hash.js":[function(_dereq_,module,exports){
 (function (Buffer){
 // prototype class for hash functions
 function Hash (blockSize, finalSize) {
@@ -65685,7 +66627,8 @@ Hash.prototype._update = function () {
 module.exports = Hash
 
 }).call(this,_dereq_("buffer").Buffer)
-},{"buffer":24}],474:[function(_dereq_,module,exports){
+
+},{"buffer":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/buffer/index.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/sha.js/index.js":[function(_dereq_,module,exports){
 var exports = module.exports = function SHA (algorithm) {
   algorithm = algorithm.toLowerCase()
 
@@ -65702,7 +66645,7 @@ exports.sha256 = _dereq_('./sha256')
 exports.sha384 = _dereq_('./sha384')
 exports.sha512 = _dereq_('./sha512')
 
-},{"./sha":475,"./sha1":476,"./sha224":477,"./sha256":478,"./sha384":479,"./sha512":480}],475:[function(_dereq_,module,exports){
+},{"./sha":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/sha.js/sha.js","./sha1":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/sha.js/sha1.js","./sha224":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/sha.js/sha224.js","./sha256":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/sha.js/sha256.js","./sha384":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/sha.js/sha384.js","./sha512":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/sha.js/sha512.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/sha.js/sha.js":[function(_dereq_,module,exports){
 (function (Buffer){
 /*
  * A JavaScript implementation of the Secure Hash Algorithm, SHA-0, as defined
@@ -65799,7 +66742,8 @@ Sha.prototype._hash = function () {
 module.exports = Sha
 
 }).call(this,_dereq_("buffer").Buffer)
-},{"./hash":473,"buffer":24,"inherits":191}],476:[function(_dereq_,module,exports){
+
+},{"./hash":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/sha.js/hash.js","buffer":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/buffer/index.js","inherits":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/inherits/inherits_browser.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/sha.js/sha1.js":[function(_dereq_,module,exports){
 (function (Buffer){
 /*
  * A JavaScript implementation of the Secure Hash Algorithm, SHA-1, as defined
@@ -65901,7 +66845,8 @@ Sha1.prototype._hash = function () {
 module.exports = Sha1
 
 }).call(this,_dereq_("buffer").Buffer)
-},{"./hash":473,"buffer":24,"inherits":191}],477:[function(_dereq_,module,exports){
+
+},{"./hash":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/sha.js/hash.js","buffer":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/buffer/index.js","inherits":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/inherits/inherits_browser.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/sha.js/sha224.js":[function(_dereq_,module,exports){
 (function (Buffer){
 /**
  * A JavaScript implementation of the Secure Hash Algorithm, SHA-256, as defined
@@ -65957,7 +66902,8 @@ Sha224.prototype._hash = function () {
 module.exports = Sha224
 
 }).call(this,_dereq_("buffer").Buffer)
-},{"./hash":473,"./sha256":478,"buffer":24,"inherits":191}],478:[function(_dereq_,module,exports){
+
+},{"./hash":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/sha.js/hash.js","./sha256":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/sha.js/sha256.js","buffer":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/buffer/index.js","inherits":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/inherits/inherits_browser.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/sha.js/sha256.js":[function(_dereq_,module,exports){
 (function (Buffer){
 /**
  * A JavaScript implementation of the Secure Hash Algorithm, SHA-256, as defined
@@ -66095,7 +67041,8 @@ Sha256.prototype._hash = function () {
 module.exports = Sha256
 
 }).call(this,_dereq_("buffer").Buffer)
-},{"./hash":473,"buffer":24,"inherits":191}],479:[function(_dereq_,module,exports){
+
+},{"./hash":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/sha.js/hash.js","buffer":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/buffer/index.js","inherits":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/inherits/inherits_browser.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/sha.js/sha384.js":[function(_dereq_,module,exports){
 (function (Buffer){
 var inherits = _dereq_('inherits')
 var SHA512 = _dereq_('./sha512')
@@ -66155,7 +67102,8 @@ Sha384.prototype._hash = function () {
 module.exports = Sha384
 
 }).call(this,_dereq_("buffer").Buffer)
-},{"./hash":473,"./sha512":480,"buffer":24,"inherits":191}],480:[function(_dereq_,module,exports){
+
+},{"./hash":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/sha.js/hash.js","./sha512":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/sha.js/sha512.js","buffer":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/buffer/index.js","inherits":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/inherits/inherits_browser.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/sha.js/sha512.js":[function(_dereq_,module,exports){
 (function (Buffer){
 var inherits = _dereq_('inherits')
 var Hash = _dereq_('./hash')
@@ -66418,7 +67366,8 @@ Sha512.prototype._hash = function () {
 module.exports = Sha512
 
 }).call(this,_dereq_("buffer").Buffer)
-},{"./hash":473,"buffer":24,"inherits":191}],481:[function(_dereq_,module,exports){
+
+},{"./hash":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/sha.js/hash.js","buffer":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/buffer/index.js","inherits":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/inherits/inherits_browser.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/stream-browserify/index.js":[function(_dereq_,module,exports){
 // Copyright Joyent, Inc. and other Node contributors.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a
@@ -66547,7 +67496,7 @@ Stream.prototype.pipe = function(dest, options) {
   return dest;
 };
 
-},{"events":144,"inherits":191,"readable-stream/duplex.js":436,"readable-stream/passthrough.js":446,"readable-stream/readable.js":447,"readable-stream/transform.js":448,"readable-stream/writable.js":449}],482:[function(_dereq_,module,exports){
+},{"events":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/events/events.js","inherits":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/inherits/inherits_browser.js","readable-stream/duplex.js":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/readable-stream/duplex-browser.js","readable-stream/passthrough.js":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/readable-stream/passthrough.js","readable-stream/readable.js":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/readable-stream/readable-browser.js","readable-stream/transform.js":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/readable-stream/transform.js","readable-stream/writable.js":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/readable-stream/writable-browser.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/string.prototype.repeat/repeat.js":[function(_dereq_,module,exports){
 /*! http://mths.be/repeat v0.2.0 by @mathias */
 if (!String.prototype.repeat) {
 	(function() {
@@ -66599,230 +67548,280 @@ if (!String.prototype.repeat) {
 	}());
 }
 
-},{}],483:[function(_dereq_,module,exports){
-// Copyright Joyent, Inc. and other Node contributors.
-//
-// Permission is hereby granted, free of charge, to any person obtaining a
-// copy of this software and associated documentation files (the
-// "Software"), to deal in the Software without restriction, including
-// without limitation the rights to use, copy, modify, merge, publish,
-// distribute, sublicense, and/or sell copies of the Software, and to permit
-// persons to whom the Software is furnished to do so, subject to the
-// following conditions:
-//
-// The above copyright notice and this permission notice shall be included
-// in all copies or substantial portions of the Software.
-//
-// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
-// OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
-// MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN
-// NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
-// DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
-// OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE
-// USE OR OTHER DEALINGS IN THE SOFTWARE.
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/string_decoder/lib/string_decoder.js":[function(_dereq_,module,exports){
+'use strict';
 
-var Buffer = _dereq_('buffer').Buffer;
+var Buffer = _dereq_('safe-buffer').Buffer;
 
-var isBufferEncoding = Buffer.isEncoding
-  || function(encoding) {
-       switch (encoding && encoding.toLowerCase()) {
-         case 'hex': case 'utf8': case 'utf-8': case 'ascii': case 'binary': case 'base64': case 'ucs2': case 'ucs-2': case 'utf16le': case 'utf-16le': case 'raw': return true;
-         default: return false;
-       }
-     }
-
-
-function assertEncoding(encoding) {
-  if (encoding && !isBufferEncoding(encoding)) {
-    throw new Error('Unknown encoding: ' + encoding);
+var isEncoding = Buffer.isEncoding || function (encoding) {
+  encoding = '' + encoding;
+  switch (encoding && encoding.toLowerCase()) {
+    case 'hex':case 'utf8':case 'utf-8':case 'ascii':case 'binary':case 'base64':case 'ucs2':case 'ucs-2':case 'utf16le':case 'utf-16le':case 'raw':
+      return true;
+    default:
+      return false;
   }
+};
+
+function _normalizeEncoding(enc) {
+  if (!enc) return 'utf8';
+  var retried;
+  while (true) {
+    switch (enc) {
+      case 'utf8':
+      case 'utf-8':
+        return 'utf8';
+      case 'ucs2':
+      case 'ucs-2':
+      case 'utf16le':
+      case 'utf-16le':
+        return 'utf16le';
+      case 'latin1':
+      case 'binary':
+        return 'latin1';
+      case 'base64':
+      case 'ascii':
+      case 'hex':
+        return enc;
+      default:
+        if (retried) return; // undefined
+        enc = ('' + enc).toLowerCase();
+        retried = true;
+    }
+  }
+};
+
+// Do not cache `Buffer.isEncoding` when checking encoding names as some
+// modules monkey-patch it to support additional encodings
+function normalizeEncoding(enc) {
+  var nenc = _normalizeEncoding(enc);
+  if (typeof nenc !== 'string' && (Buffer.isEncoding === isEncoding || !isEncoding(enc))) throw new Error('Unknown encoding: ' + enc);
+  return nenc || enc;
 }
 
 // StringDecoder provides an interface for efficiently splitting a series of
 // buffers into a series of JS strings without breaking apart multi-byte
-// characters. CESU-8 is handled as part of the UTF-8 encoding.
-//
-// @TODO Handling all encodings inside a single object makes it very difficult
-// to reason about this code, so it should be split up in the future.
-// @TODO There should be a utf8-strict encoding that rejects invalid UTF-8 code
-// points as used by CESU-8.
-var StringDecoder = exports.StringDecoder = function(encoding) {
-  this.encoding = (encoding || 'utf8').toLowerCase().replace(/[-_]/, '');
-  assertEncoding(encoding);
+// characters.
+exports.StringDecoder = StringDecoder;
+function StringDecoder(encoding) {
+  this.encoding = normalizeEncoding(encoding);
+  var nb;
   switch (this.encoding) {
-    case 'utf8':
-      // CESU-8 represents each of Surrogate Pair by 3-bytes
-      this.surrogateSize = 3;
-      break;
-    case 'ucs2':
     case 'utf16le':
-      // UTF-16 represents each of Surrogate Pair by 2-bytes
-      this.surrogateSize = 2;
-      this.detectIncompleteChar = utf16DetectIncompleteChar;
+      this.text = utf16Text;
+      this.end = utf16End;
+      nb = 4;
+      break;
+    case 'utf8':
+      this.fillLast = utf8FillLast;
+      nb = 4;
       break;
     case 'base64':
-      // Base-64 stores 3 bytes in 4 chars, and pads the remainder.
-      this.surrogateSize = 3;
-      this.detectIncompleteChar = base64DetectIncompleteChar;
+      this.text = base64Text;
+      this.end = base64End;
+      nb = 3;
       break;
     default:
-      this.write = passThroughWrite;
+      this.write = simpleWrite;
+      this.end = simpleEnd;
       return;
   }
-
-  // Enough space to store all bytes of a single character. UTF-8 needs 4
-  // bytes, but CESU-8 may require up to 6 (3 bytes per surrogate).
-  this.charBuffer = new Buffer(6);
-  // Number of bytes received for the current incomplete multi-byte character.
-  this.charReceived = 0;
-  // Number of bytes expected for the current incomplete multi-byte character.
-  this.charLength = 0;
-};
-
-
-// write decodes the given buffer and returns it as JS string that is
-// guaranteed to not contain any partial multi-byte characters. Any partial
-// character found at the end of the buffer is buffered up, and will be
-// returned when calling write again with the remaining bytes.
-//
-// Note: Converting a Buffer containing an orphan surrogate to a String
-// currently works, but converting a String to a Buffer (via `new Buffer`, or
-// Buffer#write) will replace incomplete surrogates with the unicode
-// replacement character. See https://codereview.chromium.org/121173009/ .
-StringDecoder.prototype.write = function(buffer) {
-  var charStr = '';
-  // if our last write ended with an incomplete multibyte character
-  while (this.charLength) {
-    // determine how many remaining bytes this buffer has to offer for this char
-    var available = (buffer.length >= this.charLength - this.charReceived) ?
-        this.charLength - this.charReceived :
-        buffer.length;
-
-    // add the new bytes to the char buffer
-    buffer.copy(this.charBuffer, this.charReceived, 0, available);
-    this.charReceived += available;
-
-    if (this.charReceived < this.charLength) {
-      // still not enough chars in this buffer? wait for more ...
-      return '';
-    }
-
-    // remove bytes belonging to the current character from the buffer
-    buffer = buffer.slice(available, buffer.length);
-
-    // get the character that was split
-    charStr = this.charBuffer.slice(0, this.charLength).toString(this.encoding);
-
-    // CESU-8: lead surrogate (D800-DBFF) is also the incomplete character
-    var charCode = charStr.charCodeAt(charStr.length - 1);
-    if (charCode >= 0xD800 && charCode <= 0xDBFF) {
-      this.charLength += this.surrogateSize;
-      charStr = '';
-      continue;
-    }
-    this.charReceived = this.charLength = 0;
-
-    // if there are no more bytes in this buffer, just emit our char
-    if (buffer.length === 0) {
-      return charStr;
-    }
-    break;
-  }
-
-  // determine and set charLength / charReceived
-  this.detectIncompleteChar(buffer);
-
-  var end = buffer.length;
-  if (this.charLength) {
-    // buffer the incomplete character bytes we got
-    buffer.copy(this.charBuffer, 0, buffer.length - this.charReceived, end);
-    end -= this.charReceived;
-  }
-
-  charStr += buffer.toString(this.encoding, 0, end);
-
-  var end = charStr.length - 1;
-  var charCode = charStr.charCodeAt(end);
-  // CESU-8: lead surrogate (D800-DBFF) is also the incomplete character
-  if (charCode >= 0xD800 && charCode <= 0xDBFF) {
-    var size = this.surrogateSize;
-    this.charLength += size;
-    this.charReceived += size;
-    this.charBuffer.copy(this.charBuffer, size, 0, size);
-    buffer.copy(this.charBuffer, 0, 0, size);
-    return charStr.substring(0, end);
-  }
-
-  // or just emit the charStr
-  return charStr;
-};
-
-// detectIncompleteChar determines if there is an incomplete UTF-8 character at
-// the end of the given buffer. If so, it sets this.charLength to the byte
-// length that character, and sets this.charReceived to the number of bytes
-// that are available for this character.
-StringDecoder.prototype.detectIncompleteChar = function(buffer) {
-  // determine how many bytes we have to check at the end of this buffer
-  var i = (buffer.length >= 3) ? 3 : buffer.length;
-
-  // Figure out if one of the last i bytes of our buffer announces an
-  // incomplete char.
-  for (; i > 0; i--) {
-    var c = buffer[buffer.length - i];
-
-    // See http://en.wikipedia.org/wiki/UTF-8#Description
-
-    // 110XXXXX
-    if (i == 1 && c >> 5 == 0x06) {
-      this.charLength = 2;
-      break;
-    }
-
-    // 1110XXXX
-    if (i <= 2 && c >> 4 == 0x0E) {
-      this.charLength = 3;
-      break;
-    }
-
-    // 11110XXX
-    if (i <= 3 && c >> 3 == 0x1E) {
-      this.charLength = 4;
-      break;
-    }
-  }
-  this.charReceived = i;
-};
-
-StringDecoder.prototype.end = function(buffer) {
-  var res = '';
-  if (buffer && buffer.length)
-    res = this.write(buffer);
-
-  if (this.charReceived) {
-    var cr = this.charReceived;
-    var buf = this.charBuffer;
-    var enc = this.encoding;
-    res += buf.slice(0, cr).toString(enc);
-  }
-
-  return res;
-};
-
-function passThroughWrite(buffer) {
-  return buffer.toString(this.encoding);
+  this.lastNeed = 0;
+  this.lastTotal = 0;
+  this.lastChar = Buffer.allocUnsafe(nb);
 }
 
-function utf16DetectIncompleteChar(buffer) {
-  this.charReceived = buffer.length % 2;
-  this.charLength = this.charReceived ? 2 : 0;
+StringDecoder.prototype.write = function (buf) {
+  if (buf.length === 0) return '';
+  var r;
+  var i;
+  if (this.lastNeed) {
+    r = this.fillLast(buf);
+    if (r === undefined) return '';
+    i = this.lastNeed;
+    this.lastNeed = 0;
+  } else {
+    i = 0;
+  }
+  if (i < buf.length) return r ? r + this.text(buf, i) : this.text(buf, i);
+  return r || '';
+};
+
+StringDecoder.prototype.end = utf8End;
+
+// Returns only complete characters in a Buffer
+StringDecoder.prototype.text = utf8Text;
+
+// Attempts to complete a partial non-UTF-8 character using bytes from a Buffer
+StringDecoder.prototype.fillLast = function (buf) {
+  if (this.lastNeed <= buf.length) {
+    buf.copy(this.lastChar, this.lastTotal - this.lastNeed, 0, this.lastNeed);
+    return this.lastChar.toString(this.encoding, 0, this.lastTotal);
+  }
+  buf.copy(this.lastChar, this.lastTotal - this.lastNeed, 0, buf.length);
+  this.lastNeed -= buf.length;
+};
+
+// Checks the type of a UTF-8 byte, whether it's ASCII, a leading byte, or a
+// continuation byte.
+function utf8CheckByte(byte) {
+  if (byte <= 0x7F) return 0;else if (byte >> 5 === 0x06) return 2;else if (byte >> 4 === 0x0E) return 3;else if (byte >> 3 === 0x1E) return 4;
+  return -1;
 }
 
-function base64DetectIncompleteChar(buffer) {
-  this.charReceived = buffer.length % 3;
-  this.charLength = this.charReceived ? 3 : 0;
+// Checks at most 3 bytes at the end of a Buffer in order to detect an
+// incomplete multi-byte UTF-8 character. The total number of bytes (2, 3, or 4)
+// needed to complete the UTF-8 character (if applicable) are returned.
+function utf8CheckIncomplete(self, buf, i) {
+  var j = buf.length - 1;
+  if (j < i) return 0;
+  var nb = utf8CheckByte(buf[j]);
+  if (nb >= 0) {
+    if (nb > 0) self.lastNeed = nb - 1;
+    return nb;
+  }
+  if (--j < i) return 0;
+  nb = utf8CheckByte(buf[j]);
+  if (nb >= 0) {
+    if (nb > 0) self.lastNeed = nb - 2;
+    return nb;
+  }
+  if (--j < i) return 0;
+  nb = utf8CheckByte(buf[j]);
+  if (nb >= 0) {
+    if (nb > 0) {
+      if (nb === 2) nb = 0;else self.lastNeed = nb - 3;
+    }
+    return nb;
+  }
+  return 0;
 }
 
-},{"buffer":24}],484:[function(_dereq_,module,exports){
+// Validates as many continuation bytes for a multi-byte UTF-8 character as
+// needed or are available. If we see a non-continuation byte where we expect
+// one, we "replace" the validated continuation bytes we've seen so far with
+// UTF-8 replacement characters ('\ufffd'), to match v8's UTF-8 decoding
+// behavior. The continuation byte check is included three times in the case
+// where all of the continuation bytes for a character exist in the same buffer.
+// It is also done this way as a slight performance increase instead of using a
+// loop.
+function utf8CheckExtraBytes(self, buf, p) {
+  if ((buf[0] & 0xC0) !== 0x80) {
+    self.lastNeed = 0;
+    return '\ufffd'.repeat(p);
+  }
+  if (self.lastNeed > 1 && buf.length > 1) {
+    if ((buf[1] & 0xC0) !== 0x80) {
+      self.lastNeed = 1;
+      return '\ufffd'.repeat(p + 1);
+    }
+    if (self.lastNeed > 2 && buf.length > 2) {
+      if ((buf[2] & 0xC0) !== 0x80) {
+        self.lastNeed = 2;
+        return '\ufffd'.repeat(p + 2);
+      }
+    }
+  }
+}
+
+// Attempts to complete a multi-byte UTF-8 character using bytes from a Buffer.
+function utf8FillLast(buf) {
+  var p = this.lastTotal - this.lastNeed;
+  var r = utf8CheckExtraBytes(this, buf, p);
+  if (r !== undefined) return r;
+  if (this.lastNeed <= buf.length) {
+    buf.copy(this.lastChar, p, 0, this.lastNeed);
+    return this.lastChar.toString(this.encoding, 0, this.lastTotal);
+  }
+  buf.copy(this.lastChar, p, 0, buf.length);
+  this.lastNeed -= buf.length;
+}
+
+// Returns all complete UTF-8 characters in a Buffer. If the Buffer ended on a
+// partial character, the character's bytes are buffered until the required
+// number of bytes are available.
+function utf8Text(buf, i) {
+  var total = utf8CheckIncomplete(this, buf, i);
+  if (!this.lastNeed) return buf.toString('utf8', i);
+  this.lastTotal = total;
+  var end = buf.length - (total - this.lastNeed);
+  buf.copy(this.lastChar, 0, end);
+  return buf.toString('utf8', i, end);
+}
+
+// For UTF-8, a replacement character for each buffered byte of a (partial)
+// character needs to be added to the output.
+function utf8End(buf) {
+  var r = buf && buf.length ? this.write(buf) : '';
+  if (this.lastNeed) return r + '\ufffd'.repeat(this.lastTotal - this.lastNeed);
+  return r;
+}
+
+// UTF-16LE typically needs two bytes per character, but even if we have an even
+// number of bytes available, we need to check if we end on a leading/high
+// surrogate. In that case, we need to wait for the next two bytes in order to
+// decode the last character properly.
+function utf16Text(buf, i) {
+  if ((buf.length - i) % 2 === 0) {
+    var r = buf.toString('utf16le', i);
+    if (r) {
+      var c = r.charCodeAt(r.length - 1);
+      if (c >= 0xD800 && c <= 0xDBFF) {
+        this.lastNeed = 2;
+        this.lastTotal = 4;
+        this.lastChar[0] = buf[buf.length - 2];
+        this.lastChar[1] = buf[buf.length - 1];
+        return r.slice(0, -1);
+      }
+    }
+    return r;
+  }
+  this.lastNeed = 1;
+  this.lastTotal = 2;
+  this.lastChar[0] = buf[buf.length - 1];
+  return buf.toString('utf16le', i, buf.length - 1);
+}
+
+// For UTF-16LE we do not explicitly append special replacement characters if we
+// end on a partial character, we simply let v8 handle that.
+function utf16End(buf) {
+  var r = buf && buf.length ? this.write(buf) : '';
+  if (this.lastNeed) {
+    var end = this.lastTotal - this.lastNeed;
+    return r + this.lastChar.toString('utf16le', 0, end);
+  }
+  return r;
+}
+
+function base64Text(buf, i) {
+  var n = (buf.length - i) % 3;
+  if (n === 0) return buf.toString('base64', i);
+  this.lastNeed = 3 - n;
+  this.lastTotal = 3;
+  if (n === 1) {
+    this.lastChar[0] = buf[buf.length - 1];
+  } else {
+    this.lastChar[0] = buf[buf.length - 2];
+    this.lastChar[1] = buf[buf.length - 1];
+  }
+  return buf.toString('base64', i, buf.length - n);
+}
+
+function base64End(buf) {
+  var r = buf && buf.length ? this.write(buf) : '';
+  if (this.lastNeed) return r + this.lastChar.toString('base64', 0, 3 - this.lastNeed);
+  return r;
+}
+
+// Pass bytes on through for single-byte encodings (e.g. ascii, latin1, hex)
+function simpleWrite(buf) {
+  return buf.toString(this.encoding);
+}
+
+function simpleEnd(buf) {
+  return buf && buf.length ? this.write(buf) : '';
+}
+},{"safe-buffer":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/safe-buffer/browser.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/strip-hex-prefix/src/index.js":[function(_dereq_,module,exports){
 var isHexPrefixed = _dereq_('is-hex-prefixed');
 
 /**
@@ -66838,10 +67837,10 @@ module.exports = function stripHexPrefix(str) {
   return isHexPrefixed(str) ? str.slice(2) : str;
 }
 
-},{"is-hex-prefixed":195}],485:[function(_dereq_,module,exports){
+},{"is-hex-prefixed":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/is-hex-prefixed/src/index.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/symbol-observable/index.js":[function(_dereq_,module,exports){
 module.exports = _dereq_('./lib/index');
 
-},{"./lib/index":486}],486:[function(_dereq_,module,exports){
+},{"./lib/index":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/symbol-observable/lib/index.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/symbol-observable/lib/index.js":[function(_dereq_,module,exports){
 (function (global){
 'use strict';
 
@@ -66873,7 +67872,8 @@ if (typeof self !== 'undefined') {
 var result = (0, _ponyfill2['default'])(root);
 exports['default'] = result;
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"./ponyfill":487}],487:[function(_dereq_,module,exports){
+
+},{"./ponyfill":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/symbol-observable/lib/ponyfill.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/symbol-observable/lib/ponyfill.js":[function(_dereq_,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -66897,7 +67897,7 @@ function symbolObservablePonyfill(root) {
 
 	return result;
 };
-},{}],488:[function(_dereq_,module,exports){
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/textarea-caret/index.js":[function(_dereq_,module,exports){
 /* jshint browser: true */
 
 (function () {
@@ -67029,7 +68029,7 @@ if (typeof module != 'undefined' && typeof module.exports != 'undefined') {
 
 }());
 
-},{}],489:[function(_dereq_,module,exports){
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/through2/through2.js":[function(_dereq_,module,exports){
 (function (process){
 var Transform = _dereq_('readable-stream/transform')
   , inherits  = _dereq_('util').inherits
@@ -67129,7 +68129,8 @@ module.exports.obj = through2(function (options, transform, flush) {
 })
 
 }).call(this,_dereq_('_process'))
-},{"_process":237,"readable-stream/transform":448,"util":495,"xtend":501}],490:[function(_dereq_,module,exports){
+
+},{"_process":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/browserify/node_modules/process/browser.js","readable-stream/transform":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/readable-stream/transform.js","util":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/util/util.js","xtend":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/xtend/immutable.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/toggle-selection/index.js":[function(_dereq_,module,exports){
 
 module.exports = function () {
   var selection = document.getSelection();
@@ -67170,7 +68171,7 @@ module.exports = function () {
   };
 };
 
-},{}],491:[function(_dereq_,module,exports){
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/traverse/index.js":[function(_dereq_,module,exports){
 var traverse = module.exports = function (obj) {
     return new Traverse(obj);
 };
@@ -67486,7 +68487,7 @@ var hasOwnProperty = Object.hasOwnProperty || function (obj, key) {
     return key in obj;
 };
 
-},{}],492:[function(_dereq_,module,exports){
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/util-deprecate/browser.js":[function(_dereq_,module,exports){
 (function (global){
 
 /**
@@ -67557,16 +68558,17 @@ function config (name) {
 }
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{}],493:[function(_dereq_,module,exports){
-arguments[4][191][0].apply(exports,arguments)
-},{"dup":191}],494:[function(_dereq_,module,exports){
+
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/util/node_modules/inherits/inherits_browser.js":[function(_dereq_,module,exports){
+arguments[4]["/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/inherits/inherits_browser.js"][0].apply(exports,arguments)
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/util/support/isBufferBrowser.js":[function(_dereq_,module,exports){
 module.exports = function isBuffer(arg) {
   return arg && typeof arg === 'object'
     && typeof arg.copy === 'function'
     && typeof arg.fill === 'function'
     && typeof arg.readUInt8 === 'function';
 }
-},{}],495:[function(_dereq_,module,exports){
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/util/util.js":[function(_dereq_,module,exports){
 (function (process,global){
 // Copyright Joyent, Inc. and other Node contributors.
 //
@@ -68156,7 +69158,8 @@ function hasOwnProperty(obj, prop) {
 }
 
 }).call(this,_dereq_('_process'),typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"./support/isBuffer":494,"_process":237,"inherits":493}],496:[function(_dereq_,module,exports){
+
+},{"./support/isBuffer":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/util/support/isBufferBrowser.js","_process":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/browserify/node_modules/process/browser.js","inherits":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/util/node_modules/inherits/inherits_browser.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/valid-url/index.js":[function(_dereq_,module,exports){
 (function(module) {
     'use strict';
 
@@ -68311,7 +69314,7 @@ function hasOwnProperty(obj, prop) {
 
 })(module);
 
-},{}],497:[function(_dereq_,module,exports){
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/vreme/vreme.js":[function(_dereq_,module,exports){
 /*!
  * vreme.js - Format date and time by providing human-readable example.
  * https://github.com/stojanovic/vreme
@@ -68671,7 +69674,7 @@ var Vreme = (function () {
 
 }));
 
-},{}],498:[function(_dereq_,module,exports){
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/web3-stream-provider/index.js":[function(_dereq_,module,exports){
 const Duplex = _dereq_('readable-stream').Duplex
 const inherits = _dereq_('util').inherits
 
@@ -68760,7 +69763,7 @@ function generateBatchId(batchPayload){
 
 function noop(){}
 
-},{"readable-stream":447,"util":495}],499:[function(_dereq_,module,exports){
+},{"readable-stream":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/readable-stream/readable-browser.js","util":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/util/util.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/wrappy/wrappy.js":[function(_dereq_,module,exports){
 // Returns a wrapper function that returns a wrapped callback
 // The wrapper function should do some stuff, and return a
 // presumably different callback function.
@@ -68795,7 +69798,7 @@ function wrappy (fn, cb) {
   }
 }
 
-},{}],500:[function(_dereq_,module,exports){
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/xss-filters/src/xss-filters.js":[function(_dereq_,module,exports){
 /*
 Copyright (c) 2015, Yahoo! Inc. All rights reserved.
 Copyrights licensed under the New BSD License.
@@ -69896,7 +70899,7 @@ exports.uriFragmentInHTMLData = exports.uriComponentInHTMLData;
 */
 exports.uriFragmentInHTMLComment = exports.uriComponentInHTMLComment;
 
-},{}],501:[function(_dereq_,module,exports){
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/xtend/immutable.js":[function(_dereq_,module,exports){
 module.exports = extend
 
 var hasOwnProperty = Object.prototype.hasOwnProperty;
@@ -69917,7 +70920,7 @@ function extend() {
     return target
 }
 
-},{}],502:[function(_dereq_,module,exports){
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/account-detail.js":[function(_dereq_,module,exports){
 'use strict';
 
 var _keys = _dereq_('babel-runtime/core-js/object/keys');
@@ -70172,7 +71175,7 @@ AccountDetailScreen.prototype.requestAccountExport = function () {
   this.props.dispatch(actions.requestExportAccount());
 };
 
-},{"./actions":508,"./components/account-export":510,"./components/account-info-link":511,"./components/copyButton":517,"./components/editable-label":520,"./components/eth-balance":522,"./components/identicon":524,"./components/tooltip":538,"./components/transaction-list":541,"./util":559,"babel-runtime/core-js/object/keys":15,"ethereumjs-util":130,"react":435,"react-addons-css-transition-group":247,"react-hyperscript":378,"react-redux":384,"util":495,"xtend":501}],503:[function(_dereq_,module,exports){
+},{"./actions":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/actions.js","./components/account-export":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/components/account-export.js","./components/account-info-link":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/components/account-info-link.js","./components/copyButton":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/components/copyButton.js","./components/editable-label":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/components/editable-label.js","./components/eth-balance":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/components/eth-balance.js","./components/identicon":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/components/identicon.js","./components/tooltip":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/components/tooltip.js","./components/transaction-list":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/components/transaction-list.js","./util":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/util.js","babel-runtime/core-js/object/keys":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/babel-runtime/core-js/object/keys.js","ethereumjs-util":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/ethereumjs-util/index.js","react":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/react.js","react-addons-css-transition-group":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-addons-css-transition-group/index.js","react-hyperscript":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-hyperscript/index.js","react-redux":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-redux/lib/index.js","util":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/util/util.js","xtend":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/xtend/immutable.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/accounts/account-list-item.js":[function(_dereq_,module,exports){
 'use strict';
 
 var Component = _dereq_('react').Component;
@@ -70263,7 +71266,7 @@ AccountListItem.prototype.pendingOrNot = function () {
   return h('.pending-dot', pending.length);
 };
 
-},{"../components/copyButton":517,"../components/eth-balance":522,"../components/identicon":524,"ethereumjs-util":130,"react":435,"react-hyperscript":378,"util":495}],504:[function(_dereq_,module,exports){
+},{"../components/copyButton":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/components/copyButton.js","../components/eth-balance":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/components/eth-balance.js","../components/identicon":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/components/identicon.js","ethereumjs-util":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/ethereumjs-util/index.js","react":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/react.js","react-hyperscript":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-hyperscript/index.js","util":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/util/util.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/accounts/import/index.js":[function(_dereq_,module,exports){
 'use strict';
 
 var _reactSelect = _dereq_('react-select');
@@ -70347,7 +71350,7 @@ AccountImportSubview.prototype.renderImportView = function () {
   }
 };
 
-},{"./json.js":505,"./private-key.js":506,"react":435,"react-hyperscript":378,"react-redux":384,"react-select":393,"util":495}],505:[function(_dereq_,module,exports){
+},{"./json.js":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/accounts/import/json.js","./private-key.js":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/accounts/import/private-key.js","react":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/react.js","react-hyperscript":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-hyperscript/index.js","react-redux":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-redux/lib/index.js","react-select":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-select/lib/Select.js","util":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/util/util.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/accounts/import/json.js":[function(_dereq_,module,exports){
 'use strict';
 
 var inherits = _dereq_('util').inherits;
@@ -70437,7 +71440,7 @@ JsonImportSubview.prototype.createNewKeychain = function () {
   this.props.dispatch(actions.importNewAccount('JSON File', [fileContents, password]));
 };
 
-},{"../../actions":508,"react":435,"react-hyperscript":378,"react-redux":384,"react-simple-file-input":400,"util":495}],506:[function(_dereq_,module,exports){
+},{"../../actions":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/actions.js","react":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/react.js","react-hyperscript":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-hyperscript/index.js","react-redux":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-redux/lib/index.js","react-simple-file-input":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-simple-file-input/lib/index.js","util":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/util/util.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/accounts/import/private-key.js":[function(_dereq_,module,exports){
 'use strict';
 
 var inherits = _dereq_('util').inherits;
@@ -70499,7 +71502,7 @@ PrivateKeyImportView.prototype.createNewKeychain = function () {
   this.props.dispatch(actions.importNewAccount('Private Key', [privateKey]));
 };
 
-},{"../../actions":508,"react":435,"react-hyperscript":378,"react-redux":384,"util":495}],507:[function(_dereq_,module,exports){
+},{"../../actions":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/actions.js","react":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/react.js","react-hyperscript":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-hyperscript/index.js","react-redux":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-redux/lib/index.js","util":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/util/util.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/accounts/index.js":[function(_dereq_,module,exports){
 'use strict';
 
 var inherits = _dereq_('util').inherits;
@@ -70643,7 +71646,7 @@ AccountsScreen.prototype.goHome = function () {
   this.props.dispatch(actions.goHome());
 };
 
-},{"../actions":508,"../util":559,"./account-list-item":503,"react":435,"react-dom":248,"react-hyperscript":378,"react-redux":384,"util":495}],508:[function(_dereq_,module,exports){
+},{"../actions":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/actions.js","../util":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/util.js","./account-list-item":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/accounts/account-list-item.js","react":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/react.js","react-dom":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/index.js","react-hyperscript":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-hyperscript/index.js","react-redux":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-redux/lib/index.js","util":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/util/util.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/actions.js":[function(_dereq_,module,exports){
 (function (global){
 'use strict';
 
@@ -71653,7 +72656,8 @@ function forceUpdateMetamaskState(dispatch) {
 }
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"../../app/scripts/lib/buy-eth-url":1,"babel-runtime/core-js/json/stringify":13}],509:[function(_dereq_,module,exports){
+
+},{"../../app/scripts/lib/buy-eth-url":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/app/scripts/lib/buy-eth-url.js","babel-runtime/core-js/json/stringify":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/babel-runtime/core-js/json/stringify.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/app.js":[function(_dereq_,module,exports){
 'use strict';
 
 var inherits = _dereq_('util').inherits;
@@ -71661,22 +72665,22 @@ var Component = _dereq_('react').Component;
 var connect = _dereq_('react-redux').connect;
 var h = _dereq_('react-hyperscript');
 var actions = _dereq_('./actions');
-var ReactCSSTransitionGroup = _dereq_('react-addons-css-transition-group'
+var ReactCSSTransitionGroup = _dereq_('react-addons-css-transition-group');
 // init
-);var InitializeMenuScreen = _dereq_('./first-time/init-menu');
-var NewKeyChainScreen = _dereq_('./new-keychain'
+var InitializeMenuScreen = _dereq_('./first-time/init-menu');
+var NewKeyChainScreen = _dereq_('./new-keychain');
 // unlock
-);var UnlockScreen = _dereq_('./unlock'
+var UnlockScreen = _dereq_('./unlock');
 // accounts
-);var AccountsScreen = _dereq_('./accounts');
+var AccountsScreen = _dereq_('./accounts');
 var AccountDetailScreen = _dereq_('./account-detail');
 var SendTransactionScreen = _dereq_('./send');
-var ConfirmTxScreen = _dereq_('./conf-tx'
+var ConfirmTxScreen = _dereq_('./conf-tx');
 // notice
-);var NoticeScreen = _dereq_('./components/notice');
-var generateLostAccountsNotice = _dereq_('../lib/lost-accounts-notice'
+var NoticeScreen = _dereq_('./components/notice');
+var generateLostAccountsNotice = _dereq_('../lib/lost-accounts-notice');
 // other views
-);var ConfigScreen = _dereq_('./config');
+var ConfigScreen = _dereq_('./config');
 var Import = _dereq_('./accounts/import');
 var InfoScreen = _dereq_('./info');
 var LoadingIndicator = _dereq_('./components/loading');
@@ -72224,7 +73228,7 @@ App.prototype.renderCommonRpc = function (rpcList, provider) {
   });
 };
 
-},{"../lib/lost-accounts-notice":566,"./account-detail":502,"./accounts":507,"./accounts/import":504,"./actions":508,"./components/buy-button-subview":515,"./components/drop-menu-item":519,"./components/loading":525,"./components/network":528,"./components/notice":529,"./components/qr-code":535,"./components/tooltip":538,"./conf-tx":542,"./config":543,"./first-time/init-menu":545,"./info":546,"./keychains/hd/create-vault-complete":547,"./keychains/hd/recover-seed/confirmation":548,"./keychains/hd/restore-vault":549,"./new-keychain":550,"./send":556,"./unlock":558,"menu-droppo":225,"react":435,"react-addons-css-transition-group":247,"react-hyperscript":378,"react-redux":384,"sandwich-expando":466,"util":495}],510:[function(_dereq_,module,exports){
+},{"../lib/lost-accounts-notice":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/lib/lost-accounts-notice.js","./account-detail":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/account-detail.js","./accounts":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/accounts/index.js","./accounts/import":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/accounts/import/index.js","./actions":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/actions.js","./components/buy-button-subview":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/components/buy-button-subview.js","./components/drop-menu-item":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/components/drop-menu-item.js","./components/loading":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/components/loading.js","./components/network":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/components/network.js","./components/notice":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/components/notice.js","./components/qr-code":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/components/qr-code.js","./components/tooltip":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/components/tooltip.js","./conf-tx":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/conf-tx.js","./config":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/config.js","./first-time/init-menu":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/first-time/init-menu.js","./info":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/info.js","./keychains/hd/create-vault-complete":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/keychains/hd/create-vault-complete.js","./keychains/hd/recover-seed/confirmation":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/keychains/hd/recover-seed/confirmation.js","./keychains/hd/restore-vault":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/keychains/hd/restore-vault.js","./new-keychain":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/new-keychain.js","./send":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/send.js","./unlock":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/unlock.js","menu-droppo":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/menu-droppo/index.js","react":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/react.js","react-addons-css-transition-group":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-addons-css-transition-group/index.js","react-hyperscript":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-hyperscript/index.js","react-redux":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-redux/lib/index.js","sandwich-expando":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/sandwich-expando/index.js","util":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/util/util.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/components/account-export.js":[function(_dereq_,module,exports){
 'use strict';
 
 var Component = _dereq_('react').Component;
@@ -72340,7 +73344,7 @@ ExportAccountView.prototype.onExportKeyPress = function (event) {
   this.props.dispatch(actions.exportAccount(input, this.props.address));
 };
 
-},{"../actions":508,"copy-to-clipboard":45,"ethereumjs-util":130,"react":435,"react-hyperscript":378,"react-redux":384,"util":495}],511:[function(_dereq_,module,exports){
+},{"../actions":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/actions.js","copy-to-clipboard":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/copy-to-clipboard/index.js","ethereumjs-util":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/ethereumjs-util/index.js","react":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/react.js","react-hyperscript":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-hyperscript/index.js","react-redux":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-redux/lib/index.js","util":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/util/util.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/components/account-info-link.js":[function(_dereq_,module,exports){
 (function (global){
 'use strict';
 
@@ -72387,7 +73391,8 @@ AccountInfoLink.prototype.render = function () {
 };
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"../../lib/account-link":562,"./tooltip":538,"react":435,"react-hyperscript":378,"util":495}],512:[function(_dereq_,module,exports){
+
+},{"../../lib/account-link":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/lib/account-link.js","./tooltip":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/components/tooltip.js","react":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/react.js","react-hyperscript":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-hyperscript/index.js","util":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/util/util.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/components/account-panel.js":[function(_dereq_,module,exports){
 'use strict';
 
 var inherits = _dereq_('util').inherits;
@@ -72458,7 +73463,7 @@ function balanceOrFaucetingIndication(account, isFauceting) {
   }
 }
 
-},{"../util":559,"./identicon":524,"react":435,"react-hyperscript":378,"util":495}],513:[function(_dereq_,module,exports){
+},{"../util":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/util.js","./identicon":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/components/identicon.js","react":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/react.js","react-hyperscript":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-hyperscript/index.js","util":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/util/util.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/components/binary-renderer.js":[function(_dereq_,module,exports){
 (function (Buffer){
 'use strict';
 
@@ -72509,7 +73514,8 @@ BinaryRenderer.prototype.hexToText = function (hex) {
 };
 
 }).call(this,_dereq_("buffer").Buffer)
-},{"buffer":24,"ethereumjs-util":130,"react":435,"react-hyperscript":378,"util":495,"xtend":501}],514:[function(_dereq_,module,exports){
+
+},{"buffer":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/buffer/index.js","ethereumjs-util":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/ethereumjs-util/index.js","react":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/react.js","react-hyperscript":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-hyperscript/index.js","util":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/util/util.js","xtend":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/xtend/immutable.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/components/bn-as-decimal-input.js":[function(_dereq_,module,exports){
 'use strict';
 
 var Component = _dereq_('react').Component;
@@ -72688,7 +73694,7 @@ BnAsDecimalInput.prototype.upsize = function (number, scale, precision) {
   return newString;
 };
 
-},{"ethereumjs-util":130,"react":435,"react-hyperscript":378,"util":495,"xtend":501}],515:[function(_dereq_,module,exports){
+},{"ethereumjs-util":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/ethereumjs-util/index.js","react":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/react.js","react-hyperscript":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-hyperscript/index.js","util":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/util/util.js","xtend":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/xtend/immutable.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/components/buy-button-subview.js":[function(_dereq_,module,exports){
 (function (global){
 'use strict';
 
@@ -72872,7 +73878,8 @@ BuyButtonSubview.prototype.radioHandler = function (event) {
 };
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"../actions":508,"./account-panel":512,"./coinbase-form":516,"./custom-radio-list":518,"./loading":525,"./shapeshift-form":536,"react":435,"react-hyperscript":378,"react-redux":384,"util":495}],516:[function(_dereq_,module,exports){
+
+},{"../actions":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/actions.js","./account-panel":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/components/account-panel.js","./coinbase-form":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/components/coinbase-form.js","./custom-radio-list":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/components/custom-radio-list.js","./loading":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/components/loading.js","./shapeshift-form":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/components/shapeshift-form.js","react":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/react.js","react-hyperscript":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-hyperscript/index.js","react-redux":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-redux/lib/index.js","util":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/util/util.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/components/coinbase-form.js":[function(_dereq_,module,exports){
 'use strict';
 
 var Component = _dereq_('react').Component;
@@ -72935,7 +73942,7 @@ CoinbaseForm.prototype.renderLoading = function () {
   });
 };
 
-},{"../actions":508,"react":435,"react-hyperscript":378,"react-redux":384,"util":495}],517:[function(_dereq_,module,exports){
+},{"../actions":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/actions.js","react":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/react.js","react-hyperscript":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-hyperscript/index.js","react-redux":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-redux/lib/index.js","util":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/util/util.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/components/copyButton.js":[function(_dereq_,module,exports){
 'use strict';
 
 var Component = _dereq_('react').Component;
@@ -72996,7 +74003,7 @@ CopyButton.prototype.debounceRestore = function () {
   }, 850);
 };
 
-},{"./tooltip":538,"copy-to-clipboard":45,"react":435,"react-hyperscript":378,"util":495}],518:[function(_dereq_,module,exports){
+},{"./tooltip":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/components/tooltip.js","copy-to-clipboard":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/copy-to-clipboard/index.js","react":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/react.js","react-hyperscript":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-hyperscript/index.js","util":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/util/util.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/components/custom-radio-list.js":[function(_dereq_,module,exports){
 'use strict';
 
 var Component = _dereq_('react').Component;
@@ -73047,7 +74054,7 @@ RadioList.prototype.render = function () {
   }))]);
 };
 
-},{"react":435,"react-hyperscript":378,"util":495}],519:[function(_dereq_,module,exports){
+},{"react":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/react.js","react-hyperscript":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-hyperscript/index.js","util":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/util/util.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/components/drop-menu-item.js":[function(_dereq_,module,exports){
 'use strict';
 
 var Component = _dereq_('react').Component;
@@ -73109,7 +74116,7 @@ DropMenuItem.prototype.activeNetworkRender = function () {
   }
 };
 
-},{"react":435,"react-hyperscript":378,"util":495}],520:[function(_dereq_,module,exports){
+},{"react":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/react.js","react-hyperscript":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-hyperscript/index.js","util":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/util/util.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/components/editable-label.js":[function(_dereq_,module,exports){
 'use strict';
 
 var Component = _dereq_('react').Component;
@@ -73165,7 +74172,7 @@ EditableLabel.prototype.saveText = function () {
   this.setState({ isEditingLabel: false, textLabel: truncatedText });
 };
 
-},{"react":435,"react-dom":248,"react-hyperscript":378,"util":495}],521:[function(_dereq_,module,exports){
+},{"react":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/react.js","react-dom":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/index.js","react-hyperscript":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-hyperscript/index.js","util":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/util/util.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/components/ens-input.js":[function(_dereq_,module,exports){
 (function (global){
 'use strict';
 
@@ -73351,7 +74358,8 @@ function getNetworkEnsSupport(network) {
 }
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"babel-runtime/core-js/object/keys":15,"copy-to-clipboard":45,"debounce":89,"ethjs-ens":136,"ethjs-ens/lib/network-map.json":137,"react":435,"react-hyperscript":378,"util":495,"xtend":501}],522:[function(_dereq_,module,exports){
+
+},{"babel-runtime/core-js/object/keys":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/babel-runtime/core-js/object/keys.js","copy-to-clipboard":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/copy-to-clipboard/index.js","debounce":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/debounce/index.js","ethjs-ens":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/ethjs-ens/index.js","ethjs-ens/lib/network-map.json":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/ethjs-ens/lib/network-map.json","react":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/react.js","react-hyperscript":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-hyperscript/index.js","util":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/util/util.js","xtend":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/xtend/immutable.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/components/eth-balance.js":[function(_dereq_,module,exports){
 'use strict';
 
 var Component = _dereq_('react').Component;
@@ -73435,7 +74443,7 @@ EthBalanceComponent.prototype.renderBalance = function (value) {
   }, label)]), showFiat ? h(FiatValue, { value: props.value, conversionRate: conversionRate, currentCurrency: currentCurrency }) : null]));
 };
 
-},{"../util":559,"./fiat-value.js":523,"./tooltip.js":538,"react":435,"react-hyperscript":378,"util":495}],523:[function(_dereq_,module,exports){
+},{"../util":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/util.js","./fiat-value.js":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/components/fiat-value.js","./tooltip.js":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/components/tooltip.js","react":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/react.js","react-hyperscript":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-hyperscript/index.js","util":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/util/util.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/components/fiat-value.js":[function(_dereq_,module,exports){
 'use strict';
 
 var Component = _dereq_('react').Component;
@@ -73501,7 +74509,7 @@ function fiatDisplay(fiatDisplayNumber, fiatSuffix) {
   }
 }
 
-},{"../util":559,"react":435,"react-hyperscript":378,"util":495}],524:[function(_dereq_,module,exports){
+},{"../util":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/util.js","react":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/react.js","react-hyperscript":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-hyperscript/index.js","util":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/util/util.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/components/identicon.js":[function(_dereq_,module,exports){
 'use strict';
 
 var Component = _dereq_('react').Component;
@@ -73571,7 +74579,7 @@ IdenticonComponent.prototype.componentDidUpdate = function () {
   }
 };
 
-},{"../../lib/icon-factory":565,"detect-node":91,"jazzicon":197,"react":435,"react-dom":248,"react-hyperscript":378,"util":495}],525:[function(_dereq_,module,exports){
+},{"../../lib/icon-factory":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/lib/icon-factory.js","detect-node":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/detect-node/index.js","jazzicon":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/jazzicon/index.js","react":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/react.js","react-dom":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/index.js","react-hyperscript":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-hyperscript/index.js","util":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/util/util.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/components/loading.js":[function(_dereq_,module,exports){
 'use strict';
 
 var inherits = _dereq_('util').inherits;
@@ -73618,7 +74626,7 @@ function showMessageIfAny(loadingMessage) {
   return h('span', loadingMessage);
 }
 
-},{"react":435,"react-addons-css-transition-group":247,"react-hyperscript":378,"util":495}],526:[function(_dereq_,module,exports){
+},{"react":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/react.js","react-addons-css-transition-group":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-addons-css-transition-group/index.js","react-hyperscript":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-hyperscript/index.js","util":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/util/util.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/components/mascot.js":[function(_dereq_,module,exports){
 'use strict';
 
 var inherits = _dereq_('util').inherits;
@@ -73681,7 +74689,7 @@ Mascot.prototype.lookAt = function (target) {
   this.refollowMouse();
 };
 
-},{"debounce":89,"metamask-logo":228,"react":435,"react-hyperscript":378,"util":495}],527:[function(_dereq_,module,exports){
+},{"debounce":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/debounce/index.js","metamask-logo":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/metamask-logo/index.js","react":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/react.js","react-hyperscript":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-hyperscript/index.js","util":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/util/util.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/components/mini-account-panel.js":[function(_dereq_,module,exports){
 'use strict';
 
 var inherits = _dereq_('util').inherits;
@@ -73746,7 +74754,7 @@ AccountPanel.prototype.genIcon = function (seed, picOrder) {
   })]);
 };
 
-},{"./identicon":524,"react":435,"react-hyperscript":378,"util":495}],528:[function(_dereq_,module,exports){
+},{"./identicon":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/components/identicon.js","react":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/react.js","react-hyperscript":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-hyperscript/index.js","util":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/util/util.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/components/network.js":[function(_dereq_,module,exports){
 'use strict';
 
 var Component = _dereq_('react').Component;
@@ -73848,7 +74856,7 @@ Network.prototype.render = function () {
   }()]);
 };
 
-},{"react":435,"react-hyperscript":378,"util":495}],529:[function(_dereq_,module,exports){
+},{"react":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/react.js","react-hyperscript":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-hyperscript/index.js","util":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/util/util.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/components/notice.js":[function(_dereq_,module,exports){
 'use strict';
 
 var inherits = _dereq_('util').inherits;
@@ -73926,7 +74934,7 @@ Notice.prototype.componentWillUnmount = function () {
   linker.teardownListener(node);
 };
 
-},{"extension-link-enabler":145,"react":435,"react-dom":248,"react-hyperscript":378,"react-markdown":381,"util":495}],530:[function(_dereq_,module,exports){
+},{"extension-link-enabler":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/extension-link-enabler/index.js","react":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/react.js","react-dom":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/index.js","react-hyperscript":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-hyperscript/index.js","react-markdown":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-markdown/src/react-markdown.js","util":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/util/util.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/components/pending-msg-details.js":[function(_dereq_,module,exports){
 'use strict';
 
 var Component = _dereq_('react').Component;
@@ -73970,7 +74978,7 @@ PendingMsgDetails.prototype.render = function () {
   h('.tx-data.flex-column.flex-justify-center.flex-grow.select-none', [h('.flex-row.flex-space-between', [h('label.font-small', 'MESSAGE'), h('span.font-small', msgParams.data)])])]);
 };
 
-},{"./account-panel":512,"react":435,"react-hyperscript":378,"util":495}],531:[function(_dereq_,module,exports){
+},{"./account-panel":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/components/account-panel.js","react":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/react.js","react-hyperscript":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-hyperscript/index.js","util":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/util/util.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/components/pending-msg.js":[function(_dereq_,module,exports){
 'use strict';
 
 var Component = _dereq_('react').Component;
@@ -74016,7 +75024,7 @@ PendingMsg.prototype.render = function () {
   }, 'Sign')])]);
 };
 
-},{"./pending-msg-details":530,"react":435,"react-hyperscript":378,"util":495}],532:[function(_dereq_,module,exports){
+},{"./pending-msg-details":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/components/pending-msg-details.js","react":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/react.js","react-hyperscript":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-hyperscript/index.js","util":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/util/util.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/components/pending-personal-msg-details.js":[function(_dereq_,module,exports){
 'use strict';
 
 var Component = _dereq_('react').Component;
@@ -74073,7 +75081,7 @@ PendingMsgDetails.prototype.render = function () {
   })])]);
 };
 
-},{"./account-panel":512,"./binary-renderer":513,"react":435,"react-hyperscript":378,"util":495}],533:[function(_dereq_,module,exports){
+},{"./account-panel":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/components/account-panel.js","./binary-renderer":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/components/binary-renderer.js","react":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/react.js","react-hyperscript":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-hyperscript/index.js","util":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/util/util.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/components/pending-personal-msg.js":[function(_dereq_,module,exports){
 'use strict';
 
 var Component = _dereq_('react').Component;
@@ -74115,7 +75123,7 @@ PendingMsg.prototype.render = function () {
   }, 'Sign')])]);
 };
 
-},{"./pending-personal-msg-details":532,"react":435,"react-hyperscript":378,"util":495}],534:[function(_dereq_,module,exports){
+},{"./pending-personal-msg-details":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/components/pending-personal-msg-details.js","react":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/react.js","react-hyperscript":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-hyperscript/index.js","util":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/util/util.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/components/pending-tx.js":[function(_dereq_,module,exports){
 'use strict';
 
 var _stringify = _dereq_('babel-runtime/core-js/json/stringify');
@@ -74176,10 +75184,10 @@ PendingTx.prototype.render = function () {
   // Gas
   var gas = txParams.gas;
   var gasBn = hexToBn(gas);
-  var safeGasLimit = parseInt(txMeta.blockGasLimit
+  var safeGasLimit = parseInt(txMeta.blockGasLimit);
 
   // Gas Price
-  );var gasPrice = txParams.gasPrice || MIN_GAS_PRICE_BN.toString(16);
+  var gasPrice = txParams.gasPrice || MIN_GAS_PRICE_BN.toString(16);
   var gasPriceBn = hexToBn(gasPrice);
 
   var txFeeBn = gasBn.mul(gasPriceBn);
@@ -74428,9 +75436,9 @@ PendingTx.prototype.checkValidity = function () {
 };
 
 PendingTx.prototype.getFormEl = function () {
-  var form = document.querySelector('form#pending-tx-form'
+  var form = document.querySelector('form#pending-tx-form');
   // Stub out form for unit tests:
-  );if (!form) {
+  if (!form) {
     return {
       checkValidity: function checkValidity() {
         return true;
@@ -74473,7 +75481,7 @@ function forwardCarrat() {
   });
 }
 
-},{"../../../app/scripts/lib/hex-to-bn":2,"../../lib/contract-namer":563,"../actions":508,"../util":559,"./bn-as-decimal-input":514,"./eth-balance":522,"./mini-account-panel":527,"babel-runtime/core-js/json/stringify":13,"clone":28,"ethereumjs-util":130,"react":435,"react-hyperscript":378,"util":495}],535:[function(_dereq_,module,exports){
+},{"../../../app/scripts/lib/hex-to-bn":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/app/scripts/lib/hex-to-bn.js","../../lib/contract-namer":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/lib/contract-namer.js","../actions":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/actions.js","../util":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/util.js","./bn-as-decimal-input":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/components/bn-as-decimal-input.js","./eth-balance":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/components/eth-balance.js","./mini-account-panel":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/components/mini-account-panel.js","babel-runtime/core-js/json/stringify":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/babel-runtime/core-js/json/stringify.js","clone":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/clone/clone.js","ethereumjs-util":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/ethereumjs-util/index.js","react":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/react.js","react-hyperscript":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-hyperscript/index.js","util":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/util/util.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/components/qr-code.js":[function(_dereq_,module,exports){
 'use strict';
 
 var Component = _dereq_('react').Component;
@@ -74547,7 +75555,7 @@ QrCodeView.prototype.renderMultiMessage = function () {
   return multiMessage;
 };
 
-},{"./copyButton":517,"qrcode-npm":245,"react":435,"react-hyperscript":378,"react-redux":384,"util":495}],536:[function(_dereq_,module,exports){
+},{"./copyButton":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/components/copyButton.js","qrcode-npm":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/qrcode-npm/qrcode.js","react":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/react.js","react-hyperscript":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-hyperscript/index.js","react-redux":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-redux/lib/index.js","util":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/util/util.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/components/shapeshift-form.js":[function(_dereq_,module,exports){
 'use strict';
 
 var _keys = _dereq_('babel-runtime/core-js/object/keys');
@@ -74811,7 +75819,7 @@ ShapeshiftForm.prototype.renderLoading = function () {
   })]);
 };
 
-},{"../../lib/persistent-form":567,"../actions":508,"../util":559,"./qr-code":535,"babel-runtime/core-js/object/keys":15,"react-addons-css-transition-group":247,"react-hyperscript":378,"react-redux":384,"util":495}],537:[function(_dereq_,module,exports){
+},{"../../lib/persistent-form":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/lib/persistent-form.js","../actions":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/actions.js","../util":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/util.js","./qr-code":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/components/qr-code.js","babel-runtime/core-js/object/keys":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/babel-runtime/core-js/object/keys.js","react-addons-css-transition-group":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-addons-css-transition-group/index.js","react-hyperscript":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-hyperscript/index.js","react-redux":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-redux/lib/index.js","util":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/util/util.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/components/shift-list-item.js":[function(_dereq_,module,exports){
 (function (global){
 'use strict';
 
@@ -74997,7 +76005,8 @@ ShiftListItem.prototype.renderInfo = function () {
 };
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"../../lib/explorer-link":564,"../actions":508,"../util":559,"./copyButton":517,"./eth-balance":522,"./tooltip":538,"react":435,"react-hyperscript":378,"react-redux":384,"util":495,"vreme":497}],538:[function(_dereq_,module,exports){
+
+},{"../../lib/explorer-link":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/lib/explorer-link.js","../actions":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/actions.js","../util":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/util.js","./copyButton":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/components/copyButton.js","./eth-balance":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/components/eth-balance.js","./tooltip":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/components/tooltip.js","react":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/react.js","react-hyperscript":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-hyperscript/index.js","react-redux":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-redux/lib/index.js","util":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/util/util.js","vreme":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/vreme/vreme.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/components/tooltip.js":[function(_dereq_,module,exports){
 'use strict';
 
 var Component = _dereq_('react').Component;
@@ -75026,7 +76035,7 @@ Tooltip.prototype.render = function () {
   }, children);
 };
 
-},{"react":435,"react-hyperscript":378,"react-tooltip-component":402,"util":495}],539:[function(_dereq_,module,exports){
+},{"react":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/react.js","react-hyperscript":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-hyperscript/index.js","react-tooltip-component":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-tooltip-component/lib/index.js","util":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/util/util.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/components/transaction-list-item-icon.js":[function(_dereq_,module,exports){
 'use strict';
 
 var Component = _dereq_('react').Component;
@@ -75100,7 +76109,7 @@ TransactionIcon.prototype.render = function () {
   }
 };
 
-},{"./identicon":524,"./tooltip":538,"react":435,"react-hyperscript":378,"util":495}],540:[function(_dereq_,module,exports){
+},{"./identicon":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/components/identicon.js","./tooltip":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/components/tooltip.js","react":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/react.js","react-hyperscript":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-hyperscript/index.js","util":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/util/util.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/components/transaction-list-item.js":[function(_dereq_,module,exports){
 (function (global){
 'use strict';
 
@@ -75250,7 +76259,8 @@ function failIfFailed(transaction) {
 }
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"../../lib/explorer-link":564,"../util":559,"./copyButton":517,"./eth-balance":522,"./shift-list-item":537,"./tooltip":538,"./transaction-list-item-icon":539,"number-to-bn":231,"react":435,"react-hyperscript":378,"util":495,"vreme":497}],541:[function(_dereq_,module,exports){
+
+},{"../../lib/explorer-link":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/lib/explorer-link.js","../util":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/util.js","./copyButton":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/components/copyButton.js","./eth-balance":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/components/eth-balance.js","./shift-list-item":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/components/shift-list-item.js","./tooltip":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/components/tooltip.js","./transaction-list-item-icon":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/components/transaction-list-item-icon.js","number-to-bn":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/number-to-bn/src/index.js","react":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/react.js","react-hyperscript":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-hyperscript/index.js","util":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/util/util.js","vreme":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/vreme/vreme.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/components/transaction-list.js":[function(_dereq_,module,exports){
 'use strict';
 
 var Component = _dereq_('react').Component;
@@ -75325,7 +76335,7 @@ TransactionList.prototype.render = function () {
   }, ['No transaction history.'])])]);
 };
 
-},{"./transaction-list-item":540,"react":435,"react-hyperscript":378,"util":495}],542:[function(_dereq_,module,exports){
+},{"./transaction-list-item":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/components/transaction-list-item.js","react":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/react.js","react-hyperscript":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-hyperscript/index.js","util":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/util/util.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/conf-tx.js":[function(_dereq_,module,exports){
 'use strict';
 
 var inherits = _dereq_('util').inherits;
@@ -75530,7 +76540,7 @@ function warningIfExists(warning) {
   }
 }
 
-},{"../../app/scripts/lib/is-popup-or-notification":3,"../lib/tx-helper":568,"./actions":508,"./components/loading":525,"./components/network":528,"./components/pending-msg":531,"./components/pending-personal-msg":533,"./components/pending-tx":534,"react":435,"react-addons-css-transition-group":247,"react-hyperscript":378,"react-redux":384,"util":495}],543:[function(_dereq_,module,exports){
+},{"../../app/scripts/lib/is-popup-or-notification":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/app/scripts/lib/is-popup-or-notification.js","../lib/tx-helper":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/lib/tx-helper.js","./actions":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/actions.js","./components/loading":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/components/loading.js","./components/network":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/components/network.js","./components/pending-msg":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/components/pending-msg.js","./components/pending-personal-msg":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/components/pending-personal-msg.js","./components/pending-tx":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/components/pending-tx.js","react":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/react.js","react-addons-css-transition-group":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-addons-css-transition-group/index.js","react-hyperscript":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-hyperscript/index.js","react-redux":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-redux/lib/index.js","util":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/util/util.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/config.js":[function(_dereq_,module,exports){
 'use strict';
 
 var inherits = _dereq_('util').inherits;
@@ -75684,7 +76694,7 @@ function currentProviderDisplay(metamaskState) {
   return h('div', [h('span', { style: { fontWeight: 'bold', paddingRight: '10px' } }, title), h('span', value)]);
 }
 
-},{"./actions":508,"./conversion.json":544,"react":435,"react-hyperscript":378,"react-redux":384,"util":495,"valid-url":496}],544:[function(_dereq_,module,exports){
+},{"./actions":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/actions.js","./conversion.json":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/conversion.json","react":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/react.js","react-hyperscript":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-hyperscript/index.js","react-redux":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-redux/lib/index.js","util":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/util/util.js","valid-url":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/valid-url/index.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/conversion.json":[function(_dereq_,module,exports){
 module.exports={
   "rows": [
     {
@@ -75893,7 +76903,7 @@ module.exports={
   ]
 }
 
-},{}],545:[function(_dereq_,module,exports){
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/first-time/init-menu.js":[function(_dereq_,module,exports){
 'use strict';
 
 var inherits = _dereq_('util').inherits;
@@ -76049,7 +77059,7 @@ InitializeMenuScreen.prototype.inputChanged = function (event) {
   });
 };
 
-},{"../actions":508,"../components/mascot":526,"../components/tooltip":538,"events":144,"react":435,"react-hyperscript":378,"react-redux":384,"textarea-caret":488,"util":495}],546:[function(_dereq_,module,exports){
+},{"../actions":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/actions.js","../components/mascot":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/components/mascot.js","../components/tooltip":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/components/tooltip.js","events":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/events/events.js","react":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/react.js","react-hyperscript":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-hyperscript/index.js","react-redux":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-redux/lib/index.js","textarea-caret":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/textarea-caret/index.js","util":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/util/util.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/info.js":[function(_dereq_,module,exports){
 (function (global){
 'use strict';
 
@@ -76170,7 +77180,8 @@ InfoScreen.prototype.navigateTo = function (url) {
 };
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"./actions":508,"react":435,"react-hyperscript":378,"react-redux":384,"util":495}],547:[function(_dereq_,module,exports){
+
+},{"./actions":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/actions.js","react":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/react.js","react-hyperscript":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-hyperscript/index.js","react-redux":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-redux/lib/index.js","util":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/util/util.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/keychains/hd/create-vault-complete.js":[function(_dereq_,module,exports){
 'use strict';
 
 var inherits = _dereq_('util').inherits;
@@ -76242,7 +77253,7 @@ CreateVaultCompleteScreen.prototype.confirmSeedWords = function () {
   this.props.dispatch(actions.confirmSeedWords());
 };
 
-},{"../../actions":508,"react":435,"react-hyperscript":378,"react-redux":384,"util":495}],548:[function(_dereq_,module,exports){
+},{"../../actions":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/actions.js","react":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/react.js","react-hyperscript":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-hyperscript/index.js","react-redux":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-redux/lib/index.js","util":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/util/util.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/keychains/hd/recover-seed/confirmation.js":[function(_dereq_,module,exports){
 'use strict';
 
 var inherits = _dereq_('util').inherits;
@@ -76339,7 +77350,7 @@ RevealSeedConfirmation.prototype.revealSeedWords = function () {
   this.props.dispatch(actions.requestRevealSeed(password));
 };
 
-},{"../../../actions":508,"react":435,"react-hyperscript":378,"react-redux":384,"util":495}],549:[function(_dereq_,module,exports){
+},{"../../../actions":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/actions.js","react":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/react.js","react-hyperscript":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-hyperscript/index.js","react-redux":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-redux/lib/index.js","util":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/util/util.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/keychains/hd/restore-vault.js":[function(_dereq_,module,exports){
 'use strict';
 
 var inherits = _dereq_('util').inherits;
@@ -76479,7 +77490,7 @@ RestoreVaultScreen.prototype.createNewVaultAndRestore = function () {
   this.props.dispatch(actions.createNewVaultAndRestore(password, seed));
 };
 
-},{"../../../lib/persistent-form":567,"../../actions":508,"react-hyperscript":378,"react-redux":384,"util":495}],550:[function(_dereq_,module,exports){
+},{"../../../lib/persistent-form":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/lib/persistent-form.js","../../actions":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/actions.js","react-hyperscript":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-hyperscript/index.js","react-redux":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-redux/lib/index.js","util":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/util/util.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/new-keychain.js":[function(_dereq_,module,exports){
 'use strict';
 
 var inherits = _dereq_('util').inherits;
@@ -76508,7 +77519,7 @@ NewKeychain.prototype.render = function () {
   }, [h('h1', 'Here\'s a list!!!!')]);
 };
 
-},{"react":435,"react-hyperscript":378,"react-redux":384,"util":495}],551:[function(_dereq_,module,exports){
+},{"react":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/react.js","react-hyperscript":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-hyperscript/index.js","react-redux":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-redux/lib/index.js","util":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/util/util.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/reducers.js":[function(_dereq_,module,exports){
 'use strict';
 
 var _stringify = _dereq_('babel-runtime/core-js/json/stringify');
@@ -76517,12 +77528,12 @@ var _stringify2 = _interopRequireDefault(_stringify);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var extend = _dereq_('xtend'
+var extend = _dereq_('xtend');
 
 //
 // Sub-Reducers take in the complete state and return their sub-state
 //
-);var reduceIdentities = _dereq_('./reducers/identities');
+var reduceIdentities = _dereq_('./reducers/identities');
 var reduceMetamask = _dereq_('./reducers/metamask');
 var reduceApp = _dereq_('./reducers/app');
 
@@ -76542,19 +77553,19 @@ function rootReducer(state, action) {
   // Identities
   //
 
-  state.identities = reduceIdentities(state, action
+  state.identities = reduceIdentities(state, action);
 
   //
   // MetaMask
   //
 
-  );state.metamask = reduceMetamask(state, action
+  state.metamask = reduceMetamask(state, action);
 
   //
   // AppState
   //
 
-  );state.appState = reduceApp(state, action);
+  state.appState = reduceApp(state, action);
 
   window.METAMASK_CACHED_LOG_STATE = state;
   return state;
@@ -76570,7 +77581,7 @@ function removeSeedWords(key, value) {
   return key === 'seedWords' ? undefined : value;
 }
 
-},{"./reducers/app":552,"./reducers/identities":553,"./reducers/metamask":554,"babel-runtime/core-js/json/stringify":13,"xtend":501}],552:[function(_dereq_,module,exports){
+},{"./reducers/app":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/reducers/app.js","./reducers/identities":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/reducers/identities.js","./reducers/metamask":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/reducers/metamask.js","babel-runtime/core-js/json/stringify":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/babel-runtime/core-js/json/stringify.js","xtend":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/xtend/immutable.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/reducers/app.js":[function(_dereq_,module,exports){
 'use strict';
 
 var extend = _dereq_('xtend');
@@ -76580,9 +77591,9 @@ var txHelper = _dereq_('../../lib/tx-helper');
 module.exports = reduceApp;
 
 function reduceApp(state, action) {
-  log.debug('App Reducer got ' + action.type
+  log.debug('App Reducer got ' + action.type);
   // clone and defaults
-  );var selectedAddress = state.metamask.selectedAddress;
+  var selectedAddress = state.metamask.selectedAddress;
   var hasUnconfActions = checkUnconfActions(state);
   var name = 'accounts';
   if (selectedAddress) {
@@ -76597,15 +77608,17 @@ function reduceApp(state, action) {
     name: name,
     detailView: null,
     context: selectedAddress
+  };
 
-    // confirm seed words
-  };var seedWords = state.metamask.seedWords;
+  // confirm seed words
+  var seedWords = state.metamask.seedWords;
   var seedConfView = {
     name: 'createVaultComplete',
     seedWords: seedWords
+  };
 
-    // default state
-  };var appState = extend({
+  // default state
+  var appState = extend({
     shouldClose: false,
     menuOpen: false,
     currentView: seedWords ? seedConfView : defaultView,
@@ -76614,8 +77627,7 @@ function reduceApp(state, action) {
     },
     transForward: true, // Used to render transition direction
     isLoading: false, // Used to display loading indicator
-    warning: null // Used to display error text
-  }, state.appState);
+    warning: null }, state.appState);
 
   switch (action.type) {
 
@@ -76629,11 +77641,11 @@ function reduceApp(state, action) {
     case actions.TRANSITION_BACKWARD:
       return extend(appState, {
         transForward: false
-      }
+      });
 
-      // intialize
+    // intialize
 
-      );case actions.SHOW_CREATE_VAULT:
+    case actions.SHOW_CREATE_VAULT:
       return extend(appState, {
         currentView: {
           name: 'createVault'
@@ -76738,11 +77750,11 @@ function reduceApp(state, action) {
           context: appState.currentView.context
         },
         transForward: true
-      }
+      });
 
-      // unlock
+    // unlock
 
-      );case actions.UNLOCK_METAMASK:
+    case actions.UNLOCK_METAMASK:
       return extend(appState, {
         forgottenPassword: appState.forgottenPassword ? !appState.forgottenPassword : null,
         detailView: {},
@@ -76776,21 +77788,21 @@ function reduceApp(state, action) {
         currentView: {
           name: 'UnlockScreen'
         }
-      }
-      // reveal seed words
+      });
+    // reveal seed words
 
-      );case actions.REVEAL_SEED_CONFIRMATION:
+    case actions.REVEAL_SEED_CONFIRMATION:
       return extend(appState, {
         currentView: {
           name: 'reveal-seed-conf'
         },
         transForward: true,
         warning: null
-      }
+      });
 
-      // accounts
+    // accounts
 
-      );case actions.SET_SELECTED_ACCOUNT:
+    case actions.SET_SELECTED_ACCOUNT:
       return extend(appState, {
         activeAddress: action.value
       });
@@ -77153,7 +78165,7 @@ function indexForPending(state, txId) {
   return index;
 }
 
-},{"../../lib/tx-helper":568,"../actions":508,"xtend":501}],553:[function(_dereq_,module,exports){
+},{"../../lib/tx-helper":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/lib/tx-helper.js","../actions":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/actions.js","xtend":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/xtend/immutable.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/reducers/identities.js":[function(_dereq_,module,exports){
 'use strict';
 
 var extend = _dereq_('xtend');
@@ -77170,7 +78182,7 @@ function reduceIdentities(state, action) {
   }
 }
 
-},{"xtend":501}],554:[function(_dereq_,module,exports){
+},{"xtend":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/xtend/immutable.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/reducers/metamask.js":[function(_dereq_,module,exports){
 'use strict';
 
 var extend = _dereq_('xtend');
@@ -77311,7 +78323,7 @@ function reduceMetamask(state, action) {
   }
 }
 
-},{"../actions":508,"xtend":501}],555:[function(_dereq_,module,exports){
+},{"../actions":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/actions.js","xtend":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/xtend/immutable.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/root.js":[function(_dereq_,module,exports){
 'use strict';
 
 var inherits = _dereq_('util').inherits;
@@ -77333,7 +78345,7 @@ Root.prototype.render = function () {
   }, [h(App)]);
 };
 
-},{"./app":509,"react":435,"react-hyperscript":378,"react-redux":384,"util":495}],556:[function(_dereq_,module,exports){
+},{"./app":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/app.js","react":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/react.js","react-hyperscript":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-hyperscript/index.js","react-redux":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-redux/lib/index.js","util":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/util/util.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/send.js":[function(_dereq_,module,exports){
 'use strict';
 
 var inherits = _dereq_('util').inherits;
@@ -77591,7 +78603,7 @@ SendTransactionScreen.prototype.onSubmit = function () {
   this.props.dispatch(actions.signTx(txParams));
 };
 
-},{"../lib/persistent-form":567,"./actions":508,"./components/ens-input":521,"./components/eth-balance":522,"./components/identicon":524,"./util":559,"ethereumjs-util":130,"react-hyperscript":378,"react-redux":384,"util":495}],557:[function(_dereq_,module,exports){
+},{"../lib/persistent-form":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/lib/persistent-form.js","./actions":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/actions.js","./components/ens-input":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/components/ens-input.js","./components/eth-balance":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/components/eth-balance.js","./components/identicon":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/components/identicon.js","./util":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/util.js","ethereumjs-util":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/ethereumjs-util/index.js","react-hyperscript":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-hyperscript/index.js","react-redux":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-redux/lib/index.js","util":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/util/util.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/store.js":[function(_dereq_,module,exports){
 (function (global){
 'use strict';
 
@@ -77601,7 +78613,7 @@ var thunkMiddleware = _dereq_('redux-thunk');
 var rootReducer = _dereq_('./reducers');
 var createLogger = _dereq_('redux-logger');
 
-global.METAMASK_DEBUG = undefined;
+global.METAMASK_DEBUG = true;
 
 module.exports = configureStore;
 
@@ -77620,7 +78632,8 @@ function configureStore(initialState) {
 }
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"./reducers":551,"redux":461,"redux-logger":454,"redux-thunk":455}],558:[function(_dereq_,module,exports){
+
+},{"./reducers":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/reducers.js","redux":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/redux/lib/index.js","redux-logger":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/redux-logger/lib/index.js","redux-thunk":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/redux-thunk/lib/index.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/unlock.js":[function(_dereq_,module,exports){
 'use strict';
 
 var inherits = _dereq_('util').inherits;
@@ -77725,7 +78738,7 @@ UnlockScreen.prototype.inputChanged = function (event) {
   });
 };
 
-},{"./actions":508,"./components/mascot":526,"events":144,"react":435,"react-hyperscript":378,"react-redux":384,"textarea-caret":488,"util":495}],559:[function(_dereq_,module,exports){
+},{"./actions":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/actions.js","./components/mascot":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/components/mascot.js","events":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/events/events.js","react":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/react.js","react-hyperscript":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-hyperscript/index.js","react-redux":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-redux/lib/index.js","textarea-caret":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/textarea-caret/index.js","util":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/util/util.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/util.js":[function(_dereq_,module,exports){
 'use strict';
 
 var _keys = _dereq_('babel-runtime/core-js/object/keys');
@@ -77846,8 +78859,8 @@ function formatBalance(balance, decimalsToKeep) {
   if (decimalsToKeep === undefined) {
     if (beforeDecimal === '0') {
       if (afterDecimal !== '0') {
-        var sigFigs = afterDecimal.match(/^0*(.{2})/ // default: grabs 2 most significant digits
-        );if (sigFigs) {
+        var sigFigs = afterDecimal.match(/^0*(.{2})/); // default: grabs 2 most significant digits
+        if (sigFigs) {
           afterDecimal = sigFigs[0];
         }
         formatted = '0.' + afterDecimal + ' ETH';
@@ -77965,7 +78978,7 @@ function isHex(str) {
   return Boolean(str.match(/^(0x)?[0-9a-fA-F]+$/));
 }
 
-},{"babel-runtime/core-js/object/keys":15,"ethereumjs-util":130}],560:[function(_dereq_,module,exports){
+},{"babel-runtime/core-js/object/keys":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/babel-runtime/core-js/object/keys.js","ethereumjs-util":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/ethereumjs-util/index.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/css.js":[function(_dereq_,module,exports){
 'use strict';
 
 var _keys = _dereq_('babel-runtime/core-js/object/keys');
@@ -78004,7 +79017,7 @@ function bundleCss() {
   return cssBundle;
 }
 
-},{"babel-runtime/core-js/object/keys":15,"path":235}],561:[function(_dereq_,module,exports){
+},{"babel-runtime/core-js/object/keys":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/babel-runtime/core-js/object/keys.js","path":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/path-browserify/index.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/index.js":[function(_dereq_,module,exports){
 (function (global){
 'use strict';
 
@@ -78022,9 +79035,9 @@ log.setLevel(global.METAMASK_DEBUG ? 'debug' : 'warn');
 
 function launchMetamaskUi(opts, cb) {
   var accountManager = opts.accountManager;
-  actions._setBackgroundConnection(accountManager
+  actions._setBackgroundConnection(accountManager);
   // check if we are unlocked first
-  );accountManager.getState(function (err, metamaskState) {
+  accountManager.getState(function (err, metamaskState) {
     if (err) return cb(err);
     var store = startApp(metamaskState, accountManager, opts);
     cb(null, store);
@@ -78043,20 +79056,20 @@ function startApp(metamaskState, accountManager, opts) {
 
     // Which blockchain we are using:
     networkVersion: opts.networkVersion
-  }
+  });
 
   // if unconfirmed txs, start on txConf page
-  );var unapprovedTxsAll = txHelper(metamaskState.unapprovedTxs, metamaskState.unapprovedMsgs, metamaskState.unapprovedPersonalMsgs, metamaskState.network);
+  var unapprovedTxsAll = txHelper(metamaskState.unapprovedTxs, metamaskState.unapprovedMsgs, metamaskState.unapprovedPersonalMsgs, metamaskState.network);
   if (unapprovedTxsAll.length > 0) {
     store.dispatch(actions.showConfTxPage());
   }
 
   accountManager.on('update', function (metamaskState) {
     store.dispatch(actions.updateMetamaskState(metamaskState));
-  }
+  });
 
   // start app
-  );render(h(Root, {
+  render(h(Root, {
     // inject initial state
     store: store
   }), opts.container);
@@ -78065,7 +79078,8 @@ function startApp(metamaskState, accountManager, opts) {
 }
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"./app/actions":508,"./app/root":555,"./app/store":557,"./lib/tx-helper":568,"loglevel":222,"react-dom":248,"react-hyperscript":378}],562:[function(_dereq_,module,exports){
+
+},{"./app/actions":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/actions.js","./app/root":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/root.js","./app/store":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/store.js","./lib/tx-helper":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/lib/tx-helper.js","loglevel":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/loglevel/lib/loglevel.js","react-dom":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-dom/index.js","react-hyperscript":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react-hyperscript/index.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/lib/account-link.js":[function(_dereq_,module,exports){
 'use strict';
 
 module.exports = function (address, network) {
@@ -78100,7 +79114,7 @@ module.exports = function (address, network) {
   return link;
 };
 
-},{}],563:[function(_dereq_,module,exports){
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/lib/contract-namer.js":[function(_dereq_,module,exports){
 'use strict';
 
 /* CONTRACT NAMER
@@ -78139,7 +79153,7 @@ function addrFromHash(addr, hash) {
   return hash[address] || null;
 }
 
-},{"eth-contract-metadata":125,"ethereumjs-util":130}],564:[function(_dereq_,module,exports){
+},{"eth-contract-metadata":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/eth-contract-metadata/index.js","ethereumjs-util":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/ethereumjs-util/index.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/lib/explorer-link.js":[function(_dereq_,module,exports){
 'use strict';
 
 module.exports = function (hash, network) {
@@ -78168,7 +79182,7 @@ module.exports = function (hash, network) {
   return 'http://' + prefix + 'etherscan.io/tx/' + hash;
 };
 
-},{}],565:[function(_dereq_,module,exports){
+},{}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/lib/icon-factory.js":[function(_dereq_,module,exports){
 'use strict';
 
 var iconFactory;
@@ -78235,7 +79249,7 @@ function jsNumberForAddress(address) {
   return seed;
 }
 
-},{"eth-contract-metadata":125,"ethereumjs-util":130}],566:[function(_dereq_,module,exports){
+},{"eth-contract-metadata":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/eth-contract-metadata/index.js","ethereumjs-util":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/ethereumjs-util/index.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/lib/lost-accounts-notice.js":[function(_dereq_,module,exports){
 'use strict';
 
 var summary = _dereq_('../app/util').addressSummary;
@@ -78250,7 +79264,7 @@ module.exports = function (lostAccounts) {
   };
 };
 
-},{"../app/util":559}],567:[function(_dereq_,module,exports){
+},{"../app/util":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/util.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/lib/persistent-form.js":[function(_dereq_,module,exports){
 'use strict';
 
 var _stringify = _dereq_('babel-runtime/core-js/json/stringify');
@@ -78320,7 +79334,7 @@ PersistentForm.prototype.componentWillUnmount = function () {
   this.setPersistentStore({});
 };
 
-},{"babel-runtime/core-js/json/stringify":13,"react":435,"util":495}],568:[function(_dereq_,module,exports){
+},{"babel-runtime/core-js/json/stringify":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/babel-runtime/core-js/json/stringify.js","react":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/react/react.js","util":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/node_modules/util/util.js"}],"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/lib/tx-helper.js":[function(_dereq_,module,exports){
 'use strict';
 
 var valuesFor = _dereq_('../app/util').valuesFor;
@@ -78345,6 +79359,6 @@ module.exports = function (unapprovedTxs, unapprovedMsgs, personalMsgs, network)
   });
 };
 
-},{"../app/util":559}]},{},[10]);
+},{"../app/util":"/Users/ankur_sardar/Desktop/metamask/metamask-plugin/ui/app/util.js"}]},{},["/Users/ankur_sardar/Desktop/metamask/metamask-plugin/app/scripts/popup.js"])
 
 //# sourceMappingURL=popup.js.map
